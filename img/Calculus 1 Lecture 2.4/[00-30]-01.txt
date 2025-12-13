@@ -1,0 +1,5 @@
+image_name: [00-30]Applications in Sales (DVD Example).png
+file_name: [00-30]-01.png
+timestamp: 00:30
+counter: 01
+folder: Calculus 1 Lecture 2.4

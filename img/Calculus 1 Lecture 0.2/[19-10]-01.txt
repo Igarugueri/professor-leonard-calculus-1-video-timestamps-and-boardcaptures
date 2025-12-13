@@ -1,0 +1,5 @@
+image_name: [19-10] Defining absolute value as an example of a piecewise function.png
+file_name: [19-10]-01.png
+timestamp: 19:10
+counter: 01
+folder: Calculus 1 Lecture 0.2

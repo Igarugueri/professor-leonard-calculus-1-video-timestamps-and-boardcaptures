@@ -1,0 +1,208 @@
+/* === Base layout === */
+body {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: sans-serif;
+  margin: 2em;
+  font-size: 17px;
+  line-height: 1.75; /* aumentado ligeramente para mejor lectura de fórmulas */
+}
+
+/* === Center reading width for chapters === */
+.chapter {
+  max-width: 1400px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  line-height: 2; /* coincide con body */
+  font-size: 1.05rem;
+}
+
+/* === Spacer to replace $\rule{0pt}{}$ === */
+.sp {
+  display: block;
+  height: 0.9rem; /* Ajusta si quieres más/menos separación */
+}
+
+/* === Link styles === */
+a {
+  color: #4ea1d3;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:visited { color: #c9b89b; }
+
+/* === Remove default list bullets and spacing === */
+ul { list-style: none; margin: 0; padding-left: 0; }
+
+/* === Alineación perfecta en saltos de línea === */
+ul li {
+  position: relative;
+  padding-left: 1.4em;   /* espacio reservado para el símbolo */
+  margin: 8px 0; /* aumentado para dar más aire entre líneas */
+  font-size: 1.05rem;
+}
+li[class^="level-"]::before,
+li[class*=" level-"]::before {
+  position: absolute;
+  left: 0;
+  top: 0.1em;            /* microajuste vertical opcional */
+}
+
+/* === Indentation per level (no acumulada, aplicada al LI) === */
+li.level-1 { margin-left: 0px; }
+li.level-2 { margin-left: 5px; }
+li.level-3 { margin-left: 10px; }
+li.level-4 { margin-left: 15px; }
+li.level-5 { margin-left: 20px; }
+li.level-6 { margin-left: 25px; }
+li.level-7 { margin-left: 30px; }
+li.level-8 { margin-left: 35px; }
+li.level-9 { margin-left: 40px; }
+
+/* === Bullet symbols by level === */
+li.level-1::before { content: "●"; color: #c0c0c0; }
+li.level-2::before { content: "◉"; color: #c0c0c0; }
+li.level-3::before { content: "○"; color: #c0c0c0; }
+li.level-4::before { content: "■"; color: #c0c0c0; }
+li.level-5::before { content: "▣"; color: #c0c0c0; }
+li.level-6::before { content: "▢"; color: #c0c0c0; }
+li.level-7::before { content: "▲"; color: #c0c0c0; }
+li.level-8::before { content: "◭"; color: #c0c0c0; }
+li.level-9::before { content: "△"; color: #c0c0c0; }
+
+
+/* 1) Para cualquier li con la clase no-bullet: sin pseudo-bullet */
+li.no-bullet::before {
+  content: "" !important;
+}
+
+/* 2) Opcional: igualar alineación al nivel correspondiente */
+li.no-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* === Aire entre niveles anidados (opcional) === */
+.chapter ul ul { margin-top: 0.2rem; }
+/* Margen superior fino para separar fórmulas dentro de listas */
+li.mt { margin-top: 0.65rem; }
+
+/* Espacio extra entre puntos principales (●) */
+li.level-1 {
+  margin-top: 2rem;   /* Ajusta este valor a tu gusto */
+}
+
+/* Pero si es el PRIMER ● justo después del H1, NO aplicar ese margen */
+h1 + ul li.level-1 {
+  margin-top: 0 !important;
+}
+
+/* === Espaciado entre secciones principales === */
+.chapter h2 {
+  margin-top: 7rem; /* Ajusta el valor según prefieras */
+}
+.chapter h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  max-width: 100%;
+  margin: 2rem auto; /* margen arriba y abajo para espacio */
+  text-align: center;
+  border-top: 2px solid #ccc; /* línea arriba */
+  border-bottom: 2px solid #ccc; /* línea abajo */
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* sombra suave debajo */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85); /* centrado + tamaño reducido */
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 2px solid #555;
+  border-radius: 10px;
+  background-color: #222;
+}
+
+/* Mostrar imagen al pasar el ratón */
+.image-container:hover img {
+  display: block;
+}
+
+.limit-table {
+  margin: 10px 0;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.limit-table th, .limit-table td {
+  border: 1px solid #aaa;
+  padding: 6px 12px;
+}
+
+.limit-arrows {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.arrow-left, .arrow-right, .arrow-mid {
+  display: inline-block;
+  font-family: monospace;
+}
+.ascii-diagram {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  white-space: pre;
+  line-height: 1.2;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+
+
+.cn-table {
+  border-collapse: collapse;
+  width: max-content; /* Se adapta al tamaño del texto */
+  margin: inherit 
+  
+}
+
+.cn-table caption.magic-summary-title {
+  caption-side: top;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.cn-table th,
+.cn-table td {
+  padding: 10px 18px;
+  border: 1px solid #555;
+  vertical-align: middle;
+}
+
+.cn-table thead th {
+  background-color: rgba(255,255,255,0.08); /* dark mode friendly */
+  font-size: 1.1rem;
+  border-bottom: 2px solid #777;
+}
+
+.magic-summary-card {
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin: 20px auto;
+  width: fit-content; /* se adapta al contenido */
+}
+
+

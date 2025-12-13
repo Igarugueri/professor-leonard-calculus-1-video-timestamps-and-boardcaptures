@@ -1,0 +1,5 @@
+image_name: [44-45]When the function is not regular.png
+file_name: [44-45]-01.png
+timestamp: 44:45
+counter: 01
+folder: Calculus 1 Lecture 5.2

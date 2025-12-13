@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．６　Hｏｗ　Tｏ　Sｋｅｔｃｈ　Gｒａｐｈｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．６</h1>
+    <h1>　Hｏｗ　Tｏ　Sｋｅｔｃｈ　Gｒａｐｈｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｒｅｖｉｅｗ　ａｎｄ　ｉｎｉｔｉａｌ　ｅｘａｍｐｌｅ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=17" target="_blank">[0:17]</a>. Curve sketching uses:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> 𝒙-intercept and 𝑦-intercept.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Relative maxima and minima (extrema).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Concavity.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> Objective: Understand the shape of graphs without a graphing calculator, using calculus.</li>
+    </ul>
+
+
+    <h2>Ｓｔｅｐｓ　ｆｏｒ　ｃｕｒｖｅ　ｓｋｅｔｃｈｉｎｇ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=41" target="_blank">[0:41]</a>. Steps for curvong
+        sketchong
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[0-41]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[0-41]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> Presentation of the 🧩 Example –: $𝒇(𝒙)=(𝒙+2)(𝒙-1)^{2}$</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=78" target="_blank">[1:18]</a>. Step 1: Find the
+        intercepts
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find 𝒙-intercepts:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Set 𝑦 = 0 and solve for 𝒙 (find the roots of the equation).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Simplify only if the equation is "easy": quadratic or lower degree, or if it is
+                    already factored.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $(𝒙+2)(𝒙-1)^{2}=0 \Rightarrow 𝒙+2=0 \;\to\; 𝒙=-2;\; 𝒙-1=0 \;\to\; 𝒙=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                So the x-intercepts are: $𝒙=-2$ and $𝒙=1$.
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find the 𝑦-intercept:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Set 𝒙 = 0 and solve for 𝑦: $𝒇(0)=(0+2)(0-1)^{2}=2\cdot 1=2$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> So the y-intercept is: $𝒚=2$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=364" target="_blank">[6:04]</a>. Step 2: Find
+        asymptotes (only for rational $𝒇(𝒙)$)
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Rational $𝒇(𝒙)$ can have vertical, horizontal asymptotes, and holes.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            ❶ ᴠ̳ᴇ̳ʀ̳ᴛ̳ɪ̳ᴄ̳ᴀ̳ʟ̳ ̳ᴀ̳ꜱ̳ʏ̳ᴍ̳ᴘ̳ᴛ̳ᴏ̳ᴛ̳ᴇ̳ꜱ̳: Arise when the function tends to $±\infty$ as 𝒙 approaches a
+            specific value.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Definition:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    This occurs when:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> (i) The function is <strong>undefined at $𝒙=𝒂$</strong> because the
+                        d̳e̳n̳o̳m̳i̳n̳a̳t̳o̳r̳ ̳i̳s̳ ̳z̳e̳r̳o̳.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">
+                        (ii) The factor causing the zero <strong>does not cancel</strong> with a factor in the
+                        numerator,
+                        meaning the discontinuity is <strong>non-removable</strong> and creates infinite behavior.
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    A vertical asymptote (VA) exists at $𝒙=𝒂$ if:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\displaystyle \lim_{x\to a^-} 𝒇(𝒙)=\pm\infty$ or $\displaystyle \lim_{x\to
+                        a^+} 𝒇(𝒙)=\pm\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> (i.e., the function "blows up" on at least one side of $𝒙=𝒂$).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                One-Sided Limits:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Rational functions or others with denominators approaching $0$ at $x=a$ often
+                    exhibit this behavior.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    The function may diverge differently from each side:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">🧩 Example: $𝒇(𝒙)=\dfrac{1}{𝒙-a}$
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"> $\displaystyle \lim_{x\to a^-} 𝒇(𝒙)=-\infty$, $\displaystyle \lim_{x\to
+                            a^+} 𝒇(𝒙)=+\infty$</li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"> $\displaystyle \lim_{x\to a} 𝒇(𝒙)$ D.N.E. (does not exist), but the
+                            vertical asymptote is still at $x=a$.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                🗒️ NOTE: The existence of a vertical asymptote <strong>does not require</strong> the two-sided limit to
+                diverge in the same way or to exist at all. What matters is that at least one of the one-sided limits
+                diverges to $±\infty$.
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            ❷ ʜ̳ᴏ̳ʟ̳ᴇ̳ꜱ̳ (Removable Discontinuities): Occur where the denominator equals zero, but the corresponding
+            factor can be canceled.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Definition:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    A hole occurs at $x=a$ if:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> (i) The original function is undefined at $x=a$ due to a zero in the
+                        denominator.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> (ii) That factor cancels with the numerator, allowing simplification.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> (iii) The simplified expression is defined around $x=a$, but not at $x=a$
+                        itself.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                One-Sided Limits:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    Check if both one-sided limits exist and match.Example:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $𝓰(𝒙)=\dfrac{(𝒙-1)(𝒙+1)}{(𝒙-1)(𝒙-2)}$ → Simplifies to:
+                        $𝓰(𝒙)=\dfrac{𝒙+1}{𝒙-2}$, for $𝒙\ne 1$.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    In this case, $x=1$ is a hole:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> The original form is undefined at $x=1$ (division by zero).</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> The simplified form is valid near $x=1$.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> Evaluate: $\displaystyle \lim_{x\to 1^-} 𝓰(𝒙)$ and $\displaystyle
+                        \lim_{x\to 1^+} 𝓰(𝒙)$
+                        <!-- ▢ nivel-6 -->
+                        <ul>
+                          <li class="level-6"> If they are equal, the two-sided limit exists.</li>
+                          <li class="level-6"> However, the function remains undefined at $x=1$, so there is a removable
+                            discontinuity.</li>
+                        </ul>
+                      </li>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ○ nivel-3 -->
+          <li class="level-3">
+            🗒️ NOTE:
+            <ul>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> A <strong>hole does not cause the function to diverge to $\infty$</strong> like a
+                vertical asymptote.</li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> Instead, it’s a “missing point” on an otherwise continuous curve, where the limit
+                exists but the function is undefined.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ◉ nivel-2 -->
+      <li class="level-2">
+        ❸ ʜ̳ᴏ̳ʀ̳ɪ̳ᴢ̳ᴏ̳ɴ̳ᴛ̳ᴀ̳ʟ̳ ̳ᴀ̳ꜱ̳ʏ̳ᴍ̳ᴘ̳ᴛ̳ᴏ̳ᴛ̳ᴇ̳ꜱ̳: Determined by evaluating the limit of a function as $𝒙\to
+        \pm\infty$.
+        <ul>
+          <!-- ○ nivel-3 -->
+          <li class="level-3">
+            Definition:
+            <ul>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                A horizontal asymptote (HA) occurs when:
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> (i) $\displaystyle \lim_{x\to +\infty} 𝒇(𝒙)=\ell$ or $\displaystyle \lim_{x\to
+                    -\infty} 𝒇(𝒙)=\ell$ where $\ell$ is a real number.</li>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5">
+                    (ii) The value $\ell$ represents the <strong>end behavior</strong> of the function — the value that
+                    $𝒇(𝒙)$ gets closer to
+                    as $𝒙$ becomes very large (positive or negative).
+                  </li>
+                </ul>
+              </li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                Unlike vertical asymptotes, which occur at specific finite values of $𝒙$, horizontal asymptotes
+                describe
+                how the function behaves as $𝒙$ tends toward infinity or negative infinity.
+              </li>
+            </ul>
+          </li>
+          <!-- ○ nivel-3 -->
+          <li class="level-3">
+            Directional (End) Behavior:
+            <ul>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                Evaluate the limits separately as $𝒙 \to +\infty$ and as $𝒙 \to -\infty$:
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> $\displaystyle \lim_{x\to +\infty} 𝒇(𝒙)$</li>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> $\displaystyle \lim_{x\to -\infty} 𝒇(𝒙)$</li>
+                </ul>
+              </li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                These are sometimes referred to as "one-sided" limits at infinity.
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5">
+                    While not the same as limits from the left/right at a point (like $\displaystyle \lim_{x\to c^+}$ or
+                    $\displaystyle \lim_{x\to c^-}$),
+                    they illustrate how a function might tend to <strong>different horizontal asymptotes</strong> at
+                    each end of the 𝒙-axis.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ○ nivel-3 -->
+          <li class="level-3">
+            🗒️ NOTE:
+            <ul>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> Including examples of behavior as $𝒙 \to +\infty$ and $𝒙 \to -\infty$ helps
+                students understand the concept of asymptotic behavior more clearly.</li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                It reinforces that limits at infinity don’t always match:
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> A function may level off to one value as $𝒙 \to +\infty$, and a different one
+                    (or none) as $𝒙 \to -\infty$.</li>
+                </ul>
+              </li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4">
+                Just like with finite limits, the concept of a two-sided limit ($\displaystyle \lim_{x\to c} 𝒇(𝒙)$)
+                <strong>only exists if both sides agree</strong>:
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> $\displaystyle \lim_{x\to c^-} 𝒇(𝒙)=\lim_{x\to c^+} 𝒇(𝒙)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ○ nivel-3 -->
+          <li class="level-3">
+            Summary:
+            <ul>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> If $\displaystyle \lim_{x\to \pm\infty} 𝒇(𝒙)=\ell$, then $y=\ell$ is a horizontal
+                asymptote.</li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> If the limits are different on each side, the function has <strong>two distinct
+                  horizontal asymptotes</strong>.</li>
+              <!-- ■ nivel-4 -->
+              <li class="level-4"> If no finite limit exists, then there is <strong>no horizontal asymptote</strong> in
+                that direction.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=547" target="_blank">[9:07]</a>. Step 3: Perform the
+      first derivative test
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> The first derivative test provides critical numbers and intervals of increase/decrease.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          The first derivative represents the rate of change of the function, or in simpler terms, how the function's
+          value is
+          increasing or decreasing.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Find the values of 𝒙 that make the numerator of $𝒇′(𝒙)$ equal to zero.
+          <ul>
+            <!-- ○ nivel-3 -->
+            <li class="level-3"> These are the critical points, candidates for maxima, minima, or points where the slope
+              is zero (horizontal).</li>
+          </ul>
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Find the values of 𝒙 that make the denominator of $𝒇′(𝒙)$ equal to zero:
+          <ul>
+            <!-- ○ nivel-3 -->
+            <li class="level-3"> These indicate places where the first derivative is undefined (possible vertical
+              discontinuities or asymptotes).</li>
+          </ul>
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> It allows determining where maxima and minima are located and how the graph rises or falls.
+        </li>
+      </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=600" target="_blank">[10:00]</a>. Step 4: Perform the
+      second derivative test
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> The second derivative test provides information about concavity and inflection points.</li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          The second derivative represents the rate of change of the slope, or in simpler terms, how the slope itself is
+          increasing
+          or decreasing. This indicates the concavity of the graph
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Find the values of 𝒙 that make the numerator of $𝒇′′(𝒙)$ equal to zero. These are the candidates
+          for inflection points.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Find the values of 𝒙 that make the denominator of $𝒇′′(𝒙)$ equal to zero. These indicate where the
+          second derivative is undefined, but they are not necessarily inflection points.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Types of Growth and Concavity Combinations:
+          <ul>
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              Increasing, Concave Up:
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Signs:
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′(𝒙)>0$ (the function is increasing).</li>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′′(𝒙)>0$ (the concavity is upward).</li>
+                  </ul>
+                </li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Interpretation → [◞ ].
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> The slope is positive and increasing (becoming steeper upward).</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              Increasing, Concave Down:
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Signs:
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′(𝒙)>0$ (the function is increasing).</li>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′′(𝒙)<0$ (the concavity is downward).</li>
+                  </ul>
+                </li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Interpretation → [ ◜].
+                  <br> The slope is positive but decreasing (flattening while going up).
+                </li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              Decreasing, Concave Up:
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Signs:
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′(𝒙)<0$ (the function is decreasing).</li>
+                        <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′′(𝒙)>0$ (the concavity is upward).</li>
+                  </ul>
+                </li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Interpretation → [ ◟].
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> The slope is negative but increasing (flattening while going down).</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              Decreasing, Concave Down:
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Signs:
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′(𝒙)<0$ (the function is decreasing).</li>
+                        <!-- ▣ nivel-5 -->
+                    <li class="level-5"> $𝒇′′(𝒙)<0$ (the concavity is downward).</li>
+                  </ul>
+                </li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4">
+                  Interpretation → [◝ ].
+                  <br> The slope is negative and further decreasing (becoming steeper downward).
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=653" target="_blank">[10:53]</a>. Step 5: Create a table
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> The table includes the first derivative on top and the second derivative below.</li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> It helps visualize the behavior of the graph, including growth, decrease, and concavity.
+        </li>
+      </ul>
+      <br>
+      <div id="cn-table-1"></div>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=692" target="_blank">[11:32]</a>. Step 6: Find the
+      points
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> You must find the points corresponding to intercepts, asymptotes, holes, critical numbers,
+          and inflection points.</li>
+      </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=747" target="_blank">[12:27]</a>. Step 7: Graph the
+      function
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> Use all the information collected in the previous steps to accurately plot the function.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2">
+          Recommended Order for Graph Plotting
+          <ul>
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              1. Locate Vertical Asymptotes (VA)
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Identify where the denominator equals zero and <strong>does not cancel</strong>
+                  with the numerator.</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Mark vertical lines at these x-values on the graph.</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              2. Find Horizontal (or Oblique) Asymptotes
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Evaluate $\displaystyle \lim_{x\to \pm\infty} 𝒇(𝒙)$.</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Mark the corresponding horizontal or slanted lines on the graph.</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              3. Locate “Holes” (Removable Discontinuities)
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Occur when a factor <strong>cancels</strong> between numerator and denominator.
+                </li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Mark them with an open dot on the graph at the corresponding x-value.</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              4. Find Intercepts (if they exist)
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> 𝒙-intercepts: Solve $𝒇(𝒙)=0$ (numerator equals zero).</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> 𝑦-intercept: Evaluate $𝒇(0)$, if it lies in the domain.</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              5. Identify Critical Points (CP) and Points of Inflection (PIP)
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Use the sign chart of $𝒇′(𝒙)$ and $𝒇″(𝒙)$.</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> CP: Where $𝒇′(𝒙)=0$ or is undefined (possible maxima, minima, plateaus).</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> PIP: Where $𝒇″(𝒙)=0$ or is undefined (possible changes in concavity).</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              6. Create a Preliminary Sketch
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Find the points</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Plot all previously identified features: VAs, HAs, holes, intercepts, CPs, and
+                  PIPs.</li>
+              </ul>
+            </li>
+
+            <!-- ○ nivel-3 -->
+            <li class="level-3">
+              7. Draw the Final Curve
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Use information from $𝒇′(𝒙)$ and $𝒇″(𝒙)$ to show increasing/decreasing behavior
+                  and concavity.</li>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> Pay attention to asymptotic behavior and discontinuities.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    </ul>
+
+
+    <h2>Ａｐｐｌｙｉｎｇ　ｔｈｅ　ｓｔｅｐｓ　ｔｏ　ｔｈｅ　ｉｎｉｔｉａｌ　ｅｘａｍｐｌｅ $𝒇(𝒙)=(𝒙+2)(𝒙-1)^{2}$</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=78" target="_blank">[1:18]</a>. Step 1: Find the
+        intercepts
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[1-18]-01.png" target="_blank">[image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[1-18]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find 𝒙-intercepts:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Set 𝑦 = 0 and solve for 𝒙 (find the roots of the equation).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Simplify only if the equation is "easy": quadratic or lower degree, or if it is
+                    already factored.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $(𝒙+2)(𝒙-1)^{2}=0 \Rightarrow 𝒙+2=0 \;\to\; 𝒙=-2;\; 𝒙-1=0 \;\to\; 𝒙=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> So the x-intercepts are: $𝒙=-2$ and $𝒙=1$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find the 𝑦-intercept:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Set 𝒙 = 0 and solve for 𝑦: $𝒇(0)=(0+2)(0-1)^{2}=2\cdot 1=2$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> So the y-intercept is: $𝒚=2$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> Step 2: ❌</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=808" target="_blank">[13:28]</a>. Step 3: First
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Expand the function to make differentiation easier.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(𝒙)=(𝒙+2)(𝒙-1)^{2}\;\to\; 𝒙^{3}-3𝒙+2$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇'(𝒙)=3𝒙^{2}-3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Solve for critical numbers by setting $𝒇'(𝒙)=0$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=\pm 1$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=905" target="_blank">[15:05]</a>. Step 4: Second
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $𝒇''(𝒙)=6𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find the inflection point by setting $𝒇''(𝒙)=0$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=0$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=976" target="_blank">[16:16]</a>. Step 5: Create a
+        table with the critical numbers and the inflection point.
+        <br>
+        <div id="cn-table-2"></div>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=1159" target="_blank">[19:19]</a>. Step 6: Find
+        points.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            POINTS:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> 𝒙-Intercepts: $(1,0)$, $(-2,0)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> 𝑦-Intercept: $(0,2)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            RELATIVE EXTREMA:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Relative Maximum (R.MAX): $(-1,4)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Relative Minimum (R.MIN): $(1,0)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            INFLECTION POINT:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> I.P.: $(0,2)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=1343" target="_blank">[22:23]</a>. Step 7: Plot the
+        points on the Cartesian plane.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Analyze intervals of increase and decrease alongside the asymptotes to sketch the graph.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>🧩 Ｅｘａｍｐｌｅ　$𝒇(𝒙)=\dfrac{𝒙^{2}-1}{𝒙^{3}}$</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[28-45]-01.png" target="_blank">[image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[28-45]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[28-45]-02.png" target="_blank">[image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[28-45]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[28-45]-03.png" target="_blank">[image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[28-45]-03.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[28-45]-04.png" target="_blank">[image-4]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[28-45]-04.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=1725" target="_blank">[28:45]</a>. Step 1: Intercepts:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝒙-intercepts: Set the numerator equal to zero.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=1$ and $𝒙=-1$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝑦-intercept: Set $𝒙=0$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> No 𝑦-intercept exists.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=1849" target="_blank">[30:49]</a>. Step 2: Asymptotes:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Vertical asymptotes: Set the denominator equal to zero.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Horizontal asymptotes: Take limits as 𝒙 tends to positive and negative infinity.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Divide numerator and denominator by the highest power in the denominator ($𝒙^{3}$).
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\displaystyle \lim_{x\to +\infty} 𝒇(𝒙)=0$ and $\displaystyle \lim_{x\to -\infty} 𝒇(𝒙)=0$, so the
+                horizontal asymptote is $y=0$.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=2264" target="_blank">[37:44]</a>. Step 3: First
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Use the quotient rule to differentiate.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Result: $𝒇'(𝒙)=\dfrac{-𝒙^{4}+3𝒙^{2}}{𝒙^{6}}=\dfrac{-𝒙^{2}+3}{𝒙^{4}}$
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=2400" target="_blank">[40:00]</a>. Find critical
+            numbers by setting $𝒇'(𝒙)=0$ and considering where $𝒇'(𝒙)$ is not defined.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=0,\; 𝒙=\sqrt{3},\; 𝒙=-\sqrt{3}$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=2566" target="_blank">[42:46]</a>. Step 4: Second
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Result: $𝒇''(𝒙)=\dfrac{2𝒙^{2}-6}{𝒙^{5}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=2711" target="_blank">[45:11]</a>. Find possible
+            inflection points by setting $𝒇''(𝒙)=0$ and considering where $𝒇''(𝒙)$ is not defined.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=0,\; 𝒙=\sqrt{6},\; 𝒙=-\sqrt{6}$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=2834" target="_blank">[47:14]</a>. Step 5: Create a
+        table with the critical numbers and the possible inflection points.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Test values in each interval to determine the sign of the first and second derivatives.
+          </li>
+        </ul>
+        <br>
+        <div id="cn-table-3"></div>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=3451" target="_blank">[57:31]</a>. Step 6: Find the
+        points.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Correct the values of the points calculated in class:
+            <!-- ◉ nivel-2 -->
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $(1,0)$ $(-1,0)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> R.MAX: $(\sqrt{3},\,0.38)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> R.MIN: $(-\sqrt{3},\,-0.38)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> IP: $(\sqrt{6},\,0.34)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> IP: $(-\sqrt{6},\,-0.34)$</li>
+            </ul>
+          </li>
+      </li>
+    </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1">
+      <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=3495" target="_blank">[58:15]</a>. Step 7: Graph the
+      function.
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> Analyze intervals of increase and decrease alongside the asymptotes to sketch the graph.
+        </li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> Conclude that the graph matches the information on concavity.</li>
+      </ul>
+    </li>
+    </ul>
+
+
+    <h2>🧩 Ｅｘａｍｐｌｅ　$𝒇(𝒙)=\dfrac{2𝒙^{2}-8}{𝒙^{2}-16}$</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[1-05-25]-01.png" target="_blank">[image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[1-05-25]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[1-05-25]-02.png" target="_blank">[image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[1-05-25]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[1-05-25]-03.png" target="_blank">[image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[1-05-25]-03.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.6/[1-05-25]-04.png" target="_blank">[image-4]</a>
+          <img src="../../img/Calculus 1 Lecture 3.6/[1-05-25]-04.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=3925" target="_blank">[1:05:25]</a>. Step 1:
+        Intercepts:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝒙-intercepts: $2𝒙^{2}-8=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=2$ and $𝒙=-2$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝑦-intercept: $𝒇(0)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $(0,\dfrac{1}{2})$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=3986" target="_blank">[1:06:26]</a>. Step 2:
+        Asymptotes:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Vertical asymptotes: $𝒙^{2}-16=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=4$ and $𝒙=-4$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Horizontal asymptotes: $\displaystyle \lim_{x\to +\infty} 𝒇(𝒙)=2$ and $\displaystyle \lim_{x\to -\infty}
+            𝒇(𝒙)=2$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The horizontal asymptote is $y=2$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=4102" target="_blank">[1:08:22]</a>. Step 3: First
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $𝒇'(𝒙)=\dfrac{-48𝒙}{(𝒙^{2}-16)^{2}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find critical numbers by setting $𝒇'(𝒙)=0$ ($-48𝒙=0$)
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Considering where $𝒇'(𝒙)$ is not defined: $(𝒙^{2}-16)^{2}=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=4$, and $𝒙=-4$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=4335" target="_blank">[1:12:15]</a>. Step 4: Second
+        derivative test:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $𝒇''(𝒙)=\dfrac{48(3𝒙^{2}+16)}{(𝒙^{2}-16)^{3}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find possible inflection points by setting $𝒇''(𝒙)=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> No inflection points from the numerator.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Considering where $𝒇''(𝒙)$ is not defined.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The values $𝒙=4$ and $𝒙=-4$ come from the denominator.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=4759" target="_blank">[1:19:19]</a>. Step 5: Create a
+        table with the critical numbers and possible inflection points.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Test values in each interval to determine the sign of the first and second derivatives.
+          </li>
+        </ul>
+        <br>
+        <div id="cn-table-4"></div>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=5063" target="_blank">[1:24:23]</a>. Step 6: Determine
+        the points to plot using previous information.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $(2,0)$ $(-2,0)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> R.MAX: $(0,\,\dfrac{1}{2})$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> R.MIN: ❌</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> IP's: ❌</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=8u6woY05aL&amp;t=5186" target="_blank">[1:26:26]</a>. Step 7: Graph the
+        function.
+      </li>
+    </ul>
+
+  </article>
+
+  <!-- Templates para las tablas de f', f'' (First/Second Derivative test) -->
+  <template id="ascii-derivtest-cn_1">
+    <pre class="ascii-diagram">
+                                  CP₁                       CP₂
+ 𝒇′(𝒙)          ±? inc/dec         ∣    ±?   inc/dec         ∣      ±? inc/dec     ...  Include also VA's and HOLD's
+           ────────────────────────●────────────────────────●───────────────────
+ 𝒇′′(𝒙)     ±? Conc.(Up/Down)      ∣   ±? Conc.(Up/Down)     ∣  ±? Conc.(Up/Down) 
+                                  PIP₁                      PIP₂                  ...  Include also VA's and HOLD's
+    </pre>
+  </template>
+
+  <template id="ascii-derivtest-cn_2">
+    <pre class="ascii-diagram">
+                                     CP₁ = -1                  CP₂ = 1
+                                         ∣                         ∣
+    𝒇′(𝒙)           ±? inc/dec = - dec   ∣  ±?   inc/dec = + inc   ∣  ±? inc/dec = +inc  
+                 ────────────────────────●───────────●─────────────●───────────────────
+    𝒇′′(𝒙)            ±? Conc.(Up/Down) = - down     ∣    ±? Conc.(Up/Down) = + up
+                                                     ∣
+                                                 PIP₁ = 0
+    </pre>
+  </template>
+
+  <template id="ascii-derivtest-cn_3">
+    <pre class="ascii-diagram">
+                                                   (VA)  𝒇′(𝒙) is not defined
+                             CP₁ = -√3                    𝒙 = 0                        CP₂ = √3
+                                ∣                            ∣                               ∣
+ 𝒇′(𝒙)   ±? inc/dec = -dec      ∣   ±?   inc/dec = +inc      ∣    ±? inc/dec = +inc          ∣    ±? inc/dec = -dec    
+        ────────────────────────●───────────────────────────●───────────────────────────────●────────────────────
+ 𝒇′′(𝒙)  ±?Conc.(Up/Down)= -down∣  ±? Conc.(Up/Down) = +up   ∣   ±? Conc.(Up/Down) = -down   ∣   ±? Conc.(Up/Down) = +up
+                                ∣                            ∣                               ∣
+                          PIP₁ = -√6                      𝒙 = 0                         PIP₂ = √6     
+                                                 (VA)  𝒇′(𝒙) is not defined              
+    </pre>
+  </template>
+
+  <template id="ascii-derivtest-cn_4">
+    <pre class="ascii-diagram">
+                            𝒙  = -4 (VA)                    CP₁ = 0                      𝒙 = 4 (VA)
+                                  ∣                            ∣                             ∣
+ 𝒇′(𝒙)  ±? inc/dec = +inc         ∣    ±?   inc/dec = +inc     ∣     ±? inc/dec = -dec       ∣    ±? inc/dec = -dec         
+       ───────────────────────────●───────────────────────────●─────────────────────────────●───────────────────────────
+ 𝒇′′(𝒙) ±? Conc.(Up/Down) = +up   ∣                ±? Conc.(Up/Down) = -down                ∣   ±? Conc.(Up/Down) = +up
+                                  ∣                                                         ∣
+                            𝒙  = -4 (VA)                                                𝒙  = 4 (VA)                          
+    </pre>
+  </template>
+
+  <script>
+    function insertTemplate(targetId, templateId) {
+      const target = document.getElementById(targetId);
+      const template = document.getElementById(templateId);
+      if (target && template) {
+        target.innerHTML = template.innerHTML;
+      }
+    }
+
+    // Inserciones para las tablas de derivadas:
+    insertTemplate("cn-table-1", "ascii-derivtest-cn_1");
+    insertTemplate("cn-table-2", "ascii-derivtest-cn_2");
+    insertTemplate("cn-table-3", "ascii-derivtest-cn_3");
+    insertTemplate("cn-table-4", "ascii-derivtest-cn_4");
+  </script>
+</body>
+
+</html>

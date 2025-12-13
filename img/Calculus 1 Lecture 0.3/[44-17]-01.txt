@@ -1,0 +1,5 @@
+image_name: [44-17]Grapgs of trigonometric functions.png
+file_name: [44-17]-01.png
+timestamp: 44:17
+counter: 01
+folder: Calculus 1 Lecture 0.3

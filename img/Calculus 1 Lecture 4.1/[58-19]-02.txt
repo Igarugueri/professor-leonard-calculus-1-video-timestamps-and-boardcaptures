@@ -1,0 +1,5 @@
+image_name: [58-19]Basic integration table_2.png
+file_name: [58-19]-02.png
+timestamp: 58:19
+counter: 02
+folder: Calculus 1 Lecture 4.1

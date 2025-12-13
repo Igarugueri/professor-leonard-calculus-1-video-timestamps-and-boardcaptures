@@ -1,0 +1,5 @@
+image_name: [3-05]Relationship between the slope and increasing-decreasing intervals.png
+file_name: [3-05]-01.png
+timestamp: 3:05
+counter: 01
+folder: Calculus 1 Lecture 3.1

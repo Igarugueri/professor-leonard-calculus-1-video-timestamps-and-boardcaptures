@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ４．４ Ｔｈｅ Ｅｖａｌｕａｔｉｏｎ Oｆ Ｄｅｆｉｎｉｔｅ Ｉｎｔｅｇｒａｌｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ４．４</h1>
+    <h1> Ｔｈｅ Ｅｖａｌｕａｔｉｏｎ Oｆ Ｄｅｆｉｎｉｔｅ Ｉｎｔｅｇｒａｌｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｄｅｆｉｎｉｔｅ　ｉｎｔｅｇｒａｌ　ａｎｄ　ｉｔｓ　ｃｏｎｎｅｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｃｏｎｃｅｐｔ　ｏｆ　ａｒｅａ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=0" target="_blank">[0:00]</a>. Introduction to the
+        definite integral and its connection to the concept of area –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[0-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[0-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">AREA 𝒜ₙ = $\displaystyle \lim_{n\to\infty}\sum_{k=1}^{n} 𝒇(x_k^* )\cdot \Delta x$ on
+            $[𝓪,𝓫]$ Equivalent to:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">𝒜 =$\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Indefinite integrals are expressed with “+ $𝓒$” because they represent the family of
+            antiderivatives without a specific bound,
+            meaning without defining an exact area. On the other hand, the definite integral, evaluated over an interval
+            $[𝓪,𝓫]$, precisely
+            calculates the net area, $𝒜$, under the curve between those two points, considering both the positive and
+            negative regions depending on
+            their position relative to the 𝒙-axis.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=104" target="_blank">[1:44]</a>. Similarity to
+            the calculation of derivatives using limits.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><strong>Both the derivative and the integral are based on the concept of a
+                  limit</strong>: the derivative is defined as the limit of the difference
+                quotient (which measures the instantaneous slope), while the integral is conceived as the limit of the
+                sum of the areas of rectangles
+                (the Riemann sum). In this process, the height of each rectangle can be arbitrarily chosen within its
+                subinterval, and although there are
+                shortcuts for calculating derivatives without always relying on the explicit limit, both concepts share
+                the central idea of approaching an
+                exact value through <strong>infinitesimal</strong> sums or differences.
+                <!-- ■ nivel-4 -->
+                <ul>
+                  <li class="level-4">" Difference quotient" refers to the average rate of change of a function between
+                    two nearby points. More concretely, if you have a function<br>
+                    𝒇(𝒙), the difference quotient is expressed as $\displaystyle \frac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Limit of a Sum:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The interval $[𝓪,𝓫]$ is divided into small partitions. In each partition, an
+                arbitrary point $x_k^*$ is chosen, and a rectangle is formed with height $𝒇(x_k^*)$ and width $\Delta
+                x$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Infinitesimal Rectangles:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">As the number of partitions tends to infinity, the width $\Delta x$ approaches a
+                differential $dx$ (that is, it becomes infinitesimal), allowing the sum of the rectangles to
+                transform into an integral.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Analogy with the Derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Just as the derivative is defined from the change between two infinitesimally close
+                points, the integral sums the areas of rectangles whose widths become progressively smaller.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Geometric Interpretation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral represents the net area (with sign) under the curve $𝒇(𝒙)$ between the
+                limits $𝓪$ and $𝓫$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Flexibility in Partitions:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Although partitions of equal width can be used to simplify calculations, this is not
+                mandatory; what matters is that,
+                in the limit, all the rectangles become infinitesimally thin.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=290" target="_blank">[4:50]</a>. Net signed area:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">𝒜 = $\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx$ ⇢ The definite integral is precisely
+                that sum of very small rectangles, so small that, in the limit, it becomes
+                exact. The finer these rectangles are ($\Delta x \rightsquigarrow dx$ As the number of rectangles
+                increases indefinitely: $n\to\infty$), the more accurate the result, allowing us to obtain
+                the area under the curve $𝒇(𝒙)$ over the interval $[𝓪,𝓫]$.
+                <!-- ■ nivel-4 -->
+                <ul>
+                  <li class="level-4">Which is equivalent to 𝒜ₙ = $\displaystyle
+                    \lim_{n\to\infty}\sum_{k=1}^{n}𝒇(x_k^*)\cdot \Delta x$ on $[𝓪,𝓫]$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｕｓｉｎｇ　ｇｅｏｍｅｔｒｉｃ　ｍｅｔｈｏｄｓ　ｔｏ　ｆｉｎｄ　ｔｈｅ　ａｒｅａ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=420" target="_blank">[7:00]</a>. 🧩 Example – 1:
+        $\displaystyle \int_{1}^{4} 2\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[7-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[7-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration limits: from 1 to 4.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Graph of $𝒇(𝒙)=2$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙)=2$ is a constant function (horizontal line).</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The area under $𝒇(𝒙)=2$ between 1 and 4 corresponds to the integral’s value.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculating the geometric area of that rectangle.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rectangle’s base = 3.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rectangle’s height = 2.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The rectangle’s area is 6 square units, matching the integral’s value.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The rectangular area remains 6 regardless of the partition.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=540" target="_blank">[9:00]</a>. 🧩 Example – 2:
+        $\displaystyle \int_{-1}^{2} (\;𝒙 + 2\;)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[9-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[9-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝒇(𝒙)=𝒙+2$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Graph of $𝒇(𝒙)=𝒙+2$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The graph starts at $y=2$ with slope $1$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral represents the area under the line $𝒙+2$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Splitting the region into a rectangle and a triangle.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculating the rectangle’s area.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rectangle’s base = 3.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rectangle’s height = 1.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rectangle’s area = 3.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculating the triangle’s area.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Triangle’s base = 3.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Triangle’s height = 3.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Triangle’s area = $\displaystyle \frac{9}{2}$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Total area is the sum of the rectangle’s area and the triangle’s area.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Correcting the computation, total area = $\displaystyle \frac{15}{2}$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=735" target="_blank">[12:15]</a>. 🧩 Example – 3:
+        $\displaystyle \int_{0}^{1} \sqrt{\,1-𝒙^{2}\,}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[12-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[12-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Identifying the function as the upper half of a circle.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The definite integral finds area under the function.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Recognizing $𝒇(𝒙)=\sqrt{\,1-𝒙^{2}\,}$ as a semicircle.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Semicircle in the upper half-plane.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The function is a semicircle of radius 1.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration limits from 0 to 1.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integration limits need not cover the entire domain of the function.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">That area is a quarter circle.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculating the area of a circle.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Formula for circle area: $\pi r^{2}$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Computing one quarter of a circle.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The area of a quarter circle is $\displaystyle \frac{\pi}{4}$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Definite integrals can sometimes be solved using geometric methods.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Geometry alone, has limitations for more complex functions.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=924" target="_blank">[15:24]</a>. We require
+                more advanced methods for functions like $𝒙^{3}$ or $𝒙^{2}$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Riemann sums as one approach.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｐｒｏｐｅｒｔｉｅｓ　ｏｆ　ｄｅｆｉｎｉｔｅ　ｉｎｔｅｇｒａｌｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[16-40]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[16-40]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[16-40]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[16-40]-02.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1000" target="_blank">[16:40]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.1: An integral with identical upper and lower limits is zero.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int_{𝓪}^{𝓪} 𝒇(𝒙)\,dx = 0$ (Area under a single point).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">There is no interval over which to integrate.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The area under a function over a single point is zero.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1080" target="_blank">[18:00]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.2: Reversing the limits of integration changes the sign of the integral.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int_{𝓫}^{𝓪} 𝒇(𝒙)\,dx = - \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 is useful when changing the order of limits during calculations or
+            simplifying expressions
+            involving definite integrals.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The integral from b to a is the negative of the integral from $𝓪$ to $𝓫$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The reversed integral represents the area below the 𝒙-axis.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1160" target="_blank">[19:20]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.3: Constants can be factored out of the integral.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int_{𝓪}^{𝓫} 𝓬 \cdot 𝒇(𝒙)\,dx = 𝓬 \cdot \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx$
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1195" target="_blank">[19:55]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.4: The integral of a sum or difference equals the sum or difference of the integrals.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int_{𝓪}^{𝓫} \big(𝒇(𝒙) \pm 𝓰(𝒙)\big)\,dx = \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx
+            \pm \int_{𝓪}^{𝓫} 𝓰(𝒙)\,dx$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1279" target="_blank">[21:19]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.5: You can partition the integral across intervals.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx = \int_{𝓪}^{𝓬} 𝒇(𝒙)\,dx + \int_{𝓬}^{𝓫}
+            𝒇(𝒙)\,dx$ and $𝓪 \le 𝓬 \le 𝓫$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This interval-splitting 𝒫𝓇𝑜𝓅𝑒𝓇𝓉 only applies to definite integrals.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Dividing a single integral into multiple intervals.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The total area can be split into smaller areas, breaking the integral into subintervals.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The total area is the sum of the areas of the subintervals.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The integral from 𝓪 to 𝓫 equals the sum of integrals from a to c and from c to b.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Subinterval limits must align appropriately.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1396" target="_blank">[23:16]</a>. 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎
+        4.4.6: If the function is positive, the integral is positive (and vice versa).
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If $𝒇(𝒙) \ge 0$ for all $𝒙 \in [𝓪,𝓫]$ then $\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx
+            \ge 0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If $𝒇(𝒙)$ is above the 𝒙-axis, the integral is positive</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If $𝒇(𝒙) \le 0$ for all $𝒙 \in [𝓪,𝓫]$ then $\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,dx
+            \le 0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If $𝒇(𝒙)$ is below the 𝒙-axis, the integral is negative</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=K0ORDCt5Ig0&amp;t=1700" target="_blank">[28:20]</a>. 🧩 Example –
+        Evaluate geometrically: $\displaystyle \int_{0}^{1} \big(4 - 2\sqrt{1-𝒙^{2}}\big)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.4/[28-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.4/[28-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 1: Split by linearity, aply 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.3 and 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.4
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{0}^{1} \big(4 - 2\sqrt{1-𝒙^{2}}\big)\,dx \;=$ $\displaystyle
+                \int_{0}^{1} 4\,dx \;-\; 2 \int_{0}^{1} \sqrt{1-𝒙^{2}}\,dx$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 2: First integral (rectangle of width 1 and height 4)
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{0}^{1} 4\,dx = 4(1 - 0) = 4$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 3: Second integral (quarter of a unit circle) $y=\sqrt{1-𝒙^{2}}$ is the upper
+            semicircle of $𝒙^{2}+y^{2}=1$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">On $[0,1]$ it traces a quarter circle, whose area is $\displaystyle \frac{\pi}{4}$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{0}^{1} 2\sqrt{1-𝒙^{2}}\,dx = 2 \cdot \left(\frac{\pi}{4}\right)
+                = \frac{\pi}{2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 4: Combine
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{0}^{1} \big(4 - 2\sqrt{1-𝒙^{2}}\big)\,dx = 4 - \frac{\pi}{2}$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

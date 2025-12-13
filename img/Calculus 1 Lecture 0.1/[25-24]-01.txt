@@ -1,0 +1,5 @@
+image_name: [25-24]Example – Finding the Equation of a Line Parallel to 2𝒙 +3𝒚 = 12 passing through the point (6,7).png
+file_name: [25-24]-01.png
+timestamp: 25:24
+counter: 01
+folder: Calculus 1 Lecture 0.1

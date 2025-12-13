@@ -1,0 +1,5 @@
+image_name: [45-58]Introduction to the chain rule.png
+file_name: [45-58]-01.png
+timestamp: 45:58
+counter: 01
+folder: Calculus 1 Lecture 2.5

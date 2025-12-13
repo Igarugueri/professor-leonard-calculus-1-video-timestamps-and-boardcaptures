@@ -1,0 +1,5 @@
+image_name: [3-26]Step-by-step explanation of the First Derivative Test_2.png
+file_name: [3-26]-02.png
+timestamp: 3:26
+counter: 02
+folder: Calculus 1 Lecture 3.3

@@ -1,0 +1,5 @@
+image_name: [3-51]Maximizing the Area of a Rectangle.png
+file_name: [3-51]-01.png
+timestamp: 3:51
+counter: 01
+folder: Calculus 1 Lecture 3.7

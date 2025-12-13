@@ -1,0 +1,5 @@
+image_name: [42-21]Example – 2 Natural Domain 𝒇(𝒙) = (2𝒙 + 1) ∕ ((𝒙 – 1)(𝒙 – 3)).png
+file_name: [42-21]-01.png
+timestamp: 42:21
+counter: 01
+folder: Calculus 1 Lecture 0.2

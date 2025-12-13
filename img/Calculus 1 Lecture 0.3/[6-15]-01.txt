@@ -1,0 +1,5 @@
+image_name: [6-15]Examples of Converting Degrees to Radians.png
+file_name: [6-15]-01.png
+timestamp: 6:15
+counter: 01
+folder: Calculus 1 Lecture 0.3

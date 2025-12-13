@@ -1,0 +1,5 @@
+image_name: [33-45]Factorization and Simplification to Evaluate Limits.png
+file_name: [33-45]-01.png
+timestamp: 33:45
+counter: 01
+folder: Calculus 1 Lecture 1.2

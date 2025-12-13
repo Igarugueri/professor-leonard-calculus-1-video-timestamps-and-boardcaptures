@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　１．２：　Pｒｏｐｅｒｔｉｅｓ　Oｆ　Lｉｍｉｔｓ．　Ｔｅｃｈｎｉｑｕｅｓ　Oｆ　Lｉｍｉｔ　Cｏｍｐｕｔａｔｉｏｎ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　１．２</h1>
+    <h1>Pｒｏｐｅｒｔｉｅｓ　Oｆ　Lｉｍｉｔｓ．　Ｔｅｃｈｎｉｑｕｅｓ　Oｆ　Lｉｍｉｔ　Cｏｍｐｕｔａｔｉｏｎ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ ｔｏ ｔｈｅ Ｐｒｏｐｅｒｔｉｅｓ ｏｆ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=50" target="_blank">0:50</a>. The Limit of a
+        Constant:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[0-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[0-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The limit of a constant is defined as: $\displaystyle \lim_{x\to a} 𝓒=𝓒$, where $𝓒$ is
+            a constant.</li>
+          <li class="level-2">If a function always has the same value, it doesn’t matter what value $x$ approaches — the
+            result does not change.</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=173" target="_blank">2:53</a>. The Limit of a Simple
+        Variable:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[2-53]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[2-53]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The limit of a simple variable is defined as: $\displaystyle \lim_{x\to a} 𝒙=𝒂$.</li>
+          <li class="level-2">If the function is just $𝒙$ itself, then as $𝒙$ gets closer to $a$, the function gets
+            closer to $a$ — so the limit is the value it approaches.</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=310" target="_blank">5:10</a>. The Importance of
+        Equality of One-sided Limits:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[5-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[5-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The importance that the one-sided limits are equal for the general limit to e𝒙ist is
+            emphasized.</li>
+          <li class="level-2">
+            Examples of one-sided limits that are not equal are provided, resulting in the non-e𝒙istence of the general
+            limit.
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to 0^-}\dfrac{1}{x}=-\infty$ and $\displaystyle \lim_{x\to
+                0^+}\dfrac{1}{𝒙}=+\infty$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｐｒｏｐｅｒｔｉｅｓ ｏｆ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=385" target="_blank">6:25</a>. Properties of Limits:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[6-25]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[6-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">
+            The properties of limits are introduced, including sum, difference, product, quotient, and e𝒙ponents.
+            <ul>
+              <li class="level-3">
+                If $\displaystyle \lim_{x\to a}𝒇(𝒙)=L$ and $\displaystyle \lim_{x\to a}𝓰(𝒙)=L_{2}$, then:
+                <ul>
+                  <li class="level-4">1.2.1 $\displaystyle \lim_{x\to a}\big(𝒇(𝒙)\pm 𝓰(𝒙)\big)=\lim_{x\to a} 𝒇(𝒙)\
+                    \pm\ \lim_{x\to a} 𝓰(𝒙)$</li>
+                  <li class="level-4">1.2.2 $\displaystyle \lim_{x\to a}\big(𝒇(𝒙)\cdot 𝓰(𝒙)\big)=\big(\lim_{x\to a}
+                    𝒇(𝒙)\big)\cdot \big(\lim_{x\to a} 𝓰(𝒙)\big)$</li>
+                  <li class="level-4">1.2.3 $\displaystyle \lim_{x\to a}\dfrac{𝒇(𝒙)}{𝓰(𝒙)}=\dfrac{\lim_{x\to a}
+                    𝒇(𝒙)}{\lim_{x\to a} 𝓰(𝒙)}$, provided $\displaystyle \lim_{x\to a} 𝓰(𝒙)\neq 0$</li>
+                  <li class="level-4">
+                    1.2.4 $\displaystyle \lim_{x\to a}\big(𝒇(𝒙)\big)^{n}=\big(\lim_{x\to a} 𝒇(𝒙)\big)^{n}$
+                    <ul>
+                      <li class="level-5">▣ 1.2.4.1 $\displaystyle \lim_{x\to
+                        a}\sqrt[n]{\,𝒇(𝒙)\,}=\sqrt[n]{\,\lim_{x\to a} 𝒇(𝒙)\,}$ (✔ The property is valid only if the
+                        limit exists, and in the case of even roots, the value inside the root must be non-negative)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=665" target="_blank">11:05</a>. Recapitulation
+      </li>
+    </ul>
+
+
+    <h2>Ｅｖａｌｕａｔｉｎｇ Ｌｉｍｉｔｓ ｉｎ Ｐｏｌｙｎｏｍｉａｌｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=740" target="_blank">12:20</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 2}\ (𝒙^{3}-2𝒙+7)$:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[12-20]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[12-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">
+            $\displaystyle \lim_{x\to 2}(𝒙^{3}-2𝒙+7)$ is calculated using the properties of limits.
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to 2}𝒙^{3}-\lim_{x\to 2}2𝒙+\lim_{x\to 2}7$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to 2}𝒙^{3}-\big(\lim_{x\to 2}2\big)\cdot \big(\lim_{x\to
+                2}𝒙\big)+\lim_{x\to 2}7$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to 2}𝒙^{3}-2𝒙+7=11$</li>
+              <li class="level-3">$f(2)=11$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=1024" target="_blank">17:04</a>. 𝑻𝒉𝒆 𝑳𝒊𝒎𝒊𝒕
+        𝒐𝒇 𝑨𝒏𝒚 𝑷𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[17-04]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[17-04]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">
+            $\displaystyle \lim_{x\to a}\mathcal{P}(𝒙)=\mathcal{P}(𝒂)$
+            <ul>
+              <li class="level-3">𝑻𝒉𝒆 𝒍𝒊𝒎𝒊𝒕 𝒐𝒇 𝒂 𝒑𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍 𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏 𝒂𝒔 $𝒙$
+                𝒂𝒑𝒑𝒓𝒐𝒂𝒄𝒉𝒆𝒔 𝒂 𝒑𝒐𝒊𝒏𝒕 $a$ 𝒊𝒔 𝒋𝒖𝒔𝒕 𝒕𝒉𝒆 𝒗𝒂𝒍𝒖𝒆 𝒐𝒇 𝒕𝒉𝒆 𝒑𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍
+                𝒂𝒕 𝒕𝒉𝒂𝒕 𝒑𝒐𝒊𝒏𝒕.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=1216" target="_blank">20:16</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 2}\ \big(𝒙^{5}-3𝒙+4\big)^{3}$:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[20-16]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[20-16]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The calculation is simplified by evaluating the function at $𝒙=2$ and then cubing the
+            result.</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｌｉｍｉｔｓ ｏｆ Ｎｏｎ－Ｐｏｌｙｎｏｍｉａｌ Ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=1385" target="_blank">23:05</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 2}\ \dfrac{4𝒙^{2}+1}{𝒙+3}$:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[23-05]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[23-05]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">Apply property 1.2.3 → $\displaystyle \dfrac{\lim_{x\to 2}(4𝒙^{2}+1)}{\lim_{x\to
+            2}(𝒙+3)}$</li>
+          <li class="level-2">Then we check that both the numerator and the denominator are polynomials, so we can
+            substitute $𝒙=2$ directly.</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=1580" target="_blank">26:20</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 1}\ \sqrt[3]{\dfrac{5𝒙+7}{𝒙^{2}+1}}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[26-20]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[26-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to 1}\sqrt[3]{\dfrac{5𝒙+7}{𝒙^{2}+1}}=\sqrt[3]{\dfrac{5\cdot
+            1+7}{1^{2}+1}}=\sqrt[3]{6}$</li>
+          <li class="level-2">It is mentioned that the same properties as for polynomials can be used, as long as domain
+            issues, such as division by zero, are avoided.</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&amp;t=1730" target="_blank">28:50</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 2}\ \dfrac{𝒙^{2}-4}{𝒙-2}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[28-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[28-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to 2}\dfrac{𝒙^{2}-4}{𝒙-2}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 2}\dfrac{(𝒙+2)(𝒙-2)}{𝒙-2}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 2}\big[\,𝒙+2\,\big]$</li>
+          <li class="level-2">Cancel $(𝒙-2)$, since we are not evaluating exactly at $𝒙=2$, but rather approaching it.
+          </li>
+          <li class="level-2">
+            $\displaystyle \lim_{x\to 2}\big[𝒙+2\big]=2+2=4$
+          </li>
+          <li class="level-2">
+            The original function is undefined because the denominator becomes zero $(𝒙-2=0)$.
+            <ul>
+              <li class="level-3">This creates a 𝒉𝒐𝒍𝒆 in the graph at the point $(2,4)$. The function does not
+                diverge to infinity; it simply has a removable discontinuity.</li>
+              <li class="level-3">This is different from a vertical asymptote, which occurs when the denominator
+                approaches zero but the numerator does 𝒏𝒐𝒕 approach
+                zero at the same time (the numerator doesn’t become zero when the denominator does) — causing the
+                function to diverge to $+\infty$ or $-\infty$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        📝 N͟O͟T͟E͟: 𝑰𝒇 𝒕𝒉𝒆 𝒅𝒆𝒏𝒐𝒎𝒊𝒏𝒂𝒕𝒐𝒓 𝒃𝒆𝒄𝒐𝒎𝒆𝒔 𝒛𝒆𝒓𝒐 𝒂𝒏𝒅 𝒘𝒆 𝒄𝒂𝒏 𝒔𝒊𝒎𝒑𝒍𝒊𝒇𝒚
+        𝒕𝒉𝒆 𝒆𝒙𝒑𝒓𝒆𝒔𝒔𝒊𝒐𝒏 𝒃𝒚 𝒄𝒂𝒏𝒄𝒆𝒍𝒊𝒏𝒈 𝒂 𝒄𝒐𝒎𝒎𝒐𝒏 𝒇𝒂𝒄𝒕𝒐𝒓 𝒘𝒊𝒕𝒉 𝒕𝒉𝒆
+        𝒏𝒖𝒎𝒆𝒓𝒂𝒕𝒐𝒓, 𝒕𝒉𝒆𝒏 𝒕𝒉𝒆𝒓𝒆'𝒔 𝒋𝒖𝒔𝒕 𝒂 𝒉𝒐𝒍𝒆 — 𝒕𝒉𝒆 𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏 𝒊𝒔 𝒔𝒕𝒊𝒍𝒍
+        𝒘𝒆𝒍𝒍-𝒃𝒆𝒉𝒂𝒗𝒆𝒅 𝒏𝒆𝒂𝒓𝒃𝒚. 𝑩𝒖𝒕 𝒊𝒇 𝒕𝒉𝒆 𝒅𝒆𝒏𝒐𝒎𝒊𝒏𝒂𝒕𝒐𝒓 𝒊𝒔 𝒛𝒆𝒓𝒐 𝒂𝒏𝒅 𝒘𝒆
+        𝒄͟𝒂͟𝒏͟’͟𝒕͟ 𝒔𝒊𝒎𝒑𝒍𝒊𝒇𝒚, 𝒕𝒉𝒆 𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏 𝒃𝒍𝒐𝒘𝒔 𝒖𝒑 — 𝒕𝒉𝒂𝒕'𝒔 𝒂 𝒗𝒆𝒓𝒕𝒊𝒄𝒂𝒍
+        𝒂𝒔𝒚𝒎𝒑𝒕𝒐𝒕𝒆.
+      </li>
+    </ul>
+    <h2>Ｆａｃｔｏｒｉｚａｔｉｏｎ ａｎｄ Ｓｉｍｐｌｉｆｉｃａｔｉｏｎ ｔｏ Ｅｖａｌｕａｔｅ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=2025" target="_blank">33:45</a>. Factorization and
+        Simplification to Evaluate Limits:
+        <ul>
+          <li class="level-2">
+            🧩 Evaluation of $\displaystyle \lim_{x\to -4}\ \dfrac{2𝒙+8}{𝒙^{2}+𝒙-12}$
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 1.2/[33-45]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 1.2/[33-45]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to -4}\dfrac{2𝒙+8}{𝒙^{2}+𝒙-12}$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to -4}\dfrac{2(𝒙+4)}{(𝒙+4)(𝒙-3)}$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to -4}\dfrac{2}{𝒙-3}=
+                \dfrac{2}{-4-3}=\dfrac{2}{-7}=-\dfrac{2}{7}$</li>
+            </ul>
+          </li>
+          <li class="level-2">The technique of factoring and simplifying serve for evaluate limits when direct
+            substitution results in $0/0$.</li>
+          <li class="level-2">
+            𝑪𝒐𝒎𝒎𝒐𝒏 𝒇𝒂𝒄𝒕𝒐𝒓𝒔 𝒊𝒏 𝒂 $0/0$ 𝒊𝒏𝒅𝒆𝒕𝒆𝒓𝒎𝒊𝒏𝒂𝒕𝒊𝒐𝒏 𝒇𝒐𝒓 𝒑𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍𝒔: 𝑰𝒇
+            𝒃𝒐𝒕𝒉 𝒕𝒉𝒆 𝒏𝒖𝒎𝒆𝒓𝒂𝒕𝒐𝒓 𝒂𝒏𝒅 𝒕𝒉𝒆 𝒅𝒆𝒏𝒐𝒎𝒊𝒏𝒂𝒕𝒐𝒓 𝒂𝒓𝒆 𝒑𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍𝒔
+            𝒂𝒏𝒅 𝒃𝒆𝒄𝒐𝒎𝒆 $0$ 𝒂𝒕 𝒕𝒉𝒆 𝒔𝒂𝒎𝒆 𝒑𝒐𝒊𝒏𝒕 $x=c$, 𝒊𝒕 𝒎𝒆𝒂𝒏𝒔 $x=c$ 𝒊𝒔 𝒂 𝒓𝒐𝒐𝒕 𝒐𝒇
+            𝒃𝒐𝒕𝒉 𝒑𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍𝒔. 𝑻𝒉𝒊𝒔 𝒊𝒎𝒑𝒍𝒊𝒆𝒔 𝒕𝒉𝒆𝒚 𝒔𝒉𝒂𝒓𝒆
+            𝒂 𝒄𝒐𝒎𝒎𝒐𝒏 𝒇𝒂𝒄𝒕𝒐𝒓 $(𝒙-𝒄)$. 𝑻𝒉𝒊𝒔 𝒇𝒂𝒄𝒕𝒐𝒓 𝒄𝒂𝒏 𝒃𝒆 𝒆𝒍𝒊𝒎𝒊𝒏𝒂𝒕𝒆𝒅
+            𝒕𝒉𝒓𝒐𝒖𝒈𝒉 𝒔𝒊𝒎𝒑𝒍𝒊𝒇𝒊𝒄𝒂𝒕𝒊𝒐𝒏, 𝒂𝒍𝒍𝒐𝒘𝒊𝒏𝒈 𝒕𝒉𝒆 𝒍𝒊𝒎𝒊𝒕 𝒕𝒐 𝒃𝒆 𝒓𝒆𝒔𝒐𝒍𝒗𝒆𝒅.
+          </li>
+          <li class="level-2">The importance of maintaining the limit notation until the limit is evaluated is
+            emphasized.</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｌｉｍｉｔｓ ｗｉｔｈ Ｖｅｒｔｉｃａｌ Ａｓｙｍｐｔｏｔｅｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=2303" target="_blank">38:23</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 5}\ \dfrac{𝒙^{2}-3𝒙-10}{𝒙^{2}-10𝒙+25}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[38-23]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[38-23]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to 5}\dfrac{𝒙^{2}-3𝒙-10}{𝒙^{2}-10𝒙+25}$ is attempted by
+            factoring and simplifying, but a 🔶vertical asymptote🔶 is found.</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 5}\dfrac{(𝒙-5)(𝒙+2)}{(𝒙-5)(𝒙-5)}$ = $\displaystyle
+            \lim_{x\to 5}\dfrac{𝒙+2}{𝒙-5}$</li>
+          <li class="level-2">
+            📝 N͟O͟T͟E͟: Before rushing to factor the expression, 𝒂𝒍𝒘𝒂𝒚𝒔 𝒄𝒉𝒆𝒄𝒌 the value you're
+            approaching—in this case, $𝒙=5$.
+            If plugging in the number gives a defined result, there's no need to factor. Factoring would just waste time
+            and might confuse you unnecessarily.
+          </li>
+          <li class="level-2">
+            The difference is clarified between:
+            <ul>
+              <li class="level-3">A 𝒉𝒐𝒍𝒆 in the graph (removable discontinuity, can be simplified), and</li>
+              <li class="level-3">A 🔶vertical asymptote🔶 (non-removable, cannot be simplified).</li>
+            </ul>
+          </li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=2445" target="_blank">40:45</a>. ͟𝐒͟𝐢͟𝐠͟𝐧͟
+            ͟𝐀͟𝐧͟𝐚͟𝐥͟𝐲͟𝐬͟𝐢͟𝐬͟ ͟𝐓͟𝐞͟𝐬͟𝐭͟:
+            <ul>
+              <li class="level-3">The sign analysis test is presented to determine the behavior of a function
+                <strong>around</strong> a 🔶vertical asymptote🔶.
+              </li>
+              <li class="level-3">
+                Steps for Sign Analysis at $𝒙=5$:
+                <ul>
+                  <li class="level-4">
+                    1. Check the function:
+                    <ul>
+                      <li class="level-5"> At $𝒙=5$, the denominator becomes $0$ and cannot be canceled out.</li>
+                      <li class="level-5"> This means there is a 🔶vertical asymptote🔶 at $𝒙=5$ — not a hole.</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    2. Identify key points:
+                    <ul>
+                      <li class="level-5"> Problem point: $𝒙=5$</li>
+                      <li class="level-5"> Optional helper point: $𝒙=-2$ (just to clearly separate intervals on the
+                        number line)</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    3. Draw a number line to analyze signs<br>
+                    <div id="numline-1"></div>
+                  </li>
+                  <li class="level-4">
+                    4. Pick a number to the right of 5 (e.g., $𝒙=6$):
+                    <ul>
+                      <li class="level-5">$𝒇(𝒙)=\dfrac{𝒙+2}{𝒙-5}$</li>
+                      <li class="level-5">$𝒇(6)=\dfrac{6+2}{6-5}=\dfrac{8}{1}=8>0$ → Positive</li>
+                      <li class="level-5">So as $𝒙\to 5^{+}$, $𝒇(𝒙)\to +\infty$
+                        <div id="numline-2"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    5. Pick a number to the left of 5 (e.g., $𝒙=0$):
+                    <ul>
+                      <li class="level-5">$𝒇(𝒙)=\dfrac{𝒙+2}{𝒙-5}$</li>
+                      <li class="level-5">$𝒇(0)=\dfrac{0+2}{0-5}=\dfrac{2}{-5}=-\dfrac{2}{5}<0$ → Negative</li>
+                      <li class="level-5">So as $𝒙\to 5^{-}$, $𝒇(𝒙)\to -\infty$
+                        <div id="numline-3"></div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    6. The limit D.N.E because the left-hand limit ($-\infty$) and right-hand limit ($+\infty$) are not
+                    the same.
+                    This confirms a vertical asymptote at $𝒙=5$.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｓｕｍｍａｒｙ ｏｆ Ｔｅｃｈｎｉｑｕｅｓ ｆｏｒ Ｅｖａｌｕａｔｉｎｇ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=2855" target="_blank">47:35</a>. Summary of Techniques
+        for Evaluating Limits
+        <ul>
+          <li class="level-2">
+            📝 N͟O͟T͟E͟:
+            <ul>
+              <li class="level-3">① If $0/0$, factor and simplify.</li>
+              <li class="level-3">② If you can’t cancel the “problem,” check with ͟𝐒͟𝐢͟𝐠͟𝐧͟
+                ͟𝐀͟𝐧͟𝐚͟𝐥͟𝐲͟𝐬͟𝐢͟𝐬͟ ͟𝐓͟𝐞͟𝐬͟𝐭͟ because the limit might not exist.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｒａｔｉｏｎａｌｉｚａｔｉｏｎ ｔｏ Ｅｖａｌｕａｔｅ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        Rationalization to Evaluate Limits:
+        <ul>
+          <li class="level-2">
+            When solving limits involving radicals:
+            <ul>
+              <li class="level-3">
+                ① Multiply by the conjugate:
+                <ul>
+                  <li class="level-4"> Especially if there’s a radical in the denominator.</li>
+                  <li class="level-4"> The goal is to eliminate the radical from the denominator. Multiply by the
+                    conjugate to use the identity:</li>
+                  <li class="level-4"> $(a-b)(a+b)=a^{2}-b^{2}$</li>
+                  <li class="level-4"> This clears the radical in the denominator.</li>
+                </ul>
+              </li>
+              <li class="level-3">
+                ② Do not expand (distribute) the numerator immediately:
+                <ul>
+                  <li class="level-4">Avoid expanding the numerator right away.</li>
+                  <li class="level-4">First, look to simplify — sometimes you can cancel factors.</li>
+                  <li class="level-4">If you expand too soon, you might miss cancellations and make the problem messier.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=3050" target="_blank">50:50</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 1}\ \dfrac{𝒙-1}{\sqrt{𝒙}-1}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[50-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[50-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to 1}\dfrac{𝒙-1}{\sqrt{𝒙}-1}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 1}\dfrac{(𝒙-1)\cdot(\sqrt{𝒙}+1)}{(𝒙-1)}$ Multiply by the
+            conjugate: $\dfrac{\sqrt{𝒙}+1}{\sqrt{𝒙}+1}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 1}\big(\sqrt{𝒙}+1\big)$ Simplify cancelling $(𝒙-1)$</li>
+          <li class="level-2">$\sqrt{1}+1=2$ Substitute directly</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=3325" target="_blank">55:25</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 0}\ \dfrac{\sqrt{1+𝒙}-1}{𝒙}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[55-25]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[55-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to 0}\dfrac{\sqrt{1+𝒙}-1}{𝒙}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 0}\dfrac{(1+𝒙)-1}{\,𝒙\cdot(\sqrt{1+𝒙}+1)\,}$ Multiply by the
+            conjugate: $\dfrac{\sqrt{1+𝒙}+1}{\sqrt{1+𝒙}+1}$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to 0}\dfrac{1}{\sqrt{1+𝒙}+1}$ Simplify cancelling $𝒙$</li>
+          <li class="level-2">$\dfrac{1}{\sqrt{1+0}+1}=\dfrac{1}{2}$ Substitute directly</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>Ｌｉｍｉｔｓ ｂｙ Ｐａｒｔｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=3670" target="_blank">1:01:10</a>. Limits by Parts
+        <ul>
+          <li class="level-2">The concept of limits by parts is introduced, where different functions are considered for
+            different intervals of the domain.</li>
+          <li class="level-2">
+            I͟D͟E͟A͟: To evaluate a limit by parts (limits for piecewise functions), the one-sided limits 🟪at the
+            points '𝒄' of change of the functions must be considered🟪
+            and see if they're equal:
+            <ul>
+              <li class="level-3">① You must check the limit from the left $(𝒙\to 𝒄^{-})$ and from the right $(𝒙\to
+                𝒄^{+})$ at the point $𝒄$.
+                <ul>
+                  <li class="level-4"> Finding the limit from the left means identifying which piece of the function
+                    approaches $𝒄$ from values smaller than $𝒄$.</li>
+                  <li class="level-4"> Finding the limit from the right means identifying which piece of the function
+                    approaches $𝒄$ from values larger than $𝒄$.</li>
+                </ul>
+              </li>
+              <li class="level-3">② If both one-sided limits are equal, then the limit exists at $𝒄$. If they are
+                different, the overall limit does not exist at that point.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=3792" target="_blank">1:03:12</a>. 🧩 Evaluation of
+        Limits by Parts:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-03-12]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-03-12]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-03-12]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-03-12]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The need to determine which function to use for each one-sided limit, depending on the
+            interval of the domain, is emphasized.</li>
+          <li class="level-2">
+            An e𝒙ample of limit by parts is worked out for a function defined in three intervals. The function is:
+            <ul>
+              <li class="level-3">
+                $\displaystyle𝒇(𝒙)=\begin{cases}\dfrac{1}{𝒙+2}, & \text{if } 𝒙<-2 \quad (𝒇_{1})\\[6pt]𝒙^{2}-5, &
+                  \text{if } -2<𝒙\le 3 \quad (𝒇_{2})\\[6pt]\sqrt{𝒙+13}, & \text{if } 𝒙>3 \quad (𝒇_{3})\end{cases}$
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">🟪Points '𝒄' of Change: find the limits as $𝒙$ approaches $-2$ and $3$🟪</li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=3910" target="_blank">1:05:10</a>. Graphical
+            Representation the e𝒙ample.
+            <div id="numline-4"></div>
+          </li>
+          <li class="level-2">
+            In this piecewise function $𝒇(𝒙)$:
+            <ul>
+              <li class="level-3">
+                🟪We must check the limit at each transition point $(𝒙=-2 \text{ and } 𝒙=3)$🟪. Steps:
+                <ul>
+                  <li class="level-4">
+                    1. Find the limit from the left $(𝒙\to 𝒄^{-})$ and the right $(𝒙\to 𝒄^{+})$ separately at the
+                    point $𝒄$:
+                    <ul>
+                      <li class="level-5">Finding the limit from the left means identifying which piece of the function
+                        is used when approaching $𝒄$ from the left.</li>
+                      <li class="level-5">Example: For $𝒙\to -2^{-}$, use $𝒇_{1}(𝒙)$.</li>
+                      <li class="level-5">Example: For $𝒙\to 3^{-}$, use $𝒇_{2}(𝒙)$.</li>
+                      <li class="level-5">Finding the limit from the right means identifying which piece of the function
+                        is used when approaching $𝒄$ from the right.</li>
+                      <li class="level-5">Example: For $𝒙\to -2^{+}$, use $𝒇_{2}(𝒙)$.</li>
+                      <li class="level-5">Example: For $𝒙\to 3^{+}$, use $𝒇_{3}(𝒙)$.</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    2. Compare the limits at each point:
+                    <ul>
+                      <li class="level-5">$𝒙=3$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to 3^{-}}\big(𝒙^{2}-5\big)=4$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to 3^{+}}\sqrt{𝒙+13}=4$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to 3}𝒇(𝒙)=4$</li>
+                      <li class="level-5"> Due to the left and right limits are equal, the limit exists at $𝒙=3$.</li>
+                      <li class="level-5">$𝒙=-2$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to -2^{-}} \dfrac{1}{𝒙+2}=-\infty$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to -2^{+}} 𝒙^{2}-5=-1$</li>
+                      <li class="level-5">$\displaystyle \lim_{x\to -2}𝒇(𝒙)=\text{D.N.E.}$ (Does Not Exist)</li>
+                      <li class="level-5">Due to they are different, the limit does not exist at $𝒙=-2$.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2>Ｌｉｍｉｔｓ ｉｎ Ｔｒｉｇｏｎｏｍｅｔｒｉｃ Ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=4783" target="_blank">1:19:43</a>. 𝙨𝒊𝙣(𝒙) 𝒂𝙣𝒅
+        𝒄𝙤𝒔(𝒙) 𝙖𝙧𝙚 𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙤𝙪𝙨 𝒆𝙫𝒆𝙧𝙮𝙬𝒉𝙚𝙧𝙚.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-19-43]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-19-43]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to a}\sin(𝒙)=\sin(𝒂)$</li>
+          <li class="level-2">$\displaystyle \lim_{x\to a}\cos(𝒙)=\cos(𝒂)$</li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=4952" target="_blank">1:22:32</a>. 𝑻𝒉𝒆
+        𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏 $\tan(𝒙)$ 𝒆𝒙𝒊𝒔𝒕𝒔 𝒆𝒙𝒄𝒆𝒑𝒕 𝒂𝒕 𝒕𝒉𝒆 𝒑𝒐𝒊𝒏𝒕𝒔 𝒘𝒉𝒆𝒓𝒆 $\cos(𝒙)=0$.
+        𝑻𝒉𝒆𝒔𝒆 𝒑𝒐𝒊𝒏𝒕𝒔 𝒂𝒓𝒆 $𝒙=\pm \pi/2+n\pi,\ n\in\mathbb{Z}$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-22-32]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-22-32]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\displaystyle \lim_{x\to a}\tan(𝒙)=\tan(a)$ ; $𝒙\neq \pm \pi/2+n\pi,\ n\in\mathbb{Z}$.
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=5295" target="_blank">1:28:15</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 1}\ \cos\!\left(\dfrac{𝒙^{2}-1}{𝒙-1}\right)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-28-15]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-28-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\cos(𝒙)$ is continuous so by composition ...</li>
+          <li class="level-2">$\displaystyle \cos\!\left(\lim_{x\to 1}\dfrac{𝒙^{2}-1}{𝒙-1}\right)$</li>
+          <li class="level-2">$\displaystyle \cos\!\left(\lim_{x\to 1}\dfrac{(𝒙+1)(𝒙-1)}{𝒙-1}\right)$</li>
+          <li class="level-2">$\displaystyle \cos\!\big(\lim_{x\to 1}(𝒙+1)\big)$</li>
+          <li class="level-2">$\cos(1+1)$</li>
+          <li class="level-2">$\cos(2)$</li>
+          <li class="level-2">
+            📝N͟O͟T͟E͟: Since $\cos(𝒙)$ is continuous, we can move the limit inside by the composition rule:
+            <ul>
+
+              <li class="level-3">𝓟𝓻𝓸𝓹𝓮𝓻𝓽𝔂: Limit of Continuous Functions (Composition Rule)
+                <ul>
+
+                  <li class="level-4">Statement:
+                    <ul>
+
+                      <li class="level-5">If $𝒇(𝒙)$ is continuous at $𝒙=a$, then:
+                        <ul>
+                          <li class="level-6">$\displaystyle \lim_{x\to a}𝒇(𝒙)=𝒇(a)$</li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                  <li class="level-4">Application:
+                    <ul>
+
+                      <li class="level-5">
+                        For continuous functions like $\sin(𝒙)$, $\cos(𝒙)$, polynomials, rationals, exponentials,
+                        etc.,
+                        you can move the limit inside:
+
+                        <ul>
+                          <li class="level-6">
+                            $\displaystyle \lim_{x\to a}𝒇(𝒙)=𝒇\!\big(\lim_{x\to a} 𝒙\big)=𝒇(a)$</li>
+                        </ul>
+                    </ul>
+                  </li>
+
+                  <li class="level-4">Important:
+                    <ul>
+                      <li class="level-5">
+                        This is why, when dealing with continuous functions, limits are straightforward to compute.
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li class="level-1">
+            <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=5580" target="_blank">1:33:00</a>. 🧩 Evaluation of
+            $\displaystyle \lim_{x\to \pi/2}\ \big(3𝒙^{2}+\cos(𝒙)\big)$
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 1.2/[1-33-00]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 1.2/[1-33-00]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <li class="level-2">Since there is no issue of discontinuity or undefined values at $𝒙=\pi/2$, we are
+                allowed to directly substitute the value into the expression.</li>
+              <li class="level-2">
+                📝N͟O͟T͟E͟: Whenever the function is continuous at the point — meaning there is no division by zero,
+                no square root of a negative number in the real domain, and no discontinuity —
+                we can evaluate the limit by direct substitution.
+              </li>
+              <li class="level-2">
+                So: $\displaystyle \lim_{x\to \pi/2}\ \big(3𝒙^{2}+\cos(𝒙)\big)=3(\pi/2)^{2}+\cos(\pi/2)=3\cdot
+                \dfrac{\pi^{2}}{4}+0=\dfrac{3\pi^{2}}{4}$
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-1">
+            <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=5835" target="_blank">1:37:15</a>. ∴
+            𝑫𝒆𝒎𝒐𝒏𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 𝒐𝒇 $\displaystyle \lim_{x\to 0}\ \dfrac{\sin 𝒙}{𝒙}=1$
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 1.2/[1-37-15]-01.png" target="_blank">– [📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 1.2/[1-37-15]-01.png" alt="Preview" />
+            </span>
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 1.2/[1-37-15]-02.png" target="_blank">– [📷image-2]</a>
+              <img src="../../img/Calculus 1 Lecture 1.2/[1-37-15]-02.png" alt="Preview" />
+            </span>
+            <ul>
+              <li class="level-2">$\displaystyle \lim_{x\to 0}\dfrac{\sin 𝒙}{𝒙}=1$ is demonstrated using the squeeze
+                theorem and areas of triangles and sectors.</li>
+              <li class="level-2">Triangles and sectors in a unit circle are constructed to compare their areas and
+                establish the necessary inequalities for the squeeze theorem.</li>
+              <li class="level-2">
+                To understand why $\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}=1$, we can use a geometric approach
+                involving areas in the unit circle. Here's a step-by-step explanation:
+                <ul>
+                  <li class="level-3">
+                    1. Unit Circle Setup:
+                    <ul>
+                      <li class="level-4">Consider a unit circle centered at the origin.</li>
+                      <li class="level-4">Let $𝒙$ be an angle near $0$ on the positive $𝒙$-axis.</li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    2. First Triangle; Two possible interpretations:
+                    <ul>
+                      <li class="level-4">
+                        Option 1: Right triangle
+                        <ul>
+                          <li class="level-5">Base $=\cos(𝒙)$, height $=\sin(𝒙)$.</li>
+                          <li class="level-5">Area $=\dfrac{1}{2}\cdot \cos(𝒙)\cdot \sin(𝒙)$.</li>
+                          <li class="level-5">It is a right triangle formed by dropping a perpendicular from the circle
+                            to the $x$-axis.</li>
+                        </ul>
+                      </li>
+                      <li class="level-4">
+                        Option 2: General triangle (more accurate for this limit discussion)
+                        <ul>
+                          <li class="level-5">Base $=1$ (the radius of the unit circle).</li>
+                          <li class="level-5">Height $=\sin(𝒙)$.</li>
+                          <li class="level-5">Area $=\dfrac{1}{2}\cdot 1\cdot \sin(𝒙)=\dfrac{1}{2}\sin(𝒙)$.</li>
+                          <li class="level-5">This is a scalene triangle (three unequal sides), not necessarily a right
+                            triangle.</li>
+                        </ul>
+                      </li>
+                      <li class="level-4">
+                        📝N͟O͟T͟E͟: For the purpose of proving the limit $\displaystyle \lim_{x\to
+                        0}\dfrac{\sin(𝒙)}{𝒙}=1$, we usually consider the triangle where the base is $1$ and the height
+                        is $\sin(𝒙)$,
+                        leading to the simpler expression $\text{Area}=\dfrac{1}{2}\sin(𝒙)$.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    3. Sector Area (Area $=\dfrac{1}{2}\cdot 𝒙$):
+                    <ul>
+                      <li class="level-4">The sector is formed by the angle $𝒙$ in the unit circle.</li>
+                      <li class="level-4">The area formula for a sector is $\dfrac{1}{2}\,r^{2}\theta$. Since $r=1$, it
+                        simplifies to $\dfrac{1}{2}\,𝒙$.</li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    4. Larger Triangle Involving the Tangent Line:
+                    <ul>
+                      <li class="level-4">Extend the tangent line from the point where the terminal side meets the
+                        circle.</li>
+                      <li class="level-4">his creates a larger triangle whose height corresponds to $\tan(𝒙)$.</li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    5. Setting Up Inequalities:
+                    <ul>
+                      <li class="level-4">
+                        Comparing areas:
+                        <ul>
+                          <li class="level-5">$\dfrac{1}{2}\sin(𝒙)<\dfrac{1}{2}\,𝒙<\dfrac{1}{2}\tan(𝒙)$ </li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    6. Simplifying the Inequalities:
+                    <ul>
+                      <li class="level-4">Multiply through by $2$:
+                        <ul>
+                          <li class="level-5">$\sin(𝒙)<𝒙<\tan(𝒙)$< /li>
+                        </ul>
+                      </li>
+                      <li class="level-4"> Divide all parts by $\sin(𝒙)$:
+                        <ul>
+                          <li class="level-5">$1<\dfrac{𝒙}{\sin(𝒙)}<\dfrac{1}{\cos(𝒙)}$< /li>
+                        </ul>
+                      </li>
+                      <li class="level-4">
+                        By taking the reciprocal of all positive terms, the inequality reverses its direction:
+                        <ul>
+                          <li class="level-5"> $1<\dfrac{𝒙}{\sin(𝒙)}<\dfrac{1}{\cos(𝒙)}\ \Longrightarrow\
+                              \cos(𝒙)<\dfrac{\sin(𝒙)}{𝒙}<1$</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-3">
+                    7. Applying the Squeeze Theorem:
+                    <ul>
+                      <li class="level-4">As $𝒙\to 0$, $\cos(𝒙)\to 1$, so $1/\cos(𝒙)\to 1$.</li>
+                      <li class="level-4">Thus, $𝒙/\sin(𝒙)$ is squeezed between $1$ and something approaching $1$.
+                      </li>
+                      <li class="level-4">By the Squeeze Theorem: $\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}=1$
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="level-2">
+                📝N͟O͟T͟E͟: In the proof using the Squeeze Theorem for $\displaystyle \lim_{x\to
+                0}\big(\sin(𝒙)/𝒙\big)=1$, it is correct to use the symbol “$<$” instead of “$\le$”. The reason is:
+                  <ul>
+              <li class="level-3">We are comparing areas or values strictly, not saying they are equal.</li>
+              <li class="level-3">For very small $𝒙$ near $0$ (but not exactly $0$), we have strict inequalities.</li>
+              <li class="level-3">The Squeeze Theorem only requires the function to be trapped between two functions,
+                not necessarily touching them.</li>
+              <li class="level-3">Thus, using “$<$” is perfectly fine and appropriate.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=6900" target="_blank">1:55:00</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 0}\ \dfrac{1-\cos 𝒙}{𝒙}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[1-55-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[1-55-00]-01.png" alt="Preview" />
+        </span>
+
+        <ul>
+          <li class="level-2">
+            $\displaystyle \lim_{x\to 0}\dfrac{1-\cos 𝒙}{𝒙}$ is calculated using the technique of multiplying by the
+            conjugate.
+          </li>
+
+          <li class="level-2">
+            The trigonometric identity $1-\cos^{2} 𝒙=\sin^{2} 𝒙$ is used to simplify the expression after multiplying
+            by the conjugate.
+          </li>
+
+          <li class="level-2">
+            Multiply and divide by the conjugate of the numerator $(1+\cos(𝒙))$:
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{(1-\cos(𝒙))(1+\cos(𝒙))}{𝒙\,(1+\cos(𝒙))}$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{1-\cos^{2}(𝒙)}{𝒙\,(1+\cos(𝒙))}$</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            Use the identity: $1-\cos^{2}(𝒙)=\sin^{2}(𝒙)$
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{\sin^{2}(𝒙)}{𝒙\,(1+\cos(𝒙))}$</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            Split into two factors:
+            <ul>
+              <li class="level-3">$\displaystyle \left(\lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}\right)\cdot \left(\lim_{x\to
+                0}\dfrac{\sin(𝒙)}{1+\cos(𝒙)}\right)$</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            Apply known limits:
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}=1,\quad \lim_{x\to
+                0}\dfrac{\sin(𝒙)}{1+\cos(𝒙)}=\dfrac{0}{2}=0$</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            $\displaystyle \lim_{x\to 0}\dfrac{1-\cos 𝒙}{𝒙}=0$
+          </li>
+        </ul>
+      </li>
+
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=7375" target="_blank">2:02:55</a>. 🧩 Evaluation of
+        $\displaystyle \lim_{x\to 0}\ \dfrac{\tan 𝒙}{𝒙}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.2/[2-02-55]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.2/[2-02-55]-01.png" alt="Preview" />
+        </span>
+
+        <ul>
+          <li class="level-2">
+            $\tan 𝒙=\dfrac{\sin 𝒙}{\cos 𝒙}$.
+          </li>
+
+          <li class="level-2">
+            The expression is split into two limits:
+            <ul>
+              <li class="level-3">
+                $\displaystyle \lim_{x\to 0}\dfrac{\sin 𝒙}{𝒙}$ and
+                $\displaystyle \lim_{x\to 0}\dfrac{1}{\cos 𝒙}$.
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            Rewrite tangent as sine over cosine:
+            <ul>
+              <li class="level-3">
+                $\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙)/\cos(𝒙)}{𝒙}$
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            Simplify the complex fraction:
+            <ul>
+              <li class="level-3">
+                $\displaystyle
+                \lim_{x\to 0}\dfrac{\sin(𝒙)}{\cos(𝒙)}\cdot \dfrac{1}{𝒙}
+                =\left(\lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}\right)
+                \cdot
+                \left(\lim_{x\to 0}\dfrac{1}{\cos(𝒙)}\right)
+                =1\cdot 1$
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            $\displaystyle \lim_{x\to 0}\dfrac{\tan 𝒙}{𝒙}=1$
+          </li>
+        </ul>
+      </li>
+
+
+      <h2>Ｍａｎｉｐｕｌａｔｉｏｎ ｏｆ Ｔｒｉｇｏｎｏｍｅｔｒｉｃ Ｌｉｍｉｔｓ</h2>
+      <ul>
+        <li class="level-1">
+          Manipulation of Trigonometric Limits
+          <ul>
+            <li class="level-2">Various examples of manipulating trigonometric limits to match known identities are
+              presented.</li>
+            <li class="level-2">Examples with $\sin 𝒙/𝒙$, $(1-\cos 𝒙)/𝒙$, and $\tan 𝒙/𝒙$ are included.</li>
+            <li class="level-2">Techniques such as multiplying by a constant, splitting the limit into multiple limits,
+              and using trigonometric identities are used.</li>
+            <li class="level-2"><strong>"We transform the unknown into something known"</strong> using mathematical
+              tools such as simplifications, identities, or properties.</li>
+          </ul>
+        </li>
+
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=7680" target="_blank">2:08:00</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ \dfrac{\sin(2𝒙)}{𝒙}$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-08-00]-01.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-08-00]-01.png" alt="Preview" />
+          </span>
+          <ul>
+            <li class="level-2">
+              Multiply by $2/2$ to create a form we can use:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\dfrac{\sin(2𝒙)}{𝒙}\cdot \dfrac{2}{2}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Rearrange the expression:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\dfrac{2\sin(2𝒙)}{2𝒙}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Factor out the constant $2$:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle 2\cdot \lim_{x\to 0}\dfrac{\sin(2𝒙)}{2𝒙}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Recognize the standard limit (with $u=2𝒙$):
+              <ul>
+                <li class="level-3">
+                  $2\cdot \lim_{u\to 0}\dfrac{\sin u}{u}=2$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              $\displaystyle \lim_{x\to 0}\dfrac{\sin(2𝒙)}{𝒙}=2$
+            </li>
+          </ul>
+        </li>
+
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=8020" target="_blank">2:13:40</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ \dfrac{\sin(5𝒙)}{\sin(6𝒙)}$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-13-40]-01.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-13-40]-01.png" alt="Preview" />
+          </span>
+          <ul>
+            <li class="level-2">
+              Multiply numerator and denominator by $1/𝒙$:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\dfrac{\sin(5𝒙)}{𝒙}\Big/\dfrac{\sin(6𝒙)}{𝒙}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Multiply numerator and denominator by constants:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\left(\dfrac{\sin(5𝒙)}{𝒙}\cdot
+                  \dfrac{5}{5}\right)\Big/\left(\dfrac{\sin(6𝒙)}{𝒙}\cdot \dfrac{6}{6}\right)$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Rearrange the expression:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \dfrac{5}{6}\cdot \lim_{x\to 0}\dfrac{\sin(5𝒙)}{5𝒙}\Big/\lim_{x\to
+                  0}\dfrac{\sin(6𝒙)}{6𝒙}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              Apply the standard limit identity ($u=5𝒙,\ 6𝒙$):
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\dfrac{\sin u}{u}=1$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              So: $\dfrac{5}{6}\cdot \dfrac{1}{1}=\dfrac{5}{6}$
+            </li>
+
+            <li class="level-2">
+              Therefore: $\displaystyle \lim_{x\to 0}\dfrac{\sin(5𝒙)}{\sin(6𝒙)}=\dfrac{5}{6}$
+            </li>
+          </ul>
+        </li>
+
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=8425" target="_blank">2:20:25</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ \dfrac{\sin(𝒙^{2})}{𝒙}$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-20-25]-01.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-20-25]-01.png" alt="Preview" />
+          </span>
+
+          <ul>
+
+            <li class="level-2">Rewrite as a product:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\left(\dfrac{\sin(𝒙^{2})}{𝒙}\right)\cdot \dfrac{𝒙}{𝒙}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Rearranged:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\, 𝒙\cdot \dfrac{\sin(𝒙^{2})}{𝒙^{2}}$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Split the limit:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \big(\lim_{x\to 0} 𝒙\big)\cdot \big(\lim_{x\to 0}\dfrac{\sin(𝒙^{2})}{𝒙^{2}}\big)$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Use the standard limit identity:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{u\to 0}\dfrac{\sin u}{u}=1 \quad (u=𝒙^{2})$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Therefore:
+              <ul>
+                <li class="level-3">$0\cdot 1 = 0$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              $\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙^{2})}{𝒙}=0$
+            </li>
+
+          </ul>
+        </li>
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=8660" target="_blank">2:24:20</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ \dfrac{\sin^{2}(𝒙)}{𝒙}$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-24-20]-01.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-24-20]-01.png" alt="Preview" />
+          </span>
+
+          <ul>
+
+            <li class="level-2">Use the identity:
+              <ul>
+                <li class="level-3">
+                  $\sin^{2}(𝒙)=\sin(𝒙)\cdot \sin(𝒙)$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Rewrite the expression:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \lim_{x\to 0}\left(\dfrac{\sin(𝒙)}{𝒙}\right)\cdot \sin(𝒙)$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Split the limit:
+              <ul>
+                <li class="level-3">
+                  $\displaystyle \left(\lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}\right)\cdot \left(\lim_{x\to 0}\sin(𝒙)\right)$
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">Apply known limits:
+              <ul>
+                <li class="level-3">$1 \cdot 0 = 0$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              $\displaystyle \lim_{x\to 0}\dfrac{\sin^{2}(𝒙)}{𝒙}=0$
+            </li>
+
+          </ul>
+        </li>
+
+
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=8745" target="_blank">2:25:45</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ \sin\!\left(\dfrac{1}{𝒙}\right)$ (Graphical approach)
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-25-45]-02.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-25-45]-02.png" alt="Preview" />
+          </span>
+          <ul>
+            <li class="level-2">$\displaystyle \lim_{x\to 0}\sin\!\left(\dfrac{1}{𝒙}\right)=\text{D.N.E}$</li>
+            <li class="level-2">
+              Graph behavior:
+              <ul>
+                <li class="level-3">As $x$ approaches $0$, $1/x$ increases rapidly in magnitude.</li>
+                <li class="level-3">This makes the sine function oscillate faster and faster.</li>
+              </ul>
+            </li>
+            <li class="level-2">
+              Infinite waves:
+              <ul>
+                <li class="level-3">The graph oscillates infinitely between $-1$ and $1$ as $x\to 0$.</li>
+                <li class="level-3">It doesn't "settle" on any value — it doesn’t flatten or approach a specific number.
+                </li>
+              </ul>
+            </li>
+            <li class="level-2">
+              No fixed value:
+              <ul>
+                <li class="level-3">For the limit to exist, $\sin(1/x)$ would need to get closer to a single number.
+                </li>
+                <li class="level-3">But instead, it keeps jumping around with no stabilization.</li>
+                <li class="level-3">There are infinitely many peaks and valleys, getting tighter near $x=0$.</li>
+              </ul>
+            </li>
+            <li class="level-2">
+              Conclusion:
+              <ul>
+                <li class="level-3">Since the function doesn't approach any one value as $x\to 0$, the limit does not
+                  exist.</li>
+                <li class="level-3">The graph shows a dense “band” of oscillation between $-1$ and $1$ near $x=0$.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=8745" target="_blank">2:25:45</a>. 🧩 Evaluation of
+          $\displaystyle \lim_{x\to 0}\ x\cdot \sin\!\left(\dfrac{1}{𝒙}\right)$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 1.2/[2-25-45]-01.png" target="_blank">– [📷image]</a>
+            <img src="../../img/Calculus 1 Lecture 1.2/[2-25-45]-01.png" alt="Preview" />
+          </span>
+          <ul>
+            <li class="level-2">The correct approach is to apply the <strong>Squeeze Theorem</strong>:</li>
+
+            <li class="level-2">We know that:
+              <ul>
+                <li class="level-3">$-1\le \sin(1/𝒙)\le 1$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">Multiplying all parts by $𝒙$ (which tends to $0$), we get:
+              <ul>
+                <li class="level-3">$-|𝒙|\le 𝒙\cdot \sin(1/𝒙)\le |𝒙|$</li>
+                <li class="level-3">📝N͟O͟T͟E͟:
+                  <ul>
+                    <li class="level-4">we know that:
+                      <ul>
+                        <li class="level-5">$-1\le \sin(1/𝒙)\le 1$</li>
+                      </ul>
+                    </li>
+                    <li class="level-4">When multiplying by $𝒙$, the direction of the inequalities depends on the sign
+                      of $𝒙$:
+                      <ul>
+                        <li class="level-5">If $𝒙&gt;0$, the inequality remains the same.</li>
+                        <li class="level-5">If $𝒙&lt;0$, the inequality reverses direction.</li>
+                      </ul>
+                    </li>
+                    <li class="level-4">To avoid this problem, we use the absolute value on the bounds of the
+                      inequality, as follows:
+                      <ul>
+                        <li class="level-5">$-|𝒙|\le 𝒙\,\sin(1/𝒙)\le |𝒙|$</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-2">
+              We introduce the absolute value to keep the direction of the inequality consistent, since multiplying by
+              $𝒙$ would
+              reverse the inequality when $𝒙&lt;0$. Using $|𝒙|$ ensures the inequality remains $-|𝒙|\le 𝒙\cdot
+              \sin(1/𝒙)\le |𝒙|$ for both positive and negative $𝒙$.
+            </li>
+
+            <li class="level-2">Apply limits:
+              <ul>
+                <li class="level-3">$\displaystyle \lim_{x\to 0}\big(-|𝒙|\big)\ \le\ \lim_{x\to 0}\big(𝒙\cdot
+                  \sin(1/𝒙)\big)\ \le\ \lim_{x\to 0}|𝒙|$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">And since:
+              <ul>
+                <li class="level-3">$\displaystyle \lim_{x\to 0}|𝒙|=0\quad \Rightarrow\quad 0\le \lim_{x\to
+                  0}\big(𝒙\cdot \sin(1/𝒙)\big)\le 0$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">By the <strong>Squeeze Theorem</strong>, it follows that:
+              <ul>
+                <li class="level-3">$\displaystyle \lim_{x\to 0}\, 𝒙\cdot \sin\!\left(\dfrac{1}{𝒙}\right)=0$</li>
+              </ul>
+            </li>
+
+            <li class="level-2">⚠📝 NOTE: At first glance, the limit:
+              <ul>
+                <li class="level-3">$\displaystyle \lim_{x\to 0} 𝒙 \cdot \sin\!\left(\dfrac{1}{𝒙}\right)$</li>
+                <li class="level-3">might look like it fits the identity:
+                  <ul>
+                    <li class="level-4">$\displaystyle \lim_{u\to 0} \dfrac{\sin u}{u}=1$</li>
+                  </ul>
+                </li>
+                <li class="level-3">
+                  But that identity 𝐨𝐧𝐥𝐲 𝐚𝐩𝐩𝐥𝐢𝐞𝐬 when the argument of the sine <strong>and</strong> the
+                  denominator both approach $0$ at the same time.
+                  Now, if we rewrite:
+                  <ul>
+                    <li class="level-4">$\displaystyle 𝒙 \cdot
+                      \sin\!\left(\dfrac{1}{𝒙}\right)=\dfrac{\sin(1/𝒙)}{1/𝒙}$
+                      <ul>
+                        <li class="level-5">Here, as $𝒙\to 0$:
+                          <ul>
+                            <li class="level-6">$1/𝒙\to \infty$,</li>
+                            <li class="level-6">and $\sin(1/𝒙)$ keeps oscillating between $-1$ and $1$ with no limit.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="level-3">So the expression $\sin(1/𝒙)/(1/𝒙)$ doesn't approach $1$, and we 𝐜𝐚𝐧𝐧𝐨𝐭
+                  apply the identity.</li>
+              </ul>
+            </li>
+
+
+            <li class="level-1">
+              <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=9333" target="_blank">2:35:33</a>. 🧩 Evaluation of
+              $\displaystyle \lim_{x\to 0}\ \dfrac{2-\cos(3𝒙)-\cos(4𝒙)}{𝒙}$
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 1.2/[2-35-33]-01.png" target="_blank">– [📷image]</a>
+                <img src="../../img/Calculus 1 Lecture 1.2/[2-35-33]-01.png" alt="Preview" />
+              </span>
+
+              <ul>
+                <li class="level-2">Rewrite the expression:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{2-\cos(3𝒙)-\cos(4𝒙)}{𝒙}$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Use the identity:
+                  <ul>
+                    <li class="level-3">$2-\cos(3𝒙)-\cos(4𝒙)=\big(1-\cos(3𝒙)\big)+\big(1-\cos(4𝒙)\big)$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Split into two separate limits:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{1-\cos(3𝒙)}{𝒙}\ +\ \lim_{x\to
+                      0}\dfrac{1-\cos(4𝒙)}{𝒙}$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Multiply and divide to match the standard form:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{1-\cos(3𝒙)}{3𝒙}\cdot 3\ +\ \lim_{x\to
+                      0}\dfrac{1-\cos(4𝒙)}{4𝒙}\cdot 4$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Apply the known limit:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{u\to 0}\dfrac{1-\cos u}{u}=0$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Evaluate:
+                  <ul>
+                    <li class="level-3">$3\cdot 0+4\cdot 0=0$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Final result:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{2-\cos(3𝒙)-\cos(4𝒙)}{𝒙}=0$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="level-1">
+              <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=9645" target="_blank">2:40:45</a>. 🧩 Evaluation of
+              $\displaystyle \lim_{x\to 0}\ \dfrac{𝒙^{2}-3\sin(𝒙)}{𝒙}$
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 1.2/[2-40-45]-01.png" target="_blank">– [📷image]</a>
+                <img src="../../img/Calculus 1 Lecture 1.2/[2-40-45]-01.png" alt="Preview" />
+              </span>
+              <ul>
+                <li class="level-2">Rewrite the expression:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{𝒙^{2}-3\sin(𝒙)}{𝒙}$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Split the terms:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\left(\dfrac{𝒙^{2}}{𝒙}\right)-3\cdot
+                      \left(\dfrac{\sin(𝒙)}{𝒙}\right)$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Simplify each part:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0} 𝒙-3\cdot \left(\dfrac{\sin(𝒙)}{𝒙}\right)$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Apply limits:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0} 𝒙=0$</li>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{\sin(𝒙)}{𝒙}=1$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Compute:
+                  <ul>
+                    <li class="level-3">$0-3\cdot 1=-3$</li>
+                  </ul>
+                </li>
+
+                <li class="level-2">Final result:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{𝒙^{2}-3\sin(𝒙)}{𝒙}=-3$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="level-1">
+              <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=9744" target="_blank">2:42:24</a>. 🧩 Evaluation of
+              $\displaystyle \lim_{t\to 0}\ \dfrac{t^{2}}{1-\cos^{2}(t)}$
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 1.2/[2-42-24]-01.png" target="_blank">– [📷image]</a>
+                <img src="../../img/Calculus 1 Lecture 1.2/[2-42-24]-01.png" alt="Preview" />
+              </span>
+              <ul>
+                <li class="level-2">Use the trigonometric identity:
+                  <ul>
+                    <li class="level-3">$1-\cos^{2}(t)=\sin^{2}(t)$</li>
+                  </ul>
+                </li>
+                <li class="level-2">Rewrite the limit:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{t\to 0}\dfrac{t^{2}}{1-\cos^{2}(t)}=\lim_{t\to
+                      0}\dfrac{t^{2}}{\sin^{2}(t)}=\lim_{t\to 0}\left(\dfrac{t}{\sin t}\right)^{2}$</li>
+                  </ul>
+                </li>
+                <li class="level-2">Recognize the limit structure:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{t\to 0}\dfrac{\sin T}{T}=1$</li>
+                    <li class="level-3">Then: $\displaystyle \lim_{t\to 0}\dfrac{t}{\sin t}=\left(\lim_{t\to
+                      0}\dfrac{\sin t}{t}\right)^{-1}=1^{-1}=1$</li>
+                  </ul>
+                </li>
+                <li class="level-2">Apply the limit:
+                  <ul>
+                    <li class="level-3">$\big(\lim_{t\to 0} t/\sin t\big)^{2}=1^{2}=1$</li>
+                  </ul>
+                </li>
+                <li class="level-2">Final result: $1$</li>
+              </ul>
+            </li>
+
+
+            <li class="level-1">
+              <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=10200" target="_blank">2:50:00</a>. 🧩 Evaluation
+              of $\displaystyle \lim_{x\to 0}\ \dfrac{𝒙}{\cos(\pi/2-𝒙)}$
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 1.2/[2-50-00]-01.png" target="_blank">– [📷image]</a>
+                <img src="../../img/Calculus 1 Lecture 1.2/[2-50-00]-01.png" alt="Preview" />
+              </span>
+              <ul>
+                <li class="level-2">Use the co-function identity:
+                  <ul>
+                    <li class="level-3">$\cos(\pi/2-𝒙)=\sin(𝒙)$</li>
+                    <li class="level-3">📝 N͟O͟T͟E͟: Two angles are complementary if they add up to $90^\circ$:
+                      <ul>
+                        <li class="level-4">$\sin(\text{angle})\ \leftrightarrow\ \cos(\text{complement of angle})$</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="level-2">Replace the expression using the identity:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{𝒙}{\sin(𝒙)}$</li>
+                  </ul>
+                </li>
+                <li class="level-2">Recognize the standard limit:
+                  <ul>
+                    <li class="level-3">$\displaystyle \lim_{x\to 0}\dfrac{𝒙}{\sin(𝒙)}=1$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="level-1">
+              <a href="https://www.youtube.com/watch?v=VSqOZNULRjQ&t=10420" target="_blank">2:53:40</a>. 🧩
+              Evaluation of $\displaystyle \lim_{\theta\to 0}\ \dfrac{\theta^{2}}{\,1-\cos(\theta)\,}$
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 1.2/[2-53-40]-01.png" target="_blank">– [📷image]</a>
+                <img src="../../img/Calculus 1 Lecture 1.2/[2-53-40]-01.png" alt="Preview" />
+              </span>
+
+              <ul>
+                <!-- ◉ Multiply... -->
+                <li class="level-2">
+                  Multiply by $1$ in the form of $\dfrac{1+\cos(\theta)}{1+\cos(\theta)}$ to simplify:
+                  <ul>
+                    <!-- ○ first equation -->
+                    <li class="level-3">
+                      $\displaystyle \lim_{\theta\to 0}\dfrac{\theta^{2}\big(1+\cos(\theta)\big)}{1-\cos^{2}(\theta)}$
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ◉ Use the identity -->
+                <li class="level-2">
+                  Use the identity: $1-\cos^{2}(\theta)=\sin^{2}(\theta)$
+                  <ul>
+                    <!-- ○ second equation -->
+                    <li class="level-3">
+                      $\displaystyle \lim_{\theta\to 0}\dfrac{\theta^{2}\big(1+\cos(\theta)\big)}{\sin^{2}(\theta)}$
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ◉ Separate into two limits -->
+                <li class="level-2">
+                  Separate into two limits:
+                  <ul>
+                    <!-- ○ product of two limits -->
+                    <li class="level-3">
+                      $\displaystyle \left(\lim_{\theta\to 0}\dfrac{\theta^{2}}{\sin^{2}(\theta)}\right)\cdot
+                      \left(\lim_{\theta\to 0}1+\cos(\theta)\right)$
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ◉ Use the identity -->
+                <li class="level-2">
+                  Use the identity:
+                  <ul>
+                    <!-- ○ identity statement -->
+                    <li class="level-3">
+                      $\displaystyle \lim_{\theta\to 0}\dfrac{\theta}{\sin(\theta)}=1$, so:
+                      <ul>
+                        <!-- ■ squared identity -->
+                        <li class="level-4">
+                          $\displaystyle \lim_{\theta\to 0}\left(\dfrac{\theta}{\sin(\theta)}\right)^{2}=1^{2}=1$
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ◉ Evaluate -->
+                <li class="level-2">
+                  Evaluate the limits:
+                  <ul>
+                    <!-- ○ final numeric result -->
+                    <li class="level-3">
+                      $1\cdot \big(1+\cos(0)\big)=1\cdot (1+1)=2$
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+  </article>
+  <template id="ascii-numberline_1">
+
+
+    <pre class="ascii-diagram">
+
+    ─────●───────────────●────
+        -2               5
+  </pre>
+  </template>
+
+
+  <template id="ascii-numberline_2">
+    <pre class="ascii-diagram">
+
+                          |
+                          |
+                          ╰----
+    ─────●───────────────●────
+        -2               5
+  </pre>
+  </template>
+
+
+  <template id="ascii-numberline_3">
+    <pre class="ascii-diagram">
+
+                          |
+                          |
+                          ╰----
+    ─────●───────────────●────
+        -2           ---╮5
+                        |
+                        |
+
+</pre>
+  </template>
+
+  <template id="ascii-numberline_4">
+    <pre class="ascii-diagram">
+
+
+         𝒇₁ ⇢  ⇠    𝒇₂    ⇢  ⇠  𝒇₃
+    <─────────|──────────────|──────────>
+             -2              3
+
+</pre>
+  </template>
+
+  <script>
+    function insertTemplate(targetId, templateId) {
+      const target = document.getElementById(targetId);
+      const template = document.getElementById(templateId);
+      if (target && template) target.innerHTML = template.innerHTML;
+    }
+
+    // Inserciones:
+    insertTemplate("numline-1", "ascii-numberline_1");
+    insertTemplate("numline-2", "ascii-numberline_2");
+    insertTemplate("numline-3", "ascii-numberline_3");
+    insertTemplate("numline-4", "ascii-numberline_4");
+  </script>
+
+
+
+</body>
+
+</html>

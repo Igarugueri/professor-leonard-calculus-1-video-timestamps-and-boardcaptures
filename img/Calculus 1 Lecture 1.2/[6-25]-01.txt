@@ -1,0 +1,5 @@
+image_name: [6-25]Properties of Limits.png
+file_name: [6-25]-01.png
+timestamp: 6:25
+counter: 01
+folder: Calculus 1 Lecture 1.2

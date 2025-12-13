@@ -1,0 +1,5 @@
+image_name: [02-53]Volume of a Cylinder.png
+file_name: [02-53]-01.png
+timestamp: 02:53
+counter: 01
+folder: Calculus 1 Lecture 5.3

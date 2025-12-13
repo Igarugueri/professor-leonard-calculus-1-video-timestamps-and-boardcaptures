@@ -1,0 +1,5 @@
+image_name: [12-20]Evaluation of limₓ→₂  𝒙³ - 2𝒙 + 7.png
+file_name: [12-20]-01.png
+timestamp: 12:20
+counter: 01
+folder: Calculus 1 Lecture 1.2

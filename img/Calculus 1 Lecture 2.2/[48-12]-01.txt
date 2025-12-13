@@ -1,0 +1,5 @@
+image_name: [48-12]Notation for higher-order derivatives.png
+file_name: [48-12]-01.png
+timestamp: 48:12
+counter: 01
+folder: Calculus 1 Lecture 2.2

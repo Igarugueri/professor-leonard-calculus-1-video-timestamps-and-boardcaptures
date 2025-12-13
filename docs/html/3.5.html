@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculus 1 lecture 3.5 – Limits Of Functions at Infinity</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．５</h1>
+    <h1>　Lｉｍｉｔｓ　Oｆ　Fｕｎｃｔｉｏｎｓ　ａｔ　Iｎｆｉｎｉｔｙ</h1>
+
+    <h2>Ｒｅｖｉｅｗ　ｏｆ　ｖｅｒｔｉｃａｌ　ａｓｙｍｐｔｏｔｅｓ　ａｎｄ　ｒｅｍｏｖａｂｌｅ　ｄｉｓｃｏｎｔｉｎｕｉｔｉｅｓ　</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=0" target="_blank">[0:00]</a>. Reminder of the
+        definition of vertical asymptote (VA): $\lim_{x\to a} 𝒇(𝒙)=\pm\infty$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[0-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[0-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Two cases for a vertical asymptote:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\lim_{x\to a^-} 𝒇(𝒙)=\lim_{x\to a^+} 𝒇(𝒙)=\pm\infty$   # The limit <strong>exists</strong> (both
+                one-sided limits agree)
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\lim_{x\to a^-} 𝒇(𝒙)=\infty$ and $\lim_{x\to a^+} 𝒇(𝒙)=-\infty$  # The limit <strong>does not
+                  exist</strong> (one-sided limits disagree)
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            to find discontinuities <strong>denominator equals zero</strong>.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If a factor <strong>cannot be canceled</strong>, the discontinuity is a
+                <strong>vertical asymptote</strong>.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If a factor <strong>can be canceled</strong>, it is a <strong>removable
+                  discontinuity</strong>, not a vertical asymptote.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=235" target="_blank">[3:55]</a>. Difference between
+        removable discontinuities (holes) and VA.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[3-55]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[3-55]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            ʜ̳ᴏ̳ʟ̳ᴇ̳ꜱ̳: removable discontinuities where only one point is missing in the function.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Occur when the <strong>numerator and denominator are zero at the same time</strong>,
+                allowing cancellation of factors.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> One single point is missing from the function.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            ᴠ̳ᴀ̳: non-removable discontinuities.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Occur when <strong>discontinuities cannot be canceled</strong>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=400" target="_blank">[6:40]</a>. 🧩 Example –:
+        $𝒇(𝒙)=\dfrac{𝒙}{(𝒙+3)(𝒙-1)}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[6-40]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[6-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Vertical asymptotes at $𝒙=1$ and $𝒙=-3$ → non-cancelable factors in the denominator.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Critical sign-change values are found by:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Setting the <strong>denominator equal to zero</strong> → to identify discontinuities
+                (<strong>vertical asymptotes</strong>).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Setting the <strong>numerator equal to zero</strong> → to identify values where the function
+                <strong>crosses the $𝒙$-axis</strong>.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    These are not discontinuities, but they must be <strong>included in the sign analysis</strong>
+                    since they may cause a sign change in the rational expression.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">
+                        In this case, $𝒙=0$ makes the numerator zero → the function is zero at this point and may
+                        change sign around it.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            General rule for analyzing a rational function $𝒇(𝒙)=\dfrac{𝒫(𝒙)}{𝒬(𝒙)}$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Fully factor both $𝒫(𝒙)$ and $𝒬(𝒙)$, and simplify the expression if possible.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Identify points of discontinuity from $𝒬(𝒙)=0$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    If a factor in the denominator <strong>does not cancel</strong> with the numerator, its zero
+                    corresponds to a <strong>vertical asymptote (VA)</strong>.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">These values are <strong>not in the domain</strong> and divide the number
+                        line into intervals.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">They are essential in the <strong>sign chart</strong>, as they may trigger
+                        sign changes in $𝒇(𝒙)$.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    If a factor in the denominator <strong>does cancel</strong> with one in the numerator, the
+                    corresponding $𝒙$-value results in a <strong>hole</strong> (removable discontinuity).
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">The function is undefined at this point, but the behavior around it may be
+                        continuous.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Holes <strong>do not cause sign changes</strong> like VAs do, but must still
+                        be <strong>noted</strong> in the analysis.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Set $𝒫(𝒙)=0$ → determine <strong>x-intercepts</strong> (zeros of the numerator).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Include them in the sign analysis <strong>only if they are in the
+                      domain</strong>, as they may indicate a sign change in the rational expression.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=494" target="_blank">[8:14]</a>. Using sign
+            analysis to determine behavior around VAs:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Sign chart:
+                <div id="numline-5"></div>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Limits at critical values:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    Near $𝒙=-3$ (vertical asymptote):
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to-3^-} 𝒇(𝒙)=-\infty$ # denominator $\to0^+$, numerator $&lt;0$ ⇒
+                        $-\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to-3^+} 𝒇(𝒙)=+\infty$ # denominator $\to0^-$, numerator $&lt;0$ ⇒
+                        $+\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> Limit does not exist.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    At $𝒙=0$ (zero of the numerator):
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to0} 𝒇(𝒙)=0$ # numerator $\to0$, denominator $\neq0$ ⇒ crosses
+                        the x-axis.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    Near $𝒙=1$ (vertical asymptote):
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to1^-} 𝒇(𝒙)=-\infty$ # denominator $\to0^-$, numerator $&gt;0$ ⇒
+                        $-\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to1^+} 𝒇(𝒙)=+\infty$ # denominator $\to0^+$, numerator $&gt;0$ ⇒
+                        $+\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> Limit does not exist.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=715" target="_blank">[11:55]</a>. 🧩 Example –:
+        $\lim_{t\to1} \dfrac{t^3}{(t^2-1)^2}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[11-55]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[11-55]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Discontinuities:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Discontinuities occur where the denominator equals zero.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> For this problem, they happen at $t=\pm1$ because $(t^2-1)^2=0$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> These are <strong>vertical asymptotes as they cannot be removed by factoring
+                  (non-removable discontinuities)</strong>.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Focus on the limit:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Even though there are two discontinuities ($t=\pm1$), only $t=1$ matters since the
+                limit is evaluated near this value.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $t=-1$ can be ignored for this problem.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Importance of the numerator:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> It is crucial for calculating the limit at vertical asymptotes (VA), as these points
+                determine where
+                the function
+                may change its sign in the adjacent intervals.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Check where the numerator ($t^3=0$) equals zero, which happens at $t=0$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $t=0$ is not an asymptote, but it is useful to divide intervals and check for sign
+                changes.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Strategy:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Divide the interval into regions around $t=0$ and $t=1$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Evaluate specific points in each region (e.g., $t=0.5,\; t=2$) to understand the
+                function's behavior.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Sign chart:
+                <div id="numline-6"></div>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Near $x=1$ (vertical asymptote):
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to1^-} 𝒇(𝒙)=+\infty$ # denominator $\to0^-$, numerator $&gt;0$ ⇒
+                        $+\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\lim_{x\to1^+} 𝒇(𝒙)=+\infty$ # denominator $\to0^+$, numerator $&gt;0$ ⇒
+                        $+\infty$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> Limit exist: $\lim_{x\to1} 𝒇(𝒙)=+\infty$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｌｉｍｉｔｓ　ａｔ　ｉｎｆｉｎｉｔｙ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=990" target="_blank">[16:30]</a>. Question: What
+        happens to a function as <strong>$𝒙$ approaches positive or negative infinity?</strong>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[16-30]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[16-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Exploring the behavior of $1/𝒙$ as $𝒙$ increases:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> As $𝒙$ increases, $1/𝒙$ approaches zero.
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-4"> $\lim_{x\to\infty} \dfrac{1}{x}=0$</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-4"> $\lim_{x\to-\infty} \dfrac{1}{x}=0$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=1225" target="_blank">[20:25]</a>. Definition of
+        limit at infinity :
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If $𝒇(𝒙)$ approaches a number as $𝒙$ approaches infinity, the limit exists.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=1267" target="_blank">[21:07]</a>. Relation between
+        limits at infinity and <strong>horizontal asymptotes (HA)</strong>:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">HA represent the value a function approaches as $𝒙$ goes to positive or negative
+            infinity.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=1380" target="_blank">[23:00]</a>. The rules for
+        calculating limits as $𝒙\to+\infty$ or $𝒙\to-\infty$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[23-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[23-00]-01.png" alt="Preview" />
+        </span>
+        are the same as before. Therefore, the same rules and techniques apply in both cases.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\lim_{x\to\infty} \dfrac{1}{x^n}=0$ for any $n&gt;0$ :
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Any <strong>constant divided by a variable raised to a power approaching infinity
+                  will approach zero</strong>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=1570" target="_blank">[26:10]</a>. Behavior of
+        polynomials at infinity
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[26-10]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[26-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Polynomials do not approach a specific number at infinity but tend to positive or negative
+            infinity.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            The behavior of a polynomial at infinity is determined by the <strong>highest power term</strong>.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> This is because, as $𝒙$ approaches infinity, the lower exponent terms become
+                insignificant compared to the dominant term.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            🧩 Example –: $\lim_{x\to-\infty} \left(-3x^3-2x^2-x+9\right)=\lim_{x\to-\infty} (-3x^3)=\infty$
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｃａｌｃｕｌａｔｉｎｇ　ｌｉｍｉｔｓ　ａｔ　ｉｎｆｉｎｉｔｙ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=2187" target="_blank">[36:27]</a>.
+        Introduction.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=2295" target="_blank">[38:15]</a>. 🧩 Example –:
+        $\lim_{x\to\infty} \dfrac{5x-2}{3x+9}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[38-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[38-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Key idea: <strong>divide each term by the highest power of $𝒙$ in the
+              denominator</strong>.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Terms with $𝒙$ in the denominator approach zero as $𝒙$ approaches infinity.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\lim_{x\to\infty} \dfrac{5-2/x}{3+9/x}=\dfrac{5}{3}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Observation: the limit at infinity of a rational function where the powers of $𝒙$ in the
+            numerator and denominator are equal is the ratio of the leading coefficients.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=2668" target="_blank">[44:28]</a>. 🧩 Example –:
+        $\lim_{x\to-\infty} \dfrac{5x^2-4x}{15x^3-3x}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[44-28]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[44-28]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Divide all terms by the highest power of $x$ in the denominator ($x^3$):
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to-\infty} \dfrac{5/x-4/x^2}{15-3/x^3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Analyze behavior as $x\to-\infty$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $5/x\to0$, $4/x^2\to0$, $3/x^3\to0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Substitute limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{0-0}{15-0}=0$ $\Rightarrow\ \lim_{x\to-\infty} \dfrac{5x^2-4x}{15x^3-3x}=0$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=2885" target="_blank">[48:05]</a>. 🧩 Example –:
+        $\lim_{x\to-\infty} \dfrac{7x^3-2x^2+1}{9-2x}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[48-05]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[48-05]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Divide all terms by the highest power of $x$ in the denominator ($x$):
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to-\infty} \dfrac{7x^2-2x+1/x}{9/x-2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Analyze behavior as $x\to-\infty$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $7x^2\to+\infty$, $-2x\to+\infty$, $1/x\to0$, $9/x\to0$, denominator $\to-2$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Substitute limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{+\infty}{-2}=-\infty$ $\Rightarrow\ \lim_{x\to-\infty}
+                \dfrac{7x^3-2x^2+1}{9-2x}=-\infty$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=3135" target="_blank">[52:15]</a>. 🧩 Example –:
+        $\lim_{x\to\infty} \sqrt[3]{\dfrac{2x^2-3}{x^2-5}}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[52-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[52-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Divide inside by the highest power $x^2$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\sqrt[3]{\dfrac{2-3/x^2}{1-5/x^2}}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Take the limit:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\sqrt[3]{\dfrac{2}{1}}=\sqrt[3]{2}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=3230" target="_blank">[53:50]</a>. 🧩 Example –:
+        $\lim_{x\to-\infty} \dfrac{\sqrt{x^2+2}}{3x-6}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[53-50]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[53-50]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[53-50]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[53-50]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[53-50]-03.png" target="_blank">[📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[53-50]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Divide by $x$ (highest power in the denominator):
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class=no-bullet>➀ <em>Applied Property</em>: Multiplication of Terms with Fractional Powers: $a\cdot
+                b=\sqrt{a^2b^2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-4">
+                🧩 Example –: $\dfrac{1}{x}\cdot\sqrt{x^2+2}=\sqrt{\dfrac{x^2+2}{x^2}}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class=no-bullet>➁ Pay attention to the use of absolute value when simplifying square roots:
+                $\sqrt{x^2}=|x|$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-4">
+                (i) Why is $x\neq\sqrt{x^2}$ in general?
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> If $x\ge0$: $\sqrt{x^2}=x$</li>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> If $x&lt;0$: e.g., $x=-3\Rightarrow \sqrt{9}=3\neq -3$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-4">
+                (ii) Why is $|x|=\sqrt{x^2}$ always true?
+                <ul>
+                  <!-- ▣ nivel-5 -->
+                  <li class="level-5"> Both yield the non-negative magnitude of $x$.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 1. Factor inside the root:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $x^2+2=x^2\,(1+2/x^2)\Rightarrow \sqrt{x^2+2}=|x|\sqrt{1+2/x^2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 2. Substitute:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{\sqrt{x^2+2}}{3x-6}=\dfrac{|x|\sqrt{1+2/x^2}}{3x-6}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 3. Divide numerator/denominator by $x$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{|x|/x\cdot\sqrt{1+2/x^2}}{3-6/x}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 4. Limit as $x\to-\infty$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $|x|/x\to-1$, $\sqrt{1+2/x^2}\to1$, $3-6/x\to3$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Conclusion:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to-\infty} \dfrac{\sqrt{x^2+2}}{3x-6}=\dfrac{-1\cdot1}{3}=-\dfrac{1}{3}$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=4013" target="_blank">[1:06:53]</a>. 🧩 Example –:
+        $\lim_{x\to\infty}\big(\sqrt{x^4+2}-x^2\big)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[1-06-53]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[1-06-53]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rationalize with the conjugate.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Divide by $x^2$ (highest power relevant).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 1: Multiply by the conjugate
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to\infty} \dfrac{(\sqrt{x^4+2}-x^2)(\sqrt{x^4+2}+x^2)}{\sqrt{x^4+2}+x^2}$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 2: $(a-b)(a+b)=a^2-b^2$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to\infty} \dfrac{x^4+2-x^4}{\sqrt{x^4+2}+x^2}=\lim_{x\to\infty}
+                \dfrac{2}{\sqrt{x^4+2}+x^2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 3: Divide top/bottom by $x^2$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to\infty} \dfrac{\dfrac{2}{x^2}}{\sqrt{1+\dfrac{2}{x^4}}+1}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 4: Take the limit
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{0}{1+1}=0$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=4560" target="_blank">[1:16:00]</a>. 🧩 Example –:
+        $\lim_{x\to\infty}\big(\sqrt{x^4+2x^2+x^2}-x^2\big)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[1-16-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[1-16-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rationalize with the conjugate.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Divide each term by $x^2$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 1: Multiply by the conjugate
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\lim_{x\to\infty}\dfrac{(\sqrt{x^4+2x^2+x^2}-x^2)(\sqrt{x^4+2x^2+x^2}+x^2)}{\sqrt{x^4+2x^2+x^2}+x^2}$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 2: $(a-b)(a+b)=a^2-b^2$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\lim_{x\to\infty}\dfrac{x^4+2x^2+x^2-x^4}{\sqrt{x^4+2x^2+x^2}+x^2}=\lim_{x\to\infty}\dfrac{2x^2}{\sqrt{x^4+2x^2+x^2}+x^2}$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 3: Divide by $x^2$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\lim_{x\to\infty}\dfrac{2}{\sqrt{1+\dfrac{2}{x^2}+\dfrac{1}{x^2}}+1}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Step 4: Take the limit
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{2}{1+1}=1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=-PYebK8DKPc&amp;t=4851" target="_blank">[1:20:51]</a>. 🧩 Example –:
+        $\lim_{x\to\infty} \sqrt{7-x}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.5/[1-20-51]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.5/[1-20-51]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Does not exist: D.N.E</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The expression inside the square root becomes negative as $𝒙\to+\infty$.</li>
+          <li>
+        </ul>
+      </li>
+      <li class="level-1"> SUMMARY: INDETERMINATE FORMS<br>
+        When $x \to \infty$ or $x \to -\infty$ in limits
+        <div id="limit-forms"></div>
+      </li>
+      </li>
+    </ul>
+
+
+
+  </article>
+
+  <!-- ASCII number line templates -->
+  <template id="ascii-limits_1">
+    <pre class="ascii-diagram">
+                        ¦ ◟                       ¦ ◟  
+            ────────────●────────────●────────────●─────────────
+       𝒇(𝒙)     -    ◝ ¦       +          -    ◝ ¦   +
+                       -3            0            1
+    </pre>
+  </template>
+
+  <template id="ascii-limits_2">
+    <pre class="ascii-diagram">
+                       ¦                        ◞ ¦ ◟  
+            ───────────●─────────────●─────────────●───────
+       𝒇(𝒙)            ¦                       +   ¦   +
+                      -1             0             1
+    </pre>
+  </template>
+
+  <!-- Magic summary table for indeterminate forms -->
+  <template id="magic-indeterminate-forms">
+
+    <table class="cn-table">
+      <thead>
+
+        <tr>
+          <th>Form</th>
+          <th>Interpretation</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>$\dfrac{\infty}{\infty}$</td>
+          <td>
+            A race of growth: who wins?<br />
+            → Divide all terms by the highest power of $x$.
+          </td>
+        </tr>
+        <tr>
+          <td>$\dfrac{0}{0}$</td>
+          <td>
+            A hidden simplification awaits!<br />
+            → Factor, cancel, (or apply L’Hôpital’s Rule [CALCULUS 2]).
+          </td>
+        </tr>
+        <tr>
+          <td>$\infty - \infty$</td>
+          <td>
+            Big values clashing… unclear result!<br />
+            → Combine into a single fraction.
+          </td>
+        </tr>
+        <tr>
+          <td>$0 \cdot \infty$</td>
+          <td>
+            Shrinking and growing — who dominates?<br />
+            → Rewrite as a fraction to resolve it.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            $1^{\infty}$,<br />
+            $0^{0}$,<br />
+            $\infty^{0}$
+          </td>
+          <td>
+            $1^{\infty}$: Exponential surprise!<br />
+            $0^{0}$: Ambiguous start of power.<br />
+            $\infty^{0}$: Explosive base with vanishing power.<br />
+            → Use logarithms or rewrite using $e^{\ln(\cdot)}$.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </template>
+
+
+  <script>
+    function insertTemplate(targetId, templateId) {
+      const target = document.getElementById(targetId);
+      const template = document.getElementById(templateId);
+      if (target && template) {
+        target.innerHTML = template.innerHTML;
+      }
+    }
+
+    // Inserciones específicas para esta lección
+    insertTemplate("numline-5", "ascii-limits_1");
+    insertTemplate("numline-6", "ascii-limits_2");
+    insertTemplate("limit-forms", "magic-indeterminate-forms");
+  </script>
+</body>
+
+</html>

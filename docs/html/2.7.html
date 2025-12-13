@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．７　Iｍｐｌｉｃｉｔ　Dｉｆｆｅｒｅｎｔｉａｔｉｏｎ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．７</h1>
+    <h1>　Iｍｐｌｉｃｉｔ　Dｉｆｆｅｒｅｎｔｉａｔｉｏｎ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｉｍｐｌｉｃｉｔ　ｄｉｆｆｅｒｅｎｔｉａｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=0"
+          target="_blank">[0:00]</a>. Introduction to the topic: implicit differentiation.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Review of the explicit form of equations 𝐲 = 𝒇(𝒙):
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">🧩 Example –: 𝐲 = $3𝒙^{2}+4$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Definition of explicit form: 𝐲 is isolated on one side of the equation, "𝐲" is given
+                explicitly.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Explicit Form: In this form, 𝐲 is expressed directly in terms of 𝒙 (e.g., 𝐲 =
+                $3𝒙^{2}+4$).
+                This makes differentiation straightforward as standard rules can be applied directly.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=90"
+          target="_blank">[1:30]</a>. Definition of implicit form –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[1-30]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[1-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example –: $𝑦+𝑥𝑦=𝑥$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Sometimes we can convert an implicit function into an explicit one.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Solve for 𝑦: $𝑦=\dfrac{𝑥}{1+𝑥}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=145"
+              target="_blank">[2:25]</a>. 🧩 Example –: $𝑥^{2}+𝑦^{2}=25$ –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.7/[2-25]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.7/[2-25]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">𝑦 is not isolated; the variables 𝑥 and 𝑦 are mixed together.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Implicit form: Here, 𝑦 is intertwined with 𝑥 in the equation (e.g.,
+                $𝑥^{2}+𝑦^{2}=25$). <strong>This requires treating 𝑦
+                  as a function of 𝑥 and often necessitates the use of the chain rule during differentiation.</strong>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a
+                  href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=258"
+                  target="_blank">[4:18]</a>. <strong>Implicit equations can often define more than one function of
+                  𝒙</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝑥^{2}+𝑦^{2}=25 \;\Leftrightarrow\; 𝑦=\pm\sqrt{25-𝑥^{2}}$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$𝑦=\sqrt{25-𝑥^{2}}$: Represents the upper semicircle (positive).</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$𝑦=-\sqrt{25-𝑥^{2}}$: Represents the lower semicircle (negative).</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Explicit differentiation fails when 𝑦 is not a single function, as in
+                    $𝑦=\pm\sqrt{25-𝑥^{2}}$, which represents
+                    two semicircles. Implicit differentiation handles this directly by differentiating the entire
+                    equation ($𝑥^{2}+𝑦^{2}=25$)
+                    without solving for 𝑦, allowing for slopes that depend on both 𝑥 and 𝑦.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">'allowing for slopes that depend on both 𝑥 and 𝑦': meaning that the
+                        derivative at each point is determined
+                        by both the 𝑥 and 𝑦 coordinates, not just by 𝑥 alone, as happens with explicit functions
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">When there are multiple solutions for 𝑦 (for example, $+\sqrt{}$ and
+                            $-\sqrt{}$), <strong>each point $(𝑥,𝑦)$ can have its own slope,</strong>
+                            which is calculated using implicit differentiation.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｄｅｆｉｎｉｔｉｏｎ　ｏｆ　ｔｈｅ　ｉｍｐｌｉｃｉｔ　ｄｉｆｆｅｒｅｎｔｉａｔｉｏｎ　ｔｅｃｈｎｉｑｕｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=295"
+          target="_blank">[4:55]</a>. Review of the concepts of explicit and implicit forms.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Understanding the distinction between explicit and implicit forms is crucial because it
+            determines
+            the method used for differentiation. In explicit differentiation, 𝐲 is expressed directly in terms of
+            𝒙,<br>
+            making it straightforward to apply standard differentiation rules. In contrast, implicit differentiation
+            is necessary when 𝐲 cannot be easily isolated, requiring the application of the chain rule during
+            differentiation.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">In explicit differentiation, the relationship between 𝐲 and 𝒙 is clear and direct,
+            allowing for straightforward
+            differentiation. However, many real-world problems result in equations where 𝐲 cannot be neatly isolated.
+            Implicit
+            differentiation allows us to find $\dfrac{d𝑦}{d𝒙}$ without rearranging the equation, by treating 𝐲 as a
+            function of 𝒙 and
+            applying differentiation rules accordingly.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=320"
+          target="_blank">[5:20]</a>. 🧩 Example: $2𝒙^{3}+3𝑦^{3}=9𝑥𝑦$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=340"
+              target="_blank">[5:40]</a>. It is not always possible to convert an implicit equation to explicit form.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">We need another method to find derivatives, instead of just assuming 𝑦 equals a
+                function of 𝑥.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">There has to be a different way—and there is. It's called implicit
+                    differentiation.
+                    <ul>
+                      <!-- ▢ nivel-6 (originally ▢ but nested under ■'s ▣? here it's directly under ■ so it's ▢ level-6) -->
+                      <!-- Actually hierarchy: ●→◉→○→■→▢ if skipping ▣ is allowed; keep symbol as in md -->
+                      <!-- ▢ nivel-6 -->
+                      <li class="level-6">How to take a derivative for $2𝒙^{3}+3𝑦^{3}=9𝑥𝑦$ without solving for 𝑦.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=482"
+          target="_blank">[8:02]</a>. 🧩 Example –: $𝒙^{3}+𝐲^{3}=5$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[8-02]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[8-02]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Example of converting implicit equations to explicit forms.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Some equations naturally present in implicit form cannot be easily rearranged to solve
+                for 𝐲. Attempting
+                to isolate 𝐲 might be complex or impossible, especially with higher-degree polynomials or
+                transcendental
+                functions. <strong>Implicit differentiation provides a systematic way to find derivatives without
+                  needing to solve for 𝐲 explicitly.</strong></li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">To solve $𝒙^{3}+𝐲^{3}=5$, we could solve for 𝐲, subtract $𝒙^{3}$, and take the cube
+            root, allowing us to find the derivative directly. However,
+            the goal is to learn implicit differentiation, which lets us find the derivative without solving for 𝐲.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a
+                  href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=573"
+                  target="_blank">[9:33]</a>. Key point: <strong>You must treat 𝐲 as a function of 𝒙</strong>, because
+                if 𝐲 can be expressed in terms of 𝒙, it depends on 𝒙.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｓｔｅｐｓ　ｆｏｒ　ｉｍｐｌｉｃｉｔ　ｄｉｆｆｅｒｅｎｔｉａｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=590"
+          target="_blank">[9:50]</a>. ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 1: Differentiate both sides of the equation with respect to 𝑥.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">from 🧩 Example –: $𝒙^{3}+𝐲^{3}=5$ –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.7/[8-02]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.7/[8-02]-01.png" alt="Preview" />
+            </span>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Remember that you are differentiating with respect to 𝑥, while 𝑦 is a function of 𝑥.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">You can differentiate term by term if the equation allows.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Derivative of both sides:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}\big[𝑥^{3}+𝑦^{3}\big]=\dfrac{d}{d𝒙}[5]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}[𝑥^{3}]+\dfrac{d}{d𝒙}[𝑦^{3}]=\dfrac{d}{d𝒙}[5]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$3𝑥^{2}+3𝑦^{2}\cdot\dfrac{d}{d𝒙}[𝑦]=0$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">When differentiating a term that includes 𝑦, apply the chain rule.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">This requires treating 𝑦 as a function of 𝒙 and often necessitates the use
+                        of the chain rule.
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"><strong>𝑦 is a function of 𝒙 that you do not know explicitly.</strong>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$\dfrac{d}{d𝒙}[𝑦]$ is the derivative of 𝑦 with respect to 𝒙, represented
+                        as $\dfrac{d𝑦}{d𝒙}$.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Each time you differentiate 𝑦, you must include a $\dfrac{d𝑦}{d𝒙}$ factor
+                        due to the chain rule.
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">It’s just like
+                            $\dfrac{d}{d𝒙}(3𝒙^{2}-1)^{4}\;\to\;4(3𝒙^{2}-1)^{3}\cdot\dfrac{d}{d𝒙}[3𝒙^{2}-1]$, but
+                            now $3𝒙^{2}-1$ is “𝑦”—an unknown function.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1140"
+          target="_blank">[19:00]</a>. ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 2: Solve the equation for $\dfrac{d𝑦}{d𝒙}$.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$3𝑥^{2}+3𝑦^{2}\cdot\dfrac{d}{d𝒙}[𝑦]=0 \;\;\Rightarrow\;\;
+            \dfrac{d}{d𝒙}[𝑦]=-\dfrac{𝑥^{2}}{𝑦^{2}}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1198"
+          target="_blank">[19:58]</a>. ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 3: Convert the implicit derivative to explicit form (optional)
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Once the implicit derivative $\dfrac{d𝑦}{d𝒙}$ is obtained, the next step is to
+            substitute the solutions for 𝑦 from the original equation.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the original equation has multiple branches (e.g., $𝑦=\pm\sqrt[3]{\,5-𝑥^{3}\,}$),
+            substitute each solution separately to find the specific slope for each branch.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For the positive branch $𝑦=\sqrt[3]{\,5-𝑥^{3}\,}$, substitute this expression for 𝑦
+                in $\dfrac{d𝑦}{d𝒙}$ to get the explicit slope for that branch.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For the negative branch $𝑦=-\sqrt[3]{\,5-𝑥^{3}\,}$, do the same, resulting in a
+                different slope for the negative branch.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This ensures that you have the correct slope for each portion of the graph, providing a
+            complete understanding of the function's behavior.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘａｍｐｌｅｓ　ｏｆ　ｉｍｐｌｉｃｉｔ　ｄｉｆｆｅｒｅｎｔｉａｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1410"
+          target="_blank">[23:30]</a>. 🧩 Example –: $3𝐲^{2}+\sin(𝐲)=4𝒙^{5}$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[23-30]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[23-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 1: Differentiate both sides with respect to 𝒙
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}\big[3𝐲^{2}+\sin(𝐲)\big]=\dfrac{d}{d𝒙}[4𝒙^{5}]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$6𝐲\cdot\dfrac{d𝐲}{d𝒙}+\cos(𝐲)\cdot\dfrac{d𝐲}{d𝒙}=20𝒙^{4}$ # Apply the chain
+                rule to both terms with 𝐲</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}\cdot\big(6𝐲+\cos(𝐲)\big)=20𝒙^{4}$ # Factor out 𝒅𝐲/𝒅𝒙</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 2: Solve the equation for $\dfrac{d𝑦}{d𝒙}$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}=\dfrac{20𝒙^{4}}{\,6𝐲+\cos(𝐲)\,}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1732"
+              target="_blank">[28:52]</a>. The key idea is to remember that you always obtain a $\dfrac{d𝑦}{d𝒙}$ when
+            differentiating 𝐲.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1850"
+              target="_blank">[30:50]</a>. Implicit differentiation is simply differentiating without being able to
+            solve for 𝐲.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">implicit differentiation is used when you cannot (or do not) solve for 𝐲 explicitly
+                in terms of 𝒙.
+                Instead, you differentiate both sides of an equation as they are, treating 𝐲 as a function of 𝒙
+                (i.e., $𝐲=𝐲(𝒙)$) and applying the chain rule where necessary.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=1888"
+          target="_blank">[31:28]</a>. 🧩 Example –: $𝒙\cdot 𝐲=1$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[31-28]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[31-28]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">You must use the product rule when differentiating $𝒙\cdot 𝐲$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 1: Differentiate both sides of the equation with respect to 𝑥
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝐲+𝒙\cdot\dfrac{d𝑦}{d𝒙}=0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 2: Solve the equation for $\dfrac{d𝑦}{d𝒙}$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝑦}{d𝒙}=-\dfrac{𝐲}{𝒙}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">ꜱ̲ᴛ̲ᴇ̲ᴩ̲ 3: Convert the implicit derivative to explicit form.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙\cdot 𝐲=1 \;\Rightarrow\; 𝐲=\dfrac{1}{𝒙}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">substitute the solutions for 𝑦 from the original equation.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d𝑦}{d𝒙}=-\dfrac{𝐲}{𝒙} \;\Rightarrow\;
+                    \dfrac{d𝑦}{d𝒙}=-\dfrac{(1/𝒙)}{𝒙}=-\dfrac{1}{𝒙^{2}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2160"
+              target="_blank">[36:00]</a>. In implicit differentiation, you must identify when to apply the product rule
+            or the quotient rule.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｓｅｃｏｎｄ　ｄｅｒｉｖａｔｉｖｅ　ｏｆ　ａｎ　ｉｍｐｌｉｃｉｔ　ｆｕｎｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2172"
+          target="_blank">[36:12]</a>. 🧩 Example –: $3𝒙^{2}-𝐲^{2}=16$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[36-12]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[36-12]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Find the first derivative
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}[\,3𝒙^{2}-𝐲^{2}\,]=\dfrac{d}{d𝒙}[16]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$6𝒙-2𝐲\cdot\dfrac{d𝐲}{d𝒙}=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$-2𝐲\cdot\dfrac{d𝐲}{d𝒙}=-6𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}=\dfrac{3𝒙}{𝐲}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a
+              href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2286"
+              target="_blank">[38:06]</a>. To find the second derivative, differentiate the first derivative with
+            respect to 𝒙.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Use the notation $\dfrac{d^{2}𝐲}{d𝒙^{2}}$ for the second derivative.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Apply the quotient rule:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d}{d𝒙}\Big[\dfrac{d𝐲}{d𝒙}\Big]=\dfrac{d}{d𝒙}\Big[\dfrac{3𝒙}{𝐲}\Big]$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\dfrac{d^{2}𝐲}{d𝒙^{2}}=\dfrac{\,𝐲\cdot\dfrac{d}{d𝒙}(3𝒙)-3𝒙\cdot\dfrac{d}{d𝒙}(𝐲)\,}{𝐲^{2}}$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d^{2}𝐲}{d𝒙^{2}}=\dfrac{\,𝐲\cdot 3-3𝒙\cdot\dfrac{d𝐲}{d𝒙}\,}{𝐲^{2}}$
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitute the expression found for $\dfrac{d𝐲}{d𝒙}$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\dfrac{d^{2}𝐲}{d𝒙^{2}}=\dfrac{\,3𝐲-3𝒙\cdot\big(\dfrac{3𝒙}{𝐲}\big)\,}{𝐲^{2}}$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d^{2}𝐲}{d𝒙^{2}}=\dfrac{\,3𝐲-\dfrac{9𝒙^{2}}{𝐲}\,}{𝐲^{2}}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify the result:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d^{2}𝐲}{d𝒙^{2}}=\dfrac{3𝐲^{2}-9𝒙^{2}}{𝐲^{3}}$ # We write $3𝐲$ as
+                    $3𝐲=\dfrac{3𝐲^{2}}{𝐲}$ to obtain a common denominator.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｇｅｏｍｅｔｒｉｃ　ｉｎｔｅｒｐｒｅｔａｔｉｏｎ　ｏｆ　ｔｈｅ　ｉｍｐｌｉｃｉｔ　ｄｅｒｉｖａｔｉｖｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2662"
+          target="_blank">[44:22]</a>. 🧩 Example – : Find the slopes at $(2,-1)$ and $(2,1)$ for $𝐲^{2}-𝒙+1=0$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[44-22]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[44-22]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiate both sides with respect to 𝒙:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}[\,𝐲^{2}-𝒙+1\,]=\dfrac{d}{d𝒙}[0]$ # Differentiate both sides</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$2𝐲\cdot\dfrac{d𝐲}{d𝒙}-1=0$ # Chain rule for $𝐲^{2}$, derivative of 𝒙 is $1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$2𝐲\cdot\dfrac{d𝐲}{d𝒙}=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}=\dfrac{1}{2𝐲}$ # Isolate 𝒅𝐲/𝒅𝒙</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluate the slope at $(2,-1)$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}\Big|_{(2,-1)}=\dfrac{1}{2\cdot(-1)}=-\dfrac{1}{2}$ # Substitute
+                $𝐲=-1$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluate the slope at $(2,1)$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d𝐲}{d𝒙}\Big|_{(2,1)}=\dfrac{1}{2\cdot 1}=\dfrac{1}{2}$ # Substitute $𝐲=1$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Comment:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">In implicit differentiation, the slope at a point can depend on both 𝒙 and 𝐲.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Here, the derivative formula $\dfrac{d𝐲}{d𝒙}=\dfrac{1}{2𝐲}$ shows that the slope
+                only depends on the 𝐲 value.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">So, for each point, substitute the corresponding 𝐲 to find the slope.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｑｕａｔｉｏｎ　ｏｆ　ｔｈｅ　ｔａｎｇｅｎｔ　ｌｉｎｅ　ｔｏ　ａｎ　ｉｍｐｌｉｃｉｔ　ｃｕｒｖｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2848"
+          target="_blank">[47:28]</a>. Implicit differentiation can be used to find the equation of the tangent line to
+        a curve at a given point.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=2881"
+          target="_blank">[48:01]</a>. 🧩 Example –: $4𝒙^{4}+8𝒙^{2}𝐲^{2}-25𝒙^{2}𝐲+16𝐲^{4}=0$ obtain the slope of
+        the tangent line at the point $(2,1)$. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[48-01]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[48-01]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.7/[48-01]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 2.7/[48-01]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiate both sides with respect to 𝒙:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\dfrac{d}{d𝒙}\big[\,4𝒙^{4}+8𝒙^{2}𝐲^{2}-25𝒙^{2}𝐲+4𝐲^{4}\,\big]=\dfrac{d}{d𝒙}[0]$ # Differentiate
+                term by term</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the product and chain rules to each term:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $16𝒙^{3}+\dfrac{d}{d𝒙}[8𝒙^{2}𝐲^{2}]-\dfrac{d}{d𝒙}[25𝒙^{2}𝐲]+\dfrac{d}{d𝒙}[4𝐲^{4}]=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$16𝒙^{3}+16𝒙𝐲^{2}+8𝒙^{2}\cdot 2𝐲\cdot\dfrac{d𝐲}{d𝒙}-(25\cdot
+                2𝒙𝐲+25𝒙^{2}\cdot\dfrac{d𝐲}{d𝒙})+16𝐲^{3}\cdot\dfrac{d𝐲}{d𝒙}=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $16𝒙^{3}+16𝒙𝐲^{2}\cdot\dfrac{d𝐲}{d𝒙}-50𝒙𝐲-25𝒙^{2}\cdot\dfrac{d𝐲}{d𝒙}+16𝐲^{3}\cdot\dfrac{d𝐲}{d𝒙}=0$
+                # Collect all terms with 𝒅𝐲/𝒅𝒙</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Collect all terms with $\dfrac{d𝐲}{d𝒙}$ to one side:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$(16𝒙^{2}𝐲-25𝒙^{2}+16𝐲^{3})\cdot\dfrac{d𝐲}{d𝒙}=50𝒙𝐲-16𝒙^{3}-16𝒙𝐲^{2}$ #
+                Move other terms to the right</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Solve for $\dfrac{d𝐲}{d𝒙}$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\dfrac{d𝐲}{d𝒙}=\dfrac{\,50𝒙𝐲-16𝒙^{3}-16𝒙𝐲^{2}\,}{\,16𝒙^{2}𝐲-25𝒙^{2}+16𝐲^{3}\,}$ # This is
+                the implicit derivative</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">This result gives the slope of the tangent line at any point $(𝒙,𝐲)$ on the curve.
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluate $\dfrac{d𝑦}{d𝑥}$ at the point $(2,1)$ to obtain the slope of the tangent line.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">At the point $(2,1)$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Substitute $𝒙=2$, $𝐲=1$:</li>
+                </ul>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d𝐲}{d𝒙}=\dfrac{50\cdot 2\cdot 1-16\cdot 8-16\cdot 2\cdot 1}{16\cdot
+                    4\cdot 1-25\cdot 4+16\cdot 1}$ </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$=\dfrac{100-128-32}{64-100+16}$ </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$=\dfrac{-60}{-20}$ </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$=3$ </li>
+                </ul>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">So, $m=3$ # Slope at $(2,1)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Use the point-slope formula to find the equation of the tangent line.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Equation of the tangent line at $(2,1)$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Use point-slope form:
+                    $𝐲-1=3(𝒙-2)$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Simplify:
+                    $𝐲-1=3𝒙-6$ <br>
+                    $𝐲=3𝒙-5$ # Final equation of the tangent line at $(2,1)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｒｅｌａｔｅｄ　ｒａｔｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=RUS4mKo9tBk&amp;list=PLF797E961509B4EB5&amp;t=4041"
+          target="_blank">[1:07:21]</a>. Introduction to the concept of related rates: word problems involving implicit
+        derivatives.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Techniques for solving related rates problems will be presented in the next session.</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

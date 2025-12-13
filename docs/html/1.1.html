@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　１．１：　ａｎ　ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｌｉｍｉｔｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　１．１</h1>
+    <h1>Aｎ　Iｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　Lｉｍｉｔｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=0" target="_blank">[0:00]</a>.
+        Introduction.</li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=53" target="_blank">[0:53]</a>. The
+        two objectives of calculus:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[0-53]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[0-53]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">Objective 1: Find the tangent line to a curve (slope) at a given point.</li>
+          <li class="level-2">Objective 2: Find the area under a curve between two points.</li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2>Ｔｈｅ Ｐｒｏｂｌｅｍ ｏｆ ｔｈｅ Ｔａｎｇｅｎｔ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=356" target="_blank">[5:56]</a>.
+        Introduction to the problem of the tangent: how to find the equation of the tangent line to a curve at a given
+        point.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[5-56]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[5-56]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[5-56]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[5-56]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=444"
+              target="_blank">[7:24]</a>. The concept of the secant line is introduced as an approximation to the
+            tangent line.
+            <ul>
+              <li class="level-3">🕵 To find the tangent line to a curve at a point: First, we need to calculate the
+                slope of the tangent line. But…
+                <ul>
+                  <li class="level-4">We can’t find the slope with just one point!</li>
+                  <li class="level-4">So we use another nearby point on the curve, called 𝑸.</li>
+                </ul>
+              </li>
+              <li class="level-3">📌 The line through the given point 𝑷 and the nearby point 𝑸: 𝑷𝑸⃡, is called a
+                secant line.</li>
+            </ul>
+          </li>
+
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=508"
+              target="_blank">[08:28]</a>. Is this secant line 𝑷𝑸⃡ a good approximation of the tangent line? How could
+            we get a better approximation?
+            <ul>
+              <li class="level-3">𝑷 is a fixed point, but 𝑸 is a movable point.</li>
+            </ul>
+          </li>
+
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=580"
+              target="_blank">[9:40]</a>. It is explained how to move 𝑸 on the secant line so that it approaches the
+            tangent line.
+            <ul>
+              <li class="level-3">If we move 𝑸 closer along the curve, the approximation becomes even better.
+                <ul>
+                  <li class="level-4">When can we stop? Can we get as close as possible to point 𝑷?</li>
+                  <li class="level-4">We can’t actually reach point 𝑷, because we need two points to define a line.
+                  </li>
+                  <li class="level-4">The <strong>idea</strong> is to move point 𝑸 so, so, so, so close to 𝑷 that the
+                    secant line becomes practically identical to the tangent line at point 𝑷.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=815"
+              target="_blank">[13:35]</a>. The concept of a limit is introduced: bringing one point closer to another
+            without them being the same.
+            <ul>
+              <li class="level-3">𝑰𝒏 𝒄𝒂𝒍𝒄𝒖𝒍𝒖𝒔, 𝙩𝙬𝙤 𝙥𝙤𝙞𝙣𝙩𝙨 𝙘𝙖𝙣 𝙗𝙚 𝙞𝙣𝙛𝙞𝙣𝙞𝙩𝙚𝙨𝙞𝙢𝙖𝙡𝙡𝙮
+                𝙘𝙡𝙤𝙨𝙚 𝙩𝙤 𝙚𝙖𝙘𝙝 𝙤𝙩𝙝𝙚𝙧 — 𝙣𝙤𝙩 𝙚𝙭𝙖𝙘𝙩𝙡𝙮 𝙩𝙝𝙚 𝙨𝙖𝙢𝙚, 𝙗𝙪𝙩 𝙨𝙤 𝙘𝙡𝙤𝙨𝙚
+                𝙩𝙝𝙖𝙩 𝙩𝙝𝙚 𝙙𝙞𝙛𝙛𝙚𝙧𝙚𝙣𝙘𝙚 𝙗𝙚𝙘𝙤𝙢𝙚𝙨 𝙣𝙚𝙜𝙡𝙞𝙜𝙞𝙗𝙡𝙚.
+                𝑻𝙝𝒊𝙨 𝙞𝙨 𝒕𝙝𝒆 𝒇𝙤𝙪𝙣𝒅𝙖𝒕𝙞𝒐𝙣 𝙤𝒇 𝒕𝙝𝒆 𝒄𝙤𝙣𝙘𝙚𝙥𝒕 𝒐𝒇 𝙡𝒊𝙢𝒊𝙩𝙨.
+                <ul>
+                  <li class="level-4">The name “infinitesimal calculus” comes from its core idea: working with
+                    quantities that are <strong>infinitesimally small</strong> — values that
+                    are not zero, but <strong>so close to zero that they behave almost like it</strong>. For example,
+                    when finding the tangent line to a curve at a point, we imagine
+                    a second point Q getting $\boxed{\textcolor{#FFD54F}{\textbf{infinitesimally close}}}$ to the fixed
+                    point 𝑷. As 𝑸 approaches 𝑷, the secant line 𝑷𝑸⃡ becomes almost indistinguishable from the
+                    tangent line.
+                    This process — letting the distance between two points <strong>shrink infinitely</strong> — is what
+                    makes calculus so powerful. It allows us to define limits, derivatives, and integrals.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=1120" target="_blank">[18:40]</a>.
+        🧩 Example –: Find the equation of the tangent line to the curve $y=x^2$ at the point 𝑷(1, 1)
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[18-40]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[18-40]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[18-40]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[18-40]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[18-40]-03.png" target="_blank">– [📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[18-40]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">Define a moving point 𝑸 on the curve: 𝑸($x,x^2$).</li>
+          <li class="level-2">Recall the slope formula for a line between two points:
+            <p>$m=\dfrac{y_2-y_1}{x_2-x_1}$</p>
+          </li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=1410"
+              target="_blank">[23:30]</a>. Compute the slope of the secant line between 𝑷 and 𝑸:
+            <p>$m_{\text{sec}}=\dfrac{x^2-1}{x-1}=\dfrac{(x+1)(x-1)}{x-1}=x+1$ (as long as $x\neq1$)</p>
+          </li>
+          <li class="level-2">⚠ Why $x\neq1$?
+            <ul>
+              <li class="level-3">We can’t divide by zero.</li>
+              <li class="level-3">This is why 𝑸 ≠ 𝑷. We use 𝑸 to approach 𝑷, not coincide.</li>
+            </ul>
+          </li>
+          <li class="level-2">📌 <strong>IDEA</strong>: move point 𝑸 so, so, so, so close to 𝑷 that the secant line
+            becomes practically identical to the tangent line at point 𝑷.
+            <ul>
+              <li class="level-3">The slope of the secant line is related to the slope of the tangent line using the
+                concept of a limit:
+                As 𝑸 → 𝑷,
+                $m_{\text{sec}} \to m_{\text{tan}}$</li>
+              <li class="level-3"><strong>IDEA</strong>: What happens to the value of $m_{\text{sec}}$ as $x\to1$, that
+                is, as 𝑸 → 𝑷?
+                <ul>
+                  <li class="level-4">Imagine 𝑸 getting <strong>nfinitesimally close</strong> to the fixed point 𝑷(1,
+                    1)
+                    <ul>
+                      <li class="level-5">if 𝑸(4,𝑦) we get $m_{\text{sec}}\big|_{x=4}=4+1=5$</li>
+                      <li class="level-5">if 𝑸(2,𝑦) we get $m_{\text{sec}}\big|_{x=2}=2+1=3$</li>
+                      <li class="level-5">if 𝑸(1.5,𝑦) we get $m_{\text{sec}}\big|_{x=1.5}=1.5+1=2.5$</li>
+                      <li class="level-5">. . .</li>
+                      <li class="level-5">if 𝑸(1.0000...1,𝑦) we get
+                        $m_{\text{sec}}\big|_{x=1.0000...1}=1.0000...1+1=2.0000...1$</li>
+                      <li class="level-5">Because $x$ is infinitely close to 1, we can now “jump” to 1 — the secant has
+                        effectively become the tangent.
+                        <ul>
+                          <li class="level-6">$\boxed{\textcolor{#FFD54F}{\textbf{Infinitesimally close}}}$: We are
+                            visualizing the limit as a progressive approach where there is no practical difference
+                            between being
+                            infinitely close to the point and being at the point itself.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="level-4">$m_{\text{sec}}\big|_{x=1}=1+1=2$ so as $x\to1$ $m_{\text{sec}} \to 2$
+                    <ul>
+                      <li class="level-5">Hence, because $m_{\text{sec}} \to m_{\text{tan}}$, $m_{\text{tan}}=2$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">Conclusion: the slope of the tangent line at 𝑷(1, 1) is 2.</li>
+          <li class="level-2">Find the tangent line using point-slope form:
+            $y-1=2(x-1)\;\Rightarrow\;y=2x-1$</li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2>Ｔｈｅ Ｐｒｏｂｌｅｍ ｏｆ ｔｈｅ Ａｒｅａ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=2200" target="_blank">[36:40]</a>.
+        Brief introduction to the area problem
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[36-40]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[36-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The question is posed: how to find the area under a curve.</li>
+          <li class="level-2">The idea of approximating the area with rectangles is introduced.</li>
+          <li class="level-2">It is explained that by using an infinite number of rectangles, the area is calculated
+            exactly.</li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2> Ｄｅｆｉｎｉｔｉｏｎ ｏｆ ａ Ｌｉｍｉｔ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=2360" target="_blank">[39:20]</a>.
+        The concept of a limit is defined in general terms:
+        <ul>
+          <li class="level-2"><strong>What does the function do as a variable approaches a given value?</strong></li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=2455" target="_blank">[40:55]</a>.
+        🧩 Example – : What does the function $f(x)=x^2$ do as $x$ approaches 2?
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[40-55]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[40-55]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">A table of values is constructed to approximate the limit.
+            <div id="table-1"></div>
+
+
+
+          </li>
+          <li class="level-2">It is observed that the function approaches 4 from both the right and the left.</li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=2680" target="_blank">[44:40]</a>.
+        The formal notation of the limit is introduced:
+        <ul>
+          <li class="level-2">𝙏𝒉𝒆 𝒇𝙪𝙣𝙘𝒕𝙞𝙤𝙣 𝒎𝙪𝙨𝒕 𝙖𝙥𝙥𝙧𝙤𝙖𝙘𝙝 𝒕𝙝𝙚 𝙨𝙖𝙢𝙚 𝙫𝙖𝙡𝙪𝙚 𝒇𝙧𝙤𝙢
+            𝙡𝙚𝙛𝙩 𝒂𝙣𝙙 𝙧𝙞𝙜𝙝𝙩 𝒇𝙤𝙧 𝙡𝙞𝙢𝙞𝒕 𝙩𝙤 𝙚𝙭𝙞𝙨𝙩.</li>
+          <li class="level-2">$\displaystyle \lim_{x\to a} f(x)=L;\;\; \displaystyle \lim_{x\to 2} x^2 = 4$</li>
+        </ul>
+      </li>
+
+      <li class="level-1">It is emphasized that the limit does not depend on the value of the function at the point, but
+        on <em>its behavior near the point</em>.</li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=2834" target="_blank">[47:14]</a>.
+        🧩 Example – What are limits?: $\displaystyle \lim_{x\to 1}\dfrac{x-1}{x^2-1}$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[47-14]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[47-14]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">Since the function has a hole at $x=1$, it is best to create a table again.
+            <div id="table-2"></div>
+          </li>
+          <li class="level-2">$\displaystyle \lim_{x\to 1}\dfrac{x-1}{x^2-1}=0.5$</li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2>Ｏｎｅ－ｓｉｄｅｄ Ｌｉｍｉｔｓ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=3450" target="_blank">[57:30]</a>.
+        Introduction to one-sided limits
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[57-30]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[57-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The notation for one-sided limits is explained.
+            <ul>
+              <li class="level-3">right-hand limits $\displaystyle \lim_{x\to a^+} f(x)$</li>
+              <li class="level-3">left-hand limits $\displaystyle \lim_{x\to a^-} f(x)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=3600"
+          target="_blank">[1:00:00]</a>. 🧩 Example –: Calculate the one-sided limits of a function represented
+        graphically as $x$ approaches 2
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-00-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-00-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">It is observed that $\displaystyle \lim_{x\to 2^+} f(x) = 1$ and $\displaystyle \lim_{x\to
+            2^-} f(x) = -1$.</li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=3752"
+              target="_blank">[1:02:32]</a>. 𝐍𝐎𝐓𝐄: 𝑻𝙝𝒆 𝒄𝙤𝙣𝙙𝒊𝙩𝒊𝙤𝙣 𝒇𝙤𝙧 𝒕𝒉𝒆 𝒆𝙭𝒊𝙨𝙩𝒆𝙣𝒄𝒆 𝒐𝒇
+            𝙖 𝙡𝒊𝙢𝒊𝒕 𝙞𝒔 𝒔𝙩𝒂𝒕𝒆𝒅:
+            <ul>
+              <li class="level-3">𝙏𝒉𝙚 𝙤𝒏𝙚-𝙨𝒊𝙙𝙚𝙙 𝙡𝒊𝙢𝒊𝙩𝒔 𝒎𝙪𝙨𝒕 𝙗𝒆 𝒆𝙦𝒖𝒂𝙡.
+                <ul>
+                  <li class="level-4">$\boxed{\displaystyle \lim_{x\to a^+} f(x) = \lim_{x\to a^-} f(x)
+                    \;\Longleftrightarrow\; \text{The limit exists}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">It is concluded that $\displaystyle \lim_{x\to 2} f(x)$ does not exist: D.N.E.</li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=3960"
+          target="_blank">[1:06:00]</a>. 🧩 Example –: Calculate $\displaystyle \lim_{x\to 2} g(x)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-06-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-06-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">It is confirmed that $\displaystyle \lim_{x\to 2^+} g(x) = 3$ and $\displaystyle
+            \lim_{x\to 2^-} g(x) = 1$.</li>
+          <li class="level-2">It is concluded that $\displaystyle \lim_{x\to 2} g(x)$ D.N.E. because the one-sided
+            limits are different.</li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=4220"
+          target="_blank">[1:10:20]</a>. 🧩 Example –: Calculate $\displaystyle \lim_{x\to 5} h(x)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-10-20]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-10-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">It is confirmed that $\displaystyle \lim_{x\to 5^+} h(x) = 3$ and $\displaystyle
+            \lim_{x\to 5^-} h(x) = 3$.</li>
+          <li class="level-2">It is concluded that $\displaystyle \lim_{x\to 5} h(x)$ exists and is equal to 3 because
+            the one-sided limits are equal.</li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2>Ｉｎｆｉｎｉｔｅ Ｌｉｍｉｔｓ ａｎｄ Ａｓｙｍｐｔｏｔｅｓ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=4452"
+          target="_blank">[1:14:12]</a>. 🧩 Example –: Find limit of $f(x)=\dfrac{1}{x}$ as $x \to 0$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-14-12]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-14-12]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">What happens to the function $\dfrac{1}{x}$ as $x$ approaches $0$.</li>
+          <li class="level-2">A table of values is constructed to approximate the one-sided limits.
+            <div id="table-3"></div>
+          </li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=4663"
+              target="_blank">[1:17:43]</a>. It is observed that $\displaystyle \lim_{x\to 0^-}\dfrac{1}{x}=-\infty$ and
+            $\displaystyle \lim_{x\to 0^+}\dfrac{1}{x}=+\infty$.</li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=4783"
+          target="_blank">[1:19:43]</a>. The infinite limit is related to the existence of a vertical asymptote.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-19-43]-02.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-19-43]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">$\boxed{\displaystyle \lim_{x\to a^\pm} f(x) = \pm\infty
+            \;\;\Longleftrightarrow\;\;\text{vertical asymptote}}$ .</li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=54_XRjHhZzI&amp;t=4935"
+          target="_blank">[1:22:15]</a>. The four possible cases of vertical asymptotes and their relation to infinite
+        limits are graphically explained.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 1.1/[1-19-43]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 1.1/[1-19-43]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">The behavior of the function in each case is analyzed.</li>
+          <li class="level-2">The limit exists only when both one-sided limits tend to the same infinite value:
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 1.1/[1-22-15]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 1.1/[1-22-15]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <li class="level-3">$\displaystyle \lim_{x\to a^+} f(x) = +\infty$ and $\displaystyle \lim_{x\to a^-} f(x)
+                = +\infty$ ⟶ vertical asymptote at $x=a$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to a^+} f(x) = -\infty$ and $\displaystyle \lim_{x\to a^-} f(x)
+                = -\infty$ ⟶ vertical asymptote at $x=a$</li>
+              <li class="level-3">$\displaystyle \lim_{x\to a^+} f(x) = +\infty$ and $\displaystyle \lim_{x\to a^-} f(x)
+                = -\infty$ ⟶ opposite-sided divergence (no single limit)</li>
+              <li class="level-3">$\displaystyle \lim_{x\to a^+} f(x) = -\infty$ and $\displaystyle \lim_{x\to a^-} f(x)
+                = +\infty$ ⟶ opposite-sided divergence (no single limit)</li>
+            </ul>
+          </li>
+          <li class="level-2">In the first two cases, the infinite limit “exists” (in the extended sense) and defines
+            the vertical asymptote.</li>
+          <li class="level-2">In the last two cases, the function still has a vertical asymptote at $x=a$, but the two
+            sides diverge in opposite directions, so the limit does not exist.</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+
+  <template id="limit-table-template">
+
+    <table class="limit-table">
+
+      <tr>
+        <th>x</th>
+        <td>1.5</td>
+        <td>1.9</td>
+        <td>1.99</td>
+        <td>2</td>
+        <td>2.001</td>
+        <td>2.1</td>
+        <td>2.5</td>
+      </tr>
+
+      <tr>
+        <th>f(x)</th>
+        <td>2.25</td>
+        <td>3.61</td>
+        <td>3.9601</td>
+        <td style="color:#d32f2f; font-weight:bold;">✖</td>
+        <td>4.004</td>
+        <td>4.41</td>
+        <td>6.25</td>
+      </tr>
+
+      <!-- FILA TEXTO CENTRADO -->
+      <tr class="limit-text-row">
+        <td colspan="4" style="text-align:center;">TO THE LEFT</td>
+        <td style="text-align:center; font-weight:bold;">2</td>
+        <td colspan="3" style="text-align:center;">TO THE RIGHT</td>
+      </tr>
+
+      <!-- FILA FLECHAS CENTRADAS -->
+      <tr class="limit-arrows-row">
+        <td colspan="4" style="text-align:center; white-space:nowrap;">
+          >>>>>>>>>>>>>>>>>>>>>
+        </td>
+
+        <td style="text-align:center; font-weight:bold;">|</td>
+
+        <td colspan="3" style="text-align:center; white-space:nowrap;">
+          <<<<<<<<<<<<<<<<<<<<<< </td>
+      </tr>
+
+    </table>
+
+  </template>
+  <template id="limit-table-template_2">
+
+    <table class="limit-table">
+      <tr>
+        <th>x</th>
+        <td>0.5</td>
+        <td>0.99</td>
+        <td>0.999</td>
+        <td>1</td>
+        <td>1.001</td>
+        <td>1.01</td>
+        <td>1.5</td>
+      </tr>
+      <tr>
+        <th>f(x)</th>
+        <td>0.67</td>
+        <td>0.503</td>
+        <td>0.5002</td>
+        <td style="color:#d32f2f; font-weight:bold;">✖</td>
+        <td>0.499</td>
+        <td>0.497</td>
+        <td>0.4</td>
+      </tr>
+    </table>
+
+  </template>
+  <template id="limit-table-template_3">
+    <table class="limit-table">
+      <table class="limit-table">
+        <tr>
+          <th>x</th>
+          <td>-0.5</td>
+          <td>-0.01</td>
+          <td>-0.001</td>
+          <td>0</td>
+          <td>0.001</td>
+          <td>0.01</td>
+          <td>0.5</td>
+        </tr>
+
+        <tr>
+          <th>f(x)</th>
+          <td>-2</td>
+          <td>-100</td>
+          <td>-1000</td>
+          <td style="color:#d32f2f; font-weight:bold;">✖</td>
+          <td>1000</td>
+          <td>100</td>
+          <td>2</td>
+        </tr>
+
+
+      </table>
+
+  </template>
+  <script>
+    document.getElementById("table-1").innerHTML =
+      document.getElementById("limit-table-template").innerHTML;
+  </script>
+  <script>
+    document.getElementById("table-2").innerHTML =
+      document.getElementById("limit-table-template_2").innerHTML;
+  </script>
+  <script>
+    document.getElementById("table-3").innerHTML =
+      document.getElementById("limit-table-template_3").innerHTML;
+  </script>
+
+</body>
+
+</html>

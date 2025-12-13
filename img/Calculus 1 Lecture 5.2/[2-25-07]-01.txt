@@ -1,0 +1,5 @@
+image_name: [2-25-07]Example – 4 Revolve between 𝑦 = 𝒙 (outside) and 𝑦 = 𝒙³ (inside) about 𝑦 = 3∕2 (shifted axis, washers in 𝒅𝒙)_1.png
+file_name: [2-25-07]-01.png
+timestamp: 2:25:07
+counter: 01
+folder: Calculus 1 Lecture 5.2

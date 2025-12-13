@@ -1,0 +1,5 @@
+image_name: [39-20]Introduction to Solids of Revolution_3.png
+file_name: [39-20]-03.png
+timestamp: 39:20
+counter: 03
+folder: Calculus 1 Lecture 5.2

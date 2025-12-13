@@ -1,0 +1,5 @@
+image_name: [1-05-25]Example 𝒇(𝒙)=（２𝒙²　－　８）　／　（𝒙²　－　１６）_4.png
+file_name: [1-05-25]-04.png
+timestamp: 1:05:25
+counter: 04
+folder: Calculus 1 Lecture 3.6

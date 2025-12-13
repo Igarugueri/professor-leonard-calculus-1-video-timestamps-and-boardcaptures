@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculus 1 – Lecture 0.1 · Lines, Angle of Inclination, and the Distance Formula</title>
+  <link rel="stylesheet" href="../style.css" />
+
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,                // agranda un poco las fórmulas
+        matchFontHeight: false,     // evita saltos de línea por fracciones y raíces
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　Ｌｅｃｔｕｒｅ　０．１</h1>
+    <h1>Ｌｉｎｅｓ， Ａｎｇｌｅ ｏｆ Ｉｎｃｌｉｎａｔｉｏｎ， ａｎｄ ｔｈｅ Ｄｉｓｔａｎｃｅ Ｆｏｒｍｕｌａ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1" target="_blank">[0:01]</a>
+        Introduction
+        <ul>
+          <li class="level-2">Review of Math 2 concepts and basic algebra needed for Calculus.</li>
+          <li class="level-2">Topics to cover:
+            <ul>
+              <li class="level-3">Basic lines.</li>
+              <li class="level-3">Families of curves.</li>
+              <li class="level-3">Trigonometric functions.</li>
+              <li class="level-3">Introduction to Calculus.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｌｉｎｅｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=34" target="_blank">[0:34]</a>
+        Lines –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[0-34]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[0-34]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">What is special about a line?
+            <ul>
+              <li class="level-3">You need at least two points to define a line.</li>
+              <li class="level-3">Lines do not curve.</li>
+              <li class="level-3">Lines do not end.</li>
+              <li class="level-3">Lines have slope.</li>
+            </ul>
+          </li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=63" target="_blank">[1:03]</a> What
+            do we need to graph a line?
+            <ul>
+              <li class="level-3">Two points or . . .</li>
+              <li class="level-3">. . . One point and the slope</li>
+            </ul>
+          </li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=70" target="_blank">[1:10]</a>
+            <strong>Slope of a Line</strong>
+            <ul>
+              <li class="level-3">The slope describes how a line rises or falls.</li>
+              <li class="level-3">Deriving the slope formula:
+                <ul>
+                  <li class="level-4">Take two generic points on a line: $(𝒙_1,𝒚_1)$ and $(𝒙_2,𝒚_2)$.</li>
+                  <li class="level-4">Coordinates of a point $(𝒙,𝒚)$.</li>
+                  <li class="level-4">Distinguishing two points using subscripts.</li>
+                  <li class="level-4">Calculating the “run” (change in 𝒙): $𝒙_2-𝒙_1$.</li>
+                  <li class="level-4">Calculating the “rise” (change in 𝒚): $𝒚_2-𝒚_1$.</li>
+                  <li class="level-4"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=210"
+                      target="_blank">[3:30]</a> Defining the slope $(𝒎)$ as rise over run:
+                    <ul>
+                      <li class="level-5">$\boxed{\Large 𝒎=\dfrac{𝒚_2-𝒚_1}{𝒙_2-𝒙_1}}$
+                        <ul>
+                          <li class="level-6">The formula works for any pair of points on the line.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=339" target="_blank">[5:39]</a>
+            <strong>Equation of a Line from the Slope Formula</strong>
+            <ul>
+              <li class="level-3">Manipulating the slope formula to get the equation of a line.</li>
+              <li class="level-3">Fix one point $(𝒙_1,𝒚_1)$ and let the other point be variable $(𝒙,𝒚)$.
+                <ul>
+                  <li class="level-4">Substituting into the slope formula:
+                    <ul>
+                      <li class="level-5">$\boxed{\Large 𝒎=\dfrac{𝒚-𝒚_1}{𝒙-𝒙_1}}$</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">The resulting equation allows solving for 𝒚 when a value for 𝒙 is provided.</li>
+                  <li class="level-4">Isolating $(𝒚-𝒚_1)$
+                    <ul>
+                      <li class="level-5">$\boxed{\Large 𝒚-𝒚_1=𝒎(𝒙-𝒙_1)}$</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">Called point-slope form because you need one point $(𝒙_1,𝒚_1)$ and the slope
+                    $(𝒎)$ to define it.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=580" target="_blank">[9:40]</a>
+            🧩 Example – Finding a Line’s Equation Given Two Points: $(-2,-3)$ and $(8,2)$ –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 0.1/[9-40]-01.png" target="_blank">[image]</a>
+              <img src="../../img/Calculus 1 Lecture 0.1/[9-40]-01.png"
+                alt="Graph showing line through (-2,-3) and (8,2)" />
+            </span>
+            <ul>
+              <li class="level-3">Necessary steps:
+                <ul>
+
+                  <li class="level-4">We need one point (we have two).</li>
+                  <li class="level-4">We need the slope (we must calculate it).</li>
+                </ul>
+              </li>
+              <li class="level-3">Calculating the slope using the two given points:
+                <ul>
+                  <li class="level-4">$𝒎=\dfrac{2-(-3)}{8-(-2)}=\dfrac{5}{10}=\dfrac{1}{2}$</li>
+                </ul>
+              </li>
+              <li class="level-3">Using the point-slope form to find the equation:
+                <ul>
+                  <li class="level-4">$𝒚-(-3)=\dfrac{1}{2}(𝒙-(-2))$</li>
+                  <li class="level-4">$𝒚+3=\dfrac{1}{2}(𝒙+2)$</li>
+                  <li class="level-4">$𝒚+3=\dfrac{1}{2}𝒙+1$</li>
+                  <li class="level-4">$𝒚=\dfrac{1}{2}𝒙-2$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=910" target="_blank">[15:10]</a>
+            <strong>Slope-Intercept Form of a Line’s Equation</strong>
+            <ul>
+              <li class="level-3">Transforming the point-slope form to slope-intercept form
+                <ul>
+                  <li class="level-4">$\displaystyle \boxed{\Large 𝒚=𝒎𝒙+𝒃}$</li>
+                  <li class="level-4">Identifying the slope $(𝒎)$ and the 𝒚-intercept $(𝒃)$.</li>
+                  <li class="level-4">🧩 Example – Graphing using slope-intercept form.</li>
+                  <li class="level-4">Interpretation of positive or negative slope.</li>
+                  <li class="level-4">Two points define a unique line.
+
+                    <ul>
+                      <li class="level-5">$𝒚=\dfrac{1}{2}𝒙-2$
+                        <ul>
+                          <li class="level-6">$𝒃=-2$ point $(0,-2)$</li>
+                          <li class="level-6">$𝒎=\dfrac{1}{2}$; from $(0,2)$ one unit up (rise) ⇡ and two units to the
+                            right ⇢ (run)
+                            <ul>
+                              <li class="level-7">$(-1,2)$ is the second point</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                </ul>
+              </li>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-2">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1044" target="_blank">[17:24]</a>
+        <strong>Special Types of Lines</strong> –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[17-24]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[17-24]-01.png" alt="Special types of lines diagram" />
+        </span>
+        <ul>
+          <li class="level-3">
+            <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1066" target="_blank">[17:46]</a>
+            Horizontal lines: $𝒚=𝒄$ (where 𝒄 is a constant).
+            <ul>
+
+              <li class="level-4">Intersects the 𝒚-axis at 𝒄.</li>
+              <li class="level-4">Slope is zero.</li>
+            </ul>
+          </li>
+          <li class="level-3"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1125" target="_blank">[18:45]</a>
+            Vertical lines: $𝒙=𝒄$ (where 𝒄 is a constant).
+            <ul>
+              <li class="level-4">Intersects the 𝒙-axis at 𝒄.</li>
+              <li class="level-4">Slope is undefined.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-2">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1190" target="_blank">[19:50]</a>
+        <strong>Standard Form of a Line’s Equation</strong> –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[21-52]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[21-52]-01.png" alt="Standard form of a line equation diagram" />
+        </span>
+        <ul>
+
+          <li class="level-3"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1312" target="_blank">[21:52]</a>
+            🧩 Example – Converting from standard form to slope-intercept form by isolating 𝒚: $4𝒙+2𝒚-3=0 \;\to\;
+            𝒚=𝒎𝒙+𝒃$
+            <ul>
+              <li class="level-4">Start from the standard form:
+                <ul>
+                  <li class="level-5">$4𝒙+2𝒚-3=0$</li>
+                </ul>
+              </li>
+              <li class="level-4">Move the constant term to the other side:
+                <ul>
+                  <li class="level-5">$4𝒙+2𝒚=3$</li>
+                </ul>
+              </li>
+              <li class="level-4">Divide each term to isolate 𝒚:
+                <ul>
+                  <li class="level-5">$\dfrac{4𝒙-3}{-2}=-2𝒙+\dfrac{3}{2}=𝒚$</li>
+                </ul>
+              </li>
+              <li class="level-4">Final slope–intercept form:
+                <ul>
+                  <li class="level-5">$𝒚=-2𝒙+\dfrac{3}{2}$
+                    <ul>
+                      <li class="level-6">Here, slope $𝒎=-2$ and intercept $𝒃=\dfrac{3}{2}$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1322" target="_blank">[22:02]</a>
+        <strong>Cover-Up Method for Graphing from Standard Form</strong>
+        <ul>
+          <li class="level-3">To find the 𝒙-intercept, cover the term with 𝒚.</li>
+          <li class="level-3">To find the 𝒚-intercept, cover the term with 𝒙.</li>
+          <li class="level-3">🧩 Example – $3𝒙+4𝒚=4$ ($𝒙$-intercept at $\dfrac{4}{3}$, $𝒚$-intercept at $1$).</li>
+        </ul>
+      </li>
+
+      <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1382" target="_blank">[23:02]</a>
+        <strong>Parallel Lines</strong>
+        <ul>
+          <li class="level-3">Have the same slope.</li>
+          <li class="level-3">Stair analogy: both rise or fall at the same rate, never intersecting.</li>
+          <li class="level-3">Algebraic condition for parallelism:
+            <ul>
+              <li class="level-4">Two lines $𝑦=𝒎_1𝑥+𝒃_1$ and $𝑦=𝒎_2𝑥+𝒃_2$ are parallel iff $𝒎_1=𝒎_2$ but
+                $𝒃_1\neq𝒃_2$.</li>
+              <li class="level-4">Different intercepts $(𝒃_1,𝒃_2)$ shift the lines vertically without changing slope.
+              </li>
+            </ul>
+          </li>
+          <li class="level-3">Geometric interpretation: equal slope ⇒ same inclination angle with respect to the
+            𝒙-axis.</li>
+        </ul>
+      </li>
+
+      <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1419" target="_blank">[23:39]</a>
+        <strong>Perpendicular Lines</strong>
+        <ul>
+          <li class="level-3">Intersect at a right angle (90°).</li>
+          <li class="level-3">If one slope is positive, the other is negative.</li>
+          <li class="level-3">Their slopes are negative reciprocals:
+            <ul>
+              <li class="level-4">$\displaystyle \boxed{\Large 𝒎_1\cdot𝒎_2=-1}$</li>
+              <li class="level-4">Example: if $𝒎_1=2$, then $𝒎_2=-\dfrac{1}{2}$</li>
+            </ul>
+          </li>
+          <li class="level-3">Special case (vertical and horizontal lines):
+            <ul>
+              <li class="level-4">A vertical line (undefined slope) and a horizontal line (slope $=0$) are perpendicular
+                even though $𝒎_1\cdot𝒎_2\neq-1$ (since one slope is undefined).</li>
+            </ul>
+          </li>
+          <li class="level-3">Visual cue: perpendicular lines form a “T” or “L” shape where they intersect.</li>
+        </ul>
+      </li>
+
+      <li class="level-2">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1524" target="_blank">[25:24]</a>
+        🧩 Example – Parallel to $2𝒙+3𝒚=12$ through $(6,7)$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[25-24]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[25-24]-01.png" alt="Parallel line through (6,7) diagram" />
+        </span>
+        <ul>
+
+          <li class="level-3">Identify the slope of the given line (in slope-intercept form):
+            <ul>
+              <li class="level-4">$2𝒙+3𝒚=12$</li>
+              <li class="level-4">$3𝒚=-2𝒙+12$</li>
+              <li class="level-4">$𝒚=-\dfrac{2}{3}𝒙+4$</li>
+            </ul>
+          </li>
+          <li class="level-3">The slope of the parallel line is the same: $𝒎=-\dfrac{2}{3}$</li>
+          <li class="level-3">Use the point-slope form with the point $(6,7)$ and the parallel slope:
+            <ul>
+              <li class="level-4">$𝒚-𝒚_1=𝒎(𝒙-𝒙_1)$</li>
+              <li class="level-4">$𝒚-7=-\dfrac{2}{3}(𝒙-6)$</li>
+              <li class="level-4">$𝒚-7=-\dfrac{2}{3}𝒙+4$</li>
+              <li class="level-4">$𝒚=-\dfrac{2}{3}𝒙+11$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-2">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1790" target="_blank">[29:50]</a>
+        🧩 Example – Perpendicular to $2𝒙+3𝒚=12$ through $(6,7)$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[29-50]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[29-50]-01.png" alt="Perpendicular line through (6,7) diagram" />
+        </span>
+        <ul>
+
+          <li class="level-3">$𝒎=-\dfrac{2}{3} \;\to\; 𝒎=\dfrac{3}{2}$ (negative reciprocals)</li>
+          <li class="level-3">Use the point-slope form:
+            <ul>
+              <li class="level-4">$𝒚-𝒚_1=𝒎(𝒙-𝒙_1)$</li>
+              <li class="level-4">$𝒚-7=\dfrac{3}{2}(𝒙-6)$</li>
+              <li class="level-4">$𝒚-7=\dfrac{3}{2}𝒙-9$</li>
+              <li class="level-4">$𝒚=\dfrac{3}{2}𝒙-2$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </li>
+    </ul>
+
+    <h2>Ａｎｇｌｅ ｏｆ Ｉｎｃｌｉｎａｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=1930" target="_blank">[32:10]</a>
+        Angle of Inclination –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[32-10]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[32-10]-01.png" alt="Angle of Inclination diagram" />
+        </span>
+        <ul>
+
+          <li class="level-2">Definition: The angle a line forms with the positive 𝒙-axis.</li>
+          <li class="level-2">Relationship with change in 𝒙 $(\Delta 𝒙)$ and change in 𝒚 $(\Delta 𝒚)$.</li>
+          <li class="level-2">Using basic trigonometry on a right triangle formed by the line, $\Delta 𝒙$, and $\Delta
+            𝒚$.</li>
+          <li class="level-2">The tangent of the angle of inclination $(𝜃)$ equals the slope $(𝒎)$:
+            <ul>
+              <li class="level-3">$\displaystyle \boxed{\Large \tan(𝜃)=\dfrac{\Delta 𝒚}{\Delta 𝒙}=𝒎}$</li>
+            </ul>
+          </li>
+          <li class="level-2">If the angle is known, the slope can be found; if the slope is known, the angle can be
+            found.</li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=2150" target="_blank">[35:50]</a>
+            🧩 Example – Given the Angle of Inclination: $30^\circ$ or $\dfrac{\pi}{6}$
+            <ul>
+              <li class="level-3">Using the formula $𝒎=\tan(𝜃)$.</li>
+              <li class="level-3">
+                $\tan\!\big(\dfrac{\pi}{6}\big)=\dfrac{\sin(\pi/6)}{\cos(\pi/6)}=\dfrac{1/2}{\sqrt{3}/2}=\dfrac{1}{\sqrt{3}}=\dfrac{\sqrt{3}}{3}$
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=2340" target="_blank">[39:00]</a>
+            🧩 Example – Given the Slope: $𝒎=-1$
+
+            <ul>
+
+              <li class="level-3">Using $\tan(𝜃)=𝒎 \;\to\; -1=\tan(𝜃)$</li>
+              <li class="level-3">Applying the inverse tangent: $𝜃=\tan^{-1}(-1)$</li>
+              <li class="level-3">Interpreting the inverse tangent: finding the angle whose tangent is $-1$.</li>
+              <li class="level-3">Using the unit circle to find angles where sine and cosine have equal magnitudes but
+                opposite signs:
+                <ul>
+                  <li class="level-4">$135^\circ$ → Second quadrant</li>
+                  <li class="level-4">$315^\circ$ → Fourth quadrant</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">Importance of practicing these trigonometric concepts.</li>
+          <li class="level-2">Trigonometry will be used extensively in Calculus.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｄｉｓｔａｎｃｅ Ｆｏｒｍｕｌａ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=fYyARMqiaag&t=2660" target="_blank">[44:20]</a>
+        Distance Formula –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.1/[44-20]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.1/[44-20]-01.png" alt="Distance formula diagram" />
+        </span>
+        <ul>
+
+          <li class="level-2">Derived using two random points $(𝒙_1,𝒚_1)$ and $(𝒙_2,𝒚_2)$.</li>
+          <li class="level-2">Forming a right triangle with sides $|𝒙_2-𝒙_1|$ and $|𝒚_2-𝒚_1|$.</li>
+          <li class="level-2">Applying the Pythagorean Theorem: $𝒅^2=(𝒙_2-𝒙_1)^2+(𝒚_2-𝒚_1)^2$</li>
+          <li class="level-2">Solving for distance 𝒅:
+            <ul>
+              <li class="level-3">$\displaystyle \boxed{\Large 𝒅=\sqrt{(𝒙_2-𝒙_1)^2+(𝒚_2-𝒚_1)^2}}$</li>
+            </ul>
+          </li>
+          <li class="level-2">We omit the negative root because distance cannot be negative.</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

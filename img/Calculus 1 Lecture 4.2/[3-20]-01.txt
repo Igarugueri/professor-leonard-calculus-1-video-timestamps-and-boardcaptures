@@ -1,0 +1,5 @@
+image_name: [3-20].Substitution is a method to handle complex integrals.png
+file_name: [3-20]-01.png
+timestamp: 3:20
+counter: 01
+folder: Calculus 1 Lecture 4.2

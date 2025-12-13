@@ -1,0 +1,5 @@
+image_name: [34-24]Analysis of the area of an individual rectangle .png
+file_name: [34-24]-01.png
+timestamp: 34:24
+counter: 01
+folder: Calculus 1 Lecture 4.3

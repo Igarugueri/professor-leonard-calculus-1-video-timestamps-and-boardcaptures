@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculus 1 – Lecture 0.2 · Introduction to Functions</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　Ｌｅｃｔｕｒｅ　０．２</h1>
+    <h1>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　Ｆｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1" target="_blank">[00:01]</a>
+        Introduction
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[00-01]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[00-01]-01.png" alt="Lecture 0.2 introduction image" />
+        </span>
+        <ul>
+          <li class="level-2">Presentation of the topic: Functions (Section 0.2)</li>
+          <li class="level-2">Initial definition of a function: one variable depends on another (e.g., $𝒚$ depends on
+            $𝒙$)</li>
+          <li class="level-2">Fundamental condition for a function: each input has exactly one output
+            <ul>
+              <li class="level-3">If one input had multiple outputs, it would not be a function</li>
+            </ul>
+          </li>
+          <li class="level-2">Common notation for inputs ($𝒙$) and outputs ($𝒚$ or $𝒇(𝒙)$)</li>
+          <li class="level-2">Ways to represent functions
+            <ul>
+              <li class="level-3">Tables
+                <ul>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=120" target="_blank">[02:00]</a>
+                    🧩 Example – Function table: Fish caught and their weight
+                    <ul>
+                      <li class="level-5">Clarification about having specific outputs for each input</li>
+                      <li class="level-5">It is allowed for different inputs to share the same output</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=325" target="_blank">[05:25]</a>
+                    Reference table for a function:
+                    <ul>
+                      <li class="level-5">$\displaystyle
+                        \begin{array}{c|cccc}
+                        x & 0 & 1 & 2 & 3 \\ \hline
+                        y & 2 & 5 & -3 & 9
+                        \end{array}$</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=350" target="_blank">[05:50]</a>
+                    Reference table for not a function.
+                    <ul>
+                      <li class="level-5">$\displaystyle
+                        \begin{array}{c|cccc}
+                        x & 0 & 1 & 2 & 3 & 2\\ \hline
+                        y & 2 & 5 & -3 & 9 & 7
+                        \end{array}$</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=425" target="_blank">[07:05]</a>
+                    🧩 Example – if $𝒚=𝒇(𝒙)$, find $𝒇(0)$
+                    <ul>
+                      <li class="level-5">Reference table for examples:
+                        <ul>
+                          <li class="level-6">$\displaystyle
+                            \begin{array}{c|cccc}
+                            x & 0 & 1 & 2 & 3 \\ \hline
+                            y & 2 & 5 & -3 & 9
+                            \end{array}$</li>
+                        </ul>
+                      </li>
+                      <li class="level-5">Interpreting $𝒇(0)$ as the output when the input is 0
+                        <ul>
+                          <li class="level-6">$𝒇(0)=2$</li>
+                        </ul>
+                      </li>
+                      <li class="level-5">Another example: find $𝒇(3)$
+                        <ul>
+                          <li class="level-6">$𝒇(3)=9$</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3">Formulas</li>
+              <li class="level-3">Graphs</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｆｕｎｃｔｉｏｎ　ｎｏｔａｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=425" target="_blank">[07:05]</a>
+        Typical application with equations (e.g., $𝒚=3𝒙^{2}-4𝒙+2$)
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[07-05]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[07-05]-01.png" alt="Function notation example" />
+        </span>
+        <ul>
+          <li class="level-2">Isn't the best way to represent a function because when we are looking at two different
+            functions at once, we are not going to distinguish between them.</li>
+        </ul>
+      </li>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=504" target="_blank">[08:24]</a>
+        Advantages of using $𝒇(𝒙)$, $𝓰(𝒙)$, $𝒉(𝒙)$
+        <ul>
+          <li class="level-2">Helps distinguish between multiple functions</li>
+          <li class="level-2">🧩 Example – Find $𝒇(0)$ for $𝒇(𝒙)=3𝒙^{2}-4𝒙+2$</li>
+          <li class="level-2">Contrast $𝒇(0)=2$ with $𝒚=2$
+            <ul>
+              <li class="level-3">$𝒇(0)$ inherently shows the value of the input</li>
+              <li class="level-3">We obtain also a coordinate point $(0,2)$
+                <ul>
+                  <li class="level-4">Coordinate points expressed as $(𝒙,𝒇(𝒙))$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｄｅｎｔｉｆｙｉｎｇ　ｆｕｎｃｔｉｏｎｓ　ｆｒｏｍ　ｇｒａｐｈｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=580" target="_blank">[09:40]</a>
+        The Vertical Line Test
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[09-40]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[09-40]-01.png" alt="Vertical line test image" />
+        </span>
+        <ul>
+          <li class="level-2">Reminder: in tables, repeated inputs with different outputs mean it is not a function</li>
+          <li class="level-2">Explanation of the Vertical Line Test
+            <ul>
+              <li class="level-3">A graph is a function if and only if every vertical line intersects it at most once
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">Graphic examples
+            <ul>
+              <li class="level-3">A diagonal line: it is a function</li>
+              <li class="level-3">A parabola: it is a function (though not one-to-one)</li>
+              <li class="level-3">A graph that passes the test even if it has an empty section (e.g., $1/𝒙$)
+                <ul>
+                  <li class="level-4">Not every input must have an output, but if it does, it must be unique</li>
+                </ul>
+              </li>
+              <li class="level-3">A graph that fails the Vertical Line Test (one input with multiple outputs) is not a
+                function</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=800" target="_blank">[13:20]</a>
+        🧩 Example – Equation that does not represent a function: the circle
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[13-20]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[13-20]-01.png" alt="Circle not a function" />
+        </span>
+        <ul>
+          <li class="level-2">Equation of a circle centered at the origin: $𝒙^{2}+𝒚^{2}=25$</li>
+          <li class="level-2">When trying to solve for $𝒚$, we get $𝒚=\pm\sqrt{25-𝒙^{2}}$</li>
+          <li class="level-2">The $\pm$ indicates one input ($𝒙$) can have two different outputs ($𝒚$), so it is not a
+            function</li>
+          <li class="level-2">However, parts of the circle can be functions if defined separately
+            <ul>
+              <li class="level-3">$𝒇(𝒙)=\sqrt{25-𝒙^{2}}$ (the upper half)</li>
+              <li class="level-3">$𝓰(𝒙)=-\sqrt{25-𝒙^{2}}$ (the lower half)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｐｉｅｃｅｗｉｓｅ　Ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1060" target="_blank">[17:40]</a>
+        General idea
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[17-40]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[17-40]-01.png" alt="Piecewise functions general idea" />
+        </span>
+        <ul>
+          <li class="level-2">The function’s formula depends on the value of $𝒙$
+            <ul>
+              <li class="level-3">The function changes depending on the input value</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1150" target="_blank">[19:10]</a>
+        Defining absolute value as an example of a piecewise function
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[19-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[19-10]-01.png" alt="Absolute value as piecewise" />
+        </span>
+        <ul>
+          <li class="level-2">The absolute value symbol: $|𝒙|$</li>
+          <li class="level-2">Intuitive definition: distance from zero</li>
+          <li class="level-2">More specific two-part definition:
+            <ul>
+              <li class="level-3">If $𝒙\ge 0$, $|𝒙|=𝒙$</li>
+              <li class="level-3">If $𝒙<0$, $|𝒙|=-𝒙$ (the sign is flipped)</li>
+            </ul>
+          </li>
+          <li class="level-2">🧩 Example – $|5|=5$; $|-12|=12$</li>
+        </ul>
+      </li>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1245" target="_blank">[20:45]</a>
+        Formal notation for a piecewise function
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[20-45]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[20-45]-01.png" alt="Piecewise notation" />
+        </span>
+        <ul>
+          <li class="level-2">Use of braces to group the different definitions and their $𝒙$-ranges</li>
+          <li class="level-2">🧩 Example of the piecewise definition for absolute value</li>
+        </ul>
+      </li>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1430" target="_blank">[23:50]</a>
+        Graphing piecewise functions
+        <ul>
+          <li class="level-2">Each “piece” is graphed individually</li>
+          <li class="level-2">The correct domain interval must be applied to each piece</li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1500" target="_blank">[25:00]</a>
+            Graphing absolute value function
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 0.2/[27-35]-02.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 0.2/[27-35]-02.png" alt="Absolute value graph" />
+            </span>
+          </li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=1655" target="_blank">[27:35]</a>
+            🧩 Example – Graphing a piecewise function
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 0.2/[27-35]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 0.2/[27-35]-01.png" alt="Piecewise graph example" />
+            </span>
+            <ul>
+              <li class="level-3">$\displaystyle 𝒇(𝒙)=\begin{cases}0,& \text{if } 𝒙\le -1,\\\sqrt{1-𝒙^{2}},& -1
+                <𝒙<1,\\𝒙,& \text{if } 𝒙\ge 1\end{cases}$</li>
+              <li class="level-3">Identifying key intervals where the function’s definition changes</li>
+              <li class="level-3">$𝒇(𝒙)=0$ for $𝒙\le−1$
+                <ul>
+                  <li class="level-4">Graph of $𝒚=0$ (the x-axis) for $𝒙\le−1$</li>
+                  <li class="level-4">Closed circle at $𝒙=−1$ because of “≤”</li>
+                </ul>
+              </li>
+              <li class="level-3">$𝒇(𝒙)=\sqrt{1−𝒙^{2}}$ for $−1<𝒙<1$ <ul>
+              <li class="level-4">Rewriting as $𝒚=\sqrt{1−𝒙^{2}}$</li>
+              <li class="level-4">Recognizing the related circle equation ($𝒙^{2}+𝒚^{2}=1$)</li>
+              <li class="level-4">Identifying it as the upper semicircle of radius 1, centered at (0, 0)</li>
+              <li class="level-4">Open circles because of the strict inequality “<” <ul>
+              <li class="level-5">At $𝒙=−1$
+                <ul>
+                  <li class="level-6">Connection to the closed circle from the previous piece at $𝒙=−1$</li>
+                </ul>
+              </li>
+              <li class="level-5">At $𝒙=1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="level-3">$𝒇(𝒙)=𝒙$ for $𝒙\ge 1$
+        <ul>
+          <li class="level-4">Graph of $𝒚=𝒙$ (a straight line through the origin with slope 1)</li>
+          <li class="level-4">Only consider the portion for $𝒙\ge 1$</li>
+          <li class="level-4">Closed circle at $𝒙=1$ due to “≥”</li>
+        </ul>
+      </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+
+    <h2>Ｄｏｍａｉｎ　＆　Ｒａｎｇｅ</h2>
+
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2125" target="_blank">[35:25]</a>. Domain and Range of a
+        function
+        <a href="../../img/Calculus 1 Lecture 0.2/[35-25]-01.png" target="_blank">– [📷image]</a>
+        <ul>
+          <li class="level-2">Definition of Domain
+            <ul>
+              <li class="level-3">All values that can be “input” into a function</li>
+              <li class="level-3">Typically 𝒙-values, but can vary depending on the problem’s variables</li>
+            </ul>
+          </li>
+          <li class="level-2">Definition of Range
+            <ul>
+              <li class="level-3">All possible values that are “output” by a function</li>
+              <li class="level-3">Typically 𝒚-values or 𝒇(𝒙)</li>
+            </ul>
+          </li>
+          <li class="level-2">Restrictions on the Domain
+            <ul>
+              <li class="level-3">Real-world constraints (problem context)
+                <ul>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2200" target="_blank">[36:40]</a>. 🧩 Example
+                    – The area of a square (side 𝓼): $𝓼^{2}$
+                    <ul>
+                      <li class="level-5">The domain (𝓼) cannot be negative</li>
+                      <li class="level-5">The side can be zero (trivial area)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2286" target="_blank">[38:06]</a>. Formula-based
+                restrictions
+                <ul>
+                  <li class="level-4">Division by zero: the denominator cannot be zero (e.g., $𝒚=\dfrac{1}{𝒙}$)</li>
+                  <li class="level-4">Even-index roots: the radicand cannot be negative in real numbers (e.g.,
+                    $𝒇(𝒙)=\sqrt{𝒙}$)
+                    <ul>
+                      <li class="level-5">The square root of zero is defined</li>
+                      <li class="level-5">In complex numbers, roots of negative numbers do exist (using $i$)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2370" target="_blank">[39:30]</a>. Natural Domain
+            <ul>
+              <li class="level-3">Definition for this course: all values that work in the formula, including natural and
+                formula-based restrictions
+                <ul>
+                  <li class="level-4">When we find the natural domain, we must consider (include) any restrictions that
+                    naturally arise from the formula — these restrictions define which values must be excluded.</li>
+                </ul>
+              </li>
+              <li class="level-3">In short: all values for which the formula makes sense</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2454" target="_blank">[40:54]</a>. How to find the
+        Natural Domain
+        <ul>
+          <li class="level-2">🧩 Example – 1 Natural Domain: $𝒇(𝒙)=𝒙^{3}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[40-54]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Is there any number you cannot plug in? No</li>
+              <li class="level-3">Domain: all real numbers ($𝓡$ or $𝒙\in 𝓡$)</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2541" target="_blank">[42:21]</a>. 🧩 Example – 2
+            Natural Domain: $𝒇(𝒙)=\dfrac{2𝒙+1}{(𝒙-1)(𝒙-3)}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[42-21]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Some numbers make the denominator zero; these are excluded</li>
+              <li class="level-3">Set the denominator $(𝒙-1)(𝒙-3)=0
+                <ul>
+                  <li class="level-4">Solutions: $𝒙=1$ and $𝒙=3$</li>
+                </ul>
+              </li>
+              <li class="level-3">Domain:
+                <ul>
+                  <li class="level-4">Sets: $𝒙\in 𝓡\setminus\{1,3\}$</li>
+                  <li class="level-4">Set-Builder Notation: $\{\, 𝓍\in 𝓡 : 𝓍\neq \mathbf{1}\ \text{and}\ 𝓍\neq
+                    \mathbf{3}\,\}$</li>
+                  <li class="level-4">Union of Intervals: $(-\infty,1)\cup(1,3)\cup(3,\infty)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2715" target="_blank">[45:15]</a>. 🧩 Example – 3
+            Natural Domain: $𝓰(𝒙)=\tan(𝒙)$
+            <a href="../../img/Calculus 1 Lecture 0.2/[45-15]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Definition of tangent: $\tan(𝒙)=\dfrac{\sin(𝒙)}{\cos(𝒙)}$</li>
+              <li class="level-3">Tangent is undefined where cosine is zero</li>
+              <li class="level-3">Cosine is zero at $𝒙=\dfrac{\pi}{2},\ \dfrac{3\pi}{2},\ -\dfrac{\pi}{2},\ \dots$</li>
+              <li class="level-3">Domain: all real numbers except $𝒙=\dfrac{\pi}{2}+n\pi$, where $n$ is an integer</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=2890" target="_blank">[48:10]</a>. 🧩 Example – 4
+            Natural Domain: $𝒇(𝒙)=\sqrt{6-5𝒙+𝒙^{2}}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[48-10]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Potential problem: the square root of a negative number</li>
+              <li class="level-3">The radicand must be $\ge 0$: $6-5𝒙+𝒙^{2}\ge 0$</li>
+              <li class="level-3">Factorization of the quadratic: $(𝒙-2)(𝒙-3)\ge 0$</li>
+              <li class="level-3">Sign analysis test to find intervals satisfying this inequality
+                <ul>
+                  <li class="level-4">Critical points: $𝒙=2$ and $𝒙=3$</li>
+                  <li class="level-4">Draw a number line with critical points</li>
+                  <li class="level-4">Test values in each interval
+                    <ul>
+                      <li class="level-5">For $𝒙<2$ (e.g., $0$), the product is positive</li>
+                      <li class="level-5">For $2<𝒙<3$ (e.g., $2.5$), the product is negative</li>
+                      <li class="level-5">For $𝒙>3$ (e.g., $4$), the product is positive</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">Intervals where the expression is nonnegative form the domain
+                    <ul>
+                      <li class="level-5">Domain in interval notation: $(-\infty,2]\cup[3,\infty)$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=3530" target="_blank">[58:50]</a>. 🧩 Example – 5
+            Natural Domain: $𝒇(𝒙)=\dfrac{𝒙^{2}-4}{𝒙-2}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[58-50]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Potential problem: denominator is zero if $𝒙=2$</li>
+              <li class="level-3">Domain: $𝒙\in 𝓡\setminus\{2\}$</li>
+              <li class="level-3">Simplification: $𝒇(𝒙)=\dfrac{(𝒙+2)(𝒙-2)}{𝒙-2}=𝒙+2$ (for $𝒙\neq 2$)</li>
+              <li class="level-3">Even if the function simplifies, the original domain restriction remains</li>
+              <li class="level-3">The discontinuity at $𝒙=2$ is called a “hole” or removable discontinuity
+                <ul>
+                  <li class="level-4">Occurs when the problematic factor can be canceled</li>
+                  <li class="level-4">In polynomials, this happens when substitution yields $0/0$</li>
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=3794" target="_blank">[01:03:14]</a>. Graph
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3">If the problematic factor cannot be canceled, we get a vertical asymptote
+                <ul>
+                  <li class="level-4">Typically a number/zero form upon substitution</li>
+                </ul>
+              </li>
+
+              <!-- CORRECCIÓN: este bloque es nivel-2 (◉), no nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=3960" target="_blank">[01:06:00]</a>. <span
+                  style="background:rgb(74, 119, 89); padding:3px 6px; border-radius:6px;">
+                  Removable discontinuity
+                </span>
+                <span style="padding:0 6px;">vs.</span>
+                <span style="background:rgb(122, 11, 65); padding:3px 6px; border-radius:6px;">
+                  Vertical asymptote
+                </span>
+
+                <a href="../../img/Calculus 1 Lecture 0.2/[01-06-00]-01.png" target="_blank">– [📷image]</a>
+                <ul>
+                  <li class="level-4">$𝒇(𝒙)=\dfrac{𝒙^{2}-4}{𝒙-2}$
+                    <ul>
+                      <li class="level-5">Has a “domain problem” at $𝒙=2$</li>
+                      <li class="level-5">But it can be removed, problematic factor can be canceled (this is a removable
+                        discontinuity — it creates a "hole")</li>
+                    </ul>
+                  </li>
+                  <li class="level-4">$𝓰(𝒙)=\dfrac{3𝒙}{𝒙-4}$
+                    <ul>
+                      <li class="level-5">Also has a “domain issue” at $𝒙=4$</li>
+                      <li class="level-5">But it cannot be removed, problematic factor cannot be canceled — it's a
+                        vertical asymptote</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- FIN CORRECCIÓN -->
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4220" target="_blank">[01:10:20]</a>. 🧩 Example – 6:
+            $𝒇(𝒙)=2+\sqrt{𝒙-1}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[01-10-20]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Potential problem: negative radicand</li>
+              <li class="level-3">Inequality: $𝒙-1\ge 0$</li>
+              <li class="level-3">Solution: $𝒙\ge 1$</li>
+              <li class="level-3">Domain in interval notation: $[1,\infty)$</li>
+            </ul>
+          </li>
+
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4380" target="_blank">[01:13:00]</a>. 🧩 Example – 7:
+            with a root in the denominator: $𝒇(𝒙)=\dfrac{1}{\sqrt{𝒙-1}}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[01-13-00]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Restrictions: the radicand cannot be negative and the denominator cannot be zero</li>
+              <li class="level-3">Inequality: $𝒙-1>0$</li>
+              <li class="level-3">Solution: $𝒙>1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4415" target="_blank">[01:13:35]</a>. How to find the
+        Range
+        <ul>
+          <li class="level-2">The set of all possible outputs (𝒚-values)</li>
+          <li class="level-2">𝓕𝓲𝓻𝓼𝓽 𝓶𝓮𝓽𝓱𝓸𝓭: substitute domain values into the function and observe the
+            results
+            <ul>
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4555" target="_blank">[01:15:55]</a>. 🧩 Example
+                – : $𝒇(𝒙)=2+\sqrt{𝒙-1}$ with domain $[1,\infty)$
+                <ul>
+                  <li class="level-4">If $𝒙=1$, $𝒇(1)=2$</li>
+                  <li class="level-4">As $𝒙$ decreases, $𝒇(𝒙)$ increases toward $+\infty$</li>
+                  <li class="level-4">Range: $[2,\infty)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">𝓢𝓮𝓬𝓸𝓷𝓭 𝓶𝓮𝓽𝓱𝓸𝓭 (not always easy): solve for $𝒙$ in terms of $𝒚$ and find that
+            domain of $𝒚$
+            <ul>
+              <li class="level-3">This makes the outputs act like “inputs”</li>
+            </ul>
+          </li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4575" target="_blank">[01:16:15]</a>. 🧩 Example – :
+            $𝒇(𝒙)=\dfrac{𝒙+1}{𝒙-1}$
+            <a href="../../img/Calculus 1 Lecture 0.2/[01-16-15]-01.png" target="_blank">– [📷image]</a>
+            <ul>
+              <li class="level-3">Domain: $𝒙\neq 1$, vertical asymptote (problematic factor cannot be canceled)</li>
+              <li class="level-3">Solve for $𝒙$: $𝒚(𝒙-1)=𝒙+1 \;\Rightarrow\; 𝒚𝒙-𝒚=𝒙+1 \;\Rightarrow\;
+                𝒚𝒙-𝒙=𝒚+1 \;\Rightarrow\; 𝒙(𝒚-1)=𝒚+1 \;\Rightarrow\; 𝒙=\dfrac{𝒚+1}{𝒚-1}$</li>
+              <li class="level-3">The condition $𝒚\neq 1$ indicates the range excludes $𝒚=1$ (the domain of $𝒚$ is
+                the range of the function)</li>
+              <li class="level-3">That exclusion ($𝒚\neq 1$) corresponds to a horizontal asymptote</li>
+              <li class="level-3">Warning: this method is not always straightforward</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+
+    <h2>Ａｐｐｌｉｃａｔｉｏｎ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=4885" target="_blank">[01:21:25]</a>
+        🧩 Example – Application problem: Cardboard box
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[01-21-25]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[01-21-25]-01.png" alt="cardboard box problem" />
+        </span>
+        <ul>
+          <li class="level-2">Problem description: cutting squares out of the corners of a piece of cardboard to form a
+            box</li>
+          <li class="level-2">Cardboard dimensions: 16 inches by 30 inches</li>
+          <li class="level-2">The cut squares must have the same side length ($𝒙$) on each corner</li>
+          <li class="level-2">Formula for the volume of the box as a function of $𝒙$
+            <ul>
+              <li class="level-3">Length of the base: $30-2𝒙$</li>
+              <li class="level-3">Width of the base: $16-2𝒙$</li>
+              <li class="level-3">Height of the box: $𝒙$</li>
+              <li class="level-3">Volume $𝓥(𝒙)=𝒙(16-2𝒙)(30-2𝒙)$</li>
+            </ul>
+          </li>
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=5225" target="_blank">[01:27:05]</a>
+            Realistic domain for the volume function
+            <ul>
+              <li class="level-3">There are no denominators or roots in the volume formula</li>
+              <li class="level-3">Real-world restriction: the length of the cuts ($𝒙$) must be positive ($𝒙>0$)</li>
+              <li class="level-3">The cut cannot be so large that a side is fully removed</li>
+              <li class="level-3">The maximum cut is less than half of the shorter dimension (16 inches), so $𝒙<8$<
+                  /li>
+              <li class="level-3">Realistic domain: $0<𝒙<8$< /li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｖｅｎ　ａｎｄ　Ｏｄｄ　ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=1EGFSefe5II&t=5450" target="_blank">[01:30:50]</a>
+        Brief review
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.2/[01-30-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.2/[01-30-50]-01.png" alt="even and odd functions" />
+        </span>
+        <ul>
+          <li class="level-2">Even function
+            <ul>
+              <li class="level-3">Algebraic definition: $𝒇(-𝒙)=𝒇(𝒙)$</li>
+              <li class="level-3">Symmetry about the y-axis</li>
+              <li class="level-3">Example: $𝒇(𝒙)=𝒙^{4}-𝒙^{2}+1$</li>
+            </ul>
+          </li>
+          <li class="level-2">Odd function
+            <ul>
+              <li class="level-3">Algebraic definition: $𝓰(-𝒙)=-𝓰(𝒙)$</li>
+              <li class="level-3">Symmetry about the origin (180° rotation)</li>
+              <li class="level-3">Example: $𝓰(𝒙)=𝒙^{3}-𝒙$</li>
+            </ul>
+          </li>
+          <li class="level-2">Method to check if a function is even or odd: substitute $-𝒙$ and simplify</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

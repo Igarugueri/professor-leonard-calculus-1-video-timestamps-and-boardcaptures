@@ -1,0 +1,5 @@
+image_name: [0-16]The second derivative describes how a function’s slope changes.png
+file_name: [0-16]-01.png
+timestamp: 0:16
+counter: 01
+folder: Calculus 1 Lecture 3.4

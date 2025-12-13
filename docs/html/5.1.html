@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．１ Ｆｉｎｄｉｎｇ Ａｒｅａ Ｂｅｔｗｅｅｎ Ｔｗｏ Ｃｕｒｖｅｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．１</h1>
+    <h1>Ｆｉｎｄｉｎｇ Ａｒｅａ Ｂｅｔｗｅｅｎ Ｔｗｏ Ｃｕｒｖｅｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=0" target="_blank">[00:00]</a>. Introduction to finding
+        the area between two curves
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[00-00]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[00-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">General idea: A function $𝒇(𝒙)$ is above another function $𝓰(𝒙)$ over an interval
+            $[𝓪,𝓫]$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The area between $𝒇(𝒙)$ and $𝓰(𝒙)$ is the area under $𝒇(𝒙)$ minus the area under
+                $𝓰(𝒙)$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The area between two curves is always non-negative. If you get a negative value,
+                    something is wrong (ordering or setup).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=235"
+              target="_blank">[03:55]</a>. Representation with integrals
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><strong>Area under $𝒇(𝒙)$ minus area under $𝓰(𝒙)$:</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \int_{𝓪}^{𝓫}𝒇(𝒙)\,𝒅𝒙 - \int_{𝓪}^{𝓫}𝓰(𝒙)\,𝒅𝒙$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$\displaystyle \int_{𝓪}^{𝓫}\big(𝒇(𝒙)-𝓰(𝒙)\big)\,𝒅𝒙$, assuming
+                        $𝒇(𝒙)\geq 𝓰(𝒙)$ for all $𝒙\in[𝓪,𝓫]$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=359"
+                  target="_blank">[05:59]</a>. Important note: For the single-integral formula to work, $𝒇(𝒙)\geq
+                𝓰(𝒙)$ on the entire interval $[𝓪,𝓫]$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇(𝒙)$ may touch $𝓰(𝒙)$, but must not go below it on $[𝓪,𝓫]$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">If the graphs intersect inside $(𝓪,𝓫)$, split at all intersection points and
+                    integrate piecewise, keeping the upper–minus–lower order on each subinterval.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=588"
+                  target="_blank">[09:48]</a>. Relationship with total area
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 5.1/[09-48]-01.png" target="_blank">- [📷image]</a>
+                  <img src="../../img/Calculus 1 Lecture 5.1/[09-48]-01.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Generalization: The “area under a curve” is the area between $𝒇(𝒙)$ and the
+                    𝒙-axis ($y=0$).
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$\displaystyle \int_{𝓪}^{𝓫}\big(𝒇(𝒙)-0\big)\,𝒅𝒙$ (here $𝓰(𝒙)=0$).</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">If $𝒇(𝒙)$ dips below the 𝒙-axis, use absolute value or split at its zeros:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">“Above − below” by splitting at $𝓬$ where $𝒇(𝓬)=0$:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle
+                            \int_{𝓪}^{𝓬}(𝒇(𝒙)-0)\,𝒅𝒙+\int_{𝓬}^{𝓫}(0-𝒇(𝒙))\,𝒅𝒙=\int_{𝓪}^{𝓬}𝒇(𝒙)\,𝒅𝒙-\int_{𝓬}^{𝓫}𝒇(𝒙)\,𝒅𝒙$
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Equivalently, the total area is $\displaystyle \int_{𝓪}^{𝓫}\lvert
+                        𝒇(𝒙)\rvert\,𝒅𝒙$.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Conclusion: “Area between two curves” and “area under a curve” are the same
+                    concept with $𝓰(𝒙)=0$ as the baseline.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+
+    <h2>Ｅｘａｍｐｌｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=880" target="_blank">[14:40]</a>. 🧩 Example – Find
+        the
+        area: Bounded above by $y=2𝒙+5$ and below by $y=𝒙^{3}$ on $[0,2]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[14-40]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[14-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Problem setup: Identify the integration limits and which function is on top.</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            The importance of parentheses when subtracting the two functions with multiple terms.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                If the function below had been $𝓰(𝒙)=𝒙^{3}+1$ note the difference between:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\displaystyle \int_{0}^{2}\big[(2𝒙+5)-(𝒙^{3}+1)\big]\,𝒅𝒙$ and $\displaystyle
+                    \int_{0}^{2}(2𝒙+5)-𝒙^{3}+1\,𝒅𝒙$
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Integrate and evaluate the resulting integral.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\displaystyle
+                𝓐=\int_{0}^{2}\big((2𝒙+5)-(𝒙^{3})\big)\,𝒅𝒙=\int_{0}^{2}(2𝒙+5-𝒙^{3})\,𝒅𝒙=\Big(𝒙^{2}+5𝒙-\dfrac{𝒙^{4}}{4}\Big)\Big|_{0}^{2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓐=\big(2^{2}+5\cdot2-(2^{4}/4)\big)-0=10$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=1475" target="_blank">[24:35]</a>. 🧩 Example –
+        Finding
+        the area between two curves without a given interval: $𝒇(𝒙)=𝒙^{2},\;𝓰(𝒙)=𝒙+6$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[24-35]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[24-35]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[24-35]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[24-35]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Steps to follow
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=1510" target="_blank">[25:10]</a>. 𝒮𝓉ℯ𝓅 1:
+                <strong>Find the intersection points</strong> of the curves.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Set $𝒇(𝒙)=𝓰(𝒙)$.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Solve $𝒙^{2}=𝒙+6 \;\;\Rightarrow\;\; (𝒙-3)(𝒙+2)=0 \;\;\Rightarrow\;\;
+                    𝒙=-2,𝒙=3$.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">These are the limits of integration.</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=1638" target="_blank">[27:18]</a>. 𝒮𝓉ℯ𝓅 2:
+                <strong>Determine which function is on top</strong> in the interval $[−2,3]$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Test a point (e.g. $𝒙=0$).</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇(0)=0^{2}=0,\;𝓰(0)=0+6=6$.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Since $𝓰(𝒙)>𝒇(𝒙)$, the line $𝒙+6$ is above the parabola $𝒙^{2}$.</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=1920" target="_blank">[32:00]</a>. 𝒮𝓉ℯ𝓅 3:
+                <strong>Set up and solve the integral</strong>.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\displaystyle 𝓐=\int_{-2}^{3}\big(𝓰(𝒙)-𝒇(𝒙)\big)\,𝒅𝒙 =\int_{-2}^{3}(𝒙+6-𝒙^{2})\,𝒅𝒙$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    Compute:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Antiderivative: $\displaystyle \dfrac{1}{2}𝒙^{2}+6𝒙-\dfrac{1}{3}𝒙^{3}.$
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">
+                        Evaluate: $\displaystyle \Big[\dfrac{1}{2}(3^{2})+6\cdot
+                        3-\dfrac{1}{3}(3^{3})\Big]\;-\;\Big[\dfrac{1}{2}((-2)^{2})+6(-2)-\dfrac{1}{3}((-2)^{3})\Big]$
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Result: $\displaystyle \dfrac{125}{6}$.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=2300" target="_blank">[38:20]</a>. 🧩 Example –
+        Finding
+        the area between two curves without a given interval: $𝒇(𝒙)=𝒙^{3},\;𝓰(𝒙)=𝒙$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[38-20]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[38-20]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[38-20]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[38-20]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ○ nivel-2 -->
+          <li class="level-2">𝒮𝓉ℯ𝓅 1: Solve $𝒇(𝒙)=𝒙^{3}=𝒙$ → intersections: $−1,0,1$.</li>
+
+          <!-- ○ nivel-2 -->
+          <li class="level-2">
+            𝒮𝓉ℯ𝓅 2: Test points in each interval to see which function is on top.
+            <ul>
+              <!-- ■ nivel-3 -->
+              <li class="level-3">$n$ intervals means $n$ integrals</li>
+              <!-- ■ nivel-3 -->
+              <li class="level-3">
+                For each interval test a point to see which function has the higher value.
+                <ul>
+                  <!-- ▣ nivel-4 -->
+                  <li class="level-4">On $[−1,0]$: $𝒙^{3}>𝒙$</li>
+                  <!-- ▣ nivel-4 -->
+                  <li class="level-4">On $[0,1]$: $𝒙>𝒙^{3}$</li>
+                </ul>
+              </li>
+
+              <!-- ■ nivel-3 -->
+              <li class="level-3">
+                Split the problem into $n$ integrals because the functions cross.
+              </li>
+            </ul>
+          </li>
+
+          <!-- ○ nivel-2 -->
+          <li class="level-2">
+            𝒮𝓉ℯ𝓅 3: Set up the two integrals: $\displaystyle
+            \int_{-1}^{0}(𝒙^{3}-𝒙)\,𝒅𝒙+\int_{0}^{1}(𝒙-𝒙^{3})\,𝒅𝒙$
+            <ul>
+              <!-- ■ nivel-3 -->
+              <li class="level-3">Antiderivatives:
+                <!-- ■ nivel-3 -->
+                <ul>
+                  <li class="level-4">$\displaystyle \int(𝒙^{3}-𝒙)\,𝒅𝒙=\dfrac{𝒙^{4}}{4}-\dfrac{𝒙^{2}}{2}$</li>
+
+                  <!-- ■ nivel-3 -->
+                  <li class="level-4">$\displaystyle \int(𝒙-𝒙^{3})\,𝒅𝒙=\dfrac{𝒙^{2}}{2}-\dfrac{𝒙^{4}}{4}$</li>
+                </ul>
+
+              </li>
+              <!-- ■ nivel-3 -->
+              <li class="level-3">Evaluate each piece:
+                <!-- ■ nivel-3 -->
+                <ul>
+                  <li class="level-4">
+                    $\displaystyle\Big[\dfrac{𝒙^{4}}{4}-\dfrac{𝒙^{2}}{2}\Big]_{-1}^{0}=(0-0)-\Big(\dfrac{1}{4}-\dfrac{1}{2}\Big)=\dfrac{1}{4}$
+                  </li>
+                  <!-- ■ nivel-3 -->
+                  <li class="level-4">
+                    $\displaystyle\Big[\dfrac{𝒙^{2}}{2}-\dfrac{𝒙^{4}}{4}\Big]_{0}^{1}=\Big(\dfrac{1}{2}-\dfrac{1}{4}\Big)-(0-0)=\dfrac{1}{4}$
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ■ nivel-3 -->
+              <li class="level-3">Total area:
+                <ul>
+                  <li class="level-4"> $\displaystyle 𝒜=\dfrac{1}{4}+\dfrac{1}{4}=\dfrac{1}{2}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </li>
+
+    </ul>
+
+    <h2>Ａｐｐｌｉｃａｔｉｏｎｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=c7wur9Lixb0&t=3060" target="_blank">[51:00]</a>. 🧩 Example –
+        Distance
+        between two racing cars.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.1/[51-00]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.1/[51-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The curves represent each car’s speed as a function of time.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The area between the curves represents the distance between the cars.
+            <!-- ◉ nivel-2 -->
+            <ul>
+              <li class="level-3">The area of each rectangle is $𝓿\cdot𝓽=$ Distance</li>
+            </ul>
+            <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Distance $=\displaystyle \int_{𝓪}^{𝓫}\big(\text{Car1 speed}-\text{Car2 speed}\big)\,dt$
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The area shows how far "my" car is ahead of "your" car.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the cars cross paths multiple times, multiple integrals must be set up.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The net integral gives the final distance between the cars.</li>
+        </ul>
+      </li>
+
+
+      <ul>
+        <!-- ● nivel-1 -->
+        <li class="level-1"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=3655"
+            target="_blank">[1:00:55]</a>. 🧩 Example – Advanced example: Area between $𝒙=𝑦^{2}$ and $𝑦=𝒙-2$
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 5.1/[1-00-55]-01.png" target="_blank">- [📷image-1]</a>
+            <img src="../../img/Calculus 1 Lecture 5.1/[1-00-55]-01.png" alt="Preview" />
+          </span>
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 5.1/[1-00-55]-02.png" target="_blank">- [📷image-2]</a>
+            <img src="../../img/Calculus 1 Lecture 5.1/[1-00-55]-02.png" alt="Preview" />
+          </span>
+          <span class="image-container">
+            <a href="../../img/Calculus 1 Lecture 5.1/[1-00-55]-03.png" target="_blank">- [📷image-3]</a>
+            <img src="../../img/Calculus 1 Lecture 5.1/[1-00-55]-03.png" alt="Preview" />
+          </span>
+          <ul>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2">This problem is tricky because it is not expressed in terms of 𝒙 functions.</li>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2">It helps to sketch a graph.</li>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2">If you only find the intersection points, you miss part of the area.
+              <ul>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">The parabola $𝒙=𝑦^{2}$ starts at $𝒙=0$ (vertex at $(0,0)$).</li>
+              </ul>
+            </li>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=3900"
+                target="_blank">[1:05:00]</a>. Integration with respect to 𝒙 Vs. integration with respect to 𝑦
+              <ul>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">$𝑦^{2}=𝑦+2$</li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">Factor the quadratic to find $𝑦$-values of the intersection points.
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">$𝑦=-1,\;𝑦=2$</li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=4040"
+                    target="_blank">[1:07:20]</a>. Discussion
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Vertical slices require splitting; horizontal slices do not.
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">Riemann view:
+                          <ul>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">Vertical rectangles need two sub-sums ($[0,1]$ &amp; $[1,4]$); </li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">Horizontal rectangles need one sub-sum ($𝑦∈[−1,2]$).</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2">Integration with respect to 𝒙
+              <ul>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 1: Solve both equations for $𝑦$ in terms of $𝒙$.
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">$𝒙=𝑦^{2}$ becomes $𝑦=±\sqrt{𝒙}$.</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">$𝑦=𝒙-2$ remains the same.
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5"> Solve for $𝑦$: $𝑦^{2}=𝑦+2$
+                          <ul>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">① Obtaining the values $𝑦=2$ and $𝑦=-1$.</li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">② Then, substitute these into $𝒙=𝑦^{2}$ (or $𝒙=𝑦+2$) to find the
+                              corresponding $𝒙$-values for the integration limits.</li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">③ Finally, the new limits in terms of $𝒙$ will be $𝒙=1$ and
+                              $𝒙=4$, allowing the integral to be rewritten in terms of $𝒙$.</li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">NOTE1: Functions: $\sqrt{𝒙}$ and $-\sqrt{𝒙}$
+                              <ul>
+                                <!-- ▲ nivel-7 -->
+                                <li class="level-7">Domain: $𝒙\ge 0$</li>
+                                <!-- ▲ nivel-7 -->
+                                <li class="level-7">Set equal: $\sqrt{𝒙}=-\sqrt{𝒙}$; $2\sqrt{𝒙}=0 \Rightarrow
+                                  \sqrt{𝒙}=0 \Rightarrow 𝒙=0$</li>
+                                <!-- ▲ nivel-7 -->
+                                <li class="level-7">Intersection point: $(0,0)$</li>
+                              </ul>
+                            </li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">The functions $\sqrt{𝒙}$ and $-\sqrt{𝒙}$ intersect only at the
+                              origin so $𝒙=0$ is another integration limit.</li>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">Intersections of the two curves: at $𝑦=-1 \Rightarrow
+                              (𝒙,𝑦)=(1,-1)$; at $𝑦=2 \Rightarrow (𝒙,𝑦)=(4,2)$.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 2: Test points in each interval to see which function is on top.
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">The function $𝒙=𝑦^{2}$ starts at $0$ (NOTE1) so there are two intervals
+                      $[0,1]$, $[1,4]$
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">2 intervals means 2 integrals</li>
+                      </ul>
+                    </li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=4325"
+                        target="_blank">[1:12:05]</a>. <strong>Re-draw the graph for clarity of the area
+                        zone</strong>.</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Identify the upper and lower functions in each region.<br>
+                      <pre>
+                          +√𝒙       +√𝒙
+                        ┌───────┬───────┬
+                        0       1       4
+                          -√𝒙     𝒙 - 2
+                      </pre>
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">Check: at $𝒙=2 \Rightarrow \sqrt{2}\approx 1.414$ vs $𝒙-2=0$ ⇒ top is
+                          $\sqrt{𝒙}$; at $𝒙=0.25 \Rightarrow \sqrt{𝒙}=0.5$ and $−\sqrt{𝒙}=−0.5$ ⇒ top is
+                          $\sqrt{𝒙}$.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 3: Set up the two integrals:
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=4623"
+                        target="_blank">[1:17:03]</a>. $\displaystyle
+                      \int_{0}^{1}\big(\sqrt{𝒙}-(-\sqrt{𝒙})\big)\,𝒅𝒙+\int_{1}^{4}\big(\sqrt{𝒙}-(𝒙-2)\big)\,𝒅𝒙$
+                    </li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Evaluation: $\displaystyle
+                      \int_{0}^{1}2\,𝒙^{1/2}\,𝒅𝒙+\int_{1}^{4}\big(𝒙^{1/2}-𝒙+2\big)\,𝒅𝒙=9/2$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- ◉ nivel-2 -->
+            <li class="level-2"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=5200"
+                target="_blank">[1:26:40]</a>. Integration with respect to 𝑦 (the best mode).
+              <ul>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">Introduction
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4"><strong>It is easier to integrate with respect to $𝑦$</strong> because only
+                      two functions are involved,
+                      and one is always to the right of the other.</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">The formula is similar to integrating with respect to $𝒙$, but with $𝒙$
+                      and $𝑦$ reversed along the $𝑦$-axis
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">Now we have to go from $𝓒$ to $𝓓$ along the $𝑦$-axis over one
+                          interval $[𝓒,𝓓]$</li>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">General idea: A function $𝒇(𝒙)$ is <strong>on the right</strong> of
+                          another function $𝓰(𝒙)$ over an interval $[𝓒,𝓓]$
+                          <ul>
+                            <!-- ▢ nivel-6 -->
+                            <li class="level-6">Note that the right function was the above (top) function on
+                              interval $[𝓪,𝓫]$ when we integrate with respect to $𝒙$</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4"><strong>Set up the equations in terms of $𝑦$:</strong> $𝒙=𝒉(𝑦)$,
+                      $𝒙=𝓰(𝑦)$.</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4"><a href="https://www.youtube.com/watch?v=c7wur9Lixb0&amp;t=5350"
+                        target="_blank">[1:29:10]</a>. The area is $\displaystyle
+                      \int_{𝓒}^{𝓓}\big(𝒉(𝑦)-𝓰(𝑦)\big)\,𝒅𝑦$ if $𝒉(𝑦)\ge 𝓰(𝑦)$ for all $𝑦\in[𝓒,𝓓]$</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Use letters: $𝓒=−1$, $𝓓=2$.</li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 1: Solve for $𝑦$: $𝑦^{2}=𝑦+2$
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Obtaining the values $𝑦=2$ and $𝑦=-1$.</li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 2: Determine the integration limits (the $𝑦$-values) and which function
+                  is on the right and on the left.
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">On the right $𝑦+2$; on the left $𝑦^{2}$
+                      <ul>
+                        <!-- ▣ nivel-5 -->
+                        <li class="level-5">Justify right − left on the whole interval: $𝑦^{2}\le 𝑦+2
+                          \Leftrightarrow (𝑦−2)(𝑦+1)\le 0$, true for $𝑦\in[−1,2]$ ⇒ no split needed.</li>
+                      </ul>
+                    </li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Continuity note: both curves are continuous; the region is closed and
+                      bounded → area via definite integrals applies directly.</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Domain note (for $𝑦=±\sqrt{𝒙}$): $𝒙\ge 0$, which explains the vertical
+                      left bound $𝒙=0$ and the split at $𝒙=1$.</li>
+                  </ul>
+                </li>
+                <!-- ○ nivel-3 -->
+                <li class="level-3">𝒮𝓉ℯ𝓅 3: Set up the integral:
+                  <ul>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">$\displaystyle \int_{-1}^{2}\big((𝑦+2)-𝑦^{2}\big)\,𝒅𝑦$</li>
+                    <!-- ■ nivel-4 -->
+                    <li class="level-4">Evaluation: Antiderivative $-\tfrac{𝑦^{3}}{3}+\tfrac{𝑦^{2}}{2}+2𝑦$, so
+                      area $=9/2$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+  </article>
+</body>
+
+</html>
+
+
+</ul>
+
+</article>
+</body>
+
+</html>

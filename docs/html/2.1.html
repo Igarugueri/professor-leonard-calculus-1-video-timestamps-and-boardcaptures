@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．１　Iｎｔｒｏｄｕｃｔｉｏｎ　Tｏ　Tｈｅ　Dｅｒｉｖａｔｉｖｅ　Oｆ　ａ　Fｕｎｃｔｉｏｎ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．１</h1>
+    <h1>　Iｎｔｒｏｄｕｃｔｉｏｎ　Tｏ　Tｈｅ　Dｅｒｉｖａｔｉｖｅ　Oｆ　ａ　Fｕｎｃｔｉｏｎ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｃｏｎｃｅｐｔ　ｏｆ　ｔｈｅ　ｄｅｒｉｖａｔｉｖｅ．</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=0"
+          target="_blank">0:00</a>. Reminder of the limit of the difference quotient
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[0-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[0-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \lim_{h\to 0}\dfrac{𝒇(𝒙_{0}+h)-𝒇(𝒙_{0})}{h}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This limit has been used to calculate the instantaneous rate of change,
+            instantaneous velocity, and the slope of a curve at a point.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The concept of the derivative
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is defined as the 𝒔𝙡𝒐𝙥𝒆 𝒐𝙛 𝙖 𝙘𝒖𝙧𝒗𝙚 𝙖𝒕 𝒂 𝒑𝙤𝙞𝙣𝒕.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The derivative of a function at a specific point provides the slope of the curve
+                at that point, which is also equivalent to the 𝙨𝙡𝙤𝙥𝙚 𝙤𝙛 𝙩𝙝𝙚 𝙩𝙖𝙣𝙜𝙚𝙣𝙩 𝙡𝙞𝙣𝙚 𝙩𝙤
+                𝙩𝙝𝙚 𝙘𝙪𝙧𝙫𝙚 𝙖𝙩 𝙩𝙝𝙖𝙩 𝙨𝙖𝙢𝙚 𝙥𝙤𝙞𝙣𝙩.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=125"
+          target="_blank">2:05</a>. The importance of understanding the meaning of the derivative
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The slope of a curve at a point.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=150"
+          target="_blank">2:30</a>. The notation for the derivative
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Read as "the derivative of the function 𝒇 with respect to 𝒙."</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Also referred to as "𝒇 prime of 𝒙."</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=205"
+          target="_blank">3:25</a>. The specific point 𝒙₀ is removed from the notation:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This indicates that the general derivative function is being sought.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘａｍｐｌｅｓ　ｄｅｄｉｃａｔｅｄ　ｔｏ　ｆｉｎｄｉｎｇ　ｔｈｅ　ｄｅｒｉｖａｔｉｖｅ　ｏｆ　ａ　ｆｕｎｃｔｉｏｎ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=333"
+          target="_blank">5:33</a>. 🧩 Example – Find the derivative of the function $𝒇(𝒙)=2x^{2}-3$ and the equation
+        of the tangent line at the point $(2,5)$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[5-33]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[5-33]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[5-33]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[5-33]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=420"
+              target="_blank">7:00</a>. The formula for what is a derivative.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculate $𝒇(𝒙+h)$ and $𝒇(𝒙)$ for the given function:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙+h)=2(𝒙+h)^{2}-3$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙)=2𝒙^{2}-3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution into the formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{2(𝒙+h)^{2}-3-\big(2𝒙^{2}-3\big)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Process of factoring:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand the expression:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{2(𝒙^{2}+2𝒙 h+h^{2})-3-2𝒙^{2}+3}{h}$
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{4𝒙 h+2h^{2}}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Factor out $h$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{h\,(4𝒙+2h)}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Cancel $h$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\big(4𝒙+2h\big)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Limit calculation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">As $h$ approaches zero, $𝒇'(𝒙)=4x$ is obtained.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Use of the derivative</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">How to find the slope of the curve at any point.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">By applying the derivative to the given point $𝒙=2$ from $(2,5)$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$m=𝒇'(2)=4\cdot 2=8$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=774"
+              target="_blank">12:54</a>. Use the point-slope form:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒚-𝒚_{1}=m(𝒙-𝒙_{1})$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitute the point $(2,5)$ and slope $(8)$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚-5=8(𝒙-2)$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚-5=8𝒙-16$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚=8𝒙-11$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Final answer:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Equation of the tangent line: $𝒚=8𝒙-11$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=960"
+          target="_blank">16:00</a>. 🧩 Example – Find the derivative of the function $𝒇(𝒙)=2x^{3}-x$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[16-00]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[16-00]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[16-00]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[16-00]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=1030"
+              target="_blank">17:10</a>. The formula for what is a derivative.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculate $𝒇(𝒙+h)$ and $𝒇(𝒙)$ for the given function:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙+h)=2(𝒙+h)^{3}-(𝒙+h)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙)=2𝒙^{3}-𝒙$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution into the formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to
+                0}\dfrac{2(𝒙+h)^{3}-(𝒙+h)-\big(2𝒙^{3}-𝒙\big)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Process of factoring:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand the expression:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{2\big(𝒙^{3}+3𝒙^{2}h+3𝒙
+                    h^{2}+h^{3}\big)-(𝒙+h)-2𝒙^{3}+𝒙}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{2𝒙^{3}+6𝒙^{2}h+6𝒙
+                    h^{2}+2h^{3}-𝒙-h-2𝒙^{3}+𝒙}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Combine like terms:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{6𝒙^{2}h+6𝒙 h^{2}+2h^{3}-h}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Factor out $h$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{h\,(6𝒙^{2}+6𝒙 h+2h^{2}-1)}{h}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Cancel $h$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\big(6𝒙^{2}+6𝒙 h+2h^{2}-1\big)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Limit calculation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">As $h$ approaches zero:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇'(𝒙)=6𝒙^{2}-1$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Use of the derivative</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">How to find the slope of the curve at any point.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">By applying the derivative to the given point $𝒙=3$:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$m=𝒇'(3)=6(3)^{2}-1=53$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=1650"
+          target="_blank">27:30</a>. 🧩 Example – Find the derivative of the function $𝒇(𝒙)=3x+2$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[27-30]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[27-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Explanation of linear functions:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The slope is constant, so the derivative is the coefficient of $x$ (in this case,
+                $3$).</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=1750"
+              target="_blank">29:10</a>. Generalization:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For any linear function of the form $y=mx+b$, the derivative is always $m$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=1870"
+          target="_blank">31:10</a>. 🧩 Example – Find the derivative of the function $𝒇(𝒙)=\sqrt{x}$ and the equation
+        of the tangent line at $x=4$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[31-10]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[31-10]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[31-10]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[31-10]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Use of the The formula for what is a derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Necessary because it is not a linear function.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=1945"
+              target="_blank">32:25</a>. Importance of finding the general derivative function:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Before evaluating at a specific point.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculate $𝒇(𝒙+h)$ and $𝒇(𝒙)$ for the given function:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙+h)=\sqrt{𝒙+h}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙)=\sqrt{𝒙}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution into the formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{\sqrt{𝒙+h}-\sqrt{𝒙}}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Process of factoring:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Multiply and divide by the conjugate to rationalize the numerator:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to
+                    0}\dfrac{\big(\sqrt{𝒙+h}-\sqrt{𝒙}\big)\big(\sqrt{𝒙+h}+\sqrt{𝒙}\big)}{\,h\big(\sqrt{𝒙+h}+\sqrt{𝒙}\big)}$
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand the numerator using the difference of squares:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to
+                    0}\dfrac{(𝒙+h)-𝒙}{\,h\big(\sqrt{𝒙+h}+\sqrt{𝒙}\big)}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{h}{\,h\big(\sqrt{𝒙+h}+\sqrt{𝒙}\big)}$
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Cancel $h$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{1}{\sqrt{𝒙+h}+\sqrt{𝒙}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Limit calculation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">As $h$ approaches zero:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle 𝒇'(𝒙)=\dfrac{1}{2\sqrt{𝒙}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Use of the derivative</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">How to find the slope of the curve at the point $𝒙=4$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$m=𝒇'(4)=\dfrac{1}{2\sqrt{4}}=\dfrac{1}{4}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=2233"
+              target="_blank">37:13</a>. Explanation to find the equation of the tangent line. Application of the
+            point-slope method.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Find the value of the function at the point:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇(4)=\sqrt{4}=2$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Point: $(4,2)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒚-𝒚_{1}=m(𝒙-𝒙_{1})$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitute the point $(4,2)$ and slope $\big(\dfrac{1}{4}\big)$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚-2=\dfrac{1}{4}(𝒙-4)$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚-2=\dfrac{1}{4}𝒙-1$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒚=\dfrac{1}{4}𝒙+1$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Final answer:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Equation of the tangent line: $𝒚=\dfrac{1}{4}𝒙+1$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｏｎｃｅｐｔ　ｏｆ　ｉｎｓｔａｎｔａｎｅｏｕｓ　ｖｅｌｏｃｉｔｙ　ａｓ　ｔｈｅ　ｄｅｒｉｖａｔｉｖｅ　ｏｆ　ｔｈｅ　ｐｏｓｉｔｉｏｎ　ｆｕｎｃｔｉｏｎ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=2460"
+          target="_blank">41:00</a>. Definition of instantaneous velocity:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[41-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[41-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle v_{\text{inst.}}=\lim_{h\to 0}\dfrac{𝒇(t+h)-𝒇(t)}{h}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$v_{\text{inst.}}=v(t)=𝒇'(t)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Instantanious velocity is the first derivative of a position curve</strong></li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Relationship between instantaneous velocity and the derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$v(t)=s'(t)$, where $s(t)$ is the psition function.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle v(t)=\lim_{h\to 0}\dfrac{s(t+h)-s(t)}{h}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=2565"
+          target="_blank">42:45</a>. 🧩 Example – The position function $s(t)=1250-16t^{2}$ is provided for an object
+        falling from the Empire State Building.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=2594"
+              target="_blank">43:14</a>. Three questions are posed:
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.1/[42-45]-01.png" target="_blank">– [📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 2.1/[42-45]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">1. Find the formula for instantaneous velocity $v(t)$.
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 2.1/[42-45]-02.png" target="_blank">– [📷image-2]</a>
+                  <img src="../../img/Calculus 1 Lecture 2.1/[42-45]-02.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"><a
+                      href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=2840"
+                      target="_blank">47:20</a>. The first question is solved: find $v(t)$.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Formula for instantaneous velocity:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=s'(t)=\lim_{h\to 0}\dfrac{s(t+h)-s(t)}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 1: Define the functions:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$s(t+h)=1250-16(t+h)^{2}$</li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$s(t)=1250-16t^{2}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 2: Substitution into the formula:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to
+                            0}\dfrac{1250-16(t+h)^{2}-\big(1250-16t^{2}\big)}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 3: Expand the square:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to 0}\dfrac{1250-16\big(t^{2}+2t
+                            h+h^{2}\big)-1250+16t^{2}}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 4: Simplify the expression:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to 0}\dfrac{1250-16t^{2}-32t
+                            h-16h^{2}-1250+16t^{2}}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 5: Cancel out common terms:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to 0}\dfrac{-32t h-16h^{2}}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 6: Factor out $h$:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to 0}\dfrac{h(-32t-16h)}{h}$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 7: Cancel $h$:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\displaystyle v(t)=\lim_{h\to 0}\big(-32t-16h\big)$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Step 8: Apply the limit as $h\to 0$:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$v(t)=-32t$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Final answer:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">The instantaneous velocity $v(t)=-32t$.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">2. Determine when the object hits the ground.
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 2.1/[42-45]-03.png" target="_blank">– [📷image-3]</a>
+                  <img src="../../img/Calculus 1 Lecture 2.1/[42-45]-03.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"><a
+                      href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3076"
+                      target="_blank">51:16</a>. The second question is solved: determine when the object hits the
+                    ground.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">The equation $1250-16t^{2}=0$ is posed to find the time when the height is
+                        zero.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">It is solved from the equation, obtaining $t=\sqrt{\dfrac{1250}{16}}$.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">It is calculated, obtaining $t\approx 8.84$ seconds.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">3. Calculate the velocity of the object upon impact.
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 2.1/[42-45]-04.png" target="_blank">– [📷image-4]</a>
+                  <img src="../../img/Calculus 1 Lecture 2.1/[42-45]-04.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"><a
+                      href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3269"
+                      target="_blank">54:29</a>. The third question is solved: calculate the velocity of the object upon
+                    impact.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$t=8.84$ seconds is substituted into the formula for instantaneous velocity
+                        $v(t)=-32t$.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">The velocity is calculated, obtaining $v(8.84)\approx -282.88$ feet per
+                        second.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｄｉｆｆｅｒｅｎｔｉａｂｉｌｉｔｙ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3420"
+          target="_blank">57:00</a>. A function's ability to have a derivative at a point.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3456"
+          target="_blank">57:36</a>. It is explained that for a function to be differentiable at a point, the limit of
+        the difference
+        quotient must exist at that point.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle 𝒇'(𝒙)=\lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$ must exist</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3520"
+          target="_blank">58:40</a>. Relationship between differentiability and limits:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiability exists if the limit of the difference quotient exists.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The existence of the limit is connected with continuity and the equality of the
+                one-sided limits.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3560"
+          target="_blank">59:20</a>. <strong>Two implications of differentiability:</strong>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[57-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[57-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3580"
+              target="_blank">59:40</a>. ① ᴛʜᴇ ᴅᴇʀɪᴠᴀᴛɪᴠᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ᴛᴀᴋᴇɴ ᴀᴛ ᴀ ꜱʜᴀʀᴩ ᴩᴏɪɴᴛ 𝑎.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <table style="border-collapse:collapse; margin:.25rem 0;">
+                  <tr>
+                    <td style="padding:0 .75em 0 0;">The slope from the left</td>
+                    <td style="padding:0 .75em; text-align:center;">≠</td>
+                    <td style="padding:0 0 0 .75em;">The slope from the right</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:.2rem .75em 0 0;">$𝒇'^{-}(𝑎)$</td>
+                    <td style="padding:.2rem .75em; text-align:center;">≠</td>
+                    <td style="padding:.2rem 0 0 .75em;">$𝒇'^{+}(𝑎)$</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:.2rem .75em 0 0;">$\displaystyle \lim_{h\to 0^{-}}\dfrac{𝒇(𝑎+h)-𝒇(𝑎)}{h}$
+                    </td>
+                    <td style="padding:.2rem .75em; text-align:center;">≠</td>
+                    <td style="padding:.2rem 0 0 .75em;">$\displaystyle \lim_{h\to 0^{+}}\dfrac{𝒇(𝑎+h)-𝒇(𝑎)}{h}$
+                    </td>
+                  </tr>
+                </table>
+              </li>
+
+              <li class="level-3">The slope of the function exist but the limit of our slop doesn't exist
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{𝒙\to 𝑎}𝒇(𝒙)$ exits</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{h\to 0}\dfrac{𝒇(𝑎+h)-𝒇(𝑎)}{h}$ doesn't exist</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3796"
+              target="_blank">1:03:16</a>. ② ᴛʜᴇ ᴅᴇʀɪᴠᴀᴛɪᴠᴇ ᴄᴀɴɴᴏᴛ ʙᴇ ᴛᴀᴋᴇɴ ᴀᴛ ᴀ ᴩᴏɪɴᴛ ᴡʜᴇʀᴇ ᴛʜᴇ ꜱʟᴏᴩᴇ ɪꜱ ᴠᴇʀᴛɪᴄᴀʟ
+            (ᴜɴᴅᴇꜰɪɴᴇᴅ).
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is explained that the limit of the derivative at a point with a vertical slope does
+                not
+                exist because the one-sided limits tend to positive and negative infinity, respectively.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=3885"
+          target="_blank">1:04:45</a>. 🧩 Example – The differentiability of the absolute value function $𝒇(𝒙)=|x|$ is
+        analyzed.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[1-04-45]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[1-04-45]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is observed that the function has a sharp point at $x=0$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that the function is not differentiable at $x=0$ because the slopes of the
+            one-sided limits are different ($-1$ and $1$).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is clarified that the function is differentiable at all other points.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=4067"
+          target="_blank">1:07:47</a>.<strong>Relationship between continuity and differentiability</strong>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[7-07-47]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[7-07-47]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">A graph is used to illustrate a function discontinuous <strong>at a point.</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is concluded that <strong>ɪꜰ ᴀ ꜰᴜɴᴄᴛɪᴏɴ ɪꜱ ɴᴏᴛ ᴄᴏɴᴛɪɴɪᴜᴏᴜꜱ ᴀᴛ ᴀ ᴩᴏɪɴᴛ, ɪᴛ ɪꜱ ɴᴏᴛ
+                  ᴅɪꜰꜰᴇʀᴇɴᴛɪᴀʙʟᴇ ᴀᴛ ᴛʜᴀᴛ ᴩᴏɪɴᴛ.</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{x\to a}𝒇(𝒙)\neq 𝒇(a)\;\Rightarrow\;𝒇'(a)$ does not exist
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=4140"
+              target="_blank">1:09:00</a>. A graph is used to illustrate a function continuous at a point but not
+            differentiable at that point (a sharp point).
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is concluded that <strong>ᴄᴏɴᴛɪɴᴜɪᴛy ᴅᴏᴇꜱ ɴᴏᴛ ɪᴍᴩʟy ᴅɪꜰꜰᴇʀᴇɴᴛɪᴀʙɪʟɪᴛy.</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{x\to a}𝒇(𝒙)=\;𝒇(a)\;\nRightarrow\;𝒇'(a)$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is established that <strong>ᴅɪꜰꜣᴇʀᴇɴᴛɪᴀʙɪʟɪᴛy ɪᴍᴩʟɪᴇꜱ ᴄᴏɴᴛɪɴᴜɪᴛy.</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇'(a)$ exist $\Rightarrow$ $\displaystyle \lim_{x\to a}𝒇(𝒙)=𝒇(a)$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is reiterated that differentiability is a stronger condition than continuity.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Differentiability ⇒ Continuity</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Continuity ⇏ Differentiability</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=4288"
+          target="_blank">1:11:28</a>. The different notations for the derivative are reviewed.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[1-11-28]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[1-11-28]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Prime notation: $𝒇'(𝒙)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Leibniz notation: $\dfrac{d}{dx}\big[𝒇(𝒙)\big]$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Prime notation for functions with variable $𝒚$: $𝒚'$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Leibniz notation for functions with variable $𝒚$: $\dfrac{d𝒚}{d𝒙}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=962lLfW-8Jo&list=PLF797E961509B4EB5&t=4404"
+          target="_blank">1:13:24</a>. It is explained how to evaluate derivatives at specific points.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.1/[1-11-28]-02.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.1/[1-11-28]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Notation to evaluate the derivative of $𝒇$ at point $a$: $𝒇'(𝑎)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Alternative notation to evaluate the derivative of $𝒇$ at point $a$:
+            $\left.\dfrac{d}{d𝒙}\big[𝒇(𝒙)\big]\right|_{𝒙=𝑎}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Notation to evaluate the derivative of $𝒚$ at point $a$: $𝒚'(𝑎)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Alternative notation to evaluate the derivative of $𝒚$ at point $a$:
+            $\left.\dfrac{d𝒚}{d𝒙}\right|_{𝒙=𝑎}$</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

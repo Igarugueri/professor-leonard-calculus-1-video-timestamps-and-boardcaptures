@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．３　Tｈｅ　Pｒｏｄｕｃｔ　ａｎｄ　Qｕｏｔｉｅｎｔ　Rｕｌｅｓ　Fｏｒ　Dｅｒｉｖａｔｉｖｅｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．３</h1>
+    <h1>Tｈｅ　Pｒｏｄｕｃｔ　ａｎｄ　Qｕｏｔｉｅｎｔ　Rｕｌｅｓ　Fｏｒ　Dｅｒｉｖａｔｉｖｅｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>I ｎｔｒｏｄｕｃｔｉｏｎ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=0"
+          target="_blank">0:00</a>. Introduction to the lesson on the product rule and the quotient rule for
+        derivatives.</li>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=19"
+          target="_blank">0:19</a>. Brief review of the lesson topics: product rule and quotient rule.</li>
+    </ul>
+
+    <h2>Ｐｒｏｄｕｃｔ ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=41"
+          target="_blank">0:41</a>. Presentation of the scenario: Is it possible to derive the product of two functions?
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=52"
+              target="_blank">0:52</a>. 🧩 Example – with basic functions: $𝒇(𝒙)=𝒙^{2}$ and $𝓰(𝒙)=𝒙^{3}$. 📷
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.3/[0-52]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.3/[0-52]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Posing the main question: Is $\dfrac{d}{dx}\big[𝒇(𝒙)\cdot
+                𝓰(𝒙)\big]=\dfrac{d}{dx}\big[𝒇(𝒙)\big]\cdot \dfrac{d}{dx}\big[𝓰(𝒙)\big]$?</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=107"
+              target="_blank">1:47</a>. Analysis of the question through the given Example.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is observed that $𝒇(𝒙)\cdot 𝓰(𝒙)=𝒙^{5}$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Calculating $\dfrac{d}{dx}\big(𝒙^{5}\big)=5𝒙^{4}$.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Calculating separately $\dfrac{d}{dx}\big[𝒇(𝒙)\big]\cdot
+                \dfrac{d}{dx}\big[𝓰(𝒙)\big]$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">A different answer is obtained: $6𝒙^{3}$.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Conclusion: Derivatives cannot be separated by multiplication.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=288"
+          target="_blank">4:48</a>. Need for a rule to derive products of functions.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=300"
+              target="_blank">5:00</a>. Introduction to the concept of the product rule.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=321"
+          target="_blank">5:21</a>. Explanation of the product rule.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=365"
+              target="_blank">6:05</a>. Interpretation in words of the product rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Formula of the product rule</strong>:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{dx}\big[𝒇(𝒙)\cdot 𝓰(𝒙)\big]=\dfrac{d}{dx}\big[𝒇(𝒙)\big]\cdot
+                𝓰(𝒙)+𝒇(𝒙)\cdot \dfrac{d}{dx}\big[𝓰(𝒙)\big]$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=433"
+          target="_blank">7:13</a>. Verification of the product rule using the initial Example. 📷
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.3/[7-13]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.3/[7-13]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Emphasis on the importance of the notation $\dfrac{d}{dx}$ to indicate the function to be
+            derived.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{dx}\big[𝒇(𝒙)\cdot 𝓰(𝒙)\big]=𝒇'(𝒙)\cdot 𝓰(𝒙)+𝒇(𝒙)\cdot 𝓰'(𝒙)$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{dx}\big[𝒙^{2}\cdot 𝒙^{3}\big]=\dfrac{d}{dx}\big[𝒙^{2}\big]\cdot
+                𝒙^{3}+𝒙^{2}\cdot \dfrac{d}{dx}\big[𝒙^{3}\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$2𝒙\cdot 𝒙^{3}+𝒙^{2}\cdot 3𝒙^{2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$2𝒙^{4}+3𝒙^{4}=5𝒙^{4}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Mention of the need for a formal proof to generalize the rule.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｐｒｅｌｉｍｉｎａｒｙ　ｃｏｎｓｉｄｅｒａｔｉｏｎｓ　ｆｏｒ　ｔｈｅ　ｐｒｏｄｕｃｔ　ｒｕｌｅ：　ｅｖａｌｕａｔｉｎｇ　ｄｉｓｔｒｉｂｕｔｉｏｎ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=634" target="_blank">10:34</a>.
+        Presentation of an example where distribution is possible.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example –: $(𝒙^{2}-1)\cdot(3𝒙^{4}-2𝒙)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=669"
+                  target="_blank">11:09</a>. Anticipation of scenarios where distribution will n̲o̲t̲ be feasible.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=683"
+                      target="_blank">11:23</a>. 🧩 Example – with a high exponent, where distribution would be tedious.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$(𝒙^{2}-1)\cdot(3𝒙^{4}-2𝒙)^{4}$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"><strong>This is why the project rule become very important</strong></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=683"
+                  target="_blank">12:19</a>. 🧩 Example – A Constant in the Product Rule
+                📷
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 2.3/[2-19]-01.png" target="_blank">– [📷image]</a>
+                  <img src="../../img/Calculus 1 Lecture 2.3/[2-19]-01.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Why is the product rule not used here? Because the constant's derivative is zero,
+                    so it contributes nothing.</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=850"
+                  target="_blank">14:10</a>. Two ways to solve $𝐲'$ from $𝐲=(𝒙^{2}-1)(3𝒙^{4}+2𝒙)$
+                📷
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 2.3/[14-10]-01.png" target="_blank">– [📷image]</a>
+                  <img src="../../img/Calculus 1 Lecture 2.3/[14-10]-01.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Applying distribution
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Expand:
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$𝐲=3𝒙^{6}+2𝒙^{3}-3𝒙^{4}-2𝒙$</li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$𝐲=3𝒙^{6}-3𝒙^{4}+2𝒙^{3}-2𝒙$</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Derivative (power rule):
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">$\dfrac{d𝐲}{d𝒙}=18𝒙^{5}-12𝒙^{3}+6𝒙^{2}-2$</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=915"
+                      target="_blank">15:15</a>. Applying the product rule Given:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"><strong>Product rule</strong> Setup
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Aply formula:
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">
+                                $\\dfrac{d𝐲}{d𝒙}=\\dfrac{d}{d𝒙}\big[(𝒙^{2}-1)(3𝒙^{4}+2𝒙)\big]=\\dfrac{d}{d𝒙}\big[𝒙^{2}-1\big]\cdot(3𝒙^{4}+2𝒙)+(𝒙^{2}-1)\cdot
+                                \\dfrac{d}{d𝒙}\big[3𝒙^{4}+2𝒙\big]$</li>
+                            </ul>
+                          </li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Differentiate each part:
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">$=(2𝒙)(3𝒙^{4}+2𝒙)+(𝒙^{2}-1)(12𝒙^{3}+2)$</li>
+                            </ul>
+                          </li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Expand both products:
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">$=6𝒙^{5}+4𝒙^{2}+12𝒙^{5}+2𝒙^{2}-12𝒙^{3}-2$</li>
+                            </ul>
+                          </li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Combine like terms:
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">$\\dfrac{d𝐲}{d𝒙}=18𝒙^{5}-12𝒙^{3}+6𝒙^{2}-2$</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ａｐｐｌｉｃａｔｉｏｎ　ｏｆ　ｔｈｅ　ｐｒｏｄｕｃｔ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=1176"
+          target="_blank">19:36</a>. You need to understand the product rule first because it's one of the fundamental
+        tools for differentiating expressions
+        where two functions are multiplied: $\big(𝒇(𝒙)\cdot 𝓰(𝒙)\big)'=𝒇'(𝒙)\cdot 𝓰(𝒙)+𝒇(𝒙)\cdot 𝓰'(𝒙)$.
+        Later on, you'll often encounter problems where this rule appears <strong>in combination</strong> with the chain
+        rule: $\big(𝒇(𝓰(𝒙))\big)'=𝒇'\big(𝓰(𝒙)\big)\cdot 𝓰'(𝒙)$
+        or with the quotient rule: $\big(\dfrac{𝒇(𝒙)}{𝓰(𝒙)}\big)'=\dfrac{𝒇'(𝒙)\cdot 𝓰(𝒙)-𝒇(𝒙)\cdot
+        𝓰'(𝒙)}{\big(𝓰(𝒙)\big)^{2}}$.
+        Understanding the product rule early will make it easier to handle these more complex derivative rules as they
+        often work together.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=1210"
+          target="_blank">20:10</a>. 🧩 Example – $(𝒙^{2}+1)\cdot \sqrt{𝒙}$ 📷
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.3/[20-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.3/[20-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the product rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">  $𝒇'(𝒙)=\dfrac{d}{d𝒙}[1+𝒙^{2}]\cdot 𝒙^{1/2}+(1+𝒙^{2})\cdot
+                \dfrac{d}{d𝒙}\big[𝒙^{1/2}\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">   $𝒇'(𝒙)=2𝒙\cdot 𝒙^{1/2}+(1+𝒙^{2})\cdot \dfrac{1}{2}\cdot 𝒙^{-1/2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Distribute:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">   $𝒇'(𝒙)=2𝒙\cdot 𝒙^{1/2}+\dfrac{1}{2}\cdot 𝒙^{-1/2}+\dfrac{1}{2}\cdot
+                𝒙^{2}\cdot 𝒙^{-1/2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">   $𝒇'(𝒙)=2\cdot 𝒙^{3/2}+\dfrac{1}{2}\cdot 𝒙^{-1/2}+\dfrac{1}{2}\cdot 𝒙^{3/2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">   $𝒇'(𝒙)=\dfrac{5}{2}\cdot 𝒙^{3/2}+\dfrac{1}{2}\cdot 𝒙^{-1/2}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=1210"
+          target="_blank">32:10</a>. 🧩 Example – Find $𝓰'(2)$ ; $𝓰(𝒙)=(𝒙^{2}+1)\cdot 𝒇(𝒙)$ where $𝒇(2)=3$ and
+        $𝒇'(2)=1$ 📷
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.3/[32-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.3/[32-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the product rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰'(𝒙)=\dfrac{d}{d𝒙}\big[(𝒙^{2}+1)\big]\cdot 𝒇(𝒙)+(𝒙^{2}+1)\cdot
+                \dfrac{d}{d𝒙}\big[𝒇(𝒙)\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰'(𝒙)=2𝒙\cdot 𝒇(𝒙)+(𝒙^{2}+1)\cdot 𝒇'(𝒙)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitute $𝒙=2$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰'(2)=2\cdot 2\cdot 𝒇(2)+(2^{2}+1)\cdot 𝒇'(2)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰'(2)=4\cdot 3+5\cdot(-1)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰'(2)=12-5=7$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｑｕｏｔｉｅｎｔ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2350"
+          target="_blank">39:10</a>. Posing the question: Is it possible to derive the quotient of two functions?
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Dismissing the possibility of deriving the numerator and the denominator separately.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2400"
+          target="_blank">40:00</a>. Introduction to the quotient rule.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2450"
+              target="_blank">40:50</a>. Presentation of the <strong>formula for the quotient rule</strong>. 📷
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.3/[40-50]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.3/[40-50]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}\Big[\dfrac{𝒇(𝒙)}{𝓰(𝒙)}\Big]=\dfrac{𝓰(𝒙)\cdot 𝒇'(𝒙)-𝒇(𝒙)\cdot
+                𝓰'(𝒙)}{\big(𝓰(𝒙)\big)^{2}}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Likewise $\dfrac{d}{d𝒙}\Big[\dfrac{𝒇(𝒙)}{𝓰(𝒙)}\Big]=\dfrac{𝒇'(𝒙)\cdot
+                𝓰(𝒙)-𝒇(𝒙)\cdot 𝓰'(𝒙)}{\big(𝓰(𝒙)\big)^{2}}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2540"
+              target="_blank">42:20</a>. Other notation
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝓰(𝒙)\cdot \dfrac{d}{d𝒙}\big[𝒇(𝒙)\big]-𝒇(𝒙)\cdot
+                \dfrac{d}{d𝒙}\big[𝓰(𝒙)\big]}{\big(𝓰(𝒙)\big)^{2}}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Likewise $\dfrac{\dfrac{d}{d𝒙}\big[𝒇(𝒙)\big]\cdot 𝓰(𝒙)-𝒇(𝒙)\cdot
+                \dfrac{d}{d𝒙}\big[𝓰(𝒙)\big]}{\big(𝓰(𝒙)\big)^{2}}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ａｐｐｌｉｃａｔｉｏｎ　　ｅｘａｍｐｌｅｓ　ｏｆ　ｔｈｅ　ｑｕｏｔｉｅｎｔ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2740"
+          target="_blank">45:40</a>. 🧩 Example –: $𝑦=\dfrac{𝒙^{3}-3𝒙^{2}-5}{2𝒙+5}$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">An example where the quotient rule is necessary.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2770"
+              target="_blank">46:10</a>. Comparison with a case where prior simplification is possible.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝑦=\dfrac{𝒙^{3}-3𝒙^{2}-5}{2𝒙}$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Iinstead of directly using the quotient rule, you can split the fraction into
+                    simpler parts, combine
+                    exponents, and differentiate each piece separatel.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=2880"
+              target="_blank">48:00</a>. Explanation of how to set up the quotient rule for the given example. 📷
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.3/[48-00]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.3/[48-00]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Apply the quotient rule:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d𝑦}{d𝒙}=\dfrac{(2𝒙+5)\cdot
+                    \dfrac{d}{d𝒙}(𝒙^{3}-3𝒙^{2}-5)-(𝒙^{3}-3𝒙^{2}-5)\cdot \dfrac{d}{d𝒙}(2𝒙+5)}{(2𝒙+5)^{2}}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Calculate derivatives:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d}{d𝒙}(𝒙^{3}-3𝒙^{2}-5)=3𝒙^{2}-6𝒙$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d}{d𝒙}(2𝒙+5)=2$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitute and expand:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Numerator: $(2𝒙+5)(3𝒙^{2}-6𝒙)-(𝒙^{3}-3𝒙^{2}-5)\cdot 2$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Denominator: $(2𝒙+5)^{2}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Expand the numerator:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$6𝒙^{3}-12𝒙^{2}+15𝒙^{2}-30𝒙-2𝒙^{3}+6𝒙^{2}+10$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$4𝒙^{3}+9𝒙^{2}-30𝒙+10$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Final answer:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{d𝑦}{d𝒙}=\dfrac{4𝒙^{3}+9𝒙^{2}-30𝒙+10}{(2𝒙+5)^{2}}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Emphasis on the importance of using parentheses for correct distribution.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｐｒｏｄｕｃｔ　ｒｕｌｅ　ｗｉｔｈｉｎ　ｔｈｅ　ｑｕｏｔｉｅｎｔ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=3475"
+          target="_blank">57:55</a>. 🧩 Example – where the product rule and quotient rule are combined:
+        $𝒇(𝒙)=\dfrac{(3𝒙-1)(𝒙^{2}+4)}{𝒙^{2}+2}$ 📷
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.3/[51-55]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.3/[51-55]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Explanation of the importance of identifying which rule has higher hierarchy in the
+            problem.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=3500"
+          target="_blank">58:20</a>. Description of setting up the quotient rule for the given example, including the
+        product rule within it.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=AvCQQ3X4Nuc&list=PLF797E961509B4EB5&t=3650"
+              target="_blank">1:00:50</a>. Emphasis on the importance of following the notation $\dfrac{d}{d𝒙}$ to
+            perform derivatives correctly.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the quotient rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\dfrac{(𝒙^{2}+2)\cdot
+                \dfrac{d}{d𝒙}\big[(3𝒙-1)(𝒙^{2}+4)\big]-(3𝒙-1)(𝒙^{2}+4)\cdot
+                \dfrac{d}{d𝒙}\big[𝒙^{2}+2\big]}{(𝒙^{2}+2)^{2}}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculate derivatives:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}\big[(3𝒙-1)(𝒙^{2}+4)\big]=3(𝒙^{2}+4)+2𝒙(3𝒙-1)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒙}\big[𝒙^{2}+2\big]=2𝒙$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitute and expand:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Numerator: $(𝒙^{2}+2)\big[3(𝒙^{2}+4)+2𝒙(3𝒙-1)\big]-(3𝒙-1)(𝒙^{2}+4)\cdot 2𝒙$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Denominator: $(𝒙^{2}+2)^{2}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

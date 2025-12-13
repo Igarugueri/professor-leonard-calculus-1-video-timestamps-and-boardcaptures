@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　４．２　Iｎｔｅｇｒａｔｉｏｎ　Bｙ　Sｕｂｓｔｉｔｕｔｉｏｎ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　４．２</h1>
+    <h1>Iｎｔｅｇｒａｔｉｏｎ　Bｙ　Sｕｂｓｔｉｔｕｔｉｏｎ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=54" target="_blank">[0:54]</a>. The
+        need for an integral to fit into the integration table.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the integral doesn't fit, it cannot be solved directly.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral must be adjusted in order to fit.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">We aim to manipulate the integral through distribution, division, or trigonometric
+                    functions.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Intro𝒅𝑢ction to u-substitution, where the letter "$𝑢$" is used.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘａｍｐｌｅ　ｏｆ　ａｎ　ｉｎｔｅｇｒａｌ　ｔｈａｔ　ｃａｎｎｏｔ　ｂｅ　ｓｏｌｖｅｄ　ｄｉｒｅｃｔｌｙ　ｕｓｉｎｇ　ｂａｓｉｃ　ｍｅｔｈｏｄｓ．</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=134" target="_blank">[2:14]</a>.
+        $\displaystyle \int (𝒙^{2}+1)\cdot 2𝒙\,dx$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Can not fit the integration table but you could do it by distribution.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">$\displaystyle \int (𝒙^{2}+1)^{3}\cdot 2𝒙\,dx$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The alternative of “raising it to the third power” repeatedly is a long and complicated
+            process,
+            but you could do it by distribution.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">🧩 Example –: $\displaystyle \int (𝒙^{2}+1)^{50}\cdot 2𝒙\,dx$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">There is a need for a better way to solve the problem.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=200" target="_blank">[3:20]</a>.
+        Substitution is a method to handle complex integrals. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[3-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[3-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">❶ Pick “$𝑢$” so the integral is easier.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Usually the “inside” of some thing.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The derivative of “$𝑢$” must be in the $\int$ (disregard constants). In this context,
+                it means that when using
+                the substitution method to solve an integral, you can disregard constant factors that appear when
+                differentiating $𝑢$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=375"
+              target="_blank">[6:15]</a>. ❷ Transform: $\int 𝒙\,dx \;\to\; \int 𝑢\,du$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral must end up in terms of "$𝑢\,du$."</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">After the transformation, the integral must match something in the integration table.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If the integral does not fit in the table, either another substitution is required or
+                it cannot be done by these methods.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">There are integrals that cannot be solved with these methods.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">❸ Do the integral.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">❹ Translate back to "$𝒙$".</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=570" target="_blank">[9:30]</a>. 🧩
+        Example (continuation) –: $\displaystyle \int (𝒙^{2}+1)^{50}\cdot 2𝒙\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[9-30]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[9-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">You must choose a "$u$" whose derivative is present in the integral.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Constants are not very relevant in the derivative.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">"$u$" is usually chosen as the interior part.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝑢=𝒙^{2}+1$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The derivative of the chosen portion is calculated on both sides.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$du=2𝒙\,dx$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=566"
+              target="_blank">[9:26]</a>. Verify that the derivative is in the integral.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">"$dx$" is isolated for the substitution.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$du=2𝒙\,dx \;\to\; dx=\dfrac{du}{2𝒙}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The substitution is carried out in the original integral.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int 𝑢^{50}\cdot 2𝒙\cdot \left(\dfrac{du}{2𝒙}\right)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The interior portion is replaced by "$𝑢$".</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">"$dx$" is replaced by its "$du$" equivalent.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The integral is simplified after the substitution.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int 𝑢^{50}\,du$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The expression is integrated in terms of "$𝑢$".
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int 𝑢^{50}\,du=\dfrac{𝑢^{51}}{51}+\mathcal{C}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is stressed that all $𝒙$ terms must vanish before integration.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">You cannot integrate if both "$𝒙$" and "$u$" are present.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is reiterated that all "$𝒙$" must disappear prior to integration.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$"
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝑢^{51}}{51}+\mathcal{C}\;\to\; \dfrac{(𝒙^{2}+1)^{51}}{51}+\mathcal{C}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🧩Ｅｘａｍｐｌｅｓ　ｂｙ　ｓｕｂｓｔｉｔｕｔｉｏｎ ｍｅｔｈｏｄ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=1039" target="_blank">[17:19]</a>.
+        $\displaystyle \int 𝒙^{2}\,(𝒙^{3}-4)^{5}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[17-19]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[17-19]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=𝒙^{3}-4 \;\to\; du=3𝒙^{2}\,dx \;\to\; dx=\dfrac{du}{3𝒙^{2}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝒙^{2}\cdot 𝑢^{5}\cdot
+            \left(\dfrac{du}{3𝒙^{2}}\right)=\dfrac{1}{3}\int 𝑢^{5}\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$=\dfrac{1}{3}\cdot\dfrac{𝑢^{6}}{6}+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\dfrac{(𝒙^{3}-4)^{6}}{18}+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=1273" target="_blank">[21:13]</a>.
+        $\displaystyle \int 𝒙^{2}\,(𝒙^{3}-4)^{5}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[21-13]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[21-13]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=𝒙^{4} \;\to\; du=4𝒙^{3}\,dx \;\to\; dx=\dfrac{du}{4𝒙^{3}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 2𝒙^{3}\cdot \sin(𝑢)\cdot
+            \left(\dfrac{du}{4𝒙^{3}}\right)=\dfrac{2}{4}\int \sin(𝑢)\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$=\dfrac{1}{2}\left(-\cos(𝑢)\right)+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $-\dfrac{1}{2}\cos(𝒙^{4})+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=1640" target="_blank">[27:20]</a>.
+        $\displaystyle \int \left(\dfrac{1}{𝒙^{2}}+\sec^{2}(\pi\cdot 𝒙)\right)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[27-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[27-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \dfrac{1}{𝒙^{2}}\,dx \;+\; \int \sec^{2}(\pi 𝒙)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \dfrac{1}{𝒙^{2}}\,dx=-\dfrac{1}{𝒙}+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \sec^{2}(\pi\cdot 𝒙)\,dx$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝑢=\pi\cdot 𝒙 \;\to\; du=\pi\,dx \;\to\; dx=\dfrac{du}{\pi}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \sec^{2}(\pi\cdot 𝒙)\,dx=\dfrac{1}{\pi}\int
+            \sec^{2}(𝑢)\,du=\dfrac{1}{\pi}\tan(𝑢)+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $-\dfrac{1}{𝒙}+\dfrac{1}{\pi}\tan(\pi\cdot 𝒙)+\mathcal{C}$
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=1740" target="_blank">[29:00]</a>.
+        $\displaystyle \int \cos(5𝒙)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[29-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[29-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=5𝒙 \;\to\; du=5\,dx \;\to\; dx=\dfrac{du}{5}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \cos(5𝒙)\,dx=\int \cos(𝑢)\left(\dfrac{du}{5}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{1}{5}\int \cos(𝑢)\,du=\dfrac{1}{5}\sin(𝑢)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\dfrac{1}{5}\sin(5𝒙)+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=2090" target="_blank">[34:50]</a>.
+        $\displaystyle \int (2𝒙-3)^{15}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[36-46]-02.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[36-46]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=2𝒙-3 \;\to\; du=2\,dx \;\to\; dx=\dfrac{du}{2}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int (2𝒙-3)^{15}\,dx=\int 𝑢^{15}\left(\dfrac{du}{2}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{1}{2}\int 𝑢^{15}\,du=\dfrac{1}{2}\cdot \dfrac{𝑢^{16}}{16}=\dfrac{𝑢^{16}}{32}$
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\dfrac{(2𝒙-3)^{16}}{32}+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=2206" target="_blank">[36:46]</a>.
+        $\displaystyle \int \left(\dfrac{1}{𝒙^{2}}+\sec^{2}(\pi 𝒙)\right)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[36-46]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[36-46]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int [𝒙^{-2}+\sec^{2}(\pi 𝒙)]\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝒙^{-2}\,dx+\int \sec^{2}(\pi 𝒙)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=\pi 𝒙,\; du=\pi\,dx,\; dx=\dfrac{du}{\pi}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝒙^{-2}\,dx+\dfrac{1}{\pi}\int \sec^{2}(𝑢)\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\;𝒙^{-1}+\dfrac{1}{\pi}\int \sec^{2}(𝑢)\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\;𝒙^{-1}+\dfrac{1}{\pi}\tan(𝑢)+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $-\;𝒙^{-1}+\dfrac{1}{\pi}\tan(\pi 𝒙)+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=2673" target="_blank">[44:33]</a>.
+        $\displaystyle \int \sin^{2}(𝒙)\,\cos(𝒙)\,dx$ $(𝑢=\cos(𝒙))$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[44-33]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[44-33]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">This is an example of choosing the wrong substitution ($𝑢$) in integration. By selecting
+            $𝑢=\cos(𝒙)$,
+            the substitution complicates the integral rather than simplifying it, leading to unnecessary terms or even
+            making it unsolvable in its current form. Always aim to choose $𝑢$ so that it simplifies the integral
+            effectively,
+            often by targeting the "inner" function or a term whose derivative is present elsewhere in the expression.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=\cos(𝒙)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$du=-\sin(𝒙)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$dx=\dfrac{du}{-\sin(𝒙)}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \sin^{2}(𝒙)\cdot 𝑢\cdot \left(\dfrac{du}{-\sin(𝒙)}\right)\;\;
+            \color{red}{\text{❌}}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=2820" target="_blank">[47:00]</a>.
+        $\displaystyle \int \sin^{2}(𝒙)\,\cos(𝒙)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[47-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[47-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \sin^{2}(𝒙)\,\cos(𝒙)\,dx$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝑢=\sin(𝒙),\; du=\cos(𝒙)\,dx$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝑢^{2}\,\cos(𝒙)\left(\dfrac{du}{\cos(𝒙)}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝑢^{2}\,du \;\to\; \dfrac{𝑢^{3}}{3}+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\dfrac{\sin^{3}(𝒙)}{3}+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=3085" target="_blank">[51:25]</a>.
+        $\displaystyle \int \dfrac{\cos(\sqrt{𝒙})}{\sqrt{𝒙}}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[51-25]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[51-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=\sqrt{𝒙}\;\Rightarrow\; du=\dfrac{1}{2}\,𝒙^{-1/2}\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$2\,du=𝒙^{-1/2}\,dx \;\to\; 2\,du=\dfrac{1}{𝑢}\,dx \;\to\; dx=2𝑢\,du \;\;
+            (\text{because } 𝑢=\sqrt{𝒙})$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \dfrac{\cos(𝑢)}{𝑢}\cdot (2𝑢)\,du \;\to\; 2\int
+            \cos(𝑢)\,du=2\sin(𝑢)+\mathcal{C}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $2\sin(\sqrt{𝒙})+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=3600"
+          target="_blank">[1:00:00]</a>. $\displaystyle \int 𝒙^{4}\,\sqrt[3]{\,3-5𝒙^{5}\,}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[1-00-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[1-00-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=3-5𝒙^{5} \;\to\; du=-25𝒙^{4}\,dx \;\to\; dx=\dfrac{du}{-25𝒙^{4}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝒙^{4}\,\sqrt[3]{𝑢}\left(\dfrac{du}{-25𝒙^{4}}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{1}{25}\int 𝑢^{1/3}\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{1}{25}\cdot \dfrac{𝑢^{4/3}}{\dfrac{4}{3}}\;=\;-\dfrac{1}{25}\cdot
+            \dfrac{3}{4}\,𝑢^{4/3}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{3}{100}\,𝑢^{4/3}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$":
+            $-\dfrac{3}{100}\,(3-5𝒙^{5})^{4/3}+\mathcal{C}\;\;\to\;\;-\dfrac{3}{100}\,\sqrt[3]{(3-5𝒙^{5})^{4}}+\mathcal{C}$
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=4120"
+          target="_blank">[1:08:40]</a>. $\displaystyle \int 𝒙^{2}\sqrt{\,𝒙-1\,}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[1-08-40]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[1-08-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=𝒙-1 \;\to\; 𝒙=𝑢+1 \;\to\; du=dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 𝒙^{2}\sqrt{𝑢}\,du$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙^{2}=(𝑢+1)^{2}=𝑢^{2}+2𝑢+1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int 𝒙^{2}\sqrt{𝑢}\,du \;\to\; \int (𝑢^{2}+2𝑢+1)\cdot
+                \sqrt{𝑢}\,du$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2">$\displaystyle \int (𝑢^{2}+2𝑢+1)\cdot 𝑢^{1/2}\,du \;\to\; \int
+            \big(𝑢^{5/2}+2𝑢^{3/2}+𝑢^{1/2}\big)\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2">$\dfrac{𝑢^{7/2}}{\dfrac{7}{2}}+ 2\,\dfrac{𝑢^{5/2}}{\dfrac{5}{2}}+
+            \dfrac{𝑢^{3/2}}{\dfrac{3}{2}}$</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2">$\dfrac{2}{7}𝑢^{7/2}+ \dfrac{4}{5}𝑢^{5/2}+ \dfrac{2}{3}𝑢^{3/2}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\dfrac{2}{7}(𝒙-1)^{7/2}+ \dfrac{4}{5}(𝒙-1)^{5/2}+
+            \dfrac{2}{3}(𝒙-1)^{3/2}+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=4660"
+          target="_blank">[1:17:40]</a>. $\displaystyle \int \dfrac{2-𝒙}{\sqrt{\,2𝒙^{2}-8𝒙+1\,}}\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[1-17-40]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[1-17-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝑢=2𝒙^{2}-8𝒙+1 \;\to\; du=(4𝒙-8)\,dx \;\to\; du=-4(2-𝒙)\,dx \;\to\;
+            dx=\dfrac{du}{-4(2-𝒙)}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \dfrac{2-𝒙}{\sqrt{𝑢}}\left(\dfrac{du}{-4(2-𝒙)}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{1}{4}\int \dfrac{1}{\sqrt{𝑢}}\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{1}{4}\int 𝑢^{-1/2}\,du \;\to\; -\dfrac{1}{4}\cdot
+            \dfrac{𝑢^{1/2}}{\dfrac{1}{2}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$-\dfrac{1}{2}\,𝑢^{1/2}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $-\dfrac{1}{2}\sqrt{\,2𝒙^{2}-8𝒙+1\,}+\mathcal{C}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=aiBD9aI69C8&amp;t=5107"
+          target="_blank">[1:25:07]</a>. $\displaystyle \int \cos^{3}(𝒙)\,dx$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.2/[1-25-07]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.2/[1-25-07]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \cos^{3}(𝒙)\,dx \;\to\; \int \big(\cos^{2}(𝒙)\cdot
+            \cos(𝒙)\big)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \big[1-\sin^{2}(𝒙)\big]\cos(𝒙)\,dx$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \big[1-(\sin(𝒙))^{2}\big]\cos(𝒙)\,dx$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Pick "$𝑢$" so the integral is easier.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Usually the "inside" of some thing.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Choosing $u$ as $\sin(𝒙)$ comes from the fact that $\sin(𝒙)$ is "inside" a
+                        more complex operation:
+                        the square $(\sin(𝒙))^{2}$. Furthermore, its derivative, $\cos(𝒙)\,dx$, is present in the
+                        integrand, which
+                        simplifies the substitution.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$𝑢=\sin(𝒙)\;\to\; du=\cos(𝒙)\,dx \;\to\; \dfrac{du}{\cos(𝒙)}=dx$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \big[1-𝑢^{2}\big]\cos(𝒙)\left(\dfrac{du}{\cos(𝒙)}\right)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int \big(1-𝑢^{2}\big)\,du$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \int 1\,du-\int 𝑢^{2}\,du \;\to\; 𝑢-\dfrac{𝑢^{3}}{3}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Translate back to "$𝒙$": $\sin(𝒙)-\dfrac{\sin^{3}(𝒙)}{3}+\mathcal{C}$</li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </article>
+</body>
+
+</html>

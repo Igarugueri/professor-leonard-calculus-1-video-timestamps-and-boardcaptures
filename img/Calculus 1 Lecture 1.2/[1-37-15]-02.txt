@@ -1,0 +1,5 @@
+image_name: [1-37-15]𝑫𝒆𝒎𝒐𝒏𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 𝒐𝒇 limₓ→₀ 𝒔𝒊𝒏 (𝒙)  ∕ 𝒙 _2.png
+file_name: [1-37-15]-02.png
+timestamp: 1:37:15
+counter: 02
+folder: Calculus 1 Lecture 1.2

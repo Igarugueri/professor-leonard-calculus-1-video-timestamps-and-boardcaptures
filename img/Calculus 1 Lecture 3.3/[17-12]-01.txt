@@ -1,0 +1,5 @@
+image_name: [17-12]Example-Presentation of a second example to apply the first derivative test 𝒇(𝒙) = 3𝒙⁵ᐟ³ − 15𝒙²ᐟ³.png
+file_name: [17-12]-01.png
+timestamp: 17:12
+counter: 01
+folder: Calculus 1 Lecture 3.3

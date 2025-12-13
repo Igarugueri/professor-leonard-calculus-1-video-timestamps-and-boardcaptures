@@ -1,0 +1,5 @@
+image_name: [04-20]Application of Calculus- The Limit of Approximation_2.png
+file_name: [04-20]-02.png
+timestamp: 04:20
+counter: 02
+folder: Calculus 1 Lecture 5.4

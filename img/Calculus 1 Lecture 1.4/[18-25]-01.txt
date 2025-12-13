@@ -1,0 +1,5 @@
+image_name: [18-25]𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐨𝐧 𝐚𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐚𝐥.png
+file_name: [18-25]-01.png
+timestamp: 18:25
+counter: 01
+folder: Calculus 1 Lecture 1.4

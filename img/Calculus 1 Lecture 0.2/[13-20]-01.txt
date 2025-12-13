@@ -1,0 +1,5 @@
+image_name: [13-20]Example – Equation that does not represent a function, the circle.png
+file_name: [13-20]-01.png
+timestamp: 13:20
+counter: 01
+folder: Calculus 1 Lecture 0.2

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．４　Tｈｅ　Sｅｃｏｎｄ　Dｅｒｉｖａｔｉｖｅ　Tｅｓｔ　Fｏｒ　Cｏｎｃａｖｉｔｙ　Oｆ　Fｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．４　Tｈｅ　Sｅｃｏｎｄ　Dｅｒｉｖａｔｉｖｅ　Tｅｓｔ　Fｏｒ　Cｏｎｃａｖｉｔｙ　Oｆ　Fｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=16" target="_blank">[0:16]</a>. The
+        second derivative describes how a function’s slope changes, determining whether the curve is concave up or
+        concave down. – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.4/[0-16]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.4/[0-16]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the second derivative is positive, the slope is increasing, and the curve is concave
+            up.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the second derivative is negative, the slope is decreasing, and the curve is concave
+            down.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If $𝒇′′(𝓬)=0$, this is only a possible inflection point (PIP).
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">A brief note: to confirm whether an inflection point truly exists, it is necessary to
+                check whether
+                the sign of the second derivative changes on either side of that point.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If the sign does not change, then there is no real inflection.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｓｅｃｏｎｄ　ｄｅｒｉｖａｔｉｖｅ　ｔｅｓｔ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=201" target="_blank">[3:21]</a>.
+        The second derivative test is used to find inflection points. The steps are: – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.4/[3-21]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.4/[3-21]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❶ Find the function’s second derivative.</li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❷ Set the second derivative equal to zero and solve for $𝒙$. This provides the
+            possible inflection points.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Additionally, check for points where the second derivative does not exist (due to
+                discontinuities, vertical asymptotes, etc.).
+                These points can also be potential inflection points if the concavity changes.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❸ Create a second derivative chart:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Place the possible inflection points on a number line.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate the sign of the second derivative in each interval.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">A positive sign indicates concave up; a negative sign indicates concave down.</li>
+              <!-- ○ nivel-3 -->
+              <li>
+                <div id="numline-1"></div>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❹ Remember that if $𝒇′′(𝓬)=0$, it is only a possible inflection point. To
+            confirm if there is a
+            real change in concavity, you must check the sign of $𝒇′′(𝒙)$ before and after $𝒙=𝓬$.
+            If there is no change in sign, then there is no true inflection.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=441" target="_blank">[7:21]</a>.
+        The first derivative provides information about relative maxima and minima, while the second
+        derivative provides information about concavity and inflection points.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=480" target="_blank">[8:00]</a>. 🧩
+        Example –: Find the inflection points of the function $𝒇(𝒙)=𝒙^4-4𝒙^3+12$ – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.4/[8-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.4/[8-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❶ Find the first and second derivatives:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇′(𝒙)=4𝒙^3-12𝒙^2$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇′′(𝒙)=12𝒙^2-24𝒙$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❷ Set the second derivative equal to zero and solve for $𝒙$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$12𝒙^2-24𝒙=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=0,\; 𝒙=2$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❸ Create the second derivative chart:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li>
+                <div id="table-1"></div>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li>
+                <div id="numline-2"></div>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❹ The inflection points are $(0,12)$ and $(2,-4)$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=927" target="_blank">[15:27]</a>.
+        🧩 Example –: Find the inflection points of the function $𝓰(𝒙)=(𝒙-1)^{1/3}$ – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.4/[15-27]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.4/[15-27]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❶ Find the first and second derivatives:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰′(𝒙)=\dfrac{1}{3}(𝒙-1)^{-2/3}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰′′(𝒙)= -\dfrac{2}{9}(𝒙-1)^{-5/3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❷ Identify points where the second derivative is undefined:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=1$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❸ Create the second derivative chart:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li>
+                <div id="table-2"></div>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li>
+                <div id="numline-3"></div>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (no-bullet) -->
+          <li class="level-2 no-bullet">❹ The inflection point is $(1,0)$.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｃｏｍｂｉｎｉｎｇ　ｔｈｅ　ｆｉｒｓｔ　ａｎｄ　ｓｅｃｏｎｄ　ｄｅｒｉｖａｔｉｖｅ　ｔｅｓｔｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=1446" target="_blank">[24:06]</a>.
+        The first and second derivative tests can be combined to get a complete picture of the function’s behavior.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=1510" target="_blank">[25:10]</a>.
+        🧩 Example –: Analyze the function $𝒉(𝒙)=𝒙^3-3𝒙^2+24𝒙-32$ – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.4/[25-10]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.4/[25-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">First Derivative Test:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒉′(𝒙)=3𝒙^2-6𝒙+24$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Critical numbers: $𝒙=-2,\; 𝒙=4$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">First derivative chart:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li>
+                    <div id="table-3"></div>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li>
+                    <div id="numline-4"></div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&amp;t=1769"
+              target="_blank">[29:29]</a>. Second Derivative Test:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒉′′(𝒙)=6𝒙-6$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Possible inflection point: $𝒙=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Second derivative chart:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li>
+                    <div id="table-4"></div>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li>
+                    <div id="numline-5"></div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 (nuevo bloque) -->
+          <li class="level-2">
+            Remember, the second derivative can also help classify critical points from
+            the first derivative test:
+            <ul>
+              <!-- ○ nivel-4 -->
+              <li class="level-3">$𝒇′(𝓬)=0$ and $𝒇′′(𝓬)>0$ → relative minimum at $𝒙=𝓬$.</li>
+              <!-- ○ nivel-4 -->
+              <li class="level-3">$𝒇′(𝓬)=0$ and $𝒇′′(𝓬)<0$ → relative maximum at $𝒙=𝓬$.</li>
+                  <!-- ○ nivel-4 -->
+              <li class="level-3">$𝒇′(𝓬)=0$ and $𝒇′′(𝓬)=0$ → **inconclusive**, further analysis required.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-3 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=29GbRaQxtzY&t=1913" target="_blank">[31:53]</a>.
+            Combining both tests provides the following information:
+            <ul>
+              <!-- ○ nivel-4 -->
+              <li class="level-3">Relative maximum: $(-2,60)$</li>
+              <!-- ○ nivel-4 -->
+              <li class="level-3">Relative minimum: $(4,-48)$</li>
+              <!-- ○ nivel-4 -->
+              <li class="level-3">Inflection point: $(1,6)$</li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+      <!-- Ｌｉｍｉｔｓ　ａｔ　ｉｎｆｉｎｉｔｙ -->
+      <h2 class="section-title">Ｌｉｍｉｔｓ　ａｔ　ｉｎｆｉｎｉｔｙ</h2>
+
+      <ul>
+        <!-- ● nivel-1 -->
+        <li class="level-1">
+          <a href="https://www.youtube.com/watch?v=29GbRaQxtzY&t=2161" target="_blank">[36:01]</a>.
+          Section 3.5 of the course will address limits at infinity, allowing us to analyze a function’s
+          behavior as $𝒙$ approaches positive or negative infinity.
+        </li>
+      </ul>
+
+    </ul>
+    </li>
+    </ul>
+
+    <!-- ======================= -->
+    <!-- TEMPLATES: TABLES + ASCII -->
+    <!-- ======================= -->
+
+    <!-- Table 1: f''(x) intervals and concavity -->
+    <template id="table-1-template">
+      <table class="cn-table">
+        <thead>
+          <tr>
+            <th>Interval</th>
+            <th>Sign of $𝒇′′(𝒙)$</th>
+            <th>Concavity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$(-\infty,0)$</td>
+            <td>$+$</td>
+            <td>Concave up</td>
+          </tr>
+          <tr>
+            <td>$(0,2)$</td>
+            <td>$-$</td>
+            <td>Concave down</td>
+          </tr>
+          <tr>
+            <td>$(2,\infty)$</td>
+            <td>$+$</td>
+            <td>Concave up</td>
+          </tr>
+        </tbody>
+      </table>
+    </template>
+
+    <!-- Table 2: g''(x) intervals and concavity -->
+    <template id="table-2-template">
+      <table class="cn-table">
+        <thead>
+          <tr>
+            <th>Interval</th>
+            <th>Sign of $𝓰′′(𝒙)$</th>
+            <th>Concavity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$(-\infty,1)$</td>
+            <td>$+$</td>
+            <td>Concave up</td>
+          </tr>
+          <tr>
+            <td>$(1,\infty)$</td>
+            <td>$-$</td>
+            <td>Concave down</td>
+          </tr>
+        </tbody>
+      </table>
+    </template>
+
+    <!-- Table 3: h'(x) intervals and behavior -->
+    <template id="table-3-template">
+      <table class="cn-table">
+        <thead>
+          <tr>
+            <th>Interval</th>
+            <th>Sign of $𝒉′(𝒙)$</th>
+            <th>Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$(-\infty,-2)$</td>
+            <td>$+$</td>
+            <td>Increasing</td>
+          </tr>
+          <tr>
+            <td>$(-2,4)$</td>
+            <td>$-$</td>
+            <td>Decreasing</td>
+          </tr>
+          <tr>
+            <td>$(4,\infty)$</td>
+            <td>$+$</td>
+            <td>Increasing</td>
+          </tr>
+        </tbody>
+      </table>
+    </template>
+
+    <!-- Table 4: h''(x) intervals and concavity -->
+    <template id="table-4-template">
+      <table class="cn-table">
+        <thead>
+          <tr>
+            <th>Interval</th>
+            <th>Sign of $𝒉′′(𝒙)$</th>
+            <th>Concavity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$(-\infty,1)$</td>
+            <td>$-$</td>
+            <td>Concave down</td>
+          </tr>
+          <tr>
+            <td>$(1,\infty)$</td>
+            <td>$+$</td>
+            <td>Concave up</td>
+          </tr>
+        </tbody>
+      </table>
+    </template>
+
+    <!-- ASCII number line: generic PIP₁, PIP₂ -->
+    <template id="ascii-numline-1">
+      <pre class="ascii-diagram">
+               ─────────●──────────────●────────
+         𝒇′′(𝒙)         ∣               ∣
+                       PIP₁           PIP₂ . . .
+      </pre>
+    </template>
+
+    <!-- ASCII number line: 0 and 2, signs + - + -->
+    <template id="ascii-numline-2">
+      <pre class="ascii-diagram">
+                             0           2
+            𝒇′′(𝒙)     +     ∣     −      ∣   +
+                    ─────────●───────────●────────
+      </pre>
+    </template>
+
+    <!-- ASCII number line: 1, signs + - -->
+    <template id="ascii-numline-3">
+      <pre class="ascii-diagram">
+                               1
+            𝒇′′(𝒙)       +     ∣     −
+                      ─────────●─────────
+      </pre>
+    </template>
+
+    <!-- ASCII number line: -2 and 4, signs + - + -->
+    <template id="ascii-numline-4">
+      <pre class="ascii-diagram">
+                           -2          4
+        𝒇′(𝒙)        +     ∣     −     ∣    +
+                  ─────────●───────────●────────
+      </pre>
+    </template>
+
+    <template id="ascii-numline-5">
+      <pre class="ascii-diagram">
+                        -2             4
+        𝒇′(𝒙)       +    ∣      −       ∣    +
+                  ───────●──────●──────●───────
+       𝒇′′(𝒙)           -       ∣       +
+                                1
+      </pre>
+    </template>
+
+    <script>
+      function insertTemplate(targetId, templateId) {
+        const target = document.getElementById(targetId);
+        const template = document.getElementById(templateId);
+        if (target && template) {
+          target.innerHTML = template.innerHTML;
+        }
+      }
+
+      // Insert tables
+      insertTemplate("table-1", "table-1-template");
+      insertTemplate("table-2", "table-2-template");
+      insertTemplate("table-3", "table-3-template");
+      insertTemplate("table-4", "table-4-template");
+
+
+      // Insert ASCII number lines
+      insertTemplate("numline-1", "ascii-numline-1");
+      insertTemplate("numline-2", "ascii-numline-2");
+      insertTemplate("numline-3", "ascii-numline-3");
+      insertTemplate("numline-4", "ascii-numline-4");
+      insertTemplate("numline-5", "ascii-numline-5");
+    </script>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+image_name: [53-50]Example - lim ₓ→∞ (√(𝒙² + 2) ) ÷  (3𝒙 - 6)_2.png
+file_name: [53-50]-02.png
+timestamp: 53:50
+counter: 02
+folder: Calculus 1 Lecture 3.5

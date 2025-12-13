@@ -1,0 +1,5 @@
+image_name: [8-45]Application of the Chain Rule to the example (3𝒙² - 4)¹⁰⁰.png
+file_name: [8-45]-01.png
+timestamp: 8:45
+counter: 01
+folder: Calculus 1 Lecture 2.6

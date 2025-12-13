@@ -1,0 +1,5 @@
+image_name: [31-28]Example 𝒙⋅𝐲 = 1.png
+file_name: [31-28]-01.png
+timestamp: 31:28
+counter: 01
+folder: Calculus 1 Lecture 2.7

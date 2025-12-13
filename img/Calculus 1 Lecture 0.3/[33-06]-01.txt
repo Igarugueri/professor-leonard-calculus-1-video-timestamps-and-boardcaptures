@@ -1,0 +1,5 @@
+image_name: [33-06]Use of Reference Angles to Find Trigonometric Functions.png
+file_name: [33-06]-01.png
+timestamp: 33:06
+counter: 01
+folder: Calculus 1 Lecture 0.3

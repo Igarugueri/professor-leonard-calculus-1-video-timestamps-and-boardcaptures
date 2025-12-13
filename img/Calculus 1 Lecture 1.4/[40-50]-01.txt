@@ -1,0 +1,5 @@
+image_name: [40-50]𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐨𝐟 𝐏𝐨𝐥𝐲𝐧𝐨𝐦𝐢𝐚𝐥𝐬.png
+file_name: [40-50]-01.png
+timestamp: 40:50
+counter: 01
+folder: Calculus 1 Lecture 1.4

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．７　Oｐｔｉｍｉｚａｔｉｏｎ；　Mａｘ / Mｉｎ　Aｐｐｌｉｃａｔｉｏｎ　Pｒｏｂｌｅｍｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｃｔｕｒｅ　３．７</h1>
+    <h1>　Oｐｔｉｍｉｚａｔｉｏｎ；　Mａｘ / Mｉｎ　Aｐｐｌｉｃａｔｉｏｎ　Pｒｏｂｌｅｍｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=1" target="_blank">[0:01]</a>. Introduction
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[0-01]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[0-01]-01.png" alt="Preview" />
+        </span>
+        <br />
+        <!-- ◉ nivel-2 -->
+        <ul>
+          <li class="level-2">
+            This lecture focuses on how to maximize and/or minimize continuous functions.
+          </li>
+          <li class="level-2">
+            Two scenarios are explored:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Closed Intervals.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Open Intervals.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            We analyze the existence of absolute maxima and minima in continuous functions and their real-life
+            applications.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=50" target="_blank">[0:50]</a>. Real-Life
+        Applications
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Minimizing Costs and Maximizing Profits: In business, it is crucial to find the lowest cost and the highest
+            profit.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Calculus allows for precise calculations of production and costs to optimize these aspects.
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Design Optimization: Calculus can be used to design products that maximize attributes such as volume, given
+            certain constraints.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘｔｒｅｍｅ　ｖａｌｕｅ　ｔｈｅｏｒｅｍ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=135" target="_blank">[2:15]</a>. Extreme Value
+        Theorem.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Closed Intervals:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                If a function is continuous on a <strong>closed interval $[\mathcal{a},\mathcal{b}]$</strong>, then it
+                <strong>must attain</strong> both an absolute maximum and an absolute minimum on that interval.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                These extrema may occur:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">At the endpoints ($x=\mathcal{a}$ or $x=\mathcal{b}$), or</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">At critical points within $(\mathcal{a}, \mathcal{b})$ where the derivative is
+                    zero or undefined.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Open Intervals:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                If a function is continuous on an <strong>open interval $(\mathcal{a},\mathcal{b})$</strong>, it
+                <strong>might not attain</strong> absolute extrema.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                This is because there are no endpoints to "trap" the function’s values, and the function might increase
+                or decrease without bound near the edges.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2> Ｍａｘｉｍｉｚｉｎｇ　Eｘａｍｐｌｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=231" target="_blank">[3:51]</a>. Maximizing the Area
+        of a Rectangle
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[3-51]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[3-51]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Problem: Maximize the area of a rectangular region fenced with 100 feet of fencing.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Identify the Restriction: The total length of fencing (100 ft) corresponds to the rectangle’s perimeter.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Draw a Diagram: Sketch a rectangle and label its sides as $𝒙$ and $𝑦$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Formulate:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Area: $A = 𝒙\cdot 𝑦$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Constraint:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Perimeter: $2𝒙 + 2𝑦 = 100$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"><strong>Solve the restriction for one variable</strong>:</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝑦 = 50 − 𝒙$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <strong>Substitute into the Area Formula:</strong> Substitute $𝑦$ into the area expression:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$A = 𝒙(50 − 𝒙)$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find Critical Points: Take the derivative of $𝒜$ with respect to $𝒙$, set it to zero, and solve for $𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$ \dfrac{dA}{d𝒙} = 50 − 2𝒙 = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙 = 25$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Determine Endpoints: The possible minimum and maximum values for $𝒙$ are $0$ and $50$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=1088" target="_blank">[18:08]</a>. ᴛʜᴇ ᴩᴏɪɴᴛ:
+                By the Extreme Value Theorem, the maximum must occur at one of the following:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒙 = 0,\; 𝒙 = 25,\; 𝒙 = 50$ — all within the interval $𝒙 \in [0, 50]$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Evaluate the Function at Critical Points and Endpoints:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$A(0) = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$A(25) = 625$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$A(50) = 0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Conclusion: The maximum area is $625\ \text{ft}^2$ when $𝒙 = 25$ ft and $𝑦 = 25$ ft, forming a square.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=1301" target="_blank">[21:41]</a>. Maximizing the
+        Volume of a Box
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[21-41]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[21-41]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[21-41]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[21-41]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Problem: An open box is constructed from a $16\times 30$-inch piece of cardboard by cutting squares of side
+            $𝒙$ from each corner and folding up the flaps.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Draw a Diagram: Sketch the cardboard with the cut-out squares and the resulting box.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Identify the Restriction: The maximum cut size is $8$ inches (half the length of the shorter side).
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Formulate Equations:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Volume: $V = 𝒙(30 − 2𝒙)(16 − 2𝒙)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Restriction: $0 \le 𝒙 \le 8$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Simplify the Volume Formula: Expand and combine like terms as needed.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find Critical Points: Take the derivative of $V$ with respect to $𝒙$, set it to zero, and solve.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$ \dfrac{dV}{d𝒙} = 12𝒙^2 − 188𝒙 + 480 = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">By factoring or quadratic formula: $𝒙 = 12$ or $𝒙 = \dfrac{10}{3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Discard Invalid Solutions: $𝒙 = 12$ is invalid because it exceeds the restriction.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Evaluate the Function at Critical Points and Endpoints:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$V(0) = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$V\!\left(\dfrac{10}{3}\right) > 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$V(8) = 0$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Conclusion: The maximum volume is achieved with a $10/3$-inch cut.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2> Ｍｉｎｉｍｉｚｉｎｇ　Eｘａｍｐｌｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=2313" target="_blank">[38:33]</a>. Minimizing the
+        Cost of a Pipeline
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[38-33]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[38-33]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[38-33]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[38-33]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Problem: A pipeline must carry oil from an offshore platform to a refinery on land.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The pipeline cost is $1 per km offshore and $0.50 per km on land.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The platform is $5$ km from the coast, and the refinery is $8$ km along the coast.
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Draw a Diagram: Sketch the coastline, the offshore platform, the refinery, and the potential pipeline route.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Identify the Restriction: The refinery is fixed at $8$ km along the coast.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Choose a landing point $𝓟=(x,0)$ somewhere along the coast ($0 \le x \le 8$) where the total cost is
+            minimized.
+          </li>
+        </ul>
+        <div id="ascii-offshore-diagram"></div>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Formulate Equations:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Cost: $C = \sqrt{x^{2} + 25}\; +\; 0.5\,(8 − x)$
+                <br />
+                (Here, $x$ is the distance along the coast from the point directly opposite the platform to the
+                pipeline’s landfall)
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Restriction: $0 \le x \le 8$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Simplify the Cost Equation: Distribute $0.5$ in the expression.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find Critical Points: Take the derivative of $C$ with respect to $x$, set it to zero, and solve.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$ \dfrac{dC}{dx} = \dfrac{x}{\sqrt{x^{2} + 25}} − 0.5 = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Solving yields $x = \dfrac{5\sqrt{3}}{3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Evaluate the Function at Critical Points and Endpoints:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$C(0) = 9$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$C\!\left(\dfrac{5\sqrt{3}}{3}\right) \approx 8.33$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$C(8) \approx 9.43$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Conclusion: The minimum cost is about 8.33$ when x $\approx$ 2.9 km.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=SWZcq_biZLw&amp;t=4332" target="_blank">[1:12:12]</a>. Minimizing
+        Material for a Can
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[1-12-12]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[1-12-12]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[1-12-12]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[1-12-12]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.7/[1-12-12]-03.png" target="_blank">- [📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 3.7/[1-12-12]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Problem: Design a cylindrical can that holds $1{,}000\ \text{cm}^3$ of liquid using the least material.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Draw a Diagram: Sketch a cylinder, labeling the radius $r$ and height $h$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Identify the Restriction: The can’s volume is fixed at $1{,}000\ \text{cm}^3$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Formulate Equations:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Surface Area: $S = 2\pi r^{2} + 2\pi r\,h$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Restriction (Volume): $\pi r^{2}h = 1000$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Solve for One Variable: Solve the volume restriction for $h$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$h = \dfrac{1000}{\pi r^{2}}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Substitute into the Surface Area Formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$S = 2\pi r^{2} + 2\pi r \left(\dfrac{1000}{\pi r^{2}}\right)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify: $S = 2\pi r^{2} + \dfrac{2000}{r}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Find Critical Points: Take the derivative of $S$ with respect to $r$, set it to zero, and solve.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$ \dfrac{dS}{dr} = 4\pi r − \dfrac{2000}{r^{2}} = 0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Solving gives $r = \sqrt[3]{\dfrac{500}{\pi}} \approx 5.42\ \text{cm}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Calculate the Height:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$h \approx 10.84\ \text{cm}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Verify It’s a Minimum:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Use the second derivative: $\dfrac{d^{2}S}{dr^{2}} = 4\pi + \dfrac{4000}{r^{3}}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluating at $r \approx 5.42$ cm yields a positive result, indicating a minimum.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Conclusion: The can uses the least material when $r \approx 5.42$ cm and $h \approx 10.84$ cm.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+
+  <template id="ascii-offshore-diagram-template">
+    <pre class="ascii-diagram">
+ 🗼 –––(0,5) offshore platform
+            | 
+            |
+            |     Offshore segment (cost $1/km)
+            |
+            |
+            |(0,0) Landing point A at x Km                         Refinery R
+            ─────────────●─────────────────────────────────────────🛢️(8, 0)
+               &lt;-- x --&gt; 𝓟           &lt;--  |8 − x|  →
+           &lt;──────────────── Land segment (cost $0.50/km) ───────────────────&gt;
+    </pre>
+  </template>
+
+  <script>
+    function insertTemplate(targetId, templateId) {
+      const target = document.getElementById(targetId);
+      const template = document.getElementById(templateId);
+      if (target && template) target.innerHTML = template.innerHTML;
+    }
+
+    insertTemplate("ascii-offshore-diagram", "ascii-offshore-diagram-template");
+  </script>
+</body>
+
+</html>

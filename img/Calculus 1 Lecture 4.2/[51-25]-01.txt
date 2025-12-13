@@ -1,0 +1,5 @@
+image_name: [51-25]. ∫ (cos(√𝒙) ／ √𝒙) · 𝒅𝒙.png
+file_name: [51-25]-01.png
+timestamp: 51:25
+counter: 01
+folder: Calculus 1 Lecture 4.2

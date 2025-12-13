@@ -1,0 +1,5 @@
+image_name: [18-40]Example – Find the equation of the tangent line to the curve 𝑦 = 𝑥² at the point 𝑷(1, 1)_3.png
+file_name: [18-40]-03.png
+timestamp: 18:40
+counter: 03
+folder: Calculus 1 Lecture 1.1

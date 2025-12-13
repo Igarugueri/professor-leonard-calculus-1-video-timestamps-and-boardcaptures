@@ -1,0 +1,5 @@
+image_name: [0-52]Example product rule.png
+file_name: [0-52]-01.png
+timestamp: 0:52
+counter: 01
+folder: Calculus 1 Lecture 2.3

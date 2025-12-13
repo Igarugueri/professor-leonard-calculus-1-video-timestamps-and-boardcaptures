@@ -1,0 +1,5 @@
+image_name: [2-13-35]Example – 3 Revolve between 𝑦 = 𝒙² (outside) and  𝒙 = 𝑦², revolved around 𝑦-axis (washers in 𝒅𝑦).png
+file_name: [2-13-35]-01.png
+timestamp: 2:13:35
+counter: 01
+folder: Calculus 1 Lecture 5.2

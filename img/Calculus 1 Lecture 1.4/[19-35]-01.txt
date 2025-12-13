@@ -1,0 +1,5 @@
+image_name: [19-35]Example – Introduction Continuity at endpoints of an interval.png
+file_name: [19-35]-01.png
+timestamp: 19:35
+counter: 01
+folder: Calculus 1 Lecture 1.4

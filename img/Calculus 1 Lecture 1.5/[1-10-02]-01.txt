@@ -1,0 +1,5 @@
+image_name: [1-10-02]Instantaneous_velocity.png
+file_name: [1-10-02]-01.png
+timestamp: 1:10:02
+counter: 01
+folder: Calculus 1 Lecture 1.5

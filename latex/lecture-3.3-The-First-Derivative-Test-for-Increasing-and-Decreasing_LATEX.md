@@ -1,0 +1,186 @@
+﻿-----------------------------------**Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．３　Tｈｅ　Fｉｒｓｔ　Dｅｒｉｖａｔｉｖｅ　Tｅｓｔ　Fｏｒ　Iｎｃｒｅａｓｉｎｇ　ａｎｄ　Dｅｃｒｅａｓｉｎｇ**---------------------------------
+
+
+
+
+
+Ｉｎｔｒｏｄｕｃｔｉｏｎ
+
+● [0:00](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=0). Topic: The First Derivative Test — determining intervals of increase and decrease of a function.
+     ◉ Identifying where $𝒇′(𝒙)>0$ or $𝒇′(𝒙)<0$ to locate increasing and decreasing behavior.
+     ◉ Application to curve sketching: analyzing the shape of a function by detecting local maxima, minima, and transitions in slope.
+
+
+
+
+Ｒｅｖｉｅｗ　ｏｆ　ｐｒｅｖｉｏｕｓ　ｃｏｎｃｅｐｔｓ
+
+● [0:55](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=55). Review of the meaning of the first derivative and its relationship with a function’s increase and decrease. [📷image](../img/Calculus 1 Lecture 3.3/[0-55]-01.png) 
+$\rule{0pt}{}$
+     ◉ [1:10](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=70). If $𝒇′(𝒙)>0$, the function $𝒇(𝒙)$ is increasing.
+     $\rule{0pt}{}$
+     ◉ [2:16](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=136). If $𝒇′(𝒙)<0$, the function $𝒇(𝒙)$ is decreasing.
+     $\rule{0pt}{}$
+     ◉ [2:33](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=153). If $𝒇′(𝒙)=0$, constant, the function $𝒇(𝒙)$ has a horizontal tangent, and a critical number is identified.
+
+
+
+
+Ｔｈｅ　ｆｉｒｓｔ　ｄｅｒｉｖａｔｉｖｅ　ｔｅｓｔ
+
+● [3:05](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=185). Introduction to the First Derivative Test to find relative extrema (maximums and minimums).
+
+
+● [3:26](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=206). Step-by-step explanation of the First Derivative Test: [📷image-1](../img/Calculus 1 Lecture 3.3/[3-26]-01.png) [📷image-2](../img/Calculus 1 Lecture 3.3/[3-26]-02.png) 
+     ◉ ❶ [4:21](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=261). Find the first derivative, $𝒇′(𝒙)$.
+     ◉ ❷ [4:40](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=280). Set the first derivative equal to zero, $𝒇′(𝒙)=0$, to find critical numbers.
+          ○ In addition to the values where $𝒇′(𝒙)=0$, you must also include as **critical numbers** any point where $𝒇′(𝒙)$ does not exist. 
+             This is because c̲r̲i̲t̲i̲c̲a̲l̲ ̲n̲u̲m̲b̲e̲r̲s̲ are defined as **any 𝒙 in the domain of 𝒇** where either  t̲h̲e̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e̲ ̲ ̲i̲s̲ ̲z̲e̲r̲o̲ ̲  or th̲e̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e̲ ̲i̲s̲ ̲u̲n̲d̲e̲f̲i̲n̲e̲d̲..  
+             Even if the derivative does not exist at such a point, it can still correspond to a local maximum, a local minimum, or some other important change in 
+             the behavior of the function.
+               ■ Points where the denominator is zero (possible vertical asymptotes).
+                    ▣ This occurs when the function is not defined (or tends to ±∞) as 𝒙 approaches a certain value 𝒙 = a.
+                    $\rule{0pt}{}$
+                         ▢ Example: $𝒇(𝒙)=\dfrac{1}{𝒙}$. As $𝒙\to 0$, $𝒇(𝒙)\to \pm\infty$, and the line $𝒙=0$ is a vertical asymptote.
+                         $\rule{0pt}{}$
+               ■ Sharp corners or cusps (abrupt changes in slope).
+               ■ Vertical tangents (infinite slope).
+                    ▣ This occurs when the function is defined at a point, but its derivative becomes infinite (or tends to ±∞).
+                    $\rule{0pt}{}$
+                         ▢ Example: $𝒇(𝒙)=𝒙^{1/3}$ at $𝒙=0$. The function is defined at $𝒙=0$, but $𝒇′(𝒙)=\dfrac{1}{3𝒙^{2/3}}$ tends to ±∞ as $𝒙\to 0$, indicating a vertical tangent.
+                         $\rule{0pt}{}$
+               ■ Discontinuities (jump, infinite, removable).
+     ◉ ❸ [4:58](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=298). Create a first derivative sign chart using the critical numbers.
+          ○ Draw a number line and mark the critical points.
+          $\rule{0pt}{}$
+                                       C.N          C.N  
+                  𝒇′(x)                  ∣              ∣
+                               ----------∣------------∣--------—
+                               $\rule{0pt}{}$
+          ○ Indicate the sign of $𝒇′(𝒙)$ above the number line for each interval.
+    ◉ ❹ [6:16](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=376). Test a point in each interval defined by the critical numbers.
+          ○ Determine the sign of $𝒇′(𝒙)$ in each interval.
+          ○ Substitute a sample value into $𝒇′(𝒙)$ to check if the slope is positive or negative.
+          ○ The sign of $𝒇′(𝒙)$ tells whether the function is increasing or decreasing in that interval.
+          ○ Local Maximum:
+          $\rule{0pt}{}$
+                     i̲f̲ $𝒇′(𝒙)$ changes from positive to negative at a critical number,  
+                     t̲h̲e̲n̲ there is a local maximum.
+                     $\rule{0pt}{}$
+          ○ Local Minimum:
+          $\rule{0pt}{}$
+                     i̲f̲ $𝒇′(𝒙)$ changes from negative to positive at a critical number,  
+                     t̲h̲e̲n̲ there is a local minimum.
+                     $\rule{0pt}{}$
+          ○ Neither Maximum nor Minimum:
+          $\rule{0pt}{}$
+                     i̲f̲ $𝒇′(𝒙)$ does not change sign at a critical number,  
+                     t̲h̲e̲n̲ it is not classified as a maximum or minimum.
+                     $\rule{0pt}{}$
+               ■ Sometimes referred to as a **horizontal inflection point**, if:
+                    ▣ $𝒇′(𝒙)=0$.
+                    ▣ The concavity changes (i.e., $𝒇′(𝒙)$ doesn't change sign, but $𝒇″(𝒙)$ does).
+                    $\rule{0pt}{}$
+                    ▣ 🧩 Example –: $𝒇(𝒙)=𝒙^3$
+                    $\rule{0pt}{}$
+                         ▢ $𝒇′(𝒙)=3𝒙^2$ → $𝒇′(0)=0$, but stays positive on both sides of $0$.
+                         $\rule{0pt}{}$
+                         ▢ $𝒇″(𝒙)=6𝒙$ → changes sign at $𝒙=0$.
+                         $\rule{0pt}{}$
+                         ▢ So, $𝒙=0$ is a critical point, not a max or min, but a **horizontal inflection point**.
+
+
+● [10:44](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=644). 🧩 Example –: Application of the first derivative test to an example $𝒇(𝒙)=𝒙^3-3𝒙+1$ [📷image](../img/Calculus 1 Lecture 3.3/[10-44]-01.png) 
+     ◉ ❶ Find the first derivative:
+     $\rule{0pt}{}$
+          ○ $𝒇(𝒙)=𝒙^3−3𝒙+1 \Rightarrow 𝒇′(𝒙)=3𝒙^2−3$
+               $\rule{0pt}{}$
+     ◉ ❷ Set the first derivative equal to zero:
+     $\rule{0pt}{}$
+          ○ $3𝒙^2−3=0 \Rightarrow 𝒙^2=1 \Rightarrow 𝒙=−1$ and $𝒙=1$
+          ○ There are no points where $𝒇′(𝒙)$ is undefined.
+          ○ Critical numbers: $𝒙=−1$, $𝒙=1$ (both are in the domain of the original funcction)
+     ◉ ❸ Check for values that make the derivative undefined.
+     ◉ ❸ Create a sign chart for $𝒇′(𝒙)$:
+     $\rule{0pt}{}$
+                                      -1             1
+              𝒇′(𝒙)                ∣              ∣
+                              --------∣------------∣-----—
+                              $\rule{0pt}{}$
+    ❹ Test a value from each interval in $𝒇′(𝒙)$ to determine the sign.  
+    $\rule{0pt}{}$
+          ○ Test values:   
+               ■ $𝒙=−2$ → $𝒇′(𝒙)>0$
+          $\rule{0pt}{}$
+               ■ $𝒙=0$ → $𝒇′(𝒙)<0$
+                                   $\rule{0pt}{}$
+               ■ $𝒙=2$ → $𝒇′(𝒙)>0$
+          ○ Sign chart:
+          $\rule{0pt}{}$
+                                    -1             1
+            𝒇′(𝒙)        +      ∣      −      ∣     +
+                          ----------∣------------∣-----—
+                          $\rule{0pt}{}$
+          ○ Apply the First Derivative Test:
+          $\rule{0pt}{}$
+               ■ At $𝒙=−1$: $𝒇′$ changes from $+$ to $−$ → Local Maximum
+               $\rule{0pt}{}$
+               ■ At $𝒙=1$:  $𝒇′$ changes from $−$ to $+$ → Local Minimum
+               $\rule{0pt}{}$
+          ○ Evaluate the function at critical points:
+          $\rule{0pt}{}$
+               ■ $𝒇(−1)=(-1)^3−3(-1)+1=3$
+               $\rule{0pt}{}$
+               ■ $𝒇(1)=1^3−3(1)+1=−1$
+               $\rule{0pt}{}$
+     ◉ Answer:
+          ○ Local Maximum at $(−1,3)$
+          ○ Local Minimum at $(1,−1)$
+
+
+● [17:12](https://www.youtube.com/watch?v=nQ6tOORDQ3I&list=PLF797E961509B4EB5&t=1032). 🧩 Example –: Presentation of a second example to apply the first derivative test $𝒇(𝒙)=3𝒙^{5/3}-15𝒙^{2/3}$ [📷image](../img/Calculus 1 Lecture 3.3/[17-12]-01.png)
+     ◉ ❶ Find the first derivative:  
+     $\rule{0pt}{}$
+       ○ $𝒇(𝒙)=3𝒙^{5/3}-15𝒙^{2/3} \;\Rightarrow\; 𝒇′(𝒙)=5𝒙^{2/3}-10𝒙^{-1/3}$
+    $\rule{0pt}{}$
+     ◉ ❷ Set the first derivative equal to zero: $5𝒙^{2/3}-10𝒙^{-1/3}=0$  
+    $\rule{0pt}{}$
+   ○ Multiply both sides by $𝒙^{1/3}$:  
+    $\rule{0pt}{}$
+        ■ $5𝒙-10=0 \Rightarrow 𝒙=2$  
+
+   ○ Check where $𝒇′(𝒙)$ is undefined: 
+    $\rule{0pt}{}$
+     ■ $𝒇′(𝒙)$ is undefined at $𝒙=0$ (due to $𝒙^{-1/3}$)
+
+   ○ Critical numbers: $𝒙=0$, $𝒙=2$ (both are in the domain of $𝒇$)
+    $\rule{0pt}{}$
+   ❸ Create a sign chart for $𝒇′(𝒙)$:  
+   $\rule{0pt}{}$
+                 0       2  
+    $𝒇′(𝒙)$           ∣        ∣   
+           ----------∣----------------∣-------—
+           $\rule{0pt}{}$
+   ❹ Test a value from each interval in $𝒇′(𝒙)$ to determine the sign:  
+          ○ Test values:  
+          ■ $𝒙=−1 \;\Rightarrow\; 𝒇′(−1)=5(-1)^{2/3}-10(-1)^{-1/3}>0 \;\Rightarrow\; 𝒇′(𝒙)<0$  
+    $\rule{0pt}{}$
+        ■ $𝒙=1 \;\Rightarrow\; 𝒇′(1)=5-10<0 \;\Rightarrow\; 𝒇′(𝒙)<0$  
+    $\rule{0pt}{}$
+        ■ $𝒙=3 \;\Rightarrow\; 𝒇′(3)=5\cdot 3^{2/3}-10\cdot 3^{-1/3}>0 \;\Rightarrow\; 𝒇′(𝒙)>0$
+    $\rule{0pt}{}$
+       ○ Sign chart:  
+               0       2  
+    $𝒇′(𝒙)$        +  ∣    −    ∣  +  
+           -----------∣---------------∣-------—
+           $\rule{0pt}{}$
+       ○ Apply the First Derivative Test:  
+       ■ At $𝒙=0$: The derivative $𝒇′$ is undefined due to a vertical tangent, so this point is not considered a local extremum.  
+                    ▣ This will become clearer when we study the second derivative test.
+       ■ At $𝒙=2$: $𝒇′$ changes from $−$ to $+$ ⇒ Local Minimum.
+       ○ Evaluate the function at critical points:  
+    ■ $𝒇(0)=3\cdot 0-15\cdot 0=0$  
+    ■ $𝒇(2)=3\,(2)^{5/3}-15\,(2)^{2/3}\approx 9.52-23.81\approx -14.29$
+     ◉ Answer:  
+          ○ Local Minimum at $(2,\,−14.29)$  
+          ○ Vertical tangent (not extremum) at $(0,\,0)$

@@ -1,0 +1,5 @@
+image_name: [2-11-29]Example – Definite Integral with Substitution (Method 2) ∫[1, 3] [cos(π∕𝒙)∕𝒙²]·𝒅𝑥_2.png
+file_name: [2-11-29]-02.png
+timestamp: 2:11:29
+counter: 02
+folder: Calculus 1 Lecture 4.5

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．８　Rｅｌａｔｅｄ　Rａｔｅｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．８　Rｅｌａｔｅｄ　Rａｔｅｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｃｏｎｃｅｐｔ　ｏｆ　ｒｅｌａｔｅｄ　ｒａｔｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=0"
+          target="_blank">[0:00]</a>. Definition and examples.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Definition of related rates: how a formula relates to its change over time.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Examples:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Cost as a function of time.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Profit as a function of time.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Volume in expansion or contraction as a function of time.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Objective of related rates: relating a formula to time.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｏｒｙ　ｅｘａｍｐｌｅ：　ｃｏｎｅ　ｗｉｔｈ　ｗａｔｅｒ　ｌｅａｋ</h2>
+    <ul>
+      <li class="level-1">
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.8/[1-05]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.8/[1-05]-01.png" alt="Preview" />
+        </span>
+      </li>
+      <ul>
+        <ul>
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=65"
+              target="_blank">[1:05]</a>. Description and variables.
+
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Description of the problem:
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> A cone with a water leak at the bottom.</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> The water level in the cone changes over time.</li>
+                </ul>
+              </li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Variables to consider:
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Height of the water ($𝒉$).</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Radius of the water surface ($𝒓$).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=165"
+              target="_blank">[2:45]</a>. Objective: Find the rate of change of the volume of water with respect to time
+            ($\dfrac{d𝓥}{d𝓉}$).</li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=214"
+              target="_blank">[3:34]</a>. Considerations:
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> The height ($𝒉$) and radius ($𝒓$) of the water change as the water drains.</li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> The volume of water ($𝓥$) depends on $𝒉$ and $𝒓$, and thus also changes over time.
+              </li>
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=253"
+              target="_blank">[4:13]</a>. Steps to Solve the Problem:
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Step 1: Find a formula that relates the involved variables.
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> In this case, the formula for the volume of a cone: $𝓥=\dfrac{\pi}{3}𝒓^{2}𝒉$.
+                  </li>
+                </ul>
+              </li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> [5:35] Step 2: Differentiate the formula implicitly with respect to time ($𝓉$).
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Justification: Volume ($𝓥$), radius ($𝒓$), and height ($𝒉$) are functions of
+                    time.</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Use the chain rule to differentiate each variable with respect to $𝓉$, resulting
+                    in <br>
+                    terms like $\dfrac{d𝓥}{d𝓉}$, $\dfrac{d𝒓}{d𝓉}$, and $\dfrac{d𝒉}{d𝓉}$.</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Take advantage of Implicit Differentiation
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"> Why Use Implicit Differentiation in Related Rates.
+                        <ul>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5"> Many related rates problems present relationships where variables cannot
+                            be easily isolated.</li>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5"> Implicit differentiation allows us to handle these complexities by:
+                            <ul>
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6"> Treating dependent variables (like $𝐲$) as functions of independent
+                                variables (like $𝒙$ or $𝓉$).</li>
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6"> Applying the chain rule to account for the interdependence of
+                                variables.
+                                <ul>
+                                  <!-- ▲ nivel-7 -->
+                                  <li class="level-7"> Example Insight: In the cone with a water leak example, the
+                                    volume $𝓥$ depends on both the radius $𝒓$ and the height $𝒉$,
+                                    which are themselves <strong>changing over time.</strong> Implicit differentiation
+                                    facilitates finding how $𝓥$ changes with time
+                                    without needing to isolate $𝒓$ or $𝒉$.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ● nivel-1 (still under same section, but new top-level bullet in list of this h2) -->
+              <!-- We keep as nested level-1 inside this section's main <ul> -->
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=507"
+              target="_blank">[8:27]</a>. Interpretation of the Derivative Terms:
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> $\dfrac{d}{d𝓉}[𝓥]=\dfrac{d}{d𝓉}\!\Big[\dfrac{\pi}{3}𝒓^{2}𝒉\Big]$
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝓥}{d𝓉}$: Rate of change of volume with respect to time; $𝓥$ is a
+                    function of $𝓉$; describes how the volume is changing with respect to time.</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝒓}{d𝓉}$: Rate of change of radius with respect to time; $𝒓$ is a
+                    function of $𝓉$; describes how the radius is changing with respect to time.</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝒉}{d𝓉}$: Rate of change of height with respect to time; $𝒉$ is a
+                    function of $𝓉$; describes how the height is changing with respect to time.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=600"
+              target="_blank">[10:00]</a>. Use of the product rule when differentiating the volume formula.
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> $\dfrac{d}{d𝓉}[𝓥]=\dfrac{d}{d𝓉}\!\Big[\dfrac{\pi}{3}𝒓^{2}𝒉\Big]$
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Differentiate implicitly, as $r$ and $h$ depend on $t$</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝓥}{d𝓉}=\dfrac{\pi}{3}\cdot\dfrac{d}{d𝓉}[𝒓^{2}𝒉]$ # Constants can be
+                    factored out</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝓥}{d𝓉}=\dfrac{\pi}{3}\cdot\Big[\,\dfrac{d}{d𝓉}(𝒓^{2})\cdot
+                    𝒉+𝒓^{2}\cdot\dfrac{d𝒉}{d𝓉}\,\Big]$ # Product rule: $\dfrac{d}{d𝓉}[uv]=\dfrac{d}{d𝓉}[u]\cdot
+                    v+u\cdot\dfrac{d}{d𝓉}[v]$
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"> $\dfrac{d}{d𝓉}(𝒓^{2})=2𝒓\cdot\dfrac{d𝒓}{d𝓉}$ # Chain rule, since
+                        $𝒓=𝒓(𝓉)$</li>
+                    </ul>
+                  </li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> $\dfrac{d𝓥}{d𝓉}=\dfrac{\pi}{3}\cdot\Big[\,2𝒓\cdot\dfrac{d𝒓}{d𝓉}\cdot
+                    𝒉+𝒓^{2}\cdot\dfrac{d𝒉}{d𝓉}\,\Big]$ # Substitute the result above</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3">
+                    $\dfrac{d𝓥}{d𝓉}=\dfrac{\pi}{3}\Big[\,2𝒓𝒉\cdot\dfrac{d𝒓}{d𝓉}+𝒓^{2}\cdot\dfrac{d𝒉}{d𝓉}\,\Big]$
+                    # This gives the rate of change of volume in terms of rates of $r$ and $h$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=813"
+              target="_blank">[13:33]</a>. Information Needed to Solve the Problem:
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Value of the radius ($𝒓$) at a given moment.</li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Value of the height ($𝒉$) at a given moment.</li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Rate of change of the radius ($\dfrac{d𝒓}{d𝓉}$).</li>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> Rate of change of the height ($\dfrac{d𝒉}{d𝓉}$).</li>
+            </ul>
+          </li>
+
+          <!-- ● nivel-1 -->
+          <li class="level-1"> <a
+              href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=894"
+              target="_blank">[14:54]</a>. Transition to Simpler Examples to Illustrate the Concept of Related Rates.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.8/[14-54]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.8/[14-54]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"> <a
+                  href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=926"
+                  target="_blank">[15:26]</a>. 🧩 Example –: Find $\dfrac{d𝑦}{d𝓉}$ when $𝑦=𝒙^{3}$ at $𝓉=1$
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Assume that $𝑦$ and $𝒙$ are functions of time ($𝓉$).</li>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"> Differentiate the equation implicitly with respect to $𝓉$, resulting in
+                    $\dfrac{d𝑦}{d𝓉}=3𝒙^{2}\cdot\dfrac{d𝒙}{d𝓉}$
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"> <a
+                          href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1054"
+                          target="_blank">[17:34]</a>. Additional Information Needed!:
+                        <ul>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5"> Value of $𝒙$ at a given moment (e.g., $𝓉=1$) and value of
+                            $\dfrac{d𝒙}{d𝓉}$ at the same moment (e.g., $𝓉=1$).
+                            <ul>
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6"> Find this out: If $𝒙=2$ and $\dfrac{d𝒙}{d𝓉}=4$ at $𝓉=1$.
+                                <ul>
+                                  <!-- ▲ nivel-7 -->
+                                  <li class="level-7"> What is happening at $𝓉=1$?
+                                    <ul>
+                                      <!-- ◭ nivel-8 -->
+                                      <li class="level-8"> $\dfrac{d𝒙}{d𝓉}=4$ "The variable $𝒙$ is changing with
+                                        respect to time $𝓉$ at a rate of 4 units per unit of time."</li>
+                                      <!-- ◭ nivel-8 -->
+                                      <li class="level-8"> The actual position is $𝒙=2$</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5"> $\dfrac{d𝑦}{d𝓉}=3\cdot(2)^{2}\cdot 4=3\cdot 4\cdot 4=48$
+                            <!-- ▢ nivel-6 -->
+                            <ul>
+                              <li class="level-6"> So, at $𝓉=1$, $\dfrac{d𝑦}{d𝓉}=48$</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2>🧩Ｅｘａｍｐｌｅ：　ｏｉｌ　ｓｐｉｌｌ</h2>
+        <ul>
+          <li class="level-1">
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.8/[19-46]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.8/[19-46]-01.png" alt="Preview" />
+            </span>
+          </li>
+          <ul>
+            <!-- ● nivel-1 -->
+            <li class="level-1"> <a
+                href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1186"
+                target="_blank">[19:46]</a>. Description ad objective of the problem:
+              <ul>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> An oil spill is expanding in a circular shape.</li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> The radius of the spill is increasing at a constant rate of 3 feet (0.91 m) per
+                  second.</li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> Objective: Determine how quickly the area of the spill is increasing when the
+                  radius is 30 feet (9.14 m).</li>
+              </ul>
+            </li>
+
+            <!-- ● nivel-1 -->
+            <li class="level-1"> <a
+                href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1399"
+                target="_blank">[23:19]</a>. Steps to Solve the Problem:
+              <ul>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> Step 1: Assign letters to the variables:
+                  <ul>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $𝓉$ for time.</li>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $𝓐$ for area.</li>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $𝒓$ for radius.</li>
+                  </ul>
+                </li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> Step 2: Identify the formula that relates the variables:
+                  <ul>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> In this case, the area of a circle: $𝓐=\pi 𝒓^{2}$.</li>
+                  </ul>
+                </li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> Step 3: Identify the given rates in the problem:
+                  <ul>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $\dfrac{d𝒓}{d𝓉}=3$ feet per second (rate of change of the radius).</li>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $\dfrac{d𝓐}{d𝓉}$ rate of change of area</li>
+                  </ul>
+                </li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> <a
+                    href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1632"
+                    target="_blank">[27:12]</a>. Step 6: Differentiate the formula implicitly with respect to time
+                  ($𝓉$):
+                  <ul>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $\dfrac{d𝓐}{d𝓉}=2\pi 𝒓\cdot\dfrac{d𝒓}{d𝓉}$</li>
+                  </ul>
+                </li>
+                <!-- ◉ nivel-2 -->
+                <li class="level-2"> Step 5: Substitute the known values into the differentiated equation and solve for
+                  <br>
+                  the unknown rate of change ($\dfrac{d𝓐}{d𝓉}$):
+                  <ul>
+                    <!-- ○ nivel-3 -->
+                    <li class="level-3"> $\dfrac{d𝓐}{d𝓉}=2\pi\cdot (30\ \text{feet})\cdot\big(3\
+                      \text{feet/second}\big)=180\pi\ \text{square feet per second}.$</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>🧩Ｅｘａｍｐｌｅ：　ｃａｍｅｒａ　ｆｏｌｌｏｗｉｎｇ　ａ　ｒｏｃｋｅｔ
+
+          </h2>
+          <ul>
+            <li class="level-1">
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 2.8/[30-18]-01.png" target="_blank">[📷image-1]</a>
+                <img src="../../img/Calculus 1 Lecture 2.8/[30-18]-01.png" alt="Preview" />
+              </span>
+              <span class="image-container">
+                <a href="../../img/Calculus 1 Lecture 2.8/[30-18]-02.png" target="_blank">– [📷image-2]</a>
+                <img src="../../img/Calculus 1 Lecture 2.8/[30-18]-02.png" alt="Preview" />
+              </span>
+            </li>
+            <ul>
+              <ul>
+                <!-- ● nivel-1 -->
+                <li class="level-1"> <a
+                    href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1818"
+                    target="_blank">[30:18]</a>. Description ad objective of the problem.
+                  <ul>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> Description of the problem:
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> A rocket is launched from the ground vertically.</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> A camera on the ground must follow the rocket by adjusting its elevation
+                          angle.<br>
+                          It is a distance of 3000 feet (0.91 km) from the rocket.</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> The rocket ascends at a speed of 600 feet (0.18 km) per second when the
+                          rocket is at 4000 feet (1.22 km).</li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> Objective: Determine how quickly the elevation angle of the camera must change
+                      to keep the rocket centered
+                      in the frame when the rocket is 4000 feet high.</li>
+                  </ul>
+                </li>
+
+                <!-- ● nivel-1 -->
+                <li class="level-1"> <a
+                    href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1903"
+                    target="_blank">[31:43]</a>. Considerations:
+                  <ul>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> The height of the rocket ($𝒉$) changes over time.</li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> The elevation angle of the camera ($\theta$) must change to follow the rocket.
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- ● nivel-1 -->
+                <li class="level-1"> <a
+                    href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=1949"
+                    target="_blank">[32:29]</a>. Steps to Solve the Problem:
+                  <ul>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> Step 1: Assign letters to the variables:
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $𝓉$ for time.</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $𝒉$ for the height of the rocket.</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $\theta$ for the elevation angle of the camera.</li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> Step 2: Find a formula that relates the variables:
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> Use the tangent function: $\tan(\theta)=\dfrac{𝒉}{3000}$ <br>
+                          (where $3000$ is the constant horizontal distance between the camera and the launch point).
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> <a
+                        href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=2190"
+                        target="_blank">[36:30]</a>. Step 3: Identify the given rates in the problem:
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $\dfrac{d𝒉}{d𝓉}=600$ feet (0.18 km) per second (rate of change of the
+                          rocket's height) when $𝒉=4000$ feet (1.22 km).</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $\dfrac{d\theta}{d𝓉}$ rate of change of angle of the camera.</li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> <a
+                        href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=2552"
+                        target="_blank">[42:32]</a>. Step 4: Differentiate the formula implicitly with respect to time
+                      ($𝓉$):
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3">
+                          $\dfrac{d}{d𝓉}\big[\tan(\theta)\big]=\dfrac{d}{d𝓉}\!\Big[\dfrac{1}{3000}\cdot 𝒉\Big]$
+                          <ul>
+                            <!-- ■ nivel-4 -->
+                            <li class="level-4">
+                              $\sec^{2}(\theta)\cdot\dfrac{d\theta}{d𝓉}=\dfrac{1}{3000}\cdot\dfrac{d𝒉}{d𝓉}$</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> <a
+                        href="https://www.youtube.com/watch?v=43Qt6wc44To&amp;list=PLF797E961509B4EB5&amp;t=2680"
+                        target="_blank">[44:40]</a>. Step 5: Determine the value of $\sec^{2}(\theta)$ when the rocket's
+                      height is 4000 feet (1.22 km):
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> Use the Pythagorean theorem to calculate the hypotenuse of the right
+                          triangle formed by the rocket, the camera, and the ground.
+                          <ul>
+                            <!-- ■ nivel-4 -->
+                            <li class="level-4"> The rocket is $4{,}000$ feet high.</li>
+                            <!-- ■ nivel-4 -->
+                            <li class="level-4">
+                              $\text{hypotenuse}^{2}=4000^{2}+3000^{2}\;\Rightarrow\;\text{hypotenuse}=5000$ feet</li>
+                          </ul>
+                        </li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> Use the definition of secant ($\sec(\theta)=1/\cos(\theta)$) to calculate
+                          $\sec(\theta)$.
+                          <ul>
+                            <!-- ■ nivel-4 -->
+                            <li class="level-4"> $\cos(\theta)=\dfrac{3000}{5000}=\dfrac{3}{5}\;\Rightarrow\;
+                              \sec(\theta)=\dfrac{5}{3}$</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- ◉ nivel-2 -->
+                    <li class="level-2"> Step 6: Substitute the known values into the differentiated equation and solve
+                      for the unknown rate of change ($\dfrac{d\theta}{d𝓉}$):
+                      <ul>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> $\dfrac{d\theta}{d𝓉}=\dfrac{\big(\dfrac{1}{3000}\big)\big(600\
+                          \text{feet/second}\big)}{\big(\dfrac{5}{3}\big)^{2}}=\dfrac{9}{125}\ \text{radians/second}$
+                          (when the height is $4000$ feet)</li>
+                        <!-- ○ nivel-3 -->
+                        <li class="level-3"> Convert the rate of change to degrees per second: $\big(\dfrac{9}{125}\
+                          \text{radians/second}\big)\cdot\dfrac{180^\circ}{\pi}\approx 4.13^\circ/\text{second}$</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+  </article>
+</body>
+
+</html>

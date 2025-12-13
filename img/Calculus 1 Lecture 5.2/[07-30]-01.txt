@@ -1,0 +1,5 @@
+image_name: [07-30]To implement the main idea, we need to define the cross-sectional area.png
+file_name: [07-30]-01.png
+timestamp: 07:30
+counter: 01
+folder: Calculus 1 Lecture 5.2

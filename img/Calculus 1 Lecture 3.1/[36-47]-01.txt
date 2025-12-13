@@ -1,0 +1,5 @@
+image_name: [36-47]Relative Extrema.png
+file_name: [36-47]-01.png
+timestamp: 36:47
+counter: 01
+folder: Calculus 1 Lecture 3.1

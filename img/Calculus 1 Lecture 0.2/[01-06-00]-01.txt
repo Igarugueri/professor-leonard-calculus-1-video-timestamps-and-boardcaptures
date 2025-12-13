@@ -1,0 +1,5 @@
+image_name: [01-06-00]Removable discontinuity  Vs. Vertical asymptote.png
+file_name: [01-06-00]-01.png
+timestamp: 01:06:00
+counter: 01
+folder: Calculus 1 Lecture 0.2

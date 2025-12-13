@@ -1,0 +1,5 @@
+image_name: [17-04]𝑻𝒉𝒆 𝑳𝒊𝒎𝒊𝒕 𝒐𝒇 𝑨𝒏𝒚 𝑷𝒐𝒍𝒚𝒏𝒐𝒎𝒊𝒂𝒍.png
+file_name: [17-04]-01.png
+timestamp: 17:04
+counter: 01
+folder: Calculus 1 Lecture 1.2

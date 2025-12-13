@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．３　Tｈｅ　Fｉｒｓｔ　Dｅｒｉｖａｔｉｖｅ　Tｅｓｔ　Fｏｒ　Iｎｃｒｅａｓｉｎｇ　ａｎｄ　Dｅｃｒｅａｓｉｎｇ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．３</h1>
+    <h1>　Tｈｅ　Fｉｒｓｔ　Dｅｒｉｖａｔｉｖｅ　Tｅｓｔ　Fｏｒ　Iｎｃｒｅａｓｉｎｇ　ａｎｄ　Dｅｃｒｅａｓｉｎｇ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=0"
+          target="_blank">[0:00]</a>. Topic: The First Derivative Test — determining intervals of increase and decrease
+        of a function.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identifying where $𝒇′(𝒙)&gt;0$ or $𝒇′(𝒙)&lt;0$ to locate increasing and decreasing
+            behavior.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Application to curve sketching: analyzing the shape of a function by detecting local
+            maxima, minima, and transitions in slope.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｒｅｖｉｅｗ　ｏｆ　ｐｒｅｖｉｏｕｓ　ｃｏｎｃｅｐｔｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=55"
+          target="_blank">[0:55]</a>. Review of the meaning of the first derivative and its relationship with a
+        function’s increase and decrease. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.3/[0-55]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.3/[0-55]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=70"
+              target="_blank">[1:10]</a>. If $𝒇′(𝒙)&gt;0$, the function $𝒇(𝒙)$ is increasing.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=136"
+              target="_blank">[2:16]</a>. If $𝒇′(𝒙)&lt;0$, the function $𝒇(𝒙)$ is decreasing.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=153"
+              target="_blank">[2:33]</a>. If $𝒇′(𝒙)=0$, constant, the function $𝒇(𝒙)$ has a horizontal tangent, and
+            a critical number is identified.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｔｈｅ　ｆｉｒｓｔ　ｄｅｒｉｖａｔｉｖｅ　ｔｅｓｔ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=185"
+          target="_blank">[3:05]</a>. Introduction to the First Derivative Test to find relative extrema (maximums and
+        minimums).</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=206"
+          target="_blank">[3:26]</a>. Step-by-step explanation of the First Derivative Test: –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.3/[3-26]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 3.3/[3-26]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.3/[3-26]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.3/[3-26]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❶ <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=261"
+              target="_blank">[4:21]</a>. Find the first derivative, $𝒇′(𝒙)$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❷ <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=280"
+              target="_blank">[4:40]</a>. Set the first derivative equal to zero, $𝒇′(𝒙)=0$, to find critical numbers.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> In addition to the values where $𝒇′(𝒙)=0$, you must also include as
+                <strong>critical numbers</strong> any point where $𝒇′(𝒙)$ does not exist.
+                This is because c̲r̲i̲t̲i̲c̲a̲l̲ ̲n̲u̲m̲b̲e̲r̲s̲ are defined as <strong>any 𝒙 in the domain of
+                  𝒇</strong> where either t̲h̲e̲ ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e̲ ̲ ̲i̲s̲ ̲z̲e̲r̲o̲ ̲ or th̲e̲
+                ̲d̲e̲r̲i̲v̲a̲t̲i̲v̲e̲ ̲i̲s̲ ̲u̲n̲d̲e̲f̲i̲n̲e̲d̲..
+                Even if the derivative does not exist at such a point, it can still correspond to a local maximum, a
+                local minimum, or some other important change in
+                the behavior of the function. This kind of points are:
+                <!-- ■ nivel-4 -->
+                <ul>
+                  <li class="level-4"> Points where the denominator is zero (possible vertical asymptotes).
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> This occurs when the function is not defined (or tends to ±∞) as 𝒙
+                        approaches a certain value 𝒙 = a.
+                        <!-- ▣ nivel-5 -->
+                        <ul>
+                          <li class="level-6"> Example: $𝒇(𝒙)=\dfrac{1}{𝒙}$. As $𝒙\to 0$, $𝒇(𝒙)\to \pm\infty$, and
+                            the line $𝒙=0$ is a vertical asymptote.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Sharp corners or cusps (abrupt changes in slope.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Vertical tangents (infinite slope).
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> This occurs when the function is defined at a point, but its derivative
+                        becomes infinite (or tends to ±∞).
+                        <!-- ▣ nivel-5 -->
+                        <ul>
+                          <li class="level-6"> Example: $𝒇(𝒙)=𝒙^{1/3}$ at $𝒙=0$. The function is defined at $𝒙=0$,
+                            but $𝒇′(𝒙)=\dfrac{1}{3𝒙^{2/3}}$ tends to ±∞ as $𝒙\to 0$, indicating a vertical tangent.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Discontinuities (jump, infinite, removable).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❸ <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=298"
+              target="_blank">[4:58]</a>. Create a first derivative sign chart using the critical numbers.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Draw a number line and mark the critical points.
+                <br />
+                <div id="numline-1"></div>
+                <br />
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Indicate the sign of $𝒇′(𝒙)$ above the number line for each interval.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❹ <a
+              href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=376"
+              target="_blank">[6:16]</a>. Test a point in each interval defined by the critical numbers.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Determine the sign of $𝒇′(𝒙)$ in each interval.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Substitute a sample value into $𝒇′(𝒙)$ to check if the slope is positive or
+                negative.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The sign of $𝒇′(𝒙)$ tells whether the function is increasing or decreasing in that
+                interval.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Local Maximum:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> i̲f̲ $𝒇′(𝒙)$ changes from positive to negative at a critical number,<br>
+                    t̲h̲e̲n̲ there is a local maximum.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Local Minimum:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> i̲f̲ $𝒇′(𝒙)$ changes from negative to positive at a critical number,<br>
+                    t̲h̲e̲n̲ there is a local minimum.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Neither Maximum nor Minimum:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> i̲f̲ $𝒇′(𝒙)$ does not change sign at a critical number,<br>
+                    t̲h̲e̲n̲ it is not classified as a maximum or minimum.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Sometimes referred to as a <strong>horizontal inflection point</strong>, if:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $𝒇′(𝒙)=0$.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> The concavity changes (i.e., $𝒇′(𝒙)$ doesn't change sign, but $𝒇″(𝒙)$
+                        does).</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> 🧩 Example –: $𝒇(𝒙)=𝒙^3$
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"> $𝒇′(𝒙)=3𝒙^2$ → $𝒇′(0)=0$, but stays positive on both sides of $0$.
+                          </li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"> $𝒇″(𝒙)=6𝒙$ → changes sign at $𝒙=0$.</li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6"> So, $𝒙=0$ is a critical point, not a max or min, but a
+                            <strong>horizontal inflection point</strong>.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=644"
+          target="_blank">[10:44]</a>. 🧩 Example –: Application of the first derivative test to an example
+        $𝒇(𝒙)=𝒙^3-3𝒙+1$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.3/[10-44]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.3/[10-44]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❶ Find the first derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(𝒙)=𝒙^3−3𝒙+1 \Rightarrow 𝒇′(𝒙)=3𝒙^2−3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❷ Set the first derivative equal to zero:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $3𝒙^2−3=0 \Rightarrow 𝒙^2=1 \Rightarrow 𝒙=−1$ and $𝒙=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> There are no points where $𝒇′(𝒙)$ is undefined.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Critical numbers: $𝒙=−1$, $𝒙=1$ (both are in the domain of the original funcction)
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❸ Check for values that make the derivative undefined.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❸ Create a sign chart for $𝒇′(𝒙)$:
+            <ul>
+
+              <div id="numline-2"></div>
+
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❹ Test a value from each interval in $𝒇′(𝒙)$ to determine the sign.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Test values:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=−2$ → $𝒇′(𝒙)&gt;0$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=0$ → $𝒇′(𝒙)&lt;0$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=2$ → $𝒇′(𝒙)&gt;0$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Sign chart:
+                <br />
+                <div id="numline-3"></div>
+                <br />
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Apply the First Derivative Test:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> At $𝒙=−1$: $𝒇′$ changes from $+$ to $−$ → Local Maximum</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> At $𝒙=1$: $𝒇′$ changes from $−$ to $+$ → Local Minimum</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Evaluate the function at critical points:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇(−1)=(-1)^3−3(-1)+1=3$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇(1)=1^3−3(1)+1=−1$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Answer:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Local Maximum at $(−1,3)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Local Minimum at $(1,−1)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=nQ6tOORDQ3I&amp;list=PLF797E961509B4EB5&amp;t=1032"
+          target="_blank">[17:12]</a>. 🧩 Example –: Presentation of a second example to apply the first derivative test
+        $𝒇(𝒙)=3𝒙^{5/3}-15𝒙^{2/3}$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.3/[17-12]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.3/[17-12]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❶ Find the first derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(𝒙)=3𝒙^{5/3}-15𝒙^{2/3} \;\Rightarrow\; 𝒇′(𝒙)=5𝒙^{2/3}-10𝒙^{-1/3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❷ Set the first derivative equal to zero: $5𝒙^{2/3}-10𝒙^{-1/3}=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Multiply both sides by $𝒙^{1/3}$:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $5𝒙-10=0 \Rightarrow 𝒙=2$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Check where $𝒇′(𝒙)$ is undefined:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇′(𝒙)$ is undefined at $𝒙=0$ (due to $𝒙^{-1/3}$)</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Critical numbers: $𝒙=0$, $𝒙=2$ (both are in the domain of $𝒇$)</li>
+            </ul>
+          </li>
+          <!-- (líneas ❸ y ❹ se mantienen como texto dentro del mismo bloque para respetar la estructura original) -->
+          <!-- ◉ nivel-2 (lógica de paso 3, contenido tal cual) -->
+          <li class="level-2"> ❸ Create a sign chart for $𝒇′(𝒙)$:
+            <br />
+            <div id="numline-4"></div>
+            <br />
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> ❹ Test a value from each interval in $𝒇′(𝒙)$ to determine the sign:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Test values:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=−1 \;\Rightarrow\; 𝒇′(−1)=5(-1)^{2/3}-10(-1)^{-1/3}&gt;0 \;\Rightarrow\;
+                    𝒇′(𝒙)&lt;0$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=1 \;\Rightarrow\; 𝒇′(1)=5-10&lt;0 \;\Rightarrow\; 𝒇′(𝒙)&lt;0$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒙=3 \;\Rightarrow\; 𝒇′(3)=5\cdot 3^{2/3}-10\cdot 3^{-1/3}&gt;0 \;\Rightarrow\;
+                    𝒇′(𝒙)&gt;0$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Sign chart:
+                <br />
+                <div id="numline-5"></div>
+                <br />
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Apply the First Derivative Test:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> At $𝒙=0$: The derivative $𝒇′$ is undefined due to a vertical tangent, so this
+                    point is not considered a local extremum.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> This will become clearer when we study the second derivative test.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> At $𝒙=2$: $𝒇′$ changes from $−$ to $+$ ⇒ Local Minimum.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Evaluate the function at critical points:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇(0)=3\cdot 0-15\cdot 0=0$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇(2)=3\,(2)^{5/3}-15\,(2)^{2/3}\approx 9.52-23.81\approx -14.29$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Answer:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Local Minimum at $(2,\,−14.29)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Vertical tangent (not extremum) at $(0,\,0)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+
+  <template id="ascii-rolle-cn_1">
+    <pre class="ascii-diagram">
+               C.N       C.N  
+     𝒇′(x)      ∣          ∣
+           ─────●─────────●────────
+    </pre>
+  </template>
+
+  <template id="ascii-rolle-cn_2">
+    <pre class="ascii-diagram">
+                -1         1
+     𝒇′(𝒙)       ∣          ∣
+            ─────●─────────●────────
+    </pre>
+  </template>
+
+  <template id="ascii-rolle-cn_3">
+    <pre class="ascii-diagram">
+              -1         1
+    𝒇′(𝒙)  +   ∣    −     ∣   +
+          ─────●─────────●────────
+    </pre>
+  </template>
+
+  <template id="ascii-rolle-cn_4">
+    <pre class="ascii-diagram">
+               0         2  
+    𝒇′(𝒙)      ∣          ∣  
+          ─────●─────────●────────
+    </pre>
+  </template>
+
+  <template id="ascii-rolle-cn_5">
+    <pre class="ascii-diagram">
+                0         2  
+    𝒇′(𝒙)   +   ∣    −     ∣  +  
+           ─────●─────────●────────
+    </pre>
+  </template>
+
+  <script>
+    function insertTemplate(targetId, templateId) {
+      const target = document.getElementById(targetId);
+      const template = document.getElementById(templateId);
+      if (target && template) target.innerHTML = template.innerHTML;
+    }
+
+    // Inserciones:
+    insertTemplate("numline-1", "ascii-rolle-cn_1");
+    insertTemplate("numline-2", "ascii-rolle-cn_2");
+    insertTemplate("numline-3", "ascii-rolle-cn_3");
+    insertTemplate("numline-4", "ascii-rolle-cn_4");
+    insertTemplate("numline-5", "ascii-rolle-cn_5");
+  </script>
+</body>
+
+</html>

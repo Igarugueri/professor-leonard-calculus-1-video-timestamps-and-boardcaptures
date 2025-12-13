@@ -1,0 +1,5 @@
+image_name: [51-44]Not all functions have absolute maximums or minimums in an infinite interval (-∞, ∞).png
+file_name: [51-44]-01.png
+timestamp: 51:44
+counter: 01
+folder: Calculus 1 Lecture 3.1

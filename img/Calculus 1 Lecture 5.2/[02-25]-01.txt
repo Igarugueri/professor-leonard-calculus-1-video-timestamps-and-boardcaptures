@@ -1,0 +1,5 @@
+image_name: [02-25]Preparing for the Deduction of the Volume Integral.png
+file_name: [02-25]-01.png
+timestamp: 02:25
+counter: 01
+folder: Calculus 1 Lecture 5.2

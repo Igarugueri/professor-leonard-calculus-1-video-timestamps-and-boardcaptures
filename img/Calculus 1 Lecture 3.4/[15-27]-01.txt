@@ -1,0 +1,5 @@
+image_name: [15-27]Example-Find the inflection points of the function 𝓰(𝒙) = (𝒙 - 1)¹ᐟ³.png
+file_name: [15-27]-01.png
+timestamp: 15:27
+counter: 01
+folder: Calculus 1 Lecture 3.4

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．３ Ｖｏｌｕｍｅ ｏｆ Ｓｏｌｉｄｓ Ｂｙ Ｃｙｌｉｎｄｒｉｃａｌ Ｓｈｅｌｌｓ Ｍｅｔｈｏｄ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．３</h1>
+    <h1> Ｖｏｌｕｍｅ ｏｆ Ｓｏｌｉｄｓ Ｂｙ Ｃｙｌｉｎｄｒｉｃａｌ Ｓｈｅｌｌｓ Ｍｅｔｈｏｄ</h1>
+
+    <h2>Tｈｅ Ｃｙｌｉｎｄｒｉｃａｌ Ｓｈｅｌｌｓ Ｍｅｔｈｏｄ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1" target="_blank">00:01</a>.
+        Introduction to the Cylindrical Shells Method <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[00-01]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[00-01]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Main idea: Calculate the volume of a solid of revolution around the 𝑦-axis, bounded by
+            vertical lines 𝓐 and 𝓑 and a function 𝒇(𝒙)</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Alternative to the disk/washer method: The disk/washer method would require two integrals;
+            cylindrical shells aim to solve it with a single integral</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Visualization: The region is considered a function of 𝒙 rotated around the 𝑦-axis</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Cake analogy: The method is explained using the analogy of slicing a cake into concentric
+            cylindrical layers with a "coffee cutter"</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Idea of limits: The thickness of each cylinder tends to be very, very small </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=173" target="_blank">02:53</a>.
+        Volume of a Cylinder <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[02-53]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[02-53]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Volume is the cross-sectional area multiplied by the height</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The cross-section is a circle (or a washer), obtained by subtracting a smaller circle from
+            a larger one</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Cross-sectional area: $\pi\cdot \mathcal{R}_1^2 - \pi\cdot \mathcal{R}_2^2$, where
+            $\mathcal{R}_1$ and $\mathcal{R}_2$ are the outer and inner radii</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The height is the function 𝒇(𝒙)
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">An arbitrary point is chosen to determine the height</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=412" target="_blank">06:52</a>.
+        Mathematical Development of the Formula <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[06-52]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[06-52]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Volume = Cross-sectional area × height</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Factoring out π: $\pi(\mathcal{R}_1^2-\mathcal{R}_2^2)\cdot \mathcal{h}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Difference of squares: $\pi(\mathcal{R}_1+\mathcal{R}_2)(\mathcal{R}_1-\mathcal{R}_2)\cdot
+            \mathcal{h}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Multiplication by $\dfrac{2}{2}$ → $2\cdot\dfrac{1}{2}$:
+            $2\pi\cdot\dfrac{1}{2}\cdot(\mathcal{R}_1+\mathcal{R}_2)\cdot(\mathcal{R}_1-\mathcal{R}_2)\cdot \mathcal{h}$
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Identification of terms:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">𝒉 = height</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{R}_1-\mathcal{R}_2$ = thickness of the cylindrical shell</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{1}{2}(\mathcal{R}_1+\mathcal{R}_2)$ = average radius</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=700" target="_blank">11:40</a>.
+            General formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">**Volume = $2\pi \cdot (\text{average radius}) \cdot (\text{height}) \cdot
+                (\text{thickness})$**</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=780" target="_blank">13:00</a>.
+        Connection with the Function 𝒇(𝒙) and the Differential <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[13-00]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[13-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">A cylindrical slice is taken within the shell at an arbitrary point $x_{k}^{\ast}$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=930"
+                  target="_blank">15:30</a>. $x_{k}^{\ast}$ is chosen as the midpoint of the interval.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$x_{k}^{\ast}$ is the average point between $x_{k-1}$ and $x_k$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=984" target="_blank">16:24</a>.
+            The thickness of the slice is $\Delta x$ (the difference between the previous and current slices).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The height at $x_{k}^{\ast}$ is $𝒇(x_k^* )$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1100"
+              target="_blank">18:20</a>. Volume of an individual shell: $2\pi\cdot x_{k}^{\ast}\cdot 𝒇(x_k^* )\cdot
+            \Delta x$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$2\pi\times(\text{average radius})\times(\text{height})\times(\text{thickness})$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1200"
+              target="_blank">20:00</a>. The volumes of all shells are summed to approximate the total volume:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle \sum_{k=1}^{n} 2\pi\cdot x_{k}^{\ast}\cdot 𝒇(x_k^* )\cdot
+                \Delta x$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The limit is taken as the number of shells approaches infinity, converting the sum into an
+            integral:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle \lim_{n\to\infty}\sum_{k=1}^{n}2\pi\cdot x_{k}^{\ast}\cdot
+                𝒇(x_k^* )\cdot\Delta x$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\boxed{\mathcal{V}=\displaystyle \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot 𝒙\cdot
+                𝒇(𝒙)\,d𝒙}$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Random arbitrary points $x_k^*$ are represented by 𝒙 </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Around 𝒚-axis</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">NOTE: Axis of revolution: Around the 𝒚-axis, integration is performed with respect to 𝒙
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">**Important!** When rotating around the 𝒙-axis, the function must be in terms of 𝒙:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\boxed{\mathcal{V}=\displaystyle \int_{\mathcal{c}}^{\mathcal{d}}2\pi\cdot
+                    𝒚\cdot 𝒇(𝒚)\,d𝒚}$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Around 𝒙-axis</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1475" target="_blank">24:35</a>. 🧩
+        Example – Region bounded by 𝒇(𝒙)=√𝒙, 𝒙=1, 𝒙=4, revolved around the 𝒚-axis <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[24-35]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[24-35]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Confirmation of the function in terms of 𝒙</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integral setup: $\mathcal{V}=\displaystyle \int_{1}^{4}2\pi\cdot 𝒙\sqrt{𝒙}\,d𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Simplification: $2\pi\displaystyle\int_{1}^{4}𝒙^{\dfrac{3}{2}}\,d𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration: $2\pi\Big[\dfrac{2}{5}𝒙^{\dfrac{5}{2}}\Big]\Big|_{1}^{4}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluating limits: $\dfrac{4\pi}{5}\big(4^{\dfrac{5}{2}}-1^{\dfrac{5}{2}}\big)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final result: $\mathcal{V}=\dfrac{124\pi}{5}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1743" target="_blank">29:03</a>.
+        Comparison with Disks/Washers and Functions Between Curves
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Cylindrical shells method is an alternative to the disk/washer method, with a key
+            difference:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Orientation of slices:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Disks/washers: slices ⟂ to axis of rotation </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Shells: slices ∥ to axis of rotation → thin strips wrap into cylinders</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Wrapping around the 𝒚-axis
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Use vertical strips (width $d𝒙$)</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Radius = 𝒙</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Height = $[𝒇_{\text{upper}}(𝒙)−𝒇_{\text{lower}}(𝒙)]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Thickness = $d𝒙$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Wrapping around the 𝒙-axis
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Use horizontal strips (width $d𝒚$)</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Radius = 𝒚</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Height = $[𝒇_{\text{right}}(𝒚)−𝒇_{\text{left}}(𝒚)]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Thickness = $d𝒚$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Regions bounded by two curves
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Height = upper − lower, similar to areas</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration limits (𝓪, 𝓫)
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Determined by intersection points of the two functions in 𝒙</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">General cylindrical shell formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle
+                \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot(\text{radius})\cdot(\text{height})\,d𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For rotation about the 𝒚-axis: $\boxed{\mathcal{V}=\displaystyle
+                \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot𝒙\cdot[𝒇_{\text{upper}}(𝒙)−𝒇_{\text{lower}}(𝒙)]\,d𝒙}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For rotation about the 𝒙-axis: $\boxed{\mathcal{V}=\displaystyle
+                \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot𝒚\cdot[𝒇_{\text{right}}(𝒚)−𝒇_{\text{left}}(𝒚)]\,d𝒚}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Identifying the “top” function
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Always check which curve is above (larger 𝑦) in the interval</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=1790" target="_blank">29:50</a>. 🧩
+        Example – Cylindrical shells method: Region bounded by 𝒇(𝒙)=𝒙 and 𝓰(𝒙)=𝒙², around the 𝒚-axis <span
+          class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[29-50]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[29-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Problem setup: Volume between two curves around the 𝒚-axis
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot
+                𝒙\cdot[𝒇_{\text{upper}}(𝒙)−𝒇_{\text{lower}}(𝒙)]\,d𝒙$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=𝒙²$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=0$ and $𝒙=1$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Identifying the "Top" Function
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">For $𝒙\in[0,1]$, $𝒇(𝒙)=𝒙$ is on top</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration: $\displaystyle \int_{0}^{1}2\pi\cdot 𝒙(𝒙−𝒙²)\,d𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Simplification: $2\pi\displaystyle \int_{0}^{1}(𝒙²−𝒙³)\,d𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration: $2\pi\Big[\dfrac{𝒙³}{3}−\dfrac{𝒙⁴}{4}\Big]_{0}^{1}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluating limits: $2\pi\big(\dfrac{1}{3}−\dfrac{1}{4}\big)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final result: Volume $=\dfrac{\pi}{6}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=2185" target="_blank">36:25</a>. 🧩
+        Example – Region bounded by 𝒇(𝒚)=−𝒚²+6𝒚 and 𝓰(𝒚)=0, around the 𝒙-axis <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[36-25]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[36-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Problem setup: Volume between two curves around the 𝒙-axis
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle
+                \int_{\mathcal{a}}^{\mathcal{b}}2\pi\cdot𝒚\cdot[𝒇_{\text{right}}(𝒚)−𝒇_{\text{left}}(𝒚)]\,d𝒚$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Identifying the "Right" Function
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝓰(𝒚)=0$ → $𝒙=0$ ⇢ vertical line at $𝒙=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇_{\text{right}}(𝒚)=−𝒚²+6𝒚$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$−𝒚²+6𝒚=0$ → $𝒚=0$ and $𝒚=6$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Integration:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\mathcal{V}=2\pi\displaystyle\int_{0}^{6}𝒚(−𝒚²+6𝒚)\,d𝒚=2\pi\displaystyle\int_{0}^{6}(−𝒚³+6𝒚²)\,d𝒚$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluating limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\mathcal{V}=2\pi\Big[−\dfrac{𝒚⁴}{4}+2𝒚³\Big]_{0}^{6}=2\pi\big(−\dfrac{6⁴}{4}+432\big)=216\pi$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=2700" target="_blank">45:00</a>. 🧩
+        Example – Cylindrical shells method: Region bounded by 𝒇(𝒙)=𝒙²+1, 𝓰(𝒙)=−𝒙+1, and 𝒙=1, around the 𝒚-axis
+        – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.3/[45-00]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.3/[45-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Problem Definition
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Find the volume generated by rotating the region bounded by three functions around the
+                𝒚-axis</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Given functions:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇(𝒙)=𝒙²+1$ → Parabola shifted up 1 unit </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝓰(𝒙)=−𝒙+1$ → Line with positive slope </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒉(𝒙)=1$ → Vertical boundary</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The region lies in the first quadrant</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Cylindrical Shells Method Setup
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">General formula:
+                $\mathcal{V}=\displaystyle\int_{\mathcal{a}}^{\mathcal{b}}2\pi(\text{radius})(\text{height})\,d𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Radius: distance from 𝒚-axis → $r=𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Height: difference between upper and lower functions → $(𝒙²+1)−(−𝒙+1)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Integration from $𝒙=0$ to $𝒙=1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{V}=\displaystyle\int_{0}^{1}2\pi\cdot 𝒙\cdot[(𝒙²+1)−(−𝒙+1)]\,d𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Simplify:
+                $\mathcal{V}=2\pi\displaystyle\int_{0}^{1}(𝒙³+𝒙²)\,d𝒙=2\pi\Big[\dfrac{𝒙⁴}{4}+\dfrac{𝒙³}{3}\Big]_{0}^{1}=2\pi\big(\dfrac{1}{4}+\dfrac{1}{3}\big)=\dfrac{7\pi}{6}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=BDmlottZVd4&amp;t=2700"
+              target="_blank">45:00</a>. 🧩 Example – Disk/Washer Method: Region bounded by 𝒇(𝒙) = 𝒙² + 1, 𝓰(𝒙) =
+            -𝒙 + 1 and 𝒙 = 𝒉(𝒚) = 1 , around the 𝒚-axis – <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 5.3/[45-00]-01.png" target="_blank">- [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 5.3/[45-00]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Picture &amp; plan
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Axis: 𝒚-axis ⇒ cross-sections ⟂ to 𝒚 ⇒ **washers** in $𝒅𝒚$.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Horizontal slice at height $𝑦$ spans from a **left boundary**
+                    $𝒙_{\text{left}}(𝑦)$ to the **right wall** $𝒙=1$.</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Express 𝒙 in terms of 𝑦 (for horizontal radii)
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">From $𝒇(𝒙)=𝒙^{2}+1$: $𝑦=𝒙^{2}+1 \Rightarrow 𝒙=\pm\sqrt{𝑦-1}$ (take
+                    $+\sqrt{\;\,}$ branch for $𝑦\ge 1$)</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">From $𝓰(𝒙)=-𝒙+1$: $𝑦=-𝒙+1 \Rightarrow 𝒙=1-𝑦$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">𝑦-interval and piecewise left boundary
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Intersections $𝒙^{2}+1=-𝒙+1 \Rightarrow 𝒙(𝒙+1)=0
+                    \;\Rightarrow\;$✳️$(𝒙,𝑦)=(0,1)\text{ and }(-1,2)$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Intersections with the vertical wall $𝒙=1$:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">With $𝒇(𝒙)=𝒙^{2}+1$: at $𝒙=1 \Rightarrow 𝒚=2$ → point $(1,2)$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">With $𝓰(𝒙)=-𝒙+1$: at $𝒙=1 \Rightarrow 𝒚=0$ → point $(1,0)$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Therefore, $𝒙=1$ spans vertically from $𝒚=0$ (line) up to $𝒚=2$ (parabola).
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Both curves intersect at ✳️$(0,1)$, which is exactly where the region changes
+                        its left boundary.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Piecewise left boundary (split at $𝒚=1$):
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">For $𝒚\in[0,1]$: left boundary given by the line ⇒
+                        $𝒙_{\text{left}}(𝑦)=1-𝑦$.
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Reason: the parabola $𝒚=𝒙^{2}+1$ starts at $𝒚=1$ (no real $𝒙$ for
+                            $𝒚&lt;1$).</li>
+                        </ul>
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">For $𝒚\in[1,2]$: left boundary given by the parabola ⇒
+                        $𝒙_{\text{left}}(𝑦)=\sqrt{𝑦-1}$.
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">Check: at $𝒚=1$ both meet at $(0,1)$; for $𝒚&gt;1$, $1-𝒚&lt;0$ (left of
+                            𝒚-axis) while $\sqrt{𝑦-1}\ge 0$.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Radii w.r.t. the 𝒚-axis ($𝒙=0$)
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Outer radius $\mathcal{R}(𝑦)=$ distance to $𝒙=1$ ⇒ $\mathcal{R}(𝑦)=1$ (for all
+                    $𝑦$ in the region).</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Inner radius $𝑟(𝑦)=$ distance to $𝒙_{\text{left}}(𝑦)$ ⇒
+                    $𝑟(𝑦)=𝒙_{\text{left}}(𝑦)$.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$𝑟(𝑦)=1-𝑦$ for $𝑦\in[0,1]$; \;\; $𝑟(𝑦)=\sqrt{𝑦-1}$ for $𝑦\in[1,2]$.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Set up the washer integrals
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \mathcal{V}=\pi\int_{0}^{1}\!\big(1-(1-𝑦)^{2}\big)\,𝒅𝑦 \;+\;
+                    \pi\int_{1}^{2}\!\big(1-(\sqrt{𝑦-1})^{2}\big)\,𝒅𝑦$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">First piece: $2𝑦-𝑦^{2}$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Second piece: $2-𝑦$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$I_{1}=\displaystyle
+                    \int_{0}^{1}(2𝑦-𝑦^{2})\,𝒅𝑦=\Big[\,𝑦^{2}-\dfrac{𝑦^{3}}{3}\,\Big]\Big|_{0}^{1}=1-\dfrac{1}{3}=\dfrac{2}{3}$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$I_{2}=\displaystyle
+                    \int_{1}^{2}(2-𝑦)\,𝒅𝑦=\Big[\,2𝑦-\dfrac{𝑦^{2}}{2}\,\Big]\Big|_{1}^{2}=(4-2)-\Big(2-\dfrac{1}{2}\Big)=\dfrac{1}{2}$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle
+                    \mathcal{V}=\pi\big(I_{1}+I_{2}\big)=\pi\!\left(\dfrac{2}{3}+\dfrac{1}{2}\right)=\dfrac{7\pi}{6}$
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </article>
+</body>
+
+</html>

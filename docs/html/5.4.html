@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．４ Ｆｉｎｄｉｎｇ ｔｈｅ Ｌｅｎｇｔｈ ｏｆ ａ Ｃｕｒｖｅ ｏｎ ａ Ｐｌａｎｅ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ５．４ Ｆｉｎｄｉｎｇ ｔｈｅ Ｌｅｎｇｔｈ ｏｆ ａ Ｃｕｒｖｅ ｏｎ ａ Ｐｌａｎｅ</h1>
+
+    <h2>Ｆｉｎｄｉｎｇ ｔｈｅ Ｌｅｎｇｔｈ ｏｆ ａ Ｃｕｒｖｅ ｏｎ ａ Ｐｌａｎｅ</h2>
+
+    <ul>
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=100" target="_blank">01:40</a>.
+        Main idea
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">The calculation of distance traveled along a curve is a fundamental problem in mathematics
+            and physics. Unlike the straight-line distance between two points,
+            measuring distance along a curve requires a different approach based on the idea of approximating with
+            <strong>straight-line segments</strong>.
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Geometric Idea: Approximation with Line Segments:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Consider a curve defined by a function $𝒇(𝒙)$.</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Select several points on the curve and connect them with straight-line segments.
+                  </li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">If we use only a few segments, the approximation is rough, but as we increase the
+                    number of segments, the total distance begins to resemble the actual length of the curve.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=260" target="_blank">04:20</a>.
+        Application of Calculus: The Limit of Approximation
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[04-20]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[04-20]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[04-20]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[04-20]-02.png" alt="Preview 2" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[04-20]-03.png" target="_blank">- [📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[04-20]-03.png" alt="Preview 3" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">We divide the interval into small subintervals.</li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">We take one subinterval and calculate its segment distance by creating a straight
+            rectangle:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Our segment is the Hypotenuse: $𝐋_{k}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$[𝒙_{k-1},𝒙_{k}]$ Extremes of the subinterval</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Base side: $\Delta 𝒙$ is the distance between $𝒙_{k-1}$ and $𝒙_{k}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Height: $𝒇(𝒙_{k})-𝒇(𝒙_{k-1})$</li>
+
+              <!-- ○ level-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=490"
+                  target="_blank">08:10</a>. $𝐋_{k}^{2}=(\Delta
+                𝒙)^{2}+\big[\,𝒇(𝒙_{k})-𝒇(𝒙_{k-1})\,\big]^{2}\;\Rightarrow\;𝐋_{k}=\sqrt{(\Delta
+                𝒙)^{2}+\big[\,𝒇(𝒙_{k})-𝒇(𝒙_{k-1})\,\big]^{2}}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=610" target="_blank">10:10</a>.
+            Doing calculus
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Use what the Mean Value Theorem says:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4"><strong>Mean Value Theorem (MVT):</strong><br />
+                    Let $𝒇(𝒙)$ be a function that is continuous on the closed interval $[𝓪,𝓫]$ and differentiable on
+                    the open interval $(𝓪,𝓫)$. Then, there exists at least one point $𝒄$ in $(𝓪,𝓫)$ such that:
+                    <ul>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝒇'(𝒄)=\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}$</li>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5"><strong>Intuition:</strong> The theorem states that if a function meets these
+                        conditions, there is at least one point where the instantaneous rate of change (derivative) is
+                        equal to the average rate of change over the interval. In other words, the tangent line at
+                        $𝒙=𝒄$ is parallel to the secant line connecting $(𝒂,𝒇(𝒂))$ and $(𝒃,𝒇(𝒃))$.</li>
+                    </ul>
+                  </li>
+
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Extrapolating to our problem:
+                    <ul>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝒇'(𝒙_k^* )=\dfrac{𝒇(𝒙_{k})-𝒇(𝒙_{k-1})}{𝒙_{k}-𝒙_{k-1}}$
+                        <ul>
+                          <!-- ▢ level-6 -->
+                          <li class="level-6">$x_{k}^{\ast}\in[𝒙_{k-1},𝒙_{k}]$</li>
+                        </ul>
+                      </li>
+
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝒙_{k}-𝒙_{k-1}$ represents $\Delta 𝒙$
+                        <ul>
+                          <!-- ▢ level-6 -->
+                          <li class="level-6">$𝒇'(𝒙_k^* )=\dfrac{𝒇(𝒙_{k})-𝒇(𝒙_{k-1})}{\Delta 𝒙}\;\Rightarrow\;
+                            𝒇(𝒙_{k})-𝒇(𝒙_{k-1})=𝒇'(𝒙_k^* )\cdot \Delta 𝒙$</li>
+                        </ul>
+                      </li>
+
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝐋_{k}=\sqrt{(\Delta 𝒙)^{2}+\big[𝒇(𝒙_{k})-𝒇(𝒙_{k-1})\big]^{2}}$
+                        <ul>
+                          <!-- ▢ level-6 -->
+                          <li class="level-6">$𝐋_{k}=\sqrt{(\Delta 𝒙)^{2}+\big[\,𝒇'(𝒙_k^* )\cdot \Delta
+                            𝒙\,\big]^{2}}$</li>
+                        </ul>
+                      </li>
+
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝐋_{k}=\sqrt{1+\big(𝒇'(𝒙_k^* )\big)^{2}}\cdot \Delta 𝒙$ (One single
+                        section)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=1120"
+              target="_blank">18:40</a>. All multiple sections 𝑳
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋 \approx \displaystyle \sum_{k=1}^{n}\sqrt{1+\big(𝒇'(𝒙_k^* )\big)^{2}}\cdot
+                \Delta 𝒙$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle
+                \lim_{n\to\infty}\sum_{k=1}^{n}\sqrt{1+\big(𝒇'(𝒙_k^*)\big)^{2}}\cdot \Delta 𝒙$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Length of a curve on a plane
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\boxed{𝐋=\displaystyle \int_{𝓪}^{𝓫}\sqrt{1+\big(𝒇'(𝒙)\big)^{2}}\cdot
+                \mathrm{d}𝒙}$ along $𝒙$-axis</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\boxed{𝐋=\displaystyle \int_{𝒸}^{𝒹}\sqrt{1+\big(𝒇'(𝒚)\big)^{2}}\cdot
+                \mathrm{d}𝒚}$ along $𝒚$-axis</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=1380" target="_blank">23:00</a>. 🧩
+        Example – Find the length of a curve: $𝒇(𝒙)=\dfrac{1}{3}𝒙^{3}+\dfrac{1}{4𝒙}$ on $[1,3]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[23-00]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[23-00]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[23-00]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[23-00]-02.png" alt="Preview 2" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">Arc-length formula (variable 𝒙)
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle \int_{1}^{3}\sqrt{1+\big(𝒇'(𝒙)\big)^{2}}\cdot \mathrm{d}𝒙$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Domain check: $𝒙&gt;0$ (por $1/𝒙$) ⇒ $[1,3]$ válido</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Differentiate and substitute
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒇'(𝒙)=𝒙^{2}-\dfrac{1}{4𝒙^{2}}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle
+                \int_{1}^{3}\sqrt{\,1+\big(𝒙^{2}-\dfrac{1}{4𝒙^{2}}\big)^{2}\,}\cdot \mathrm{d}𝒙$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Simplifying the radical using a perfect square
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\big(𝒙^{2}-\dfrac{1}{4𝒙^{2}}\big)^{2}=𝒙^{4}-\dfrac{1}{2}+\dfrac{1}{16𝒙^{4}}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">
+                $1+\big(𝒙^{2}-\dfrac{1}{4𝒙^{2}}\big)^{2}=\dfrac{1}{2}+𝒙^{4}+\dfrac{1}{16𝒙^{4}}=\dfrac{(4𝒙^{4}+1)^{2}}{(4𝒙^{2})^{2}}$
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\sqrt{1+\big(𝒇'\big)^{2}}=\dfrac{4𝒙^{4}+1}{4𝒙^{2}}\quad(𝒙&gt;0)$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Integrate
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle \int_{1}^{3}\Big(𝒙^{2}+\dfrac{1}{4}𝒙^{-2}\Big)\,\mathrm{d}𝒙$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">
+                $𝐋=\Big[\,\dfrac{𝒙^{3}}{3}-\dfrac{1}{4𝒙}\,\Big]_{1}^{3}=\Big(\dfrac{27}{3}-\dfrac{1}{12}\Big)-\Big(\dfrac{1}{3}-\dfrac{1}{4}\Big)=\dfrac{53}{6}$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=2470" target="_blank">41:10</a>. 🧩
+        Example – Find the length of a curve: $𝒇(𝒙)=𝒙^{3/2}$ from $(1,1)$ to $\big(2,2\sqrt{2}\big)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[41-10]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[41-10]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[41-10]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[41-10]-02.png" alt="Preview 2" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">$𝒇'(𝒙)=\dfrac{3}{2}\cdot 𝒙^{1/2}$</li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">$𝐿=\displaystyle \int_{1}^{2}\sqrt{\,1+\big(\dfrac{3}{2}\cdot
+            𝒙^{1/2}\big)^{2}\,}\,\mathrm{d}𝒙=\int_{1}^{2}\sqrt{\,1+\dfrac{9}{4}𝒙\,}\,\mathrm{d}𝒙$</li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Substitution:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒖=1+\dfrac{9}{4}𝒙$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\mathrm{d}𝒖=\dfrac{9}{4}\,\mathrm{d}𝒙$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{4}{9}\,\mathrm{d}𝒖=\mathrm{d}𝒙$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Limits:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒙=2 \Rightarrow 𝒖=\dfrac{11}{2}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒙=1 \Rightarrow 𝒖=\dfrac{13}{4}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Integrating:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\displaystyle \int_{13/4}^{11/2}\sqrt{𝒖}\,\mathrm{d}𝒖$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{4}{9}\displaystyle \int_{13/4}^{11/2} 𝒖^{1/2}\,\mathrm{d}𝒖$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{4}{9}\cdot \dfrac{2}{3}\,𝒖^{3/2}\,\Big|_{13/4}^{11/2}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{8}{27}\Big[\, 𝒖^{3/2}\,\Big]_{13/4}^{11/2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Evaluating:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">
+                $\dfrac{8}{27}\Big[\,\big(\dfrac{11}{2}\big)^{3/2}-\big(\dfrac{13}{4}\big)^{3/2}\,\Big]$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{8}{27}\Big[\, \dfrac{\sqrt{11^{2}\cdot 11}}{\sqrt{2^{2}\cdot 2}} -
+                \dfrac{\sqrt{13^{2}\cdot 13}}{8}\,\Big]$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{8}{27}\Big[\, \dfrac{11\sqrt{11}}{2\sqrt{2}} - \dfrac{13\sqrt{13}}{8}\,\Big]$
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{8}{27}\cdot \dfrac{1}{8}\Big[\,22\sqrt{22}-13\sqrt{13}\,\Big]$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Final:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\dfrac{22\sqrt{22}-13\sqrt{13}}{27}\approx 2.09$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=3490" target="_blank">58:10</a>. 🧩
+        Example – Find the length of a curve: $𝒇(𝒙)=𝒙^{3/2}$ from $(1,1)$ to $\big(2,2\sqrt{2}\big)$ in terms of $𝒚$
+
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[58-10]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[58-10]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[58-10]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[58-10]-02.png" alt="Preview 2" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">Formula for length in terms of 𝒚:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle \int_{𝒸}^{𝒹}\sqrt{\,1+\big(𝒇'(𝒚)\big)^{2}\,}\cdot \mathrm{d}𝒚$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Express 𝒙 as a function of 𝒚:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒚=𝒙^{3/2}\;\Rightarrow\; 𝒙=𝒚^{2/3}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒙'=\dfrac{\mathrm{d}𝒙}{\mathrm{d}𝒚}=\dfrac{2}{3}\,𝒚^{-1/3}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Substitute into the arc length formula:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\displaystyle
+                \int_{1}^{2\sqrt{2}}\sqrt{\,1+\big(\dfrac{2}{3}𝒚^{-1/3}\big)^{2}\,}\,\mathrm{d}𝒚$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\displaystyle \int_{1}^{2\sqrt{2}}\sqrt{\,1+\dfrac{4}{9}𝒚^{-2/3}\,}\,\mathrm{d}𝒚$
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\displaystyle
+                \int_{1}^{2\sqrt{2}}\sqrt{\,\dfrac{9𝒚^{2/3}+4}{9𝒚^{2/3}}\,}\,\mathrm{d}𝒚$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\displaystyle \int_{1}^{2\sqrt{2}}
+                \dfrac{\sqrt{\,9𝒚^{2/3}+4\,}}{3\,𝒚^{1/3}}\,\mathrm{d}𝒚$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Substitution:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Let $𝒖=9𝒚^{2/3}+4 \;\Rightarrow\; \mathrm{d}𝒖=6\,𝒚^{-1/3}\,\mathrm{d}𝒚
+                \;\Rightarrow\; \mathrm{d}𝒚=\dfrac{\mathrm{d}𝒖}{6\,𝒚^{-1/3}}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Limits: $𝒚=1 \Rightarrow 𝒖=13;\;\; 𝒚=2\sqrt{2} \Rightarrow 𝒖=22$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Substitute and simplify:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\dfrac{1}{3}\displaystyle \int_{1}^{2\sqrt{2}}
+                𝒚^{-1/3}\sqrt{\,9𝒚^{2/3}+4\,}\,\mathrm{d}𝒚$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\dfrac{1}{18}\displaystyle \int_{13}^{22}\sqrt{𝒖}\,\mathrm{d}𝒖$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\dfrac{1}{27}\Big[\,𝒖^{3/2}\,\Big]_{13}^{22}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Evaluate:
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝐋=\dfrac{1}{27}\Big[\,22^{3/2}-13^{3/2}\,\Big]$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$=\dfrac{22\sqrt{22}-13\sqrt{13}}{27}\approx 2.09$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｓｕｒｆａｃｅ ａｒｅａ ｇｅｎｅｒａｔｅｄ ｂｙ ｔｈｅ ｒｏｔａｔｉｏｎ ｏｆ ａ ｃｕｒｖｅ</h2>
+
+    <ul>
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=4160" target="_blank">1:09:20</a>.
+        Intro𝒅𝑢ction</li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=4370" target="_blank">1:12:50</a>.
+        Surface area ($𝓢$) = circumference (cross-section) ∙ length ($𝐿$)
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-12-50]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-12-50]-01.png" alt="Preview" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">To find the total surface area of a solid of revolution, we use the concept of surface
+            area generated by rotating a curve.
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">The key steps are:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Measure the distance traveled by the edge of the shape → This is the arc length of
+                    the generating curve.</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Multiply it by the circumference (cross-section) generated by rotation → This is
+                    the circumference with a radius equal to the distance of the curve from the axis of rotation.</li>
+                </ul>
+              </li>
+
+              <!-- ○ level-3 -->
+              <li class="level-3">General formula for surface of revolution:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">If we rotate a function $𝒚=𝒇(𝒙)$ around the $𝒙$-axis, the generated surface
+                    area is computed as:
+                    <ul>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝓢=\displaystyle \int_{𝒂}^{𝒃} 2\pi\,𝒇(𝒙)\cdot
+                        \sqrt{\,1+\big(𝒇'(𝒙)\big)^{2}\,}\,\mathrm{d}𝒙$</li>
+                    </ul>
+                  </li>
+
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Where:
+                    <ul>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$2\pi\,𝒇(𝒙)$ is the circumference generated when rotating a point
+                        $(𝒙,𝒇(𝒙))$.
+                        <ul>
+                          <!-- ▢ level-6 -->
+                          <li class="level-6">$𝒇(𝒙)$ is the radius at any given point, the distance from $x$-axis to
+                            the function</li>
+                        </ul>
+                      </li>
+
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$\sqrt{\,1+\big(𝒇'(𝒙)\big)^{2}\,}$ represents the differential arc length
+                        element.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ level-3 -->
+              <li class="level-3">What we are doing here:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">We take each small segment of the curve.</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Compute its traveled distance (arc length)
+                    $\sqrt{\,1+\big(𝒇'(𝒙)\big)^{2}\,}\,\mathrm{d}𝒙$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Multiply it by the circumference $2\pi\,𝒇(𝒙)$.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=4543" target="_blank">1:15:43</a>.
+        Graphical approach. Full explanation
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-15-43]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-15-43]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-15-43]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-15-43]-02.png" alt="Preview 2" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-15-43]-03.png" target="_blank">- [📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-15-43]-03.png" alt="Preview 3" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-15-43]-04.png" target="_blank">- [📷image-4]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-15-43]-04.png" alt="Preview 4" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-15-43]-05.png" target="_blank">- [📷image-5]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-15-43]-05.png" alt="Preview 5" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=4710"
+              target="_blank">1:18:30</a>. Zoom one section of the solid.
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Each small segment of the solid can be approximated by a truncated cone, where
+                $𝐿_{k}$ represents the arc length of the generating curve</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">We start from the <strong>known formula</strong> for the lateral surface area of a
+                truncated cone:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢_{k}=\pi\cdot(𝓻_{1k}+𝓻_{2k})\cdot 𝐿_{k}$
+                    <ul>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">Serves as the foundation for deriving the total surface area of a solid of
+                        revolution</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=4980"
+              target="_blank">1:23:00</a>. $𝓢_{k}=\pi\cdot(𝓻_{1k}+𝓻_{2k})\cdot 𝐿_{k} \;\Rightarrow\;
+            𝐿_{k}=\sqrt{(\Delta 𝓍_{k})^{2}+\big[\,𝒇(𝓍_{k})-𝒇(𝓍_{k-1})\,\big]^{2}}$
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢_{k}=\pi\big[\,𝒇(𝓍_{k-1})+𝒇(𝓍_{k})\,\big]\cdot \sqrt{(\Delta
+                𝓍_{k})^{2}+\big[\,𝒇(𝓍_{k})-𝒇(𝓍_{k-1})\,\big]^{2}}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢_{k}=\pi\big[\,𝒇(𝓍_{k-1})+𝒇(𝓍_{k})\,\big]\cdot \sqrt{(\Delta
+                𝓍_{k})^{2}+\big[\,𝒇'(𝓍_k^* )\,\Delta 𝓍_{k}\,\big]^{2}}$
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝒇(𝓍_{k})-𝒇(𝓍_{k-1})\Rightarrow 𝒇'(𝓍_k^* )\cdot \Delta 𝓍_{k}$ by the mean
+                    value theorem</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\pi \big[\,𝒇(𝓍_{k-1})+𝒇(𝓍_{k})\,\big]\cdot \sqrt{\,1+\big(𝒇'(𝓍_k^*
+                )\big)^{2}\,}\cdot \Delta 𝓍_{k}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=5345"
+              target="_blank">1:29:05</a>. $𝒇(𝓍_{k-1})+𝒇(𝓍_{k}) \;\Rightarrow\; 2\cdot
+            \dfrac{𝒇(𝓍_{k-1})+𝒇(𝓍_{k})}{2}=$ average of radii
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">There is some point $𝓍_{k}^{**}\in[𝓍_{k-1},𝓍_{k}]$ for which
+                $𝒇(𝓍_{k}^{**})=\dfrac{𝒇(𝓍_{k-1})+𝒇(𝓍_{k})}{2}=$ average of heights</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=5675"
+              target="_blank">1:34:35</a>. $\pi \big[\,𝒇(𝓍_{k-1})+ 𝒇(𝓍_{k})\,\big]\cdot \sqrt{\,1+\big(𝒇'(𝓍_k^*
+            )\big)^{2}\,}\cdot \Delta 𝓍_{k} \;\Rightarrow\; \pi \cdot 2 \cdot 𝒇(𝓍_{k}^{**})\cdot
+            \sqrt{\,1+\big(𝒇'(𝓍_k^* )\big)^{2}\,}\cdot \Delta 𝓍_{k}$
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢_{k}=2\pi\cdot 𝒇(𝓍_{k}^{** })\cdot \sqrt{\,1+\big(𝒇'(𝓍_k^* )\big)^{2}\,}\cdot
+                \Delta 𝓍_{k}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=5770"
+              target="_blank">1:36:10</a>. Sum up all $𝓢_{k}$
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢=\displaystyle \lim_{n\to\infty}\sum_{k=1}^{n} 2\pi\, 𝒇(𝓍_{k}^{**})\cdot
+                \sqrt{\,1+\big(𝒇'(𝓍_{k}^{*})\big)^{2}\,}\cdot \Delta 𝓍_{k}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\boxed{𝓢=\displaystyle \int_{𝓪}^{𝓫} 2\pi\,𝒇(𝓍)\cdot
+                \sqrt{\,1+\big(𝒇'(𝓍)\big)^{2}\,}\,\mathrm{d}𝒙 \;}$ about $𝓍$-axis</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\boxed{𝓢=\displaystyle \int_{𝒸}^{𝒹} 2\pi\,𝒈(𝒚)\cdot
+                \sqrt{\,1+\big(𝒈'(𝒚)\big)^{2}\,}\,\mathrm{d}𝑦 \;\;}$ about $𝒚$-axis</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=5935" target="_blank">1:38:55</a>.
+        Graphical approach. Simplified version
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-38-55]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-38-55]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=6495" target="_blank">1:48:15</a>.
+        🧩 Example – Find the Surface Area ($𝓢$) of revolution: $𝒚=𝒙^{3}$ between $𝒙=0$ and $𝒙=1$, when revolved
+        around the $𝒙$-axis –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-48-15]-01.png" target="_blank">- [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-48-15]-01.png" alt="Preview" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">Starting point
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">We start from the <strong>known formula</strong> for the lateral surface area of a
+                truncated cone:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢_{k}=\pi\cdot(𝓻_{1k}+𝓻_{2k})\cdot 𝐿_{k}$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">In the limit as $\Delta 𝒙\to 0$, this leads to the formula for the surface area of a
+                solid of revolution:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\displaystyle \int_{𝓪}^{𝓫} 2\pi\cdot 𝒓\cdot
+                    \sqrt{\,1+\big(𝒇'(𝒙)\big)^{2}\,}\,\mathrm{d}𝒙$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Given data
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Function: $𝒚=𝒙^{3}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Derivative: $𝒚'=3𝒙^{2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Formula setup
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Substitute into the formula:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\displaystyle \int_{0}^{1} 2\pi\cdot 𝒙^{3}\cdot
+                    \sqrt{\,1+\big(3𝒙^{2}\big)^{2}\,}\,\mathrm{d}𝒙$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Simplify inside the radical:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$\sqrt{\,1+9𝒙^{4}\,}$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Therefore:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=2\pi \displaystyle \int_{0}^{1} 𝒙^{3}\sqrt{\,1+9𝒙^{4}\,}\,\mathrm{d}𝒙$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Substitution
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Let $𝓾=1+9𝒙^{4}$
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$\mathrm{d}𝓾=36𝒙^{3}\,\mathrm{d}𝒙 \;\Rightarrow\;
+                    \mathrm{d}𝒙=\dfrac{\mathrm{d}𝓾}{36𝒙^{3}}$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Bounds:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝒙=0 \Rightarrow 𝓾=1$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝒙=1 \Rightarrow 𝓾=10$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Substitute into the integral:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=2\pi \displaystyle \int_{1}^{10} 𝒙^{3}\cdot \sqrt{𝓾}\cdot
+                    \dfrac{\mathrm{d}𝓾}{36𝒙^{3}}$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Simplify constants: $𝓢=\dfrac{\pi}{18} \displaystyle \int_{1}^{10}
+                    \sqrt{𝓾}\,\mathrm{d}𝓾$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Integration
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$\displaystyle \int \sqrt{𝓾}\,\mathrm{d}𝓾=\dfrac{2}{3}\,𝓾^{3/2}$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Then:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\dfrac{\pi}{18}\cdot \dfrac{2}{3}\cdot \Big[\,𝓾^{3/2}\,\Big]_{1}^{10}$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\dfrac{\pi}{27}\big(10^{3/2}-1\big)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Final result
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢=\dfrac{\pi}{27}\big(10\sqrt{10}-1\big)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● level-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=5Yuw1jCBq-0&amp;t=7180" target="_blank">1:59:40</a>.
+        🧩 Example – Find the Surface Area ($𝓢$) of revolution: $𝒚=𝒙^{2}$ between $𝒙=1$ and $𝒙=2$, when revolved
+        around the $𝒚$-axis
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-59-40]-01.png" target="_blank">- [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-59-40]-01.png" alt="Preview 1" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 5.4/[1-59-40]-02.png" target="_blank">- [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 5.4/[1-59-40]-02.png" alt="Preview 2" />
+        </span>
+
+        <ul>
+          <!-- ◉ level-2 -->
+          <li class="level-2">Set the problem in 𝒚 (axis is 𝒚)
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">For revolution around 𝒚-axis, use $𝓢=\displaystyle \int_{𝒸}^{𝒹} 2\pi\,𝒈(𝒚)\cdot
+                \sqrt{\,1+\big( 𝒈'(𝒚)\big)^{2}\,}\,\mathrm{d}𝑦$</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">From $𝒚=𝒙^{2}\Rightarrow 𝒙=\sqrt{𝒚}$ (take the positive branch on $𝒙\in[1,2]$);
+                $𝒙'(𝒚)=\dfrac{\mathrm{d}𝒙}{\mathrm{d}𝒚}=\dfrac{1}{2}\cdot 𝒚^{-1/2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Bounds and radii
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝒙\in[1,2]\Rightarrow 𝒚\in[1,4]$.</li>
+              <!-- ○ level-3 -->
+              <li class="level-3">Radius to the 𝒚-axis: $𝒓(𝒚)=𝒙=\sqrt{𝒚}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">Set up the integral
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢=\displaystyle \int_{1}^{4} 2\pi\cdot \sqrt{𝒚}\cdot
+                \sqrt{\,1+\big(\dfrac{1}{2}\cdot 𝒚^{-1/2}\big)^{2}\,}\,\mathrm{d}𝒚$
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Inside the root: $\big(\dfrac{1}{2}\cdot
+                    𝒚^{-1/2}\big)^{2}=\dfrac{1}{4𝒚}\;\Rightarrow\; \sqrt{\,1+\dfrac{1}{4𝒚}\,}$</li>
+                </ul>
+              </li>
+              <!-- ○ level-3 -->
+              <li class="level-3">$𝓢=2\pi \displaystyle \int_{1}^{4} \sqrt{𝒚}\cdot
+                \sqrt{\,1+\dfrac{1}{4𝒚}\,}\,\mathrm{d}𝒚$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">(1*) Board path 1 — “Insert 2 as $\sqrt{4}$ inside the radical”
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Combine radicals as on the board:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=2\pi \displaystyle \int_{1}^{4} \sqrt{𝒚}\cdot
+                    \sqrt{\,1+\dfrac{1}{4𝒚}\,}\,\mathrm{d}𝒚 \;\to$
+                    <!-- ▣ level-5 -->
+                    <ul>
+                      <li class="level-5">$𝓢=\pi \displaystyle \int_{1}^{4} \sqrt{4}\cdot \sqrt{𝒚}\cdot
+                        \sqrt{\,1+\dfrac{1}{4𝒚}\,}\,\mathrm{d}𝒚$</li>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝓢=\pi \displaystyle \int_{1}^{4} \sqrt{4𝒚}\cdot
+                        \sqrt{\,1+\dfrac{1}{4𝒚}\,}\,\mathrm{d}𝒚$</li>
+                      <!-- ▣ level-5 -->
+                      <li class="level-5">$𝓢=\pi \displaystyle \int_{1}^{4} \sqrt{\,4𝒚+1\,}\,\mathrm{d}𝒚$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ level-2 -->
+          <li class="level-2">(2*) Board path 2 — “Explicit cancellation of $\sqrt{𝒚}$ and constants”
+            <ul>
+              <!-- ○ level-3 -->
+              <li class="level-3">Repeat the starting line and show each cancellation step-by-step:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=2\pi \displaystyle \int_{1}^{4} \sqrt{𝒚}\cdot
+                    \sqrt{\,1+\dfrac{1}{4𝒚}\,}\,\mathrm{d}𝒚$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">
+                    $\sqrt{\,1+\dfrac{1}{4𝒚}\,}=\sqrt{\,\dfrac{4𝒚+1}{4𝒚}\,}=\dfrac{\sqrt{\,4𝒚+1\,}}{2\sqrt{𝒚}}$
+                  </li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=2\pi \displaystyle \int_{1}^{4} \sqrt{𝒚}\cdot
+                    \dfrac{\sqrt{\,4𝒚+1\,}}{2\sqrt{𝒚}}\,\mathrm{d}𝒚=\pi \displaystyle \int_{1}^{4}
+                    \sqrt{\,4𝒚+1\,}\,\mathrm{d}𝒚$</li>
+                </ul>
+              </li>
+
+              <!-- ○ level-3 -->
+              <li class="level-3">Substitution and evaluation:
+                <ul>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">Let $𝓾=4𝒚+1 \Rightarrow \mathrm{d}𝓾=4\,\mathrm{d}𝒚,\; 𝒚=1 \Rightarrow 𝓾=5,\;
+                    𝒚=4 \Rightarrow 𝓾=17$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\dfrac{\pi}{4}\displaystyle \int_{5}^{17} 𝓾^{1/2}\,\mathrm{d}𝓾$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\dfrac{\pi}{4}\cdot \dfrac{2}{3}\cdot 𝓾^{3/2}\,\Big|_{5}^{17}$</li>
+                  <!-- ■ level-4 -->
+                  <li class="level-4">$𝓢=\dfrac{\pi}{6}\big[\,17^{3/2}-5^{3/2}\,\big]$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

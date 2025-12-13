@@ -1,0 +1,5 @@
+image_name: [19-35]𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐚𝐭 𝐭𝐡𝐞 𝐄𝐧𝐝𝐩𝐨𝐢𝐧𝐭𝐬 𝐨𝐟 𝐚𝐧 𝐈𝐧𝐭𝐞𝐫𝐯𝐚𝐥.png
+file_name: [19-35]-02.png
+timestamp: 19:35
+counter: 02
+folder: Calculus 1 Lecture 1.4

@@ -1,0 +1,5 @@
+image_name: [55-40]Example y = -3∙cos(½∙x).png
+file_name: [55-40]-01.png
+timestamp: 55:40
+counter: 01
+folder: Calculus 1 Lecture 0.3

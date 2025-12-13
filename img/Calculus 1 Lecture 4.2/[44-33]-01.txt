@@ -1,0 +1,5 @@
+image_name: [44-33]∫ sin²(𝒙)·cos(𝒙)·𝒅𝒙  (𝑢 = cos(𝒙) ).png
+file_name: [44-33]-01.png
+timestamp: 44:33
+counter: 01
+folder: Calculus 1 Lecture 4.2

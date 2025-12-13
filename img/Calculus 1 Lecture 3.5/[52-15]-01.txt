@@ -1,0 +1,5 @@
+image_name: [52-15]Example - llim ₓ→∞ ³√[(2𝒙² - 3) ÷ (𝒙² - 5)].png
+file_name: [52-15]-01.png
+timestamp: 52:15
+counter: 01
+folder: Calculus 1 Lecture 3.5

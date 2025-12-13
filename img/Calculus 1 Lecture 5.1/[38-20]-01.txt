@@ -1,0 +1,5 @@
+image_name: [38-20]Example – Finding the area between two curves without a given interval_1.png
+file_name: [38-20]-01.png
+timestamp: 38:20
+counter: 01
+folder: Calculus 1 Lecture 5.1

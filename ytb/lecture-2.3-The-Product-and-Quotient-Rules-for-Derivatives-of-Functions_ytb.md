@@ -1,0 +1,159 @@
+-----------------------------------**Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．３　Tｈｅ　Pｒｏｄｕｃｔ　ａｎｄ　Qｕｏｔｉｅｎｔ　Rｕｌｅｓ　Fｏｒ　Dｅｒｉｖａｔｉｖｅｓ　Oｆ　Fｕｎｃｔｉｏｎｓ**---------------------------------
+
+
+
+
+I ｎｔｒｏｄｕｃｔｉｏｎ.
+    
+● [0:00]. Introduction to the lesson on the product rule and the quotient rule for derivatives.
+● [0:19]. Brief review of the lesson topics: product rule and quotient rule.
+
+
+
+Ｐｒｏｄｕｃｔ   ｒｕｌｅ
+
+● [0:41]. Presentation of the scenario: Is it possible to derive the product of two functions?
+      ◉ [0:52]. 🧩 Example – with basic functions: 𝒇(𝒙) = 𝒙² and 𝓰(𝒙) = 𝒙³.
+           ○ Posing the main question: Is 𝒅/𝒅𝒙 [𝒇(𝒙) ⋅ 𝓰(𝒙)] = 𝒅/𝒅𝒙 [𝒇(𝒙)] ⋅ 𝒅/𝒅𝒙 [𝓰(𝒙)]?
+      ◉ [1:47]. Analysis of the question through the given Example.
+           ○ It is observed that 𝒇(𝒙) ⋅ 𝓰(𝒙) = 𝒙⁵.
+                ■ Calculating 𝒅/𝒅𝒙 (𝒙⁵) = 5𝒙⁴.
+           ○ Calculating separately 𝒅/𝒅𝒙 [𝒇(𝒙)] ⋅ 𝒅/𝒅𝒙 [𝓰(𝒙)].
+                ■ A different answer is obtained: 6𝒙³.
+           ○ Conclusion: Derivatives cannot be separated by multiplication.
+          
+● [4:48]. Need for a rule to derive products of functions.
+      ◉ [5:00]. Introduction to the concept of the product rule.
+     
+● [5:21]. Explanation of the product rule.
+      ◉ [6:05]. Interpretation in words of the product rule.
+      ◉ **Formula of the product rule**: 
+           ○ 𝒅/𝒅𝒙 [𝒇(𝒙) ⋅ 𝓰(𝒙)] = 𝒅/𝒅𝒙 [𝒇(𝒙)] ⋅ 𝓰(𝒙) + 𝒇(𝒙) ⋅ 𝒅/𝒅𝒙 [𝓰(𝒙)].
+          
+● [7:13]. Verification of the product rule using the initial Example.
+     ◉ Emphasis on the importance of the notation 𝒅/𝒅𝒙 to indicate the function to be derived.
+           ○ 𝒅/𝒅𝒙 [𝒇(𝒙) · 𝓰(𝒙)] = 𝒇′(𝒙) · 𝓰(𝒙) + 𝒇(𝒙) · 𝓰′(𝒙)
+           ○ 𝒅/𝒅𝒙 [𝒙² · 𝒙³] = 𝒅/𝒅𝒙 [𝒙²] · 𝒙³ + 𝒙² · 𝒅/𝒅𝒙 [𝒙³]
+           ○ 2𝒙 · 𝒙³ + 𝒙² · 3𝒙²
+           ○ 2𝒙⁴ + 3𝒙⁴ = 𝟓𝒙⁴
+     ◉ Mention of the need for a formal proof to generalize the rule.
+
+     
+
+Ｐｒｅｌｉｍｉｎａｒｙ　ｃｏｎｓｉｄｅｒａｔｉｏｎｓ　ｆｏｒ　ｔｈｅ　ｐｒｏｄｕｃｔ　ｒｕｌｅ：　ｅｖａｌｕａｔｉｎｇ　ｄｉｓｔｒｉｂｕｔｉｏｎ.
+
+● [10:34]. Presentation of an example where distribution is possible.
+     ◉ 🧩 Example –: (𝒙² - 1)⋅(3𝒙⁴ - 2𝒙)
+          ○ [11:09]. Anticipation of scenarios where distribution will n̲o̲t̲ be feasible.
+               ■ [11:23]. 🧩 Example – with a high exponent, where distribution would be tedious.
+                    ▣ (𝒙² - 1)⋅(3𝒙⁴ - 2𝒙)⁴
+                    ▣ **This is why the project rule become very important**
+          ○ [12:19]. 🧩 Example – A Constant in the Product Rule
+               ■ Why is the product rule not used here? Because the constant's derivative is zero, so it contributes nothing.
+          ○ [14:10]. Two ways to solve 𝐲' from  𝐲 = (𝒙² - 1)(3𝒙⁴ + 2𝒙)
+               ■ Applying distribution
+                    ▣ Expand:
+                         ▢ 𝐲 = 3𝒙⁶ + 2𝒙³ - 3𝒙⁴ - 2𝒙
+                         ▢ 𝐲 = 3𝒙⁶ - 3𝒙⁴ + 2𝒙³ - 2𝒙
+                    ▣ Derivative (power rule):
+                         ▢ 𝒅𝐲/𝒅𝒙 = 18𝒙⁵ - 12𝒙³ + 6𝒙² - 2
+               ■ [15:15]. Applying the product rule Given:
+                    ▣ **Product rule** Setup
+                         ▢ Aply formula:
+                              ▲ 𝒅𝐲/𝒅𝒙 = 𝒅/𝒅𝒙[(𝒙² - 1)(3𝒙⁴ + 2𝒙)] = 𝒅/𝒅𝒙[𝒙² - 1] · (3𝒙⁴ + 2𝒙) + (𝒙² - 1) · 𝒅/𝒅𝒙[3𝒙⁴ + 2𝒙]
+                         ▢ Differentiate each part:
+                              ▲ = (2𝒙)(3𝒙⁴ + 2𝒙) + (𝒙² - 1)(12𝒙³ + 2)
+                         ▢ Expand both products:
+                              ▲ = 6𝒙⁵ + 4𝒙² + 12𝒙⁵ + 2𝒙² - 12𝒙³ - 2
+                         ▢ Combine like terms:
+                              ▲ 𝒅𝐲/𝒅𝒙 = 18𝒙⁵ - 12𝒙³ + 6𝒙² - 2
+
+          
+
+
+Ａｐｐｌｉｃａｔｉｏｎ　ｏｆ　ｔｈｅ　ｐｒｏｄｕｃｔ　ｒｕｌｅ
+
+● [19:36]. You need to understand the product rule first because it's one of the fundamental tools for differentiating expressions 
+               where two functions are multiplied: [(𝒇(𝒙) ⋅ 𝓰(𝒙))]' = 𝒇′(𝒙) ⋅ 𝓰(𝒙) + 𝒇(𝒙) ⋅ 𝓰′(𝒙).
+               Later on, you'll often encounter problems where this rule appears **in combination** with the chain rule:  [(𝒇(𝓰(𝒙)))]' = 𝒇′(𝓰(𝒙)) ⋅ 𝓰′(𝒙)
+               or with the quotient rule: [(𝒇(𝒙)/𝓰(𝒙))]' = (𝒇′(𝒙)·𝓰(𝒙) – 𝒇(𝒙)·𝓰′(𝒙)) / (𝓰(𝒙))².
+               Understanding the product rule early will make it easier to handle these more complex derivative rules as they often work together.
+                  
+● [20:10]. 🧩 Example – :(𝒙² + 1)⋅√𝒙
+     ◉ Apply the product rule:
+        ○ 𝒇′(𝒙) = 𝒅/𝒅𝒙 [1 + 𝒙²]·𝒙¹ᐟ² + (1 + 𝒙²)·𝒅/𝒅𝒙 [𝒙¹ᐟ²]
+      ○ 𝒇′(𝒙) = 2𝒙·𝒙¹ᐟ² + (1 + 𝒙²)·(½)·𝒙⁻¹ᐟ²
+     ◉ Distribute:
+      ○ 𝒇′(𝒙) = 2𝒙·𝒙¹ᐟ² + ½·𝒙⁻¹ᐟ² + ½·𝒙²·𝒙⁻¹ᐟ²
+      ○ 𝒇′(𝒙) = 2·𝒙³ᐟ² + ½·𝒙⁻¹ᐟ² + ½·𝒙³ᐟ²
+      ○ 𝒇′(𝒙) = (5⁄2)·𝒙³ᐟ² + ½·𝒙⁻¹ᐟ²
+      
+● [32:10]. 🧩 Example – :Find 𝗀'(2) ; 𝓰(𝒙) = (𝒙² + 1)⋅𝒇(𝒙) ewhere 𝒇(2) = 3  and 𝒇'(2) = 1
+     ◉Apply the product rule:
+          ○ 𝓰′(𝒙) = 𝒅/𝒅𝒙 [(𝒙² + 1)]·𝒇(𝒙) + (𝒙² + 1)·𝒅/𝒅𝒙 [𝒇(𝒙)]
+          ○ 𝓰′(𝒙) = 2𝒙·𝒇(𝒙) + (𝒙² + 1)·𝒇′(𝒙)
+     ◉ Substitute 𝒙 = 2:
+          ○ 𝒈′(2) = 2·2·𝒇(2) + (2² + 1)·𝒇′(2)
+          ○ 𝒈′(2) = 4·3 + 5·(–1)
+          ○ 𝒈′(2) = 12 – 5 = 7
+
+
+
+
+Ｑｕｏｔｉｅｎｔ　ｒｕｌｅ
+
+● [39:10]. Posing the question: Is it possible to derive the quotient of two functions?
+     ◉ Dismissing the possibility of deriving the numerator and the denominator separately.
+● [40:00]. Introduction to the quotient rule.
+     ◉ [40:50]. Presentation of the **formula for the quotient rule**.
+           ○ 𝒅/𝒅𝒙 [𝒇(𝒙) / 𝓰(𝒙)] = [𝓰(𝒙) ⋅ 𝒇'(𝒙)  -  𝒇(𝒙) ⋅ 𝗀'(𝒙)]  /  [𝓰(𝒙)]²  
+           ○ Likewise  𝒅/𝒅𝒙 [𝒇(𝒙) / 𝓰(𝒙)] = [𝒇'(𝒙) ⋅ 𝓰(𝒙)    -  𝒇(𝒙) ⋅ 𝗀'(𝒙)]  /  [𝓰(𝒙)]²  
+     ◉ [42:20]. Other notation
+           ○ {𝓰(𝒙) ⋅ 𝒅/𝒅𝒙 [𝒇(𝒙)] - 𝒇(𝒙) ⋅ 𝒅/𝒅𝒙 [𝓰(𝒙)]}  /  [𝓰(𝒙)]²
+           ○ Likewise {𝒅/𝒅𝒙 [𝒇(𝒙)] ⋅ 𝓰(𝒙) - 𝒇(𝒙) ⋅ 𝒅/𝒅𝒙 [𝓰(𝒙)]} /  [𝓰(𝒙)]² 
+           
+
+           
+           
+Ａｐｐｌｉｃａｔｉｏｎ　　ｅｘａｍｐｌｅｓ　ｏｆ　ｔｈｅ　ｑｕｏｔｉｅｎｔ　ｒｕｌｅ
+
+● [45:40]. 🧩 Example –: 𝑦 = (𝒙³ - 3𝒙² - 5) / (2𝒙 + 5)
+      ◉ An example where the quotient rule is necessary.
+      ◉ [46:10]. Comparison with a case where prior simplification is possible.
+           ○ 𝑦 = (𝒙³ - 3𝒙² - 5) / 2𝒙 
+               ■ Iinstead of directly using the quotient rule, you can split the fraction into simpler parts, combine 
+                     exponents,  and differentiate each piece separatel.
+     ◉ [48:00]. Explanation of how to set up the quotient rule for the given example.
+          ○ Apply the quotient rule:
+               ■ 𝒅𝑦/𝒅𝒙 = [(2𝒙 + 5) · 𝒅/𝒅𝒙 (𝒙³ − 3𝒙² − 5) − (𝒙³ − 3𝒙² − 5) · 𝒅/𝒅𝒙 (2𝒙 + 5)] / (2𝒙 + 5)²
+         ○ Calculate derivatives:
+               ■ 𝒅/𝒅𝒙 (𝒙³ − 3𝒙² − 5) = 3𝒙² − 6𝒙
+               ■ 𝒅/𝒅𝒙 (2𝒙 + 5) = 2
+        ○ Substitute and expand:
+               ■ Numerator:  (2𝒙 + 5)(3𝒙² − 6𝒙) − (𝒙³ − 3𝒙² − 5)·2
+               ■ Denominator: (2𝒙 + 5)²
+        ○ Expand the numerator:
+               ■ 6𝒙³ − 12𝒙² + 15𝒙² − 30𝒙 − 2𝒙³ + 6𝒙² + 10
+        ○ Simplify:
+               ■ 4𝒙³ + 9𝒙² − 30𝒙 + 10
+        ○ Final answer:
+               ■ 𝒅𝑦/𝒅𝒙 = [4𝒙³ + 9𝒙² − 30𝒙 + 10] / (2𝒙 + 5)²
+        ○ Emphasis on the importance of using parentheses for correct distribution.
+
+     
+
+
+Ｐｒｏｄｕｃｔ　ｒｕｌｅ　ｗｉｔｈｉｎ　ｔｈｅ　ｑｕｏｔｉｅｎｔ　ｒｕｌｅ
+
+● [57:55].  🧩 Example – where the product rule and quotient rule are combined: 𝒇(𝒙) = [(3𝒙 - 1)(𝒙² + 4)] / (𝒙² + 2)
+      ◉ Explanation of the importance of identifying which rule has higher hierarchy in the problem.
+● [58:20]. Description of setting up the quotient rule for the given  example, including the product rule within it.
+      ◉ [1:00:50]. Emphasis on the importance of following the notation 𝒅/𝒅𝒙 to perform derivatives correctly. 
+      ◉ Apply the quotient rule:
+           ○ 𝒇′(𝒙) = [(𝒙²+2) · 𝒅/𝒅𝒙[(3𝒙−1)(𝒙²+4)] − (3𝒙−1)(𝒙²+4) · 𝒅/𝒅𝒙[𝒙²+2]] / (𝒙²+2)²
+      ◉ Calculate derivatives:
+           ○ 𝒅/𝒅𝒙[(3𝒙−1)(𝒙²+4)] = 3(𝒙²+4) + 2𝒙(3𝒙−1)
+           ○ 𝒅/𝒅𝒙[𝒙²+2] = 2𝒙
+      ◉ Substitute and expand:
+           ○ Numerator: (𝒙²+2)[3(𝒙²+4) + 2𝒙(3𝒙−1)] − (3𝒙−1)(𝒙²+4)·2𝒙
+           ○ Denominator: (𝒙²+2)²

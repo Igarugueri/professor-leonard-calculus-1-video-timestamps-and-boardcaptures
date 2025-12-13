@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．１　Iｎｃｒｅａｓｉｎｇ / Dｅｃｒｅａｓｉｎｇ　ａｎｄ　Cｏｎｃａｖｉｔｙ　ｏｆ　ｆｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．１　Iｎｃｒｅａｓｉｎｇ / Dｅｃｒｅａｓｉｎｇ　ａｎｄ　Cｏｎｃａｖｉｔｙ　ｏｆ　ｆｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｉｎｃｒｅａｓｉｎｇ　ａｎｄ　ｄｅｃｒｅａｓｉｎｇ　ｉｎｔｅｒｖａｌｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=47"
+          target="_blank">[0:47]</a>. Definition of increasing and decreasing intervals.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[0-47]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[0-47]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Graphical Example: Identifying intervals where the function rises or falls when
+            <strong>reading the graph from left to right along 𝒙-axses</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Increasing and decreasing intervals.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=185"
+          target="_blank">[3:05]</a>. Relationship between the slope and increasing/decreasing intervals.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Analysis of the slope at each point within increasing and decreasing intervals.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <strong>An increasing interval has a positive slope (↗) and a decreasing interval has a
+              negative slope (↘).</strong></li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=356"
+          target="_blank">[5:56]</a>. <strong>Formalization of the concept of increasing/decreasing intervals using the
+          derivative.</strong>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[3-05]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[3-05]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If $𝒇'(𝒙)&gt;0$ in an interval, then $𝒇(𝒙)$ is increasing in that interval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If $𝒇'(𝒙)&lt;0$ in an interval, then $𝒇(𝒙)$ is decreasing in that interval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If $𝒇'(𝒙)=0$ at a point or interval, then $𝒇(𝒙)$ is constant at that point or
+            interval.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Typically there will be a change from increasing to decreasing or vice versa.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Sign analysis: Checking the sign of $𝒇'(𝒙)$ to find where $𝒇(𝒙)$ goes up,
+                    down, or stays flat.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｃｏｎｃａｖｉｔｙ　ａｎｄ　ｐｏｉｎｔｓ　ｏｆ　ｉｎｆｌｅｃｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=593"
+          target="_blank">[9:53]</a>. Definition of concavity: The direction of the curve's curvature.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <strong>Concavity describes how the slope of the function changes</strong>.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> How a slope of a curve is increasing or decreasing.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> increasing changing positively. </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Decresing changing megatively.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=675"
+              target="_blank">[11:15]</a>. Graph example: Two different directions of a curve's curvature in a
+            increasing function.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[11-15]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[11-15]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ◞ → Increasing curve, accelerating (concave up)</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ◜ → Increasing curve, decelerating (concave down)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=815"
+          target="_blank">[13:35]</a>. Relationship between the second derivative and concavity.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[13-35]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[13-35]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The second derivative represents the rate of change of the slope.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <strong>Types of Concavity:</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ᴄᴏɴᴄᴀᴠᴇ ᴜᴩ
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Description: The graph of the function curves upward, resembling a cup (U) .</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Second Derivative: Positive ($𝒇''(𝒙)&gt;0$)</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Slope Behavior: The slope of the function is increasing.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Example: $𝒇(𝒙)=𝒙^{2}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ᴄᴏɴᴄᴀᴠᴇ ᴅᴏᴡɴ
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Description: The graph of the function curves downward, resembling a cap (∩).
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Second Derivative: Negative ($𝒇''(𝒙)&lt;0$)</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Slope Behavior: The slope of the function is decreasing.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Example: $𝒇(𝒙)=-𝒙^{2}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=1110"
+              target="_blank">[18:30]</a>. <strong>Points of inflection:</strong> Points where the curve changes
+            concavity.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[18-30]-01.png" target="_blank">– [📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[18-30]-01.png" alt="Preview" />
+            </span>
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[18-30]-02.png" target="_blank">– [📷image-2]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[18-30]-02.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Graphical Example of points of inflection and how <strong>concavity changes</strong>
+                around them.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=1200"
+              target="_blank">[20:00]</a>. <strong>The second derivative represents the rate of change of the
+              slope.</strong>
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[20-00]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[20-00]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If $𝒇''(𝒙)&gt;0$ in an interval, then $𝒇(𝒙)$ is concave upward (U) in that
+                interval.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If $𝒇''(𝒙)&lt;0$ in an interval, then $𝒇(𝒙)$ is concave downward (∩) in that
+                interval.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If $𝒇''(𝒙)=0$, it is a possible point of inflection, where concavity may change.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｄｅｎｔｉｆｉｃａｔｉｏｎ　ｏｆ　ｉｎｔｅｒｖａｌｓ　ａｎｄ　ｐｏｉｎｔｓ　ｏｆ　ｉｎｆｌｅｃｔｉｏｎ　ｏｎ　ａ　ｇｒａｐｈ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=1380"
+          target="_blank">[23:00]</a>. 🧩 Example –: Identify increasing/decreasing intervals, concave up/down
+        intervals, and points of inflection on a given graph.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[23-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[23-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Analyzing the function along the 𝒙-axis; <strong>reading the graph from left to right
+              along 𝒙-axses</strong></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ａｎａｌｙｚｉｎｇ　ｔｈｅ　ｓｉｇｎ　ｏｆ　ｔｈｅ　ｆｉｒｓｔ　ａｎｄ　ｓｅｃｏｎｄ　ｄｅｒｉｖａｔｉｖｅｓ　ａｔ　ｓｐｅｃｉｆｉｃ　ｐｏｉｎｔｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=1986"
+          target="_blank">[33:06]</a>. 🧩 Example –: Determine the sign of $𝒇'(𝒙)$ and $𝒇''(𝒙)$ at specific points
+        on a graph.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[33-06]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[33-06]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Explanation of the relationship between the sign of the first derivative and the
+            function's increasing/decreasing behavior.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Explanation of the relationship between the sign of the second derivative and the
+            function's concavity.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｒｅｌａｔｉｖｅ　ｅｘｔｒｅｍａ：　ｒｅｌａｔｉｖｅ　ｍａｘｉｍｕｍｓ　ａｎｄ　ｍｉｎｉｍｕｍｓ　</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2207"
+          target="_blank">[36:47]</a>. Relative Extrema:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[36-47]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[36-47]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> (ⅰ) Relative Maximum.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> (ⅱ) Relative Minimum.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2229"
+          target="_blank">[37:09]</a>. <strong>Definition of relative extrema:</strong> Relative maxima and minima are
+        high and low points respectively within an interval,
+        <strong>but not necessarily the highest or lowest overall.</strong>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> A relative maximum is a point where the function changes from increasing to decreasing.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> A relative minimum is a point where the function changes from decreasing to increasing.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2400"
+          target="_blank">[40:00]</a>. 🧩 Example –: Graphical Example of relative maximums and minimums.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[40-00]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[40-00]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2500"
+          target="_blank">[41:40]</a>. The slope at relative extrema is zero.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2523"
+              target="_blank">[42:03]</a>. This means that the tangent line to the curve at that point is horizontal.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｃｒｉｔｉｃａｌ　ｎｕｍｂｅｒｓ　ａｎｄ　ｔｈｅｉｒ　ｒｅｌａｔｉｏｎｓｈｉｐ　ｗｉｔｈ　ｒｅｌａｔｉｖｅ　ｅｘｔｒｅｍａ．　</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2542"
+          target="_blank">[42:22]</a>. Critical Numbers and Their Relationship with Relative Extrema.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Critical numbers are the points where the derivative is <strong>z̲e̲r̲o̲ or
+              u̲n̲d̲e̲f̲i̲n̲e̲d̲</strong>— they are the only possible locations where a relative maximum or minimum can
+            occur.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2557"
+          target="_blank">[42:37]</a>. <strong>Definition of a critical number:</strong> A point where the function's
+        slope is zero or undefined.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2612"
+              target="_blank">[43:32]</a>. Critical numbers are candidates for being relative maximums or minimums.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2631"
+          target="_blank">[43:51]</a>. Not all critical numbers are relative maximums or minimums.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[42-37]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[42-37]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2638"
+              target="_blank">[43:58]</a>. 🧩 Example –: $𝒇(𝒙)=𝒙^{3}$; Graph example of a critical number that does
+            not correspond to a relative extremum.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2658"
+          target="_blank">[44:18]</a>. Procedure to find critical numbers.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Calculate the function's derivative and find the 𝒙-values where <strong>the derivative</strong> is
+            <span style="color:#cb078a;">zero</span> or
+            <span style="color:#d4a017;">undefined</span>.
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Importance of analyzing points where the derivative is undefined.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                If the derivative is a fraction, analyze both the
+                <span style="color:#cb078a;">numerator</span>
+                and the
+                <span style="color:#d4a017;">denominator</span>.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <span style="color:#cb078a;">Numerator</span>
+                    to find the 𝒙-values where the derivative is
+                    <span style="color:#cb078a;">zero</span>
+                  </li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2779"
+                      target="_blank">[46:19]</a>.
+                    Also, examine the
+                    <span style="color:#d4a017;">denominator</span>
+                    because it could introduce
+                    <span style="color:#d4a017;">undefined</span>
+                    points for the slope, which is significant.
+                    These undefined points can cause the function to change from increasing to decreasing or vice versa.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    </li>
+    </ul>
+    </li>
+
+    <!-- ● nivel-1 -->
+    <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2823"
+        target="_blank">[47:03]</a>. 🧩 Example –: Finding Critical Numbers $𝒇(𝒙)=𝒙^{3}-3𝒙+1$; Find the critical
+      numbers of a polynomial function.
+      <span class="image-container">
+        <a href="../../img/Calculus 1 Lecture 3.1/[47-03]-01.png" target="_blank">– [📷image]</a>
+        <img src="../../img/Calculus 1 Lecture 3.1/[47-03]-01.png" alt="Preview" />
+      </span>
+      <ul>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> Calculation of the function's derivative.</li>
+        <!-- ◉ nivel-2 -->
+        <li class="level-2"> Set the derivative equal to zero and solve for 𝒙.
+          <ul>
+            <!-- ○ nivel-3 -->
+            <li class="level-3"> Identification of the potential critical numbers.
+              <ul>
+                <!-- ■ nivel-4 -->
+                <li class="level-4"> <a
+                    href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=2950"
+                    target="_blank">[49:10]</a>. Critical numbers do not guarantee the existence of a relative maximum
+                  or minimum.
+                  <ul>
+                    <!-- ▣ nivel-5 -->
+                    <li class="level-5">📝N͟O͟T͟E͟: <strong>Critical points can be misleading in the following
+                        cases:</strong>
+                      <ul>
+                        <!-- ▢ nivel-6 -->
+                        <li class="level-6"> Inflection points — e.g., $𝒇(𝒙)=𝒙^{3}$.</li>
+                        <!-- ▢ nivel-6 -->
+                        <li class="level-6"> Nonexistent derivatives — e.g., $𝒇(𝒙)=|𝒙|$.</li>
+                        <!-- ▢ nivel-6 -->
+                        <li class="level-6"> Rapid oscillations — e.g., $𝒇(𝒙)=\sin(𝒙)$ near $𝒙\to\infty$.</li>
+                        <!-- ▢ nivel-6 -->
+                        <li class="level-6"> Piecewise-defined functions — where the derivative changes abruptly.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    </ul>
+
+    <h2>Ａｂｓｏｌｕｔｅ　ｅｘｔｒｅｍａ：　ａｂｓｏｌｕｔｅ　ｍａｘｉｍｕｍｓ　ａｎｄ　ｍｉｎｉｍｕｍｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3039"
+          target="_blank">[50:39]</a>. <strong>Definition of absolute extrema:</strong> The highest or lowest point of
+        the function on a given interval.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The absolute maximum is the greatest value the function attains on the interval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The absolute minimum is the least value the function attains on the interval.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3104"
+          target="_blank">[51:44]</a>. Not all functions have absolute maximums or minimums in an infinite interval
+        $(-\infty,\infty)$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[51-44]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[51-44]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3155"
+              target="_blank">[52:35]</a>. $𝒇(𝒙)=𝒙^{3}$ is an example of function that do not have absolute maximums
+            or minimums in an infinite interval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3190"
+              target="_blank">[53:10]</a>. $𝒇(𝒙)=𝒙^{2}$ is an example of function that have absolute minimum in an
+            infinite interval.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3252"
+          target="_blank">[54:12]</a>. <strong>In a closed interval, a continuous function always has an absolute
+          maximum and minimum.</strong>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Imagine a hallway with two closed doors at the ends. If you walk through the hallway
+            without jumping,
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[54-12]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[54-12]-01.png" alt="Preview" />
+            </span>
+            <br>
+            at some point, you’ll reach the highest point, and at another, the lowest point. Since you can’t leave the
+            hallway,
+            there will always be a maximum and a minimum.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <strong>Formal (EVT)</strong>:
+            <br>
+            _"If $𝒇$ is continuous on a closed interval $[a,b]$, then $𝒇$ attains both a maximum and a minimum on
+            $[a,b]$."_
+            <br>
+            (EVT): Extreme Value Theorem
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｌｏｃａｔｉｏｎ　ｏｆ　ａｂｓｏｌｕｔｅ　ｅｘｔｒｅｍａ　</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3375"
+          target="_blank">[56:15]</a>. The absolute maximum and minimum values of a ᴄ̳ᴏ̳ɴ̳ᴛ̳ɪ̳ɴ̳ᴜ̳ᴏ̳ᴜ̳ꜱ̳ function on a
+        <strong>closed interval</strong> occur either:
+        <br>
+        (ⅰ) at critical points (where the derivative is zero or undefined), or
+        <br>
+        (ⅱ) at the endpoints.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Reason: These are the only locations where the function can reach its highest or lowest
+            values within the interval. </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3540"
+          target="_blank">[59:00]</a>. What happens if we have an open interval? From closed to open interval.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Example to graphically emphasize why an absolute extremum in an open interval is never
+            reached, while it can be in a closed one.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-01.png" target="_blank">– [📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If we take $3$ as the right endpoint of an open interval, no matter how closely we
+                approach it, we will never actually reach that point.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3655"
+          target="_blank">[1:00:55]</a>. In an <strong>open interval</strong>, absolute extrema 𝓬𝓸𝓾𝓵𝓭 only occur at
+        critical numbers.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ○ nivel-3 -->
+          <li class="level-3"> 𝓘𝓯 𝓪𝓫𝓼𝓸𝓵𝓾𝓽𝓮 𝓮𝔁𝓽𝓻𝓮𝓶𝓪 𝓪𝓻𝓮 𝓷𝓸𝓽 𝓯𝓸𝓾𝓷𝓭 𝓪𝓽 𝓬𝓻𝓲𝓽𝓲𝓬𝓪𝓵
+            𝓷𝓾𝓶𝓫𝓮𝓻𝓼, 𝓽𝓱𝓮𝔂 𝓭𝓸 𝓷𝓸𝓽 𝓮𝔁𝓲𝓼𝓽 𝓲𝓷 𝓽𝓱𝓮 𝓸𝓹𝓮𝓷 𝓲𝓷𝓽𝓮𝓻𝓿𝓪𝓵.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3735"
+          target="_blank">[1:02:15]</a>. Previous example showing how including or excluding endpoints affects the
+        existence of absolute extrema.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-03.png" target="_blank">– [📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Now that $3$ is included in the interval (closed), it becomes the absolute maximum. </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> We always need to analyze the behavior near the endpoints, even in open intervals. While
+            the endpoints themselves are not included and therefore
+            cannot be absolute extrema, the function’s behavior _as it approaches_ those points (via one-sided limits)
+            must still be considered to <strong>compare</strong> with
+            values at critical points.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> <a
+                  href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3785"
+                  target="_blank">[1:03:05]</a>. Different examples of intervals:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <span class="image-container">
+                      <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-04.png" target="_blank">– [📷image-4]</a>
+                      <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-04.png" alt="Preview" />
+                    </span>
+                    — Interval $[-1,4]$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <span class="image-container">
+                      <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-05.png" target="_blank">– [📷image-5]</a>
+                      <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-05.png" alt="Preview" />
+                    </span>
+                    — Interval $(-1,4]$
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    <span class="image-container">
+                      <a href="../../img/Calculus 1 Lecture 3.1/[56-15]-06.png" target="_blank">– [📷image-6]</a>
+                      <img src="../../img/Calculus 1 Lecture 3.1/[56-15]-06.png" alt="Preview" />
+                    </span>
+                    — Interval $[-1,4)$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> In a closed-open interval like $[-1,4)$, you <strong>cannot evaluate</strong>
+                        $f(4)$ directly, but you <strong>can analyze</strong> the limit $\displaystyle \lim_{x\to4^-}
+                        f(x)$.
+                        <br>
+                        If this limit is greater than the value at another critical point (such as the blue point in the
+                        image), then that critical point <strong>cannot</strong> be an absolute
+                        maximum — even if the function never actually reaches $x=4$.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｐｒｏｃｅｄｕｒｅ　ｔｏ　ｆｉｎｄ　ａｂｓｏｌｕｔｅ　ｅｘｔｒｅｍａ　</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3890"
+          target="_blank">[1:04:50]</a>. Procedure to Find Absolute Extrema:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2 no-bullet"> ➀ Find the critical numbers of the function (where the derivative is zero or
+            undefined). Evaluate the function at those points.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2 no-bullet"> ➁ Evaluate the function at the endpoints of the interval.</limargin-left:>
+            <!-- ◉ nivel-2 -->
+          <li class="level-2"> If the interval is closed, directly evaluate the function at the endpoints.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If the interval is open, perform a sign analysis near the endpoints to understand the
+            function's behavior.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=3931"
+          target="_blank">[1:05:31]</a>. 🧩 Example –: Finding Absolute Extrema on a Closed Interval:
+        $𝒇(𝒙)=2𝒙^{3}-15𝒙^{2}+36𝒙$ on $[1,5]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[1-05-31]-03.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[1-05-31]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Calculation of the function's derivative.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇'(𝒙)=6𝒙^{2}-30𝒙+36=0$ # First derivative
+                <br>
+                $=6(𝒙^{2}-5𝒙+6)=0$ # Factor the quadratic
+                <br>
+                $=6(𝒙-3)(𝒙-2)=0$ # Critical points are where the derivative equals zero
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Find the critical numbers by setting the derivative equal to zero.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=2,\; 𝒙=3$ # Critical numbers within the interval</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Evaluate the function at the critical numbers and the interval's endpoints.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=1\;\to\;𝒇(1)=23$
+                <br>
+                $𝒙=2\;\to\;𝒇(2)=28$
+                <br>
+                $𝒙=3\;\to\;𝒇(3)=27$
+                <br>
+                $𝒙=5\;\to\;𝒇(5)=55$
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identification of the absolute maximum and absolute minimum.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=1\;\to\;𝒇(1)=23$ # Absolute Minimum value on $[1,5]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒙=5\;\to\;𝒇(5)=55$ # Absolute Maximum value on $[1,5]$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4200"
+              target="_blank">[1:10:00]</a>.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[1-05-31]-02.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[1-05-31]-02.png" alt="Preview" />
+            </span>🧩 Example –: Finding Absolute Extrema on a Closed Interval: $𝒇(𝒙)=2𝒙^{3}-15𝒙^{2}+36𝒙$ on
+            $[1,5)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=1\;\to\;𝒇(1)=23$ # Absolute Minimum value on $[1,5)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4227"
+              target="_blank">[1:10:27]</a>.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[1-05-31]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[1-05-31]-01.png" alt="Preview" />
+            </span>🧩 Example –: Finding Absolute Extrema on a Closed Interval: $𝒇(𝒙)=2𝒙^{3}-15𝒙^{2}+36𝒙$ on
+            $(1,5)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> No Max and Min </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4242"
+          target="_blank">[1:10:42]</a>. 🧩 Example –: Finding Absolute Extrema on a Closed Interval
+        $𝒇(𝒙)=6𝒙^{4/3}-3𝒙^{1/3}$ on $[-1,1]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[1-10-42]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[1-10-42]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Calculation of the function's derivative.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d𝒚}{d𝒙}=8𝒙^{1/3}-𝒙^{-2/3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Find the critical numbers by setting the derivative equal to zero.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $8𝒙^{1/3}-𝒙^{-2/3}=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Factor: $𝒙^{-2/3}(8𝒙-1)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙^{-2/3}=0$ → $𝒙=0$ <strong>No real solution so the derivative is
+                  u̲n̲d̲e̲f̲i̲n̲e̲d̲ at $x=0$, so this is another critical point.</strong></li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $8𝒙-1=0\;\Rightarrow\;𝒙=\dfrac{1}{8}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4574"
+              target="_blank">[1:16:14]</a>. Evaluate the function at the critical numbers amd at endpoints.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(-1)=6(-1)^{4/3}-3(-1)^{1/3}=6(1)+3=9$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(0)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(1/8)=6(1/8)^{4/3}-3(1/8)^{1/3}=-\dfrac{9}{8}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(1)=6(1)-3(1)=3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identification of the absolute maximum and absolute minimum.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(-1)=9$ # Absolute Maximum</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(0)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1/8)=-\dfrac{9}{8}$ # Absolute Minimum</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1)=3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4807"
+              target="_blank">[1:20:07]</a>.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[1-10-42]-02.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[1-10-42]-02.png" alt="Preview" />
+            </span> $𝒇(𝒙)=6𝒙^{4/3}-3𝒙^{1/3}$ on $\{-1,1)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(-1)=9$ # Absolute Maximum</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(0)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1/8)=-\dfrac{9}{8}$ # Absolute Minimum</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1)=3$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4827"
+              target="_blank">[1:20:27]</a>.
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 3.1/[1-10-42]-03.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 3.1/[1-10-42]-03.png" alt="Preview" />
+            </span> $𝒇(𝒙)=6𝒙^{4/3}-3𝒙^{1/3}$ on $(-1,1]$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(-1)=9$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(0)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1/8)=-\dfrac{9}{8}$ # Absolute Minimum</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $𝒇(1)=3$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4845"
+          target="_blank">[1:20:45]</a>. 🧩 Example –: Finding Absolute Extrema on a Closed Interval
+        $𝒇(𝒙)=\dfrac{1}{𝒙^{2}-𝒙}$, on $(0,1)$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.1/[1-20-45]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.1/[1-20-45]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Can I check $[0,1]$? → No, because the function is undefined at the endpoints.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Domain: $(0,1)$ only — not closed, so we cannot use the EVT (Extreme Value Theorem)
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=4995"
+              target="_blank">[1:23:15]</a>. We must take one-sided limits
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Use sign analysis to determine the function's behavior near the asymptotes.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> For $𝒙$ near $0^{+}$, $𝒙^{2}-𝒙&lt;0\Rightarrow$ denominator negative $\Rightarrow
+                𝒇(𝒙)&lt;0$ and decreasing sharply
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{x\to0^{+}}𝒇(𝒙)=\displaystyle
+                    \lim_{x\to0^{+}}\dfrac{1}{𝒙^{2}-𝒙}=-\infty$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> For $𝒙$ near $1^{-}$, $𝒙^{2}-𝒙&lt;0$ again $\Rightarrow$ same behavior
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{x\to1^{-}}𝒇(𝒙)=\displaystyle
+                    \lim_{x\to1^{-}}\dfrac{1}{𝒙^{2}-𝒙}=-\infty$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Conclusion: Function dives to $-\infty$ near both edges
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> In this case, the function tends to negative infinity at both endpoint points.
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Since the function diverges negatively at both ends, <strong>no absolute minimum
+                      exists</strong></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=5250"
+              target="_blank">[1:27:30]</a>. First derivative.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇(𝒙)=(𝒙^{2}-𝒙)^{-1}\;\Rightarrow$ apply chain rule:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇'(𝒙)=-1\cdot(𝒙^{2}-𝒙)^{-2}\cdot\dfrac{d}{d𝒙}[𝒙^{2}-𝒙]$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒇'(𝒙)=-(𝒙^{2}-𝒙)^{-2}\cdot(2𝒙-1)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=5375"
+              target="_blank">[1:29:35]</a>. Find the critical numbers by setting the derivative equal to zero.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> To solve rational equations, set the numerator equal to zero, as the equation can
+                only equal zero when the numerator is zero.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $-(2𝒙-1)=0\Rightarrow 𝒙=\dfrac{1}{2}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Check if the solution is in the interval.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> ✔️ yes (inside $(0,1)$)</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> 📝N͟O͟T͟E͟: We must always check whether the critical point lies within the
+                    interval, because any solution outside the
+                    interval is not valid for determining absolute extrema on that domain.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identification of the absolute maximum and absolute minimum.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> We don't need to check the endpoints because we already did the work by evaluating
+                the limits at $0$ and $1$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=\dfrac{1}{2}\;\to\;𝒇\!\left(\dfrac{1}{2}\right)=-4$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identification of the absolute maximum and absolute minimum.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $𝒙=\dfrac{1}{2}\;\to\;𝒇\!\left(\dfrac{1}{2}\right)=-4$ Absolute maximum
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Since $𝒇(x)$ increases on $(0,\tfrac{1}{2})$ and decreases on
+                    $(\tfrac{1}{2},1)$, the critical point at $x=\tfrac{1}{2}$ is an absolute maximum.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> The function has an <strong>absolute maximum</strong> of $-4$ at $x=\tfrac{1}{2}$
+                    and no absolute minimum as it tends to negative infinity near both endpoints.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=Mx39JbbzEAo&amp;list=PLF797E961509B4EB5&amp;t=5565"
+          target="_blank">[1:32:45]</a>. Summary of the Procedure to Find Absolute Extrema:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If the interval is c̲l̲o̲s̲e̲d̲, evaluate the function at the critical numbers and at the
+            interval's endpoints.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If the interval is o̲p̲e̲n̲, evaluate the function at the critical numbers and perform a
+            sign analysis near the endpoints.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Compare the values: The highest value corresponds to the absolute maximum, and the lowest
+            value corresponds to the absolute minimum.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> <strong>In open intervals</strong>, an absolute maximum or minimum exists
+                <strong>only if a critical point's value is greater than or less than the function's limiting values
+                  near the endpoints.</strong></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

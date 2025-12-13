@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　４．２　Iｎｔｅｇｒａｔｉｏｎ　Bｙ　Sｕｂｓｔｉｔｕｔｉｏｎ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ４．３</h1>
+    <h1> Ａｒｅａ Ｕｎｄｅｒ ａ Ｃｕｒｖｅ， Ｌｉｍｉｔ Ａｐｐｒｏａｃｈ， Ｒｉｅｍａｎｎ Ｓｕｍｓ</h1>
+    <h2>S ｉｇ ｍ ａ　ｎｏｔａｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=0" target="_blank">[0:00]</a>.
+        Introduction to Sigma ( ∑ ) notation.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Definition of Sigma as a Greek letter meaning "sum".</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=140" target="_blank">[2:20]</a>.
+        Detailed explanation of Sigma notation.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example –: $\displaystyle \sum_{k=0}^{5} k^{3}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Sigma notation indicates the addition of terms.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Use of indices (k) and how they vary in the summation is defined.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle \sum_{k=0}^{5} k^{3} = 0^{3} + 1^{3} + 2^{3} + 3^{3} + 4^{3} + 5^{3}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=195" target="_blank">[3:15]</a>.
+        Summation properties. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[3-15]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[3-15]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[3-15]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[3-15]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=210"
+              target="_blank">[3:30]</a>. Property $\textcolor{magenta}{\text{➀}}$: ᴇxᴛʀᴀᴄᴛɪᴏɴ ᴏꜰ ᴄᴏɴꜱᴛᴀɴᴛꜱ ꜰʀᴏᴍ ᴛʜᴇ
+            ꜱᴜᴍᴍᴀᴛɪᴏɴ.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If a constant 𝓬 does not depend on k, the constant factor in the summation can be
+                pulled out.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \sum_{k=1}^{n}\!\big[\;𝓬\cdot 𝒇(k)\;\big]=𝓬\cdot \sum_{k=1}^{n}
+                    𝒇(k)$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Special case: $\displaystyle \sum_{k=1}^{n} 𝓬 = 𝓬\cdot n$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=327"
+                  target="_blank">[5:27]</a>. 🧩 Example –: $\displaystyle \sum_{j=1}^{5} 𝒙^{3}$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\,𝒙^{3}\cdot \sum_{j=1}^{5} 1 = 𝒙^{3}\cdot(1+1+1+1+1)=5\cdot 𝒙^{3}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=540"
+              target="_blank">[9:00]</a>. Property $\textcolor{cyan}{\text{➁}}$: ᴅɪꜱᴛʀɪʙᴜᴛɪᴠᴇ ᴩʀᴏᴩᴇʀᴛy ᴏꜰ ꜱᴜᴍᴍᴀᴛɪᴏɴ ᴏᴠᴇʀ
+            ᴀᴅᴅɪᴛɪᴏɴ ᴀɴᴅ ꜱᴜʙᴛʀᴀᴄᴛɪᴏɴ.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Just like derivatives and integrals, the summation can split sums and differences into
+                separate summations.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \sum_{k=1}^{n}\!\big[𝒇(k)+𝓰(k)\big]=\sum_{k=1}^{n}
+                    𝒇(k)+\sum_{k=1}^{n} 𝓰(k)$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">🧩 Example –: $\displaystyle
+                    \sum_{k=1}^{3}\!\big[k+2k\big]=\sum_{k=1}^{3}k+\sum_{k=1}^{3}2k$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=575" target="_blank">[9:35]</a>.
+        ꜰᴏʀᴍᴜʟᴀꜱ ꜰᴏʀ ꜱᴜɪᴍᴍᴀᴛɪᴏɴ ᴍᴀɴɪᴩᴜʟᴀᴛɪᴏɴ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[9-35]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[9-35]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="no-bullet">❶ $\displaystyle \sum_{k=1}^{n} k = 1+2+3+4+\dots+n=\dfrac{n(n+1)}{2}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="no-bullet">❷ $\displaystyle \sum_{k=1}^{n}
+            k^{2}=1^{2}+2^{2}+3^{2}+\dots+n^{2}=\dfrac{n(n+1)(2n+1)}{6}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="no-bullet">❸ $\displaystyle \sum_{k=1}^{n}
+            k^{3}=1^{3}+2^{3}+3^{3}+\dots+n^{3}=\left(\dfrac{n(n+1)}{2}\right)^{2}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="no-bullet">❹ $\displaystyle \sum_{k=1}^{n} 1=n\ ;\ \sum_{k=1}^{n}
+            𝓬=\underbrace{𝓬+𝓬+\dots+𝓬}_{n\
+            \text{terms}}=𝓬\cdot \underbrace{(1+1+\dots+1)}_{n}=𝓬\cdot n$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=1035" target="_blank">[17:15]</a>.
+        🧩 Example – Applying summation formulas: $\displaystyle \sum_{k=1}^{10}\big[k(k+1)\big]$ –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[17-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[17-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The need to manipulate sums in order to use the above formulas.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The idea of distributing products of terms so the formulas can be applied is presented.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that summations can be separated through addition or subtraction.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\displaystyle
+            \sum_{k=1}^{10}\big[k(k+1)\big]=\sum_{k=1}^{10}\!\big[k^{2}+k\big]=\sum_{k=1}^{10}k^{2}+\sum_{k=1}^{10}k\
+            \,$ $\textcolor{cyan}{\text{➁}}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Applied formulas:
+            <br>$\displaystyle \sum_{k=1}^{n} k^{2}= \dfrac{n(n+1)(2n+1)}{6}$ ❷
+            <br>$\displaystyle \sum_{k=1}^{n} k= \dfrac{n(n+1)}{2}$ ❶
+            <br>Substituting $n=10$:
+            <br>$\displaystyle \dfrac{10(10+1)(2\cdot 10+1)}{6}+\dfrac{10(10+1)}{2}=\dfrac{10\cdot 11\cdot
+            21}{6}+\dfrac{10\cdot 11}{2}=385+55=440$
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｃａｌｃｕｌａｔｉｎｇ　ｔｈｅ　ａｒｅａ　ｕｎｄｅｒ　ａ　ｃｕｒｖｅ　ｕｓｉｎｇ　ｒｅｃｔａｎｇｌｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=1395" target="_blank">[23:15]</a>.
+        Definition of the rectangular method. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[23-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[23-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">How the area under the curve is split into $n$ equal subdivisions is explained.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Partition of the interval $[𝓪,𝓫]$ into $n$ equal subintervals.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Equal-width subintervals simplify the algebra and notation.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Define the cut points (partition): $𝒙_{0}, 𝒙_{1}, 𝒙_{2},\dots, 𝒙_{n}$ with
+                $𝒙_{0}=𝓪$ and $𝒙_{n}=𝓫$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">These cuts determine $n$ adjacent subintervals $[𝒙_{k-1}, 𝒙_{k}]$ and hence $n$
+                rectangles.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">and $k\in\{1,2,\dots,n\}$ (index)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=1502"
+              target="_blank">[25:02]</a>. The width of each rectangle is defined as $\Delta 𝒙$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\Delta 𝒙$ is the change in $𝒙$ from one point to the next, for example from $𝓪$ to
+                $𝒙_{1}$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is shown how to calculate the width of the rectangles by:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\,𝓫-𝓪$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The formula for the width of each rectangle is given:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \Delta 𝒙=\dfrac{𝓫-𝓪}{n}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is pointed out that all the rectangle bases are the same, <strong>simplifying their
+                  sum</strong>.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=1685"
+              target="_blank">[28:05]</a>. Choice of sample points to determine the heights.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">In each subinterval $[𝒙_{k-1}, 𝒙_{k}]$, pick an arbitrary sample point
+                $x_{k}^{\ast}\in[𝒙_{k-1}, 𝒙_{k}]$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Examples: a point in $[𝓪, 𝒙_{1}]$ or in $[𝒙_{3}, 𝒙_{4}]$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The <strong>height of the $k$-th rectangle</strong> is $𝒇(x_{k}^{\ast})$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">With that height $h_{k}$, you build ONE rectangle that spans the entire
+                    subinterval:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">base $=\Delta 𝒙 = 𝒙_{k}-𝒙_{k-1}$ (constant if the partition is uniform)
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">height $=h_{k}=f(x_{k}^{\ast})$ (constant across the whole subinterval)</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">area of the $k$-th rectangle: $\mathcal{A}_{k}=f(x_{k}^{\ast})\cdot \Delta 𝒙$
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that to sum the areas of all rectangles, one can consider each rectangle
+            individually.
+            <!-- ○ nivel-3 -->
+            <ul>
+              <li class="level-3">The sum of the $n$ rectangle areas approximates the area under the curve.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that the area under the curve is approximated by summing the rectangles’
+            areas.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The approximation improves as $n$ increases ($\Delta 𝒙\to 0$).</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🗒️NOTE: Remarks on choices of $x_{k}^{\ast}$ (special cases used in practice).
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Left endpoints: $x_{k}^{\ast}=𝒙_{k-1}$ (left Riemann sum).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Right endpoints: $x_{k}^{\ast}=𝒙_{k}$ (right Riemann sum).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Midpoints: $x_{k}^{\ast}=\dfrac{𝒙_{k-1}+𝒙_{k}}{2}$ (often more accurate for smooth
+                $𝒇$).</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2064" target="_blank">[34:24]</a>.
+        Analysis of the area of an individual rectangle. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[34-24]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[34-24]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2170"
+              target="_blank">[36:10]</a>. Rectangle base (width): $\displaystyle \Delta 𝒙=\dfrac{𝓫-𝓪}{n}$ for
+            uniform partitions.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The idea of using an arbitrary point $x_{k}^{\ast}$ to get the rectangles’ heights is
+            presented.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2340"
+              target="_blank">[39:00]</a>. To get each rectangle’s height, $𝒇(x_{k}^{\ast})$ is evaluated at that
+            arbitrary point.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2480"
+              target="_blank">[41:20]</a>. It follows that the area of a rectangle is its base times height: $\Delta
+            𝒙\cdot 𝒇(x_{k}^{\ast})$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2556"
+              target="_blank">[42:36]</a>. The sum of the areas of all individual rectangles.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{A}=\displaystyle \sum_{k=1}^{n} 𝒇(x_{k}^{\ast})\cdot \Delta 𝒙.$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🗒️NOTE: Summary of definitions (clean reference).
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Partition: $\mathcal{P}=\{\,𝒙_{0}=𝓪<𝒙_{1}<\dots<𝒙_{n}=𝓫\,\}$.< /li>
+                  <!-- ○ nivel-3 -->
+              <li class="level-3">Widths: $\displaystyle \Delta 𝒙=\dfrac{(𝓫-𝓪)}{n}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Sample points: $x_{k}^{\ast}\in[𝒙_{k-1}, 𝒙_{k}]$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Riemann sum: $\displaystyle \sum_{k=1}^{n} 𝒇(x_{k}^{\ast})\cdot \Delta 𝒙$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2810" target="_blank">[46:50]</a>.
+        Improving the approximation using limits.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that to improve the approximation, the number of rectangles must increase.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{A}_{n}=\displaystyle \sum_{k=1}^{n} 𝒇(x_{k}^{\ast})\cdot \Delta 𝒙 \
+                \rightsquigarrow\ \mathcal{A}_{n}$ approximation based on $n$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Index and points:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$k\in\{1,2,\dots,n\}$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">$x_{0}=𝓪,\ x_{n}=𝓫,\ \text{with } 𝓪=x_{0}<x_{1}<\dots<x_{n}=𝓫\
+                          \Rightarrow\ x_{k}\in[𝓪,𝓫]$</li>
+                          <!-- ▣ nivel-5 -->
+                      <li class="level-5">$x_{k}^{\ast}\in[x_{k-1},x_{k}]$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">If the number of rectangles tends to infinity, the approximation is exact.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">When the number of rectangles increases, each rectangle’s width shrinks, tending to zero.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The concept of the limit is introduced to handle $n\to\infty$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is stated that to let $n\to\infty$, one uses the limit operation.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=2930"
+              target="_blank">[48:50]</a>. It is established that applying the limit to the sum of the rectangles’ areas
+            yields the exact area under the curve.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{A}_{n}=\displaystyle \lim_{n\to\infty}\sum_{k=1}^{n} 𝒇(x_{k}^{\ast})\cdot
+                \Delta 𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><strong>It is stated that the limit of a sum is the foundation of the
+                  integral</strong>.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \mathcal{A}_{n}=\lim_{n\to\infty}\sum_{k=1}^{n}
+                    𝒇(x_{k}^{\ast})\cdot \Delta 𝒙\ \longrightarrow\ \int_{𝓪}^{𝓫} 𝒇(x)\,dx$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$[𝓪,𝓫]$ are the limits of the interval (Definite Integral because of $[𝓪,𝓫]$)
+                    over which the integral is evaluated.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｈｏｗ　ｔｏ　ｕｓｅ　ｔｈｅ　ｄｅｆｉｎｉｔｅ　ｉｎｔｅｇｒａｌ　ｔｏ　ｆｉｎｄ　ａｒｅａｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3050" target="_blank">[50:50]</a>.
+        Arbitrary point’s of each subinterval. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[50-50]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[50-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that the arbitrary point $x_{k}^{\ast}$ can be any point in the
+            subinterval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The arbitrary point’s position does not matter, as the rectangle width tends to zero.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">For convenience, one typically chooses consistently the left endpoint, right endpoint, or
+            midpoint.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Choosing arbitrary points: Left, Right, and Midpoint.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$x_{k}^{\ast}$ can represent the left, right, or midpoint of the subinterval.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3235"
+              target="_blank">[53:55]</a>. Visualizing the cut points on the $𝒙$-axis.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">To calculate the area, one needs a finite interval from $𝓪$ to $𝓫$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The cuts on the $𝒙$-axis are set as $𝒙_{1}, 𝒙_{2}, 𝒙_{3}, \dots, 𝒙_{n}$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The width of each rectangle is $\Delta 𝒙$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">There is an arbitrary point at each cut.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Visualizing the different options for the arbitrary point
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">For left-end selection, the arbitrary point is the left endpoint of each
+                    subinterval.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Left endpoints: $x_{k}^{\ast}=𝒙_{k-1}$ (left Riemann sum).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">For right-end selection, the arbitrary point is the right endpoint of each
+                    subinterval.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Right endpoints: $x_{k}^{\ast}=𝒙_{k}$ (right Riemann sum).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">For midpoint selection, the arbitrary point is the midpoint of each subinterval.
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Midpoints: $x_{k}^{\ast}=\dfrac{𝒙_{k-1}+𝒙_{k}}{2}$ (often more accurate for smooth
+                $𝒇$).
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li>
+                    <pre class="ascii-diagram">
+                     xₖ₋₁       xₖ*         xₖ
+                     │----------│----------│  ← base = Δx; k∈{1,2,…,n}
+                                ▲
+                                │ 𝒇(xₖ*)  
+                    </pre>
+                  </li>
+
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">According to the choice.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">A formula is needed to calculate each arbitrary point.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The goal is to find a formula for $x_{k}^{\ast}$ so it can be substituted into
+                    $𝒇(x_{k}^{\ast})$.
+                    <!-- ▢ nivel-5 -->
+                    <ul>
+                      <li class="level-5">$\displaystyle \mathcal{A}_{n}=\lim_{n\to\infty}\sum_{k=1}^{n}
+                        𝒇(x_{k}^{\ast})\cdot \Delta 𝒙$</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">It is explained that the formula for $x_{k}^{\ast}$ will give a value in terms of
+                    $𝒙$ and $k$.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The result allows one to handle the sum and the limit.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3440"
+              target="_blank">[57:20]</a>. The formula for each arbitrary points $x_{k}^{\ast}$ must start with $𝓪$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$x_{k}^{\ast}=𝓪\ \dots$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3500" target="_blank">[58:20]</a>.
+        Arbitrary points using the right endpoint.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that for right endpoints, the first arbitrary point is $𝓪+\Delta 𝒙$, not
+            just $𝓪$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The second arbitrary point is $𝓪+2\cdot \Delta 𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">For the $n$th point, the distance from $𝓪$ is $n\cdot \Delta 𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The formula for $x_{k}^{\ast}$ using the right endpoint is $x_{k}^{\ast}= 𝒙_{k}=𝓪+k\cdot
+            \Delta 𝒙$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3617" target="_blank">[1:0:17]</a>.
+        Arbitrary points using the left endpoint.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is explained that for left endpoints, the first arbitrary point is $𝓪$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The second arbitrary point is $𝓪+\Delta 𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The formula for $x_{k}^{\ast}$ using the left endpoint is
+            $x_{k}^{\ast}=𝒙_{k-1}=𝓪+(k-1)\cdot \Delta 𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is noted that, compared to the right endpoints, one starts one subinterval earlier.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3755"
+          target="_blank">[1:02:35]</a>. Arbitrary points using the midpoint.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is stated that for midpoints, one must compute half the width of each subinterval.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The general formula for the midpoint is
+            $x_{k}^{\ast}=\dfrac{𝒙_{k-1}+𝒙_{k}}{2}=𝓪+\big(k-\tfrac12\big)\cdot \Delta 𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Midpoints often provide a better approximation even with fewer rectangles, especially for
+            smooth functions.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <!-- ● nivel-1 -->
+      <li class="level-1">Summary of formulas for arbitrary points.
+        <table class="cn-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Formula for 𝒙ₖ*</th>
+              <th>Equivalent form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Left Endpoints</td>
+              <td>$x_{k}^{\ast}=𝓪+(k-1)\Delta 𝒙$</td>
+              <td>$𝒙_{k-1}$</td>
+            </tr>
+            <tr>
+              <td>Right Endpoints</td>
+              <td>$x_{k}^{\ast}=𝓪+k\Delta 𝒙$</td>
+              <td>$𝒙_{k}$</td>
+            </tr>
+            <tr>
+              <td>Midpoints</td>
+              <td>$x_{k}^{\ast}=𝓪+\big(k-\tfrac12\big)\Delta 𝒙$</td>
+              <td>$\dfrac{𝒙_{k-1}+𝒙_{k}}{2}$</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+
+    </ul>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｐｒａｃｔｉｃａｌ　ａｐｐｌｉｃａｔｉｏｎ　ｏｆ　ｔｈｅ　ｍｅｔｈｏｄ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3866"
+          target="_blank">[1:04:26]</a>. A practical example is necessary to understand the method’s concept.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The idea is to sum the areas of small rectangles and then apply the limit.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The concept of limits is the foundation of calculus.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=3950"
+          target="_blank">[1:05:50]</a>. 🧩 Example –1: Calculating the area under $𝒇(𝒙)=𝒙^{2}$ on $[0,1]$ using
+        right endpoints. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-05-50]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-05-50]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-05-50]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-05-50]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">In real life one could pick any arbitrary point, and all choices yield the same final
+            result.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Right endpoints are used here.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">It is mentioned that right endpoints are often easier to handle than left endpoints.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The first step is to calculate $\Delta 𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4015"
+              target="_blank">[1:06:55]</a>. Step 1: Calculate $\Delta 𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The formula $\displaystyle \Delta 𝒙=\dfrac{𝓫-𝓪}{n}$ is stated.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">With $𝓪=0$ and $𝓫=1$, it follows that $\Delta 𝒙=\dfrac{1}{n}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4145"
+              target="_blank">[1:09:05]</a>. Step 2: Calculate $x_{k}^{\ast}$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Recall the formula for the right endpoint: $x_{k}^{\ast}=𝓪+k\cdot \Delta 𝒙$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substituting $𝓪=0$ and $\Delta 𝒙=\dfrac{1}{n}$ gives $x_{k}^{\ast}=\dfrac{k}{n}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4250"
+              target="_blank">[1:10:50]</a>. Step 3: Calculate $𝒇(x_{k}^{\ast})$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is recalled that $x_{k}^{\ast}$ must be substituted into the function $𝒇(𝒙)$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substituting $x_{k}^{\ast}=\dfrac{k}{n}$ into $𝒇(𝒙)=𝒙^{2}$ gives
+                $𝒇(x_{k}^{\ast})=\left(\dfrac{k}{n}\right)^{2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If there were a constant added to $x_{k}^{\ast}$, the problem would be more difficult.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is noted that this can be done using the integral as well.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4380"
+              target="_blank">[1:13:00]</a>. Step 4: Build the summation.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The approximation for the area is given by $\displaystyle
+                \sum_{k=1}^{n}\big[𝒇(x_{k}^{\ast})\cdot \Delta 𝒙\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The previously calculated values are substituted.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \sum_{k=1}^{n} \dfrac{k^{2}}{n^{3}}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">This expression must be algebraically manipulated to be evaluated.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Manipulating the summation.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The property of summation is used to separate constants.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">It is noted that $k^{2}$ is a variable term and $n^{3}$ is constant in the
+                    summation, so $n^{3}$ can be factored out.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">This property is why the earlier steps were carried out.
+                    <ul>
+                      <!-- ▣ nivel-6 -->
+                      <li class="level-5">$\displaystyle \sum_{k=1}^{n} \dfrac{k^{2}}{n^{3}} \ \to\
+                        \dfrac{1}{n^{3}}\cdot \sum_{k=1}^{n} k^{2}$</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The formula for summing $k^{2}$ is applied: $\displaystyle \sum_{k=1}^{n}
+                    k^{2}=\dfrac{n(n+1)(2n+1)}{6}$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">hence: $\displaystyle \sum_{k=1}^{n}
+                    \dfrac{k^{2}}{n^{3}}=\dfrac{2n^{2}+3n+1}{6n^{2}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4650"
+              target="_blank">[1:17:30]</a>. Step 5: Calculate the limit.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">After evaluating the summation, $\displaystyle \lim_{n\to\infty}$ can be computed.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is noted that such a limit yields a finite value since the area under the curve is
+                finite.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The limit is applied to the previously obtained algebraic expression.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The method for solving limits at infinity for rational functions is recalled.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">By applying these properties, the result $\dfrac{1}{3}$ is obtained.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \lim_{n\to\infty}\dfrac{2n^{2}+3n+1}{6n^{2}}=\dfrac{1}{3}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is concluded that the area under $𝒇(𝒙)=𝒙^{2}$ on $[0,1]$ is $\dfrac{1}{3}$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｄｉｓｃｕｓｓｉｏｎ　ｏｎ　ｔｈｅ　ｃｏｎｃｅｐｔ　ｏｆ　“ｓｉｇｎｅｄ　ｎｅｔ　ａｒｅａ”</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=4960"
+          target="_blank">[1:22:40]</a>. The concept of “signed net area”. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-22-40]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-22-40]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The concept of “signed net area” is introduced as the result of the integration method.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Up to this point, the examples considered functions entirely above the $𝒙$-axis.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">When the function dips below the $𝒙$-axis:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral assigns <strong>positive area</strong> to regions above the axis.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral assigns <strong>negative area</strong> to regions below the axis.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The net area is obtained by combining both contributions:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{A}=\mathcal{A}_{\text{above}}-\mathcal{A}_{\text{below}}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">This means the integral computes the difference, not the total geometric area.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Important clarification:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Symmetry alone does not determine the sign of the result.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The computed value is always the <strong>signed net area</strong>, which incorporates
+                the idea of orientation relative to the $𝒙$-axis.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example –: $\displaystyle \int_{-1}^{1} x\,dx$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The graph of $f(x)=x$ is symmetric about the origin.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The area from $[0,1]$ is positive: $\displaystyle \int_{0}^{1} x\,dx=\dfrac{1}{2}$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The area from $[-1,0]$ is negative: $\displaystyle \int_{-1}^{0} x\,dx=-\dfrac{1}{2}$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Adding them: $\dfrac{1}{2}+(-\dfrac{1}{2})=0$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The <strong>total area</strong> (geometric) is $1$, but the <strong>net signed
+                  area</strong> is $0$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=5240"
+          target="_blank">[1:27:20]</a>. 🧩 Example – 2: Calculating the net area under $𝒇(𝒙)=𝒙-1$ on $[0,2]$ using
+        <strong>left endpoints</strong>. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-27-20]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-27-20]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-27-20]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-27-20]-02.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-27-20]-03.png" target="_blank">[📷image-3]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-27-20]-03.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=5270"
+              target="_blank">[1:27:50]</a>. Step 1: Calculate $\Delta 𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The formula $\displaystyle \Delta 𝒙=\dfrac{𝓫-𝓪}{n}$ is noted</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">With $𝓪=0$ and $𝓫=2$, it follows that $\Delta 𝒙=\dfrac{2}{n}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=5300"
+              target="_blank">[1:28:20]</a>. Step 2: Calculate $x_{k}^{\ast}$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Recall the formula for the left endpoint: $x_{k}^{\ast}=𝓪+(k-1)\cdot \Delta 𝒙$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substituting $𝓪=0$ and $\Delta 𝒙=\dfrac{2}{n}$ yields
+                $x_{k}^{\ast}=\dfrac{2(k-1)}{n}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">It is recommended not to distribute $2/n$ for easier subsequent operations.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=5430"
+              target="_blank">[1:30:30]</a>. Step 3: Calculate $𝒇(x_{k}^{\ast})$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The value $x_{k}^{\ast}$ is substituted into $𝒇(𝒙)$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substituting $x_{k}^{\ast}=\dfrac{2(k-1)}{n}$ into $𝒇(𝒙)=𝒙-1$ gives
+                $𝒇(x_{k}^{\ast})=\dfrac{2(k-1)}{n}-1$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=5520"
+              target="_blank">[1:32:00]</a>. Step 4: Build the summation.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The approximation for the net area is $\displaystyle
+                \sum_{k=1}^{n}\big[𝒇(x_{k}^{\ast})\cdot \Delta 𝒙\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The values calculated earlier are substituted.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \sum_{k=1}^{n}\left[\left(\dfrac{2(k-1)}{n}\right)-1\right]\cdot
+                    \dfrac{2}{n}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Manipulating the summation.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \sum_{k=1}^{n}\left[\dfrac{4(k-1)}{n^{2}}-\dfrac{2}{n}\right]$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \dfrac{4}{n^{2}}\cdot \sum_{k=1}^{n}(k-1)-\dfrac{2}{n}\cdot
+                    \sum_{k=1}^{n}1$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \dfrac{4}{n^{2}}\cdot
+                    \Big(\sum_{k=1}^{n}k-\sum_{k=1}^{n}1\Big)-\dfrac{2}{n}\cdot n$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \dfrac{4}{n^{2}}\cdot \left(\dfrac{n(n+1)}{2}-n\right)-2$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \dfrac{2(n+1)}{n}-\dfrac{4}{n}-2$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$2+\dfrac{2}{n}-\dfrac{4}{n}-2$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=6270"
+              target="_blank">[1:44:30]</a>. Step 5: Calculate the limit.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">After evaluating the summation, the limit as $n\to\infty$ is taken.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The limit operation is applied to the resulting algebraic expression.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \lim_{n\to\infty}\sum_{k=1}^{n} 𝒇(x_{k}^{\ast})\cdot \Delta 𝒙 \ \to\
+                \lim_{n\to\infty}\left[\dfrac{2}{n}-\dfrac{4}{n}\right]\ \to\
+                \lim_{n\to\infty}\left[-\dfrac{2}{n}\right]=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">An area of $0$ is peculiar and suggests analyzing the graph.</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=6360"
+              target="_blank">[1:46:00]</a>. Graphical analysis of the result.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The function $𝒇(𝒙)=𝒙-1$ is described as a line with slope $1$ and y-intercept $-1$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The area of triangles above and below the $𝒙$-axis is computed.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The result is $0$ because positive and negative areas cancel each other out.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=F0uuW-I6icY&amp;t=6535"
+          target="_blank">[1:48:55]</a>. 🧩 Example – 3: Calculating the net area under $f(x)=2x-x^{3}$ on $[0,1]$ using
+        right endpoints. –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-48-55]-01.png" target="_blank">[📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-48-55]-01.png" alt="Preview" />
+        </span>
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.3/[1-48-55]-02.png" target="_blank">[📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.3/[1-48-55]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 1: Calculate $\Delta x$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Formula: $\displaystyle \Delta x=\dfrac{𝓫-𝓪}{n}=\dfrac{1-0}{n}=\dfrac{1}{n}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 2: Define the right endpoint $x_{k}^{\ast}$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Formula: $x_{k}^{\ast}=𝓪+k\cdot \Delta x$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">With $𝓪=0$ and $\Delta x=\dfrac{1}{n}$ → $x_{k}^{\ast}=\dfrac{k}{n}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 3: Evaluate the function at the right endpoint
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$f(x_{k}^{\ast})=2\left(\dfrac{k}{n}\right)-\left(\dfrac{k}{n}\right)^{3}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 4: Build the summation
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Approximation: $\displaystyle \sum_{k=1}^{n} f(x_{k}^{\ast})\cdot \Delta x$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle
+                \sum_{k=1}^{n}\left[\,\dfrac{2k}{n}-\left(\dfrac{k}{n}\right)^{3}\right]\cdot \dfrac{1}{n}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \sum_{k=1}^{n}\left[\dfrac{2k}{n^{2}}-\dfrac{k^{3}}{n^{4}}\right]$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Split: $\displaystyle
+                \dfrac{2}{n^{2}}\sum_{k=1}^{n}k-\dfrac{1}{n^{4}}\sum_{k=1}^{n}k^{3}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 5: Apply summation formulas
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \sum_{k=1}^{n}k=\dfrac{n(n+1)}{2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \sum_{k=1}^{n}k^{3}=\left(\dfrac{n(n+1)}{2}\right)^{2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \dfrac{2}{n^{2}}\cdot \dfrac{n(n+1)}{2}-\dfrac{1}{n^{4}}\cdot
+                \left(\dfrac{n(n+1)}{2}\right)^{2} =\dfrac{n+1}{n}-\dfrac{n^{2}+2n+1}{4n^{2}}
+                =\left(\dfrac{n}{n}+\dfrac{1}{n}\right)-\dfrac{n^{2}+2n+1}{4n^{2}}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 6: Take the limit as $n\to\infty$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle
+                \lim_{n\to\infty}\left[\dfrac{n+1}{n}-\dfrac{n^{2}+2n+1}{4n^{2}}\right]=\lim_{n\to\infty}\left[1+\dfrac{1}{n}-\dfrac{1}{4}-\dfrac{2}{4n}-\dfrac{1}{4n^{2}}\right]
+                =1-\dfrac{1}{4}=\dfrac{3}{4}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The net area under $f(x)=2x-x^{3}$ on $[0,1]$ is:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\mathcal{A}=\dfrac{3}{4}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+</body>
+
+</html>

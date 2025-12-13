@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．２　A　Bｒｉｅｆ　Dｉｓｃｕｓｓｉｏｎ　Oｆ　Rｏｌｌｅ＇ｓ　Tｈｅｏｒｅｍ　ａｎｄ　Mｅａｎ－Vａｌｕｅ　ｔｈｅｏｒｅｍ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　３．２</h1>
+    <h1>　A　Bｒｉｅｆ　Dｉｓｃｕｓｓｉｏｎ　Oｆ　Rｏｌｌｅ＇ｓ　Tｈｅｏｒｅｍ　ａｎｄ　Mｅａｎ－Vａｌｕｅ　ｔｈｅｏｒｅｍ</h1>
+
+    <h2>Ｒｏｌｌｅ＇ｓ　ｔｈｅｏｒｅｍ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> Introduction to Rolle's Theorem
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Prerequisites:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The function must be continuous on the closed interval [𝓪, 𝓫].</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The function must be differentiable on the open interval (𝓪, 𝓫).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The function must satisfy 𝒇(𝓪) = 𝒇(𝓫).</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Implications:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> These conditions guarantee that there exists at least one point 𝓬 in (𝓪, 𝓫) such
+                that $𝒇'(𝓬)=0$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Geometrically, this means that somewhere between 𝓪 and 𝓫, the function has a
+                horizontal tangent line.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=28"
+          target="_blank">[0:28]</a>. Explanation of Rolle's Theorem
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If a function 𝒇(𝒙) takes the same value at two endpoints of a closed interval, and is
+            continuous and differentiable
+            as stated above, then there must exist at least one point in between where the slope of the tangent line is
+            zero.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> A common visual example is when a function crosses the 𝒙-axis at two points.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If 𝒇(𝒙) = 0 at both endpoints and the function is continuous between them,
+                then Rolle's Theorem guarantees a point in the middle where the slope is zero.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> This represents a special case of Rolle’s Theorem when 𝒇(𝒂) = 𝒇(𝒃) = 0.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Graphical illustration of the concept.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Special case – Constant function (the trivial case of Rolle's Theorem):
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> If 𝒇(𝒙) = 𝒄 (a constant), then 𝒇 is continuous and differentiable everywhere, and
+                𝒇(𝓪) = 𝒇(𝓫) = 𝒄 for any [𝓪, 𝓫].</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The derivative $𝒇'(𝒙)=0$ at every point in (𝓪, 𝓫), so Rolle’s Theorem is
+                satisfied <strong>trivially</strong> at all points.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> This is considered the <strong>trivial case</strong> of Rolle’s Theorem.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=74"
+          target="_blank">[1:14]</a>. Interpretation: At least one point between the two 𝒙-axis crossings will have a
+        horizontal tangent.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=85"
+          target="_blank">[1:25]</a>. Transition to the Mean Value Theorem as a corollary of Rolle's Theorem.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=198"
+          target="_blank">[3:18]</a>. Formal definition of Rolle's Theorem.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Let 𝒇(𝒙) be a function satisfying the following conditions:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ⑴ Continuity: 𝒇(𝒙) is continuous on the closed interval [𝓪, 𝓫].</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ⑵ Differentiability: 𝒇(𝒙) is differentiable on the open interval (𝓪, 𝓫).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> ⑶ Equal Endpoint Values: 𝒇(𝓪) = 𝒇(𝓫).</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> i̲f̲ these conditions are met,<br>
+            t̲h̲e̲n̲ there exists at least one point 𝓬 ∈ (𝓪, 𝓫) such that $𝒇'(𝓬)=0$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> Practical Applications.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Useful in proving the existence of roots and understanding the behavior of functions.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Helps in establishing the existence of extrema within intervals.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｍｅａｎ　ｖａｌｕｅ　ｔｈｅｏｒｅｍ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=94"
+          target="_blank">[1:34]</a>. Introduction to the Mean Value Theorem.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Prerequisites:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The function must be continuous on the closed interval [𝓪, 𝓫].</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The function must be differentiable on the open interval (𝓪, 𝓫).</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Implications:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The theorem guarantees that the average rate of change over [𝓪, 𝓫] is attained by
+                the instantaneous
+                rate of change at least once within (𝓪, 𝓫).</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> This is a fundamental theorem in calculus that bridges the gap between average and
+                instantaneous rates of change.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=101"
+          target="_blank">[1:41]</a>. Explanation of the Mean Value Theorem:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Draw a secant line between two points (A and B) on a curve.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If the function 𝒇(𝒙) is differentiable between A and B, there must exist at least one
+            point on the curve where the
+            slope of the tangent is equal to the slope of the secant.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Graphical illustration of the concept, showing the tangent parallel to the secant.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=143"
+          target="_blank">[2:23]</a>. Interpretation: At least one point 𝓬 within the interval (𝓪,𝓫) will have a
+        tangent line
+        with 𝓪 slope equal to the slope of the secant line that connects the endpoints (𝓪, 𝒇(𝓪)) and (𝓫, 𝒇(𝓫)).
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=162"
+          target="_blank">[2:42]</a>. Relationship with Rolle's Theorem.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Rolle's Theorem is a special case of the Mean Value Theorem in which the function values
+            at the endpoints are equal (𝒇(𝓪) = 𝒇(𝓫)),
+            so the slope of the secant line is zero, and the conclusion becomes $𝒇'(𝓬)=0$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Although Rolle’s Theorem is more specific, it is often proved first and used to derive
+            the more general Mean Value Theorem,
+            which is why the MVT is sometimes introduced as a corollary of Rolle’s Theorem.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Formal relationship between MVT and Rolle’s Theorem:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Mean Value Theorem (more general):
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> i̲f̲ 𝒇 is continuous on [𝓪, 𝓫] and differentiable on (𝓪, 𝓫),<br>
+                    t̲h̲e̲n̲ there exists 𝓬 ∈ (𝓪, 𝓫) such that:<br>
+                    $𝒇'(𝓬)=\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Rolle’s Theorem (special case of MVT):
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> i̲f̲, in addition, 𝒇(𝓪) = 𝒇(𝓫),<br>
+                    t̲h̲e̲n̲ $𝒇'(𝓬)=\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}=0$ ⇒ $𝒇'(𝓬)=0$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=237"
+          target="_blank">[3:57]</a>. Formal definition of the Mean Value Theorem:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> i̲f̲ a function 𝒇 satisfies the following conditions:<br>
+            ⑴ Continuity: 𝒇 is continuous on the closed interval [𝓪, 𝓫].<br>
+            ⑵ Differentiability: 𝒇 is differentiable on the open interval (𝓪, 𝓫).<br>
+            t̲h̲e̲n̲ there exists at least one point 𝓬 ∈ (𝓪, 𝓫) such that: <br>
+            $𝒇'(𝓬)=\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}$</li>
+        </ul>
+      </li>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=266"
+          target="_blank">[4:26]</a>. Interpretation of the formula: The slope of the tangent at point 𝓬 is equal to
+        the slope of the secant connecting<br>
+        the points (𝓪,𝒇(𝓪)) and (𝓫, 𝒇(𝓫)).</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">Practical Applications.<br>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Applied in various fields such as physics for motion analysis, in economics for cost and
+            revenue analysis,<br>
+            and in engineering for system behavior.</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Foundation for proving other theorems in calculus like Taylor's Theorem and Lagrange's
+            Remainder Theorem.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｖｅｒｉｆｉｃａｔｉｏｎ　ｏｆ　ｔｈｅ　ｔｈｅｏｒｅｍｓ</h2>
+
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=320"
+          target="_blank">[5:20]</a>. How to verify Rolle's Theorem:<br>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Verify that the function is continuous on [𝓪, 𝓫] and differentiable on (𝓪, 𝓫). </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Check that 𝒇(𝓪) = 𝒇(𝓫). </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiate the function and solve $𝒇'(𝒙)=0$ to find critical point(s). </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Make sure that the solution(s) lie within the open interval (𝓪, 𝓫).</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=337"
+          target="_blank">[5:37]</a>. How to verify the Mean Value Theorem:<br>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Verify that the function is continuous on [𝓪, 𝓫] and differentiable on (𝓪, 𝓫). </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Calculate the slope of the secant line: $\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}$. </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiate the function and solve $𝒇'(𝒙)=\dfrac{𝒇(𝓫)-𝒇(𝓪)}{𝓫-𝓪}$ to find the
+            value(s) of 𝒙 where 𝒙 = 𝓬.</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Ensure that the solution(s) lie within the open interval (𝓪, 𝓫).</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=qW89xdGfSzw&amp;list=PLF797E961509B4EB5&amp;t=364"
+          target="_blank">[6:04]</a>. Simple summary: – <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 3.2/[6-04]-01.png" target="_blank">[image]</a>
+          <img src="../../img/Calculus 1 Lecture 3.2/[6-04]-01.png" alt="Preview" />
+        </span></li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

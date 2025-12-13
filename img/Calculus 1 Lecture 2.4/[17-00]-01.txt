@@ -1,0 +1,5 @@
+image_name: [17-00] Applications in Physics (Kinematics).png
+file_name: [17-00]-01.png
+timestamp: 17:00
+counter: 01
+folder: Calculus 1 Lecture 2.4

@@ -1,0 +1,5 @@
+image_name: [29-00] ∫ cos(5𝒙)· 𝒅𝒙.png
+file_name: [29-00]-01.png
+timestamp: 29:00
+counter: 01
+folder: Calculus 1 Lecture 4.2

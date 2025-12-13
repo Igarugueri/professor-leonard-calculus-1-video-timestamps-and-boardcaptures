@@ -1,0 +1,5 @@
+image_name: [9-40]Example – Finding a Line’s Equation Given Two Points  (-2,-3) and (8,2) .png
+file_name: [9-40]-01.png
+timestamp: 9:40
+counter: 01
+folder: Calculus 1 Lecture 0.1

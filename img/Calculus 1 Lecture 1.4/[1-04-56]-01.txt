@@ -1,0 +1,5 @@
+image_name: [1-04-56]Example – How to Use Continuity of Composite Functions lim_(𝒙→4) 𝒇(𝒙) = abs(10 - 3𝒙²).png
+file_name: [1-04-56]-01.png
+timestamp: 1:04:56
+counter: 01
+folder: Calculus 1 Lecture 1.4

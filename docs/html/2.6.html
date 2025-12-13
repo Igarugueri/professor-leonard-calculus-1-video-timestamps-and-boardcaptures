@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．６　Dｉｓｃｕｓｓｉｏｎ　Oｆ　Tｈｅ　Cｈａｉｎ　Rｕｌｅ　Fｏｒ　Dｅｒｉｖａｔｉｖｅｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．６</h1>
+    <h1>　Dｉｓｃｕｓｓｉｏｎ　Oｆ　Tｈｅ　Cｈａｉｎ　Rｕｌｅ　Fｏｒ　Dｅｒｉｖａｔｉｖｅｓ　Oｆ　Fｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｉｎｔｒｏｄｕｃｔｉｏｎ　ａｎｄ　ｒｅｌｅｖａｎｃｅ　ｏｆ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=0"
+          target="_blank">0:00</a>. Introduction to the Chain Rule and its importance in calculus.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The Cha+in Rule as the last main differentiation rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The three fundamental differentiation rules: Product Rule, Quotient Rule, and Chain Rule.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The Chain Rule as a method for **deriving compositions of functions.**</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｍｏｔｉｖａｔｉｏｎ　ａｎｄ　ｅｘａｍｐｌｅｓ　ｏｆ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=79"
+          target="_blank">1:19</a>. Review of the concept of function compositions.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=86"
+          target="_blank">1:26</a>. Example illustrating the need for the Chain Rule: derivative of $(3𝒙^{2}-4)^{100}$
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Presentation of examples of derivatives that can be calculated without the chain rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{d𝒙}\big[3𝒙^{2}\cdot 4\big]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{d𝒙}\big[(3𝒙^{2}\cdot 4)^{2}\big]$; you can apply the product rule or
+                expand, then differentiate.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{d𝒙}\big[(3𝒙^{2}\cdot 4)^{3}\big]$; still doable, but becomes tedious.
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Presentation of examples of derivatives that are difficult to calculate _without the
+            chain rule_:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{d𝒙}\big[(3𝒙^{2}\cdot 4)^{100}\big]$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Difficulty of deriving the expression $(3𝒙^{2}-4)^{100}$ using traditional methods.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=151"
+          target="_blank">2:31</a>. The Chain Rule as an efficient solution for this type of derivative.</li>
+    </ul>
+
+    <h2>Ｅｘｐｌａｎａｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ　ｔｈｒｏｕｇｈ　ａｎ　ｅｘａｍｐｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=186"
+          target="_blank">3:06</a>. Expression of $(3𝒙^{2}-4)^{100}$ as a ᴄ̳ᴏ̳ᴍ̳ᴩ̳ᴏ̳ꜱ̳ɪ̳ᴛ̳ɪ̳ᴏ̳ɴ̳ ̳ᴏ̳ꜰ̳
+        ̳ꜰ̳ᴜ̳ɴ̳ᴄ̳ᴛ̳ɪ̳ᴏ̳ɴ̳ꜱ̳.
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-26]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-26]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Motivation: Recognizing compositions is essential before applying the chain rule.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=220"
+          target="_blank">3:40</a>. Method to identify the ɪ̳ɴ̳ɴ̳ᴇ̳ʀ̳ ̳ᴀ̳ɴ̳ᴅ̳ ̳ᴏ̳ᴜ̳ᴛ̳ᴇ̳ʀ̳ ̳ꜰ̳ᴜ̳ɴ̳ᴄ̳ᴛ̳ɪ̳ᴏ̳ɴ̳ꜱ̳ ̳ɪ̳ɴ̳ ̳ᴀ̳
+        ̳ᴄ̳ᴏ̳ᴍ̳ᴩ̳ᴏ̳ꜱ̳ɪ̳ᴛ̳ɪ̳ᴏ̳ɴ̳.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=241"
+              target="_blank">4:01</a>. Definition of the "outer" and "inner" functions: $y=u^{100}$ and $u=3𝒙^{2}-4$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=287"
+              target="_blank">4:47</a>. Verification: substituting $u$ into $y$ recovers the original function.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=307"
+          target="_blank">5:07</a>. Calculation of $\dfrac{dy}{du}$ ($y=u^{100}$) and $\dfrac{du}{d𝒙}$ ($u=3𝒙^{2}-4$).
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Objective: find $\dfrac{dy}{dx}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{dy}{du}=100u^{99}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{du}{d𝒙}=6𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Chain Rule in action:
+            $\dfrac{dy}{dx}=\dfrac{dy}{du}\cdot\dfrac{du}{dx}=(\dfrac{dy}{\cancel{du}})\cdot(\dfrac{\cancel{du}}{dx})$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Notice how the intermediate variable $(u)$ "cancels" out, leaving the derivative in
+                terms of $x$.</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Mastering this identification process is crucial for differentiating any composite
+            function efficiently.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=470"
+          target="_blank">7:50</a>. Justification of Leibniz notation for the derivative.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The Chain Rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{dy}{dx}=\dfrac{dy}{du}\cdot\dfrac{du}{dx}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=525"
+          target="_blank">8:45</a>. Application of the Chain Rule to the example $(3𝒙^{2}-4)^{100}$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[8-45]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[8-45]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{d}{dx}\big[(3𝒙^{2}-4)^{100}\big]=\dfrac{dy}{du}\cdot\dfrac{du}{dx}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{d}{du}\big[u^{100}\big]\cdot\dfrac{d}{dx}\big[3𝒙^{2}-4\big]$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $100u^{99}\cdot 6𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $100u^{99}\cdot 6𝒙\Big|_{u=3𝒙^{2}-4}$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $100(3𝒙^{2}-4)^{99}\cdot 6𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $600𝒙(3𝒙^{2}-4)^{99}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=726"
+          target="_blank">12:06</a>. Simplification of the differentiation process using the Chain Rule.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Go for this step $\dfrac{d}{dx}\big[(3𝒙^{2}-4)^{100}\big]$ to this
+            $100(3𝒙^{2}-4)^{99}\cdot 6𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> The Chain Rule turns the derivative $\dfrac{d}{dx}\big[(3𝒙^{2}-4)^{100}\big]$ directly
+            into $100(3𝒙^{2}-4)^{99}\cdot 6𝒙$, making the process systematic.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Remark:The Power Rule is actually a special case (corollary) of the Chain Rule, when the
+            inner function is simply $x$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> In other words: if $y=x^{n}$, then $\dfrac{dy}{dx}=n x^{n-1}$, which fits the Chain
+                Rule with inner function $u=x$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> The Chain Rule generalizes the Power Rule to any composition, not just powers of $x$.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｉｎｔｅｒｐｒｅｔａｔｉｏｎ　ａｎｄ　ｇｅｎｅｒａｌｉｚａｔｉｏｎ　ｏｆ　ｔｈｅ　Ｐｏｗｅｒ　Ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=800"
+          target="_blank">13:20</a>. Definition of the Generalized Power Rule.
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[13-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[13-20]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=845"
+          target="_blank">14:05</a>. Demonstration of the Chain Rule from the definition of compositions.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{d}{dx}\big[(𝒇(𝒙))^{n}\big]$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $y=u^{n},\;\;u=𝒇(𝒙)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{dy}{du}=n\cdot u^{n-1};\;\; \dfrac{du}{dx}=\dfrac{d}{dx}\big[𝒇(𝒙)\big]$
+            $=\Big(\dfrac{dy}{du}\Big)\cdot\Big(\dfrac{du}{dx}\Big)$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $n\cdot u^{n-1}\cdot\dfrac{d}{dx}\big[𝒇(𝒙)\big]$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $n\cdot\big\{𝒇(𝒙)^{\,n-1}\cdot\dfrac{d}{dx}\big[𝒇(𝒙)\big]\big\}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=986"
+          target="_blank">16:26</a>. **General formula for the derivative of a function raised to a power**:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{d}{d𝒙}\big[(𝒇(𝒙))^{n}\big]=n\cdot\{𝒇(𝒙)^{\,n-1}\}\cdot\dfrac{d}{d𝒙}\big[𝒇(𝒙)\big]$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1120"
+          target="_blank">18:40</a>. Statement in simple language of the Generalized Power Rule.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> 1. Multiply by the exponent $n$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> 2. Keep the base function raised to $n-1$ (i.e., reduce the exponent by one).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> 3. Multiply by the derivative of the base function.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘａｍｐｌｅｓ　ａｎｄ　ａｐｐｌｉｃａｔｉｏｎｓ　ｏｆ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1190"
+          target="_blank">19:50</a>. $y=(𝒙^{3}-2𝒙+38)^{4}$ find $y'$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[19-50]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[19-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Importance of recognizing function compositions when applying the Chain Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Common errors when applying the Generalized Power Rule (forgetting to subtract $1$ from
+            the exponent).</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Use of parentheses to indicate the multiplication of the inner derivative.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Relationship between the Generalized Power Rule and the simple Power Rule.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ａｄｄｉｔｉｏｎａｌ　ｅｘａｍｐｌｅｓ：ｃｏｍｂｉｎａｔｉｏｎ　ｏｆ　ｄｉｆｆｅｒｅｎｔｉａｔｉｏｎ　ｒｕｌｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1465"
+          target="_blank">24:25</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[(𝒙)^{6}\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[24-25]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[24-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Could you do the general power rule?</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1580"
+          target="_blank">26:20</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[(2𝒙-3)(𝒙^{2}-5)^{3}\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[26-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[26-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Example combining the Product Rule and the Generalized Power Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Determining which rule to apply first: the Product Rule applies to the entire expression.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> <a
+                  href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1648"
+                  target="_blank">27:28</a>. $\dfrac{d}{d𝒙}\Big[\dfrac{(𝒙^{2}-1)^{2}}{(𝒙+4)}\Big]$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Identifying the necessary differentiation rules: Chain Rule (or Generalized Power
+                    Rule) and Quotient Rule.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Order of application: Quotient Rule first</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> <a
+                  href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1680"
+                  target="_blank">28:00</a>. $\dfrac{d}{d𝒙}\Big[\Big(\dfrac{(𝒙^{2}-1)^{2}}{(𝒙+4)}\Big)^{5}\Big]$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Order of application: Generalized Power Rule, then Quotient Rule, and finally
+                    another Generalized Power Rule
+                    within the Quotient Rule.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> <a
+                  href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1778"
+                  target="_blank">29:38</a>. $\dfrac{d}{d𝒙}\big[(2𝒙-3)(𝒙^{2}-5)^{3}\big]$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Application of the Product Rule as the main rule</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> <a
+              href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=1778"
+              target="_blank">29:38</a>. Application of the Product Rule as the main rule
+            <ul>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $y=(𝒙^{3}-2𝒙+38)^{4}$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $\dfrac{dy}{dx}=4(𝒙^{3}-2𝒙+38)^{3}\cdot\dfrac{d}{dx}\big[𝒙^{3}-2𝒙+38\big]$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $4(𝒙^{3}-2𝒙+38)^{3}\big(3𝒙^{2}-2\big)$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $4\big(3𝒙^{2}-2\big)(𝒙^{3}-2𝒙+38)^{3}$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $(12𝒙^{2}-8)(𝒙^{3}-2𝒙+38)^{3}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=2345"
+          target="_blank">39:05</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[\sqrt{\,5𝒙^{2}-1\,}\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[39-05]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[39-05]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Application of the Chain Rule to derivatives involving square roots.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Representing square roots as fractional exponents to facilitate differentiation.</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2"> $y=(5𝒙^{2}-1)^{1/2}$</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2"> $\dfrac{dy}{dx}=\dfrac{1}{2}(5𝒙^{2}-1)^{-1/2}\cdot\dfrac{d}{dx}\big[5𝒙^{2}-1\big]$</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2"> $\dfrac{1}{2}(5𝒙^{2}-1)^{-1/2}\cdot 10𝒙$</li>
+          <!-- ◉ nivel-2 -->
+          <br>
+          <li class="level-2"> $\dfrac{5𝒙}{\sqrt{5𝒙^{2}-1}}$</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｅｘｔｅｎｓｉｏｎ　ｏｆ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ　ｔｏ　ｔｒｉｇｏｎｏｍｅｔｒｉｃ　ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=2588"
+          target="_blank">43:08</a>. Derivative of the function $\cos(𝒙^{4})$ using the Chain Rule.
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[42-50]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[42-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identifying the outer function (cosine) and the inner function $(𝒙^{4})$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $y=\cos(u)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $u=𝒙^{4}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Applying the Chain Rule: derive the outer function, keep the inner function unchanged,
+            and multiply by the derivative of the inner function.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{dy}{du}=-\sin(u)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{du}{dx}=4𝒙^{3}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{dy}{dx}=\Big(\dfrac{dy}{du}\Big)\cdot\Big(\dfrac{du}{dx}\Big)$
+                $=-\sin(u)\cdot 4𝒙^{3}$ $=-\sin(𝒙^{4})\cdot 4𝒙^{3}$ $=-4𝒙^{3}\sin(𝒙^{4})$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=2767"
+          target="_blank">46:07</a>. **Statement of the Chain Rule for trigonometric functions**:
+        <ul>
+          <!-- ○ nivel-2 -->
+          <li class="level-2"> $\dfrac{d}{dx}\big[𝒇(𝓰(𝒙))\big]=𝒇'\!\big(𝓰(𝒙)\big)\cdot 𝓰'(𝒙)$.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ａｄｄｉｔｉｏｎａｌ　ｅｘａｍｐｌｅｓ　ａｎｄ　ｐｒａｃｔｉｃｅ　ｗｉｔｈ　ｔｈｅ　ｃｈａｉｎ　ｒｕｌｅ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=2902"
+          target="_blank">48:22</a>. Practice with examples combining the Chain Rule, Product Rule, and Quotient Rule.
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=2949"
+          target="_blank">49:09</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[\sin(4𝒙^{5})\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[49-09]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[49-09]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Example of a trigonometric function with a composite argument</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identifying that this is a Chain Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Recognizing the composition of functions: the outer function is sine and the inner
+            function is $4𝒙^{5}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Applying the Chain Rule: derive the outer function, keep the inner function unchanged,
+            and multiply
+            by the derivative of the inner function.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{dy}{dx}=\cos(4𝒙^{5})\cdot\dfrac{d}{dx}\big[4𝒙^{5}\big]$
+                $=20𝒙^{4}\cos(4𝒙^{5})$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=3135"
+          target="_blank">52:15</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[\cos^{2}(𝒙^{4})\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[52-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[52-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> **Recommendation**: analyze the structure of a problem before applying differentiation
+            rules.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Distinction between the general Chain Rule and the Generalized Power Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> In this context, the Generalized Power Rule refers to the Chain Rule applied to a
+            function raised to a power.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $\dfrac{d}{d𝒙}\big[\cos^{2}(𝒙^{4})\big]=\dfrac{d}{d𝒙}\big[(\cos(𝒙^{4}))^{2}\big]$
+              </li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $2\cos(𝒙^{4})\cdot\dfrac{d}{dx}\big[\cos(𝒙^{4})\big]$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $2\cos(𝒙^{4})\cdot\big(-\sin(𝒙^{4})\cdot\dfrac{d}{dx}[𝒙^{4}]\big)$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $2\cos(𝒙^{4})\cdot\big(-\sin(𝒙^{4})\cdot 4𝒙^{3}\big)$</li>
+              <!-- ○ nivel-3 -->
+              <br>
+              <li class="level-3"> $-8𝒙^{3}\cos(𝒙^{4})\sin(𝒙^{4})$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=3668"
+          target="_blank">1:01:08</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[\tan(3𝒙^{2}-2𝒙)\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-01-08]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-01-08]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If $\dfrac{d}{d𝒙}\big[\tan^{4}(3𝒙^{2}-2𝒙)\big]$ then first general power rule</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identifying the Chain Rule: the outer function is tangent and the inner function is
+            $3𝒙^{2}-2𝒙$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Applying the Chain Rule: derive the outer function, keep the inner function unchanged,
+            and multiply by the
+            derivative of the inner function.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\dfrac{d}{dx}\big[\tan(3𝒙^{2}-2𝒙)\big]=\sec^{2}(3𝒙^{2}-2𝒙)\cdot\dfrac{d}{dx}[3𝒙^{2}-2𝒙]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\sec^{2}(3𝒙^{2}-2𝒙)\cdot(6𝒙-2)$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $(6𝒙-2)\sec^{2}(3𝒙^{2}-2𝒙)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Common errors when applying the Chain Rule to trigonometric functions: forgetting to
+            multiply by the derivative
+            of the argument.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=3997"
+          target="_blank">1:06:37</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[\sqrt{\,𝒙^{3}+\csc(𝒙^{3})\,}\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-06-37]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-06-37]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Simplifying the expression by moving the negative exponent to the denominator.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Identifying the Generalized Power Rule: the outer function is raising to the power of
+            $-1/2$ and the inner function
+            is the expression within the parentheses.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Applying the Generalized Power Rule: bring down the exponent, keep the internal
+            expression unchanged, and multiply
+            by the derivative of the internal expression.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> To derive the internal function, it is necessary to apply the Sum Rule, Product Rule, and
+            Chain Rule.</li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{d}{d𝒙}\big[\sqrt{\,𝒙^{3}+\csc(𝒙^{3})\,}\big]=\dfrac{d}{d𝒙}\big[(𝒙^{3}+\csc(𝒙^{3}))^{1/2}\big]$
+          </li> <br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{1}{2}(𝒙^{3}+\csc(𝒙^{3}))^{-1/2}\cdot\dfrac{d}{dx}\big[𝒙^{3}+\csc(𝒙^{3})\big]$
+          </li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{1}{2}(𝒙^{3}+\csc(𝒙^{3}))^{-1/2}\cdot\big[3𝒙^{2}+\dfrac{d}{dx}\big(\csc(𝒙^{3})\big)\big]$</li>
+          <br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{1}{2}(𝒙^{3}+\csc(𝒙^{3}))^{-1/2}\cdot\big[3𝒙^{2}+(-\csc(𝒙^{3})\cot(𝒙^{3}))\cdot\dfrac{d}{dx}[𝒙^{3}]\big]$
+          </li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{1}{2}(𝒙^{3}+\csc(𝒙^{3}))^{-1/2}\cdot\big[3𝒙^{2}-3𝒙^{2}\csc(𝒙^{3})\cot(𝒙^{3})\big]$</li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> $\dfrac{\,3𝒙^{2}-3𝒙^{2}\csc(𝒙^{3})\cot(𝒙^{3})\,}{\,2\sqrt{\,𝒙^{3}+\csc(𝒙^{3})\,}}$
+          </li><br>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=4755"
+          target="_blank">1:19:15</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[(3+𝒙^{2}\cdot\cot(𝒙^{2}))^{-3}\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-19-15]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-19-15]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Example illustrating the convenience of simplifying expressions before applying the
+            Quotient Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> In this case,
+            $\dfrac{d}{dx}\Big[\dfrac{1}{\big(3+𝒙^{2}\cdot\cot(𝒙^{2})\big)^{3}}\Big]$, it is recommended to move the
+            denominator to the numerator with a negative exponent to apply the Generalized Power Rule.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Avoid using the Quotient Rule, as it can complicate the differentiation process.</li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $\dfrac{d}{dx}\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-3}=-3\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-4}\cdot\dfrac{d}{dx}\big[3+𝒙^{2}\cot(𝒙^{2})\big]$
+          </li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $-3\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-4}\cdot\big[\dfrac{d}{dx}(𝒙^{2})\cdot\cot(𝒙^{2})+𝒙^{2}\cdot\dfrac{d}{dx}(\cot(𝒙^{2}))\big]$
+          </li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $-3\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-4}\cdot\big[2𝒙\cdot\cot(𝒙^{2})+𝒙^{2}\cdot(-\csc^{2}(𝒙^{2})\cdot\dfrac{d}{dx}[𝒙^{2}])\big]$
+          </li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $=-3\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-4}\cdot\big[2𝒙\cdot\cot(𝒙^{2})+𝒙^{2}\cdot(-\csc^{2}(𝒙^{2})\cdot
+            2𝒙)\big]$</li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $-3\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{-4}\cdot\big[2𝒙\cot(𝒙^{2})-2𝒙^{3}\csc^{2}(𝒙^{2})\big]$</li><br>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            $-\dfrac{3\big[2𝒙\cot(𝒙^{2})-2𝒙^{3}\csc^{2}(𝒙^{2})\big]}{\big[3+𝒙^{2}\cot(𝒙^{2})\big]^{4}}$</li><br>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=5480"
+          target="_blank">1:31:20</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\Big[\dfrac{1+\cos(𝒙^{2})}{1+\sin(𝒙^{2})}\Big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-31-20]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-31-20]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> If $\dfrac{d}{d𝒙}\Big[\dfrac{1+\cos(𝒙^{2})}{1+\sin(𝒙^{2})}\Big]^{5}$ then apply
+            general power rule, quotient rule and chain rule</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Apply the **quotient rule**:
+            <ul><br>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{dx}\Big[\dfrac{𝒇(𝒙)}{𝗀(𝒙)}\Big]=\dfrac{𝒇'(𝒙)\cdot 𝗀(𝒙)-𝒇(𝒙)\cdot
+                𝗀'(𝒙)}{\big(𝗀(𝒙)\big)^{2}}$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <br>
+                  <li class="level-4"> Here: $𝒇(𝒙)=1+\cos(𝒙^{2})$ aand $𝗀(𝒙)=1+\sin(𝒙^{2})$</li><br>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Compute the derivatives using the **chain rule**:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇'(𝒙)=\dfrac{d}{dx}\big[1+\cos(𝒙^{2})\big]=-\sin(𝒙^{2})\cdot 2𝒙$</li><br>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝗀'(𝒙)=\dfrac{d}{dx}\big[1+\sin(𝒙^{2})\big]=\cos(𝒙^{2})\cdot 2𝒙$</li><br>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Plug into the quotient rule formula:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Numerator:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $𝒇'(𝒙)\cdot 𝗀(𝒙)-𝒇(𝒙)\cdot 𝗀'(𝒙)$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\big[-\sin(𝒙^{2})\cdot
+                        2𝒙\big]\cdot\big[1+\sin(𝒙^{2})\big]-\big[1+\cos(𝒙^{2})\big]\cdot\big[\cos(𝒙^{2})\cdot
+                        2𝒙\big]$</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $2𝒙\big[-\sin(𝒙^{2})-\sin^{2}(𝒙^{2})-\cos(𝒙^{2})-\cos^{2}(𝒙^{2})\big]$
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Denominator:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"> $\big[1+\sin(𝒙^{2})\big]^{2}$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Final answer:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $\dfrac{d}{dx}\Big[\dfrac{1+\cos(𝒙^{2})}{1+\sin(𝒙^{2})}\Big]$
+                    $=\dfrac{2𝒙\big[-\sin(𝒙^{2})-\sin^{2}(𝒙^{2})-\cos(𝒙^{2})-\cos^{2}(𝒙^{2})\big]}{\big[1+\sin(𝒙^{2})\big]^{2}}$
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"> <a href="https://www.youtube.com/watch?v=8dr1dZjfhmc&amp;list=PLF797E961509B4EB5&amp;t=5530"
+          target="_blank">1:32:10</a>. 🧩 Example –: $\dfrac{d}{d𝒙}\big[𝒙^{2}\cdot\sin(3𝒙)\big]$
+        <span class="image-container">
+          – <a href="../../img/Calculus 1 Lecture 2.6/[1-32-10]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.6/[1-32-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Product rule and then chain rule</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"> Apply the product rule:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> $\dfrac{d}{dx}\big[𝒇(𝒙)\cdot 𝗀(𝒙)\big]=𝒇'(𝒙)\cdot 𝗀(𝒙)+𝒇(𝒙)\cdot 𝗀'(𝒙)$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> Here $𝒇(𝒙)=𝒙^{2}$ and $𝗀(𝒙)=\sin(3𝒙)$</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Compute the derivatives:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝒇'(𝒙)=2𝒙$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $𝗀'(𝒙)=\dfrac{d}{dx}\big[\sin(3𝒙)\big]=\cos(3𝒙)\cdot 3$ (by the **chain
+                    rule**)  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"> Now substitute into the product rule formula:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\dfrac{d}{dx}\big[𝒙^{2}\cdot\sin(3𝒙)\big]=2𝒙\cdot\sin(3𝒙)+𝒙^{2}\cdot\big[\cos(3𝒙)\cdot
+                    3\big]$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"> $2𝒙\cdot\sin(3𝒙)+3𝒙^{2}\cdot\cos(3𝒙)$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

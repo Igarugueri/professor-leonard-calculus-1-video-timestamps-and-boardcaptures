@@ -1,0 +1,5 @@
+image_name: [2-25]Example 𝑥² + 𝑦² = 25.png
+file_name: [2-25]-01.png
+timestamp: 2:25
+counter: 01
+folder: Calculus 1 Lecture 2.7

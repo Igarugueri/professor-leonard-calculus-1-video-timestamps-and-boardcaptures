@@ -1,0 +1,5 @@
+image_name: [22-50]𝐌𝐚𝐭𝐡𝐞𝐦𝐚𝐭𝐢𝐜𝐚𝐥 𝐃𝐞𝐟𝐢𝐧𝐢𝐭𝐢𝐨𝐧 𝐨𝐟 𝐎𝐧𝐞-𝐒𝐢𝐝𝐞𝐝 𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲.png
+file_name: [22-50]-01.png
+timestamp: 22:50
+counter: 01
+folder: Calculus 1 Lecture 1.4

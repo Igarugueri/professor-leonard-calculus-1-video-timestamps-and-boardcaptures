@@ -1,0 +1,5 @@
+image_name: [24-35]Example –  Region bounded by 𝒇(𝒙) = √𝒙, 𝒙 = 1, 𝒙 = 4, revolved around the 𝒚-axis.png
+file_name: [24-35]-01.png
+timestamp: 24:35
+counter: 01
+folder: Calculus 1 Lecture 5.3

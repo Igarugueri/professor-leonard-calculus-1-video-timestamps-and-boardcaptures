@@ -1,0 +1,5 @@
+image_name: [44-10]𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐨𝐟 𝐑𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬  𝐏(𝒙)  ∕  𝐐(𝒙).png
+file_name: [44-10]-01.png
+timestamp: 44:10
+counter: 01
+folder: Calculus 1 Lecture 1.4

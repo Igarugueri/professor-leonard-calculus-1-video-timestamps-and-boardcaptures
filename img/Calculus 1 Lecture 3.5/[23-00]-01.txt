@@ -1,0 +1,5 @@
+image_name: [23-00]The rules for calculating limits as 𝒙 approaches positive-negative infinity.png
+file_name: [23-00]-01.png
+timestamp: 23:00
+counter: 01
+folder: Calculus 1 Lecture 3.5

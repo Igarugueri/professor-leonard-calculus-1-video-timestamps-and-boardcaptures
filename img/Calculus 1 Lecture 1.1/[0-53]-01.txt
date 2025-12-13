@@ -1,0 +1,5 @@
+image_name: [0-53]The two objectives of calculus.png
+file_name: [0-53]-01.png
+timestamp: 0:53
+counter: 01
+folder: Calculus 1 Lecture 1.1

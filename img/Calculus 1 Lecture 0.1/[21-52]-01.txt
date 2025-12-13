@@ -1,0 +1,5 @@
+image_name: [21-52]Example – Converting from standard form to slope-intercept form by isolating 𝒚 4𝒙 +2𝒚-3 =0  →  𝒚 = 𝒎𝒙 + 𝒃.png
+file_name: [21-52]-01.png
+timestamp: 21:52
+counter: 01
+folder: Calculus 1 Lecture 0.1

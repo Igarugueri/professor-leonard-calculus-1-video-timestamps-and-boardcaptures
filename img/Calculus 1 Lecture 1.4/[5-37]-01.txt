@@ -1,0 +1,5 @@
+image_name: [5-37]Removable Discontinuity_1.png
+file_name: [5-37]-01.png
+timestamp: 5:37
+counter: 01
+folder: Calculus 1 Lecture 1.4

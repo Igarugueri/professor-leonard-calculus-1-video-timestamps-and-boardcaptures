@@ -1,0 +1,5 @@
+image_name: [11-55]Example  lim ₜ→₁  𝒕³ ÷ (𝒕² - 1)².png
+file_name: [11-55]-01.png
+timestamp: 11:55
+counter: 01
+folder: Calculus 1 Lecture 3.5

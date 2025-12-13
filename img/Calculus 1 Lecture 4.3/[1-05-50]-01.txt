@@ -1,0 +1,5 @@
+image_name: [1-05-50]Example – Calculating the area under 𝒇(𝒙) = 𝒙² on [0,1] using right endpoints_1.png
+file_name: [1-05-50]-01.png
+timestamp: 1:05:50
+counter: 01
+folder: Calculus 1 Lecture 4.3

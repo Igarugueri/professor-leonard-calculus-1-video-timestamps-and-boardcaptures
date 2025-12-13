@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　０．４：Cｏｍｂｉｎｉｎｇ　ａｎｄ　ｃｏｍｐｏｓｉｔｉｏｎ　ｏｆ　ｆｕｎｃｔｉｏｎｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　０．４</h1>
+    <h1>Cｏｍｂｉｎｉｎｇ　ａｎｄ　ｃｏｍｐｏｓｉｔｉｏｎ　ｏｆ　ｆｕｎｃｔｉｏｎｓ</h1>
+
+    <h2>Ｃｏｍｂｉｎｉｎｇ Ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=44" target="_blank">[0:44]</a>.
+        Introduction to Combining Functions: addition, subtraction, multiplication, division.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.4/[0-44]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.4/[0-44]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=57" target="_blank">[0:57]</a>.
+            🧩 Example – with functions: $\displaystyle \mathcal{f}(x)=1+\sqrt{x-2}$ and $\displaystyle
+            \mathcal{g}(x)=x-3$
+            <ul>
+              <li class="level-3">Addition of functions: $\displaystyle (\mathcal{f}+\mathcal{g})(x)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}+\mathcal{g})(x)=\mathcal{f}(x)+\mathcal{g}(x)=(1+\sqrt{x-2})+(x-3)=-2+\sqrt{x-2}+x$
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3">Subtraction of functions: $\displaystyle (\mathcal{f}-\mathcal{g})(x)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}-\mathcal{g})(x)=\mathcal{f}(x)-\mathcal{g}(x)=(1+\sqrt{x-2})-(x-3)=4+\sqrt{x-2}-x$</li>
+                </ul>
+              </li>
+              <li class="level-3">Multiplication of functions: $\displaystyle (\mathcal{f}\cdot\mathcal{g})(x)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}\cdot\mathcal{g})(x)=\mathcal{f}(x)\cdot\mathcal{g}(x)=(1+\sqrt{x-2})\cdot(x-3)=x+x\sqrt{x-2}-3-3\sqrt{x-2}$
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3">Division of functions: $\displaystyle (\mathcal{f}/\mathcal{g})(x)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}/\mathcal{g})(x)=\dfrac{\mathcal{f}(x)}{\mathcal{g}(x)}=\dfrac{1+\sqrt{x-2}}{x-3}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=238" target="_blank">[3:58]</a>.
+        Domain of Combined Functions
+        <ul>
+          <li class="level-2">The domain is the i͟n͟t͟e͟r͟s͟e͟c͟t͟i͟o͟n͟ of the domains of the o͟r͟i͟g͟i͟n͟a͟l͟
+            functions.</li>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=270"
+              target="_blank">[4:30]</a>. 🧩 Example – illustrate domain restriction:
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 0.4/[4-30]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 0.4/[4-30]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <li class="level-3">$\displaystyle \sqrt{x}\cdot\sqrt{x}=x$. The domain is not all real numbers.
+                <ul>
+                  <li class="level-4">The domain of $\displaystyle \sqrt{x}\cdot\sqrt{x}$ is numbers greater than or
+                    equal to $\displaystyle 0$.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="level-2">Domain restrictions cannot be removed; when functions are combined, they accumulate rather
+            than cancel out.
+            <ul>
+              <li class="level-3">🧩 Example –:
+              <li class="level-4">Conclusion: domain issues do not cancel out — they accumulate.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </li>
+    </ul>
+
+
+
+    <h2>Ｃｏｍｐｏｓｉｔｉｏｎ ｏｆ Ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=457" target="_blank">[7:37]</a>.
+        Introduction by examples to Composition of Functions
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.4/[7-37]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.4/[7-37]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=476"
+              target="_blank">[7:56]</a>. 🧩 Example –: $\displaystyle \mathcal{f}(x)=x^{3}-4$ and $\displaystyle
+            \mathcal{g}(x)=\sqrt{x}$
+            <ul>
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=509"
+                  target="_blank">[8:29]</a>. Composition $\displaystyle
+                (\mathcal{f}\circ\mathcal{g})(x)=\mathcal{f}(\mathcal{g}(x))$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}\circ\mathcal{g})(x)=\mathcal{f}(\mathcal{g}(x))=\mathcal{f}(\sqrt{x})=(\sqrt{x})^{3}-4$
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=615"
+                  target="_blank">[10:15]</a>. Composition $\displaystyle
+                (\mathcal{g}\circ\mathcal{f})(x)=\mathcal{g}(\mathcal{f}(x))$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{g}\circ\mathcal{f})(x)=\mathcal{g}(\mathcal{f}(x))=\mathcal{g}(x^{3}-4)=\sqrt{x^{3}-4}$
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=667" target="_blank">[11:07]</a>.
+        Multiple Composition of Functions by example
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.4/[11-07]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.4/[11-07]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=686"
+              target="_blank">[11:26]</a>. 🧩 Example –: $\displaystyle \mathcal{f}(x)=\sqrt{x}$, $\displaystyle
+            \mathcal{g}(x)=\dfrac{1}{x}$, and $\displaystyle \mathcal{h}(x)=x^{3}$
+            <ul>
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=711"
+                  target="_blank">[11:51]</a>. $\displaystyle (\mathcal{f}\circ\mathcal{g}\circ\mathcal{h})(x)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}\circ\mathcal{g}\circ\mathcal{h})(x)=\mathcal{f}(\mathcal{g}(\mathcal{h}(x)))=\mathcal{f}(\mathcal{g}(x^{3}))=\mathcal{f}\!\left(\dfrac{1}{x^{3}}\right)=\sqrt{\dfrac{1}{x^{3}}}=\dfrac{1}{\sqrt{x^{3}}}=\dfrac{1}{x^{3/2}}$
+                  </li>
+                </ul>
+              </li>
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=810"
+                  target="_blank">[13:30]</a>. $\displaystyle (\mathcal{f}\circ\mathcal{g}\circ\mathcal{h})(8)$
+                <ul>
+                  <li class="level-4">$\displaystyle
+                    (\mathcal{f}\circ\mathcal{g}\circ\mathcal{h})(8)=\dfrac{1}{8^{3/2}}$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=f-_UsIP5jyA&amp;t=884" target="_blank">[14:44]</a>.
+        Decomposing a Function into a Composition of Functions by example
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 0.4/[14-44]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 0.4/[14-44]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <li class="level-2">🧩 Example –: $\displaystyle \mathcal{h}(x)=(x-7)^{3}$ can be written as a composition
+            $\displaystyle \mathcal{f}(\mathcal{g}(x))$
+            <ul>
+              <li class="level-3">$\displaystyle (\mathcal{f}\circ\mathcal{g})(x)$; $\displaystyle
+                \mathcal{f}(x)=x^{3}$; $\displaystyle \mathcal{g}(x)=x-7$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+
+    <h2>Ａｄｄｉｔｉｏｎａｌ　ｒｅｓｏｕｒｃｅｓ</h2>
+    <ul>
+      <li class="level-1"><a href="https://openstax.org/books/college-algebra-2e/pages/3-4-composition-of-functions"
+          target="_blank">[openstax]</a></li>
+    </ul>
+
+  </article>
+</body>
+
+</html>

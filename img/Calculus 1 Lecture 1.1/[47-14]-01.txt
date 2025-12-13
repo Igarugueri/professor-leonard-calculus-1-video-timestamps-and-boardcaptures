@@ -1,0 +1,5 @@
+image_name: [47-14]Example – What are limits limₓ→₁ (𝒙 - 1) ∕ (𝒙² - 1).png
+file_name: [47-14]-01.png
+timestamp: 47:14
+counter: 01
+folder: Calculus 1 Lecture 1.1

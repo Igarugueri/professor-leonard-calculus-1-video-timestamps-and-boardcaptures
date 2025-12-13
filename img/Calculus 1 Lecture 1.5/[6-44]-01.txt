@@ -1,0 +1,5 @@
+image_name: [6-443] Images of P and Q.png
+file_name: [6-443]-01.png
+timestamp: 6:443
+counter: 01
+folder: Calculus 1 Lecture 1.5

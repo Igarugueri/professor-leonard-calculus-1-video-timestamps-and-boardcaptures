@@ -1,0 +1,5 @@
+image_name: [2-50-00]Evaluation of limₓ→₀   𝒙  ∕  cos(π∕2 - 𝒙).png
+file_name: [2-50-00]-01.png
+timestamp: 2:50:00
+counter: 01
+folder: Calculus 1 Lecture 1.2

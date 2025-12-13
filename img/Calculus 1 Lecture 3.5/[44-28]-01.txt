@@ -1,0 +1,5 @@
+image_name: [44-28]Example-lim ₓ→∞  (5𝒙² - 4𝒙) ÷ (15𝒙³ - 3𝒙).png
+file_name: [44-28]-01.png
+timestamp: 44:28
+counter: 01
+folder: Calculus 1 Lecture 3.5

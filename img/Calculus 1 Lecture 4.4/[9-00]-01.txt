@@ -1,0 +1,5 @@
+image_name: [9-00]Example – 2 ∫[-1,2] (𝒙 + 2)·𝒅𝑥.png
+file_name: [9-00]-01.png
+timestamp: 9:00
+counter: 01
+folder: Calculus 1 Lecture 4.4

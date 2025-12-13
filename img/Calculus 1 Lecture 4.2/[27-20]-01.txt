@@ -1,0 +1,5 @@
+image_name: [27-20]∫(1 ／𝒙²) + sec²(π·𝒙)·𝒅𝒙.png
+file_name: [27-20]-01.png
+timestamp: 27:20
+counter: 01
+folder: Calculus 1 Lecture 4.2

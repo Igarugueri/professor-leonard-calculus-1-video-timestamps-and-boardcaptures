@@ -1,0 +1,5 @@
+image_name: [7-07-47]Relationship between continuity and differentiability.png
+file_name: [7-07-47]-01.png
+timestamp: 7:07:47
+counter: 01
+folder: Calculus 1 Lecture 2.1

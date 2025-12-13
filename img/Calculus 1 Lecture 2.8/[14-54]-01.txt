@@ -1,0 +1,5 @@
+image_name: [14-54]Example.png
+file_name: [14-54]-01.png
+timestamp: 14:54
+counter: 01
+folder: Calculus 1 Lecture 2.8

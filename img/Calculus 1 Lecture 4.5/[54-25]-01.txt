@@ -1,0 +1,5 @@
+image_name: [54-25]Example – Example of total area calculation using sign analysis 1 - 𝒙² on [0,2]_1.png
+file_name: [54-25]-01.png
+timestamp: 54:25
+counter: 01
+folder: Calculus 1 Lecture 4.5

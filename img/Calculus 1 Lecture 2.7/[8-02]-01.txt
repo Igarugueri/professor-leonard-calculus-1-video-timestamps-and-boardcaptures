@@ -1,0 +1,5 @@
+image_name: [8-02]Example 𝒙³ + 𝐲³ = 5.png
+file_name: [8-02]-01.png
+timestamp: 8:02
+counter: 01
+folder: Calculus 1 Lecture 2.7

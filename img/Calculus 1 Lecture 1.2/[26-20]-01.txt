@@ -1,0 +1,5 @@
+image_name: [26-20]Evaluation of  limₓ→₁   ∛((5𝒙 + 7)  ∕  (𝒙² + 1)).png
+file_name: [26-20]-01.png
+timestamp: 26:20
+counter: 01
+folder: Calculus 1 Lecture 1.2

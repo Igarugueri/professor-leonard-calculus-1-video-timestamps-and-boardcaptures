@@ -1,0 +1,5 @@
+image_name: [0-41]Steps for curving sketching.png
+file_name: [0-41]-01.png
+timestamp: 0:41
+counter: 01
+folder: Calculus 1 Lecture 3.6

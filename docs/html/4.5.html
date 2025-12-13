@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ４．５ Ｔｈｅ Ｆｕｎｄａｍｅｎｔａｌ Ｔｈｅｏｒｅｍ ｏｆ Ｃａｌｃｕｌｕｓ</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ １ Ｌｅｃｔｕｒｅ ４．５</h1>
+    <h1> Ｔｈｅ Ｆｕｎｄａｍｅｎｔａｌ Ｔｈｅｏｒｅｍ ｏｆ Ｃａｌｃｕｌｕｓ</h1>
+
+    <h2>Ｔｈｅ　Ｆｕｎｄａｍｅｎｔａｌ　Ｔｈｅｏｒｅｍ　ｏｆ　Ｃａｌｃｕｌｕｓ（FTC）<br>　　　　　　　　　　　　　　　　 𝒫𝒜𝑅𝒯 Ⅱ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=120" target="_blank">[2:00]</a>. Introduction to the
+        Fundamental Theorem of Calculus (FTC)
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[02-00]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[02-00]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Visualizing the area under the curve from 𝓪 to 𝓫
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Subtracting areas: area up to 𝓫 minus area up to 𝓪</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Analogy with distance: 𝓫-𝓪</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The area as a function
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Definite integrals as areas with specific limits</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Definition of the definite integral as the difference of the antiderivative evaluated
+                at the integration limits
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">The area from 𝓪 to 𝓫 is $𝓕(𝓫)-𝓕(𝓪)$ (FTC 𝒫𝒜𝑅𝒯 Ⅱ )</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The starting point of the integral does not matter, as long as it’s the same for both
+                limits</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">FTC, 𝒫𝒜𝑅𝒯 II — “Evaluation Theorem”
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Connects the definite integral to any antiderivative.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Statement of FTC 𝒫𝒜𝑅𝒯 II:
+            <br>$\displaystyle\left\{\begin{aligned}&\underline{\text{If }}\; 𝒇 \text{ is continuous on } [𝓪,𝓫]
+            \text{ and } 𝓕 \text{ is an antiderivative of } 𝒇 \text{ on } [𝓪,𝓫] \; (\text{i.e., } 𝓕'(𝒙)=𝒇(𝒙)),
+            \\[10pt]&\underline{\text{Then }}\; \int_{𝓪}^{𝓫} 𝒇(𝒙)\,𝒅𝒙 \;=\; 𝓕(𝓫) - 𝓕(𝓪)\end{aligned}\right.$
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Equivalent form (Net Change Theorem):
+            <br>$\displaystyle \int_{𝓪}^{𝓫} 𝓕′(𝒙)\,𝒅𝒙 = 𝓕(𝓫) - 𝓕(𝓪)$.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=645" target="_blank">[10:45]</a>. Explanation of why
+        +𝓒 is eliminated in definite integrals
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[10-45]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[10-45]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The constant cancels when subtracting antiderivatives, it belogs to the same function.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The definite integral results in a single number representing area</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=709" target="_blank">[11:49]</a>. Examples of
+        definite integrals
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=709" target="_blank">[11:49]</a>. 🧩 Example – 1:
+            $\displaystyle \int_{1}^{5} 𝒙\cdot 𝒅𝒙$ –
+
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[11-49]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[11-49]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Antiderivative:
+                <br>■ $𝓕(𝒙)=\dfrac{𝒙^{2}}{2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate at the bounds:
+                <br>■
+                $\left.\dfrac{𝒙^{2}}{2}\right|_{1}^{5}=\dfrac{5^{2}}{2}-\dfrac{1^{2}}{2}=\dfrac{25}{2}-\dfrac{1}{2}=\dfrac{24}{2}=12$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=842" target="_blank">[14:02]</a>. 🧩 Example – 2:
+            $\displaystyle \int_{0}^{\pi/2} \cos(𝒙)\,𝒅𝒙$ –
+
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[14-02]-01.png" target="_blank">[📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[14-02]-01.png" alt="Preview" />
+            </span>
+            –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[14-02]-02.png" target="_blank">[📷image-2]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[14-02]-02.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Antiderivative:
+                <br>■ $𝓕(𝒙)=\sin(𝒙)$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate at the bounds:
+                <br>■ $\left.\sin(𝒙)\right|_{0}^{\pi/2}=\sin\!\left(\dfrac{\pi}{2}\right)-\sin(0)=1-0=1$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Visualizing the area under the cosine function
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Relation to the circle’s area</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Introduction to the idea of signed net area</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=1110" target="_blank">[18:30]</a>. 🧩 Example –
+            3: $\displaystyle \int_{4}^{9} 𝒙^{2}\cdot \sqrt{𝒙}\, 𝒅𝒙$
+            –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[18-30]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[18-30]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rewrite with exponents:
+                <br>■ $\sqrt{𝒙}=𝒙^{1/2}\;\Rightarrow\; 𝒙^{2}\cdot \sqrt{𝒙}=𝒙^{2}\cdot 𝒙^{1/2}=𝒙^{5/2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Antiderivative::
+                <br>■ $𝓕(𝒙)=\displaystyle \int 𝒙^{5/2}\,𝒅𝒙=\dfrac{𝒙^{7/2}}{7/2}=\dfrac{2}{7}\cdot 𝒙^{7/2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate at bounds:
+                <br>■ $\left.\dfrac{2}{7}\cdot 𝒙^{7/2}\right|_{4}^{9}=\dfrac{2}{7}\cdot 9^{7/2}-\dfrac{2}{7}\cdot
+                4^{7/2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Powers and roots:
+                <br>■ $9^{7/2}=(\sqrt{9})^{7}=3^{7}=2187$
+                <br>■ $4^{7/2}=(\sqrt{4})^{7}=2^{7}=128$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Final result:
+                <br>$\dfrac{2}{7}\cdot 2187-\dfrac{2}{7}\cdot 128=\dfrac{4118}{7}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=1540" target="_blank">[22:50]</a>. 🧩 Example –
+            4: $\displaystyle \int_{0}^{\pi/3}\sec^{2}(𝒙)\,𝒅𝒙$ –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[22-50]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[22-50]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Antiderivative:
+                <br>■ $𝓕(𝒙)=\displaystyle \int \sec^{2}(𝒙)\,𝒅𝒙=\tan(𝒙)$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate at bounds:
+                <br>■ $\left.\tan(𝒙)\right|_{0}^{\pi/3}=\tan\!\left(\dfrac{\pi}{3}\right)-\tan(0)=\sqrt{3}-0=\sqrt{3}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=1540" target="_blank">[25:40]</a>. 🧩 Example –
+            5: Definite integral with reversed limits $\displaystyle \int_{0}^{4} 𝒙^{3}\,𝒅𝒙$
+            –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[25-40]-01.png" target="_blank">[📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[25-40]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Apply 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.2: Reversing the limits of integration changes the sign of
+                the integral.
+                <br>■ $\displaystyle \int_{𝓫}^{𝓪} 𝒇(𝒙)\,𝒅𝒙=-\int_{𝓪}^{𝓫} 𝒇(𝒙)\,𝒅𝒙$
+                <br>■ $\displaystyle \int_{4}^{0}
+                𝒙^{3}\,𝒅𝒙=\left.\dfrac{𝒙^{4}}{4}\right|_{4}^{0}=\dfrac{0^{4}}{4}-\dfrac{4^{4}}{4}=-64$
+                <br>■ $-\displaystyle \int_{0}^{4}
+                𝒙^{3}\,𝒅𝒙=-\left[\left.\dfrac{𝒙^{4}}{4}\right|_{0}^{4}\right]=-\left[\dfrac{4^{4}}{4}-\dfrac{0^{4}}{4}\right]=-64$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=1705" target="_blank">[28:25]</a>. 🧩 Example –
+            6: $\displaystyle \int_{1}^{-1} \dfrac{1}{𝒙^{2}}\,𝒅𝒙$ –
+
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[28-25]-01.png" target="_blank">[📷image-1]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[28-25]-01.png" alt="Preview" />
+            </span>
+            –
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[28-25]-02.png" target="_blank">[📷image-2]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[28-25]-02.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rewrite the integrand with negative exponent:
+                <br>■ $𝒙^{-2}=\dfrac{1}{𝒙^{2}}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Apply the power rule:
+                <br>■ $\displaystyle \int 𝒙^{-2}\,𝒅𝒙=\dfrac{𝒙^{-1}}{-1}=-\dfrac{1}{𝒙}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate the definite integral:
+                <br>■
+                $\left.-\dfrac{1}{𝒙}\right|_{-1}^{1}=\left(-\dfrac{1}{1}\right)-\left(-\dfrac{1}{-1}\right)=-1-1=-2\;
+                \; \; ❓$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Analysis of the Result
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">This result suggests a <strong>negative area</strong>, which raises concerns
+                    because the function $𝒇(𝒙)=\dfrac{1}{𝒙^{2}}$ is <strong>always positive</strong> on its domain.
+                    According to:
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.6: If the function is positive, the integral is positive
+                        (and vice versa).
+                        <ul>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">If $𝒇(𝒙)\ge 0$ for all $𝒙\in[𝓪,𝓫]$ then $\displaystyle \int_{𝓪}^{𝓫}
+                            𝒇(𝒙)\,𝒅𝒙 \ge 0$
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">If $𝒇(𝒙)$ is above the 𝒙-axis, the integral is positive</li>
+                            </ul>
+                          </li>
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">If $𝒇(𝒙)\le 0$ for all $𝒙\in[𝓪,𝓫]$ then $\displaystyle \int_{𝓪}^{𝓫}
+                            𝒇(𝒙)\,𝒅𝒙 \le 0$
+                            <ul>
+                              <!-- ▲ nivel-7 -->
+                              <li class="level-7">If $𝒇(𝒙)$ is below the 𝒙-axis, the integral is negative</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">So how can the integral be negative, if the function is positive? The issue lies
+                    in the <strong>discontinuity</strong> at $𝒙=0$.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Discontinuity and Asymptote
+                        <ul>
+                          <li class="level-6">The function $𝒇(𝒙)=\dfrac{1}{𝒙^{2}}$ is <strong>undefined at</strong>
+                            $𝒙=0$, and has a <strong>vertical asymptote</strong> there.
+                            <ul>
+                              <li class="level-7"> Therefore, the interval $[-1,1]$ includes a point of discontinuity.
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="level-6"> This means the integral is not proper and <strong>must be treated as an
+                              improper integral</strong>, using limits.
+                            <ul>
+                              <li class="level-7"> The function is unbounded and discontinuous at $𝒙=0$, leading to an
+                                asymptote.</li>
+                            </ul>
+                          <li class="level-6"> <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=1980"
+                              target="_blank">[33:00]</a>. Graphical interpretation showing how the asymptote affects
+                            the area.
+                            <ul>
+                              <li class="level-7"> <strong>Observation:</strong> If, because of the asymptote, some of
+                                those rectangles blow up to infinity, then the area can’t be computed.</li>
+                            </ul>
+                          <li class="level-6"> Domain issue: When an asymptote lies within or at the limit of
+                            integration, the integral
+                            may diverge or require special treatment (e.g., improper integrals).
+                            <ul>
+                              <li class="level-7"> <strong>Observation:</strong> If the integrand has a vertical
+                                asymptote
+                                that makes some Riemann rectangles unbounded, the corresponding
+                                improper integral diverges; therefore, the area is not defined.</li>
+                            </ul>
+                          </li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">🗒️ NOTE: 🛡️ Pre-check: Domain &amp; Continuity of the Integrand
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Before applying any property (like 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.6), <strong>you must
+                      verify that the integrand $𝒇(𝒙)$ is continuous on the interval</strong> $[𝓪,𝓫]$.
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">If $𝒇(𝒙)$ is <strong>not defined or not continuous</strong> at any point in
+                        $[𝓪,𝓫]$, the integral becomes <strong>improper</strong>.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">For improper integrals, <strong>standard properties of definite integrals do
+                          not necessarily apply</strong>.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">In particular, <strong>you cannot directly say that a positive function
+                          implies a positive integral</strong> unless the function is continuous throughout the
+                        interval.</li>
+                    </ul>
+                  </li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4"><strong>Think about it:</strong>
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5"><strong>Checklist before integrating:</strong>
+                        <br>▢ 1. 📌 Is $𝒇(𝒙)$ defined at every point in $[𝓪,𝓫]$?
+                        <br>▢ 2. 📌 Is $𝒇(𝒙)$ continuous on $[𝓪,𝓫]$?
+                      </li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">If <strong>yes</strong>, proceed with Fundamental Theorem &amp; integral
+                        properties.</li>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">If <strong>no</strong>, analyze the integral as <strong>improper</strong>
+                        (i.e., split it or use limits).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ◉ nivel-2 -->
+              <li class="level-2"><a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=2243"
+                  target="_blank">[37:23]</a>. 🧩 Example – 7: Integrals with piecewise-defined functions
+                <span class="image-container">
+                  <a href="../../img/Calculus 1 Lecture 4.5/[37-23]-01.png" target="_blank">– [📷image]</a>
+                  <img src="../../img/Calculus 1 Lecture 4.5/[37-23]-01.png" alt="Preview" />
+                </span>
+                <ul>
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3">$ \displaystyle \int_{0}^{6} 𝒇(𝒙)\,𝒅𝒙,\;\; 𝒇(𝒙)=\begin{cases}𝒙^{3}, &
+                    𝒙<2\\[2pt]5𝒙-1, & 𝒙\ge 2\end{cases}$</li>
+
+                      <!-- ○ nivel-3 -->
+                  <li class="level-3">Splitting the integral over intervals where the function is defined
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">Continuity is required to split the integral properly</li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3">Computing each integral separately:
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">$ \displaystyle \int_{0}^{2}
+                        𝒙^{3}\,𝒅𝒙=\left.\dfrac{𝒙^{4}}{4}\right|_{0}^{2}\to \dfrac{2^{4}}{4}-0=\dfrac{16}{4}=4$</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">$ \displaystyle \int_{2}^{6} (5𝒙-1)\,𝒅𝒙=\int 5𝒙\,𝒅𝒙+\int
+                        (-1)\,𝒅𝒙=\dfrac{5𝒙^{2}}{2}-𝒙 \;\Rightarrow\;
+                        \left.\left(\dfrac{5𝒙^{2}}{2}-𝒙\right)\right|_{2}^{6}=[90-6]-[10-2]=84-8=76$</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">Total area: $4+76=80$</li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"><strong>What happens at $𝒙=2$?</strong>
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">At $𝒙=2$, the function is <strong>discontinuous</strong> (it jumps from one
+                        branch to another).</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">Therefore, it is <strong>not differentiable</strong> at that point.</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"><strong>Result:</strong> There is <strong>no single, continuous
+                          antiderivative</strong> on the entire interval $[0,6]$.</li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"><strong>Can we apply the FTC directly to $\displaystyle \int_{0}^{6}
+                      𝒇(𝒙)\,𝒅𝒙$?</strong>
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"><strong>No.</strong></li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">The <strong>Fundamental Theorem of Calculus – Part II</strong> (the evaluation
+                        part) requires that:
+                        <ul>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">1. $𝒇(𝒙)$ is <strong>continuous over</strong> $[𝓪,𝓫]$</li>
+
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">2. There exists a function $𝓕$ such that $𝓕′(𝒙)=𝒇(𝒙)$</li>
+                        </ul>
+                      </li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">In this case, these conditions <strong>are not met</strong> because:
+                        <ul>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">$𝒇(𝒙)$ is <strong>not continuous</strong> at $𝒙=2$</li>
+
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">There is <strong>no single function</strong> $𝓕$ that differentiates to
+                            $𝒇$ over $[0,6]$</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"><strong>What should we do instead?</strong>
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">Split the interval into parts where the function is continuous:
+                        <ul>
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">$ \displaystyle \int_{0}^{6} 𝒇(𝒙)\,𝒅𝒙=\int_{0}^{2}
+                            𝒙^{3}\,𝒅𝒙+\int_{2}^{6}(5𝒙-1)\,𝒅𝒙$</li>
+
+                          <!-- ▣ nivel-5 -->
+                          <li class="level-5">On each subinterval:
+                            <ul>
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6">$𝒇(𝒙)$ is <strong>continuous</strong></li>
+
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6">We can apply <strong>FTC Part II</strong></li>
+
+                              <!-- ▢ nivel-6 -->
+                              <li class="level-6">We compute the area using the appropriate antiderivative for each part
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"><strong>Think about it:</strong>
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4"><strong>Core Idea:</strong> If the Fundamental Theorem of Calculus
+                        <strong>cannot be applied directly</strong> because of a <strong>discontinuity inside the
+                          interval</strong>,
+                        <strong>split the integral into continuous sections</strong> and apply the theorem to each one
+                        <strong>individually</strong>.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- ○ nivel-3 -->
+                  <li class="level-3"><a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=2320"
+                      target="_blank">[38:40]</a>. ❌ if $5𝒙-1,\; 𝒙>2$, the function $𝒇(𝒙)$ is <strong>not
+                      defined</strong> at $𝒙=2$ in the given statement.
+                    <ul>
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">This is a problem because in order to split the definite integral at $𝒙=2$,
+                        the function must be defined at that point.</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">Since $𝒇(𝒙)$ omits the value at $𝒙=2$, the expression $\displaystyle
+                        \int_{0}^{6} 𝒇(𝒙)\,𝒅𝒙$ is not properly defined as a standard definite integral.</li>
+
+                      <!-- ■ nivel-4 -->
+                      <li class="level-4">To fix this, the piecewise function must include a definition for $𝒙=2$,
+                        either from the left or the right.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｔｏｔａｌ　ａｒｅａ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=2810" target="_blank">[46:50]</a>. Introduction to
+        the concept of total area Vs. signed net area –
+
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[46-50]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[46-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Explaining the difference between total area and signed net area
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">ᴛᴏᴛᴀʟ ᴀʀᴇᴀ: This is calculated by integrating the absolute value of the function over
+                an interval, ensuring all
+                areas contribute positively regardless of whether they are above or below the 𝒙-axis.
+                <br>■ $\displaystyle \int_{𝓪}^{𝓫}\lvert 𝒇(𝒙)\rvert\,𝒅𝒙$ and $\lvert
+                𝒇(𝒙)\rvert=\begin{cases}𝒇(𝒙), &amp; 𝒇(𝒙)\ge 0\\[2pt]-𝒇(𝒙), &amp; 𝒇(𝒙)&lt;0\end{cases}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">ꜱɪɢɴᴇᴅ ɴᴇᴛ ᴀʀᴇᴀ: This result comes from a standard integral without absolute values,
+                where areas above the 𝒙-axis are positive and
+                those below are negative, potentially leading to cancellation if regions offset each other.
+                <br>■ $\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,𝒅𝒙$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=3265" target="_blank">[54:25]</a>. 🧩
+        Example – Example of total area calculation using sign analysis: $1-𝒙^{2}$ on $[0,2]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[54-25]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[54-25]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[54-25]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[54-25]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 1: Find zeros of $𝒇(𝒙)=0$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Solve $1-𝒙^{2}=0 \;\Rightarrow\; 𝒙=\pm 1$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 2: Create a sign analysis using these roots (those which are within the integration
+            interval) and the interval limits
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=0,\; 𝒙=1,\; 𝒙=2$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 3: Determine where $𝒇(𝒙)$ is positive or negative
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Positive: $[0,1]$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Negative: $[1,2]$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 4: Split the integral according to the sign of $𝒇(𝒙)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Use absolute value:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$ \lvert 𝒇(𝒙)\rvert=\begin{cases}𝒇(𝒙) &amp; \text{if } 𝒇(𝒙)\ge
+                    0\\[2pt]-𝒇(𝒙) &amp; \text{if } 𝒇(𝒙)&lt;0\end{cases}$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">So:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$A=\displaystyle \int_{0}^{1} (1-𝒙^{2})\,𝒅𝒙+\int_{1}^{2}
+                    -(1-𝒙^{2})\,𝒅𝒙=\int_{0}^{1} (1-𝒙^{2})\,𝒅𝒙-\int_{1}^{2} (1-𝒙^{2})\,𝒅𝒙$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 5: Integrate and evaluate each interval
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">First integral:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$ \displaystyle \int_{0}^{1}
+                    (1-𝒙^{2})\,𝒅𝒙=\left.[𝒙-\dfrac{𝒙^{3}}{3}]\right|_{0}^{1}=(1-\tfrac{1}{3})-(0-0)=\dfrac{2}{3}$
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Second integral:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$ \displaystyle \int_{1}^{2}
+                    (1-𝒙^{2})\,𝒅𝒙=\left.[𝒙-\dfrac{𝒙^{3}}{3}]\right|_{1}^{2}=\left(2-\dfrac{8}{3}\right)-\left(1-\dfrac{1}{3}\right)=\left(-\dfrac{2}{3}\right)-\left(\dfrac{2}{3}\right)=-\dfrac{4}{3}$
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">with the minus sign from before: $-(-\dfrac{4}{3})=+\dfrac{4}{3}$</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Final calculation of total area
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$A=\dfrac{2}{3}+\dfrac{4}{3}=2$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <h2>Ｔｈｅ　ｆｕｎｄａｍｅｎｔａｌ　ｔｈｅｏｒｅｍ　ｏｆ　ｃａｌｃｕｌｕｓ　（FTC）<br> 𝒫𝒜𝑅𝒯 Ⅰ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=4148" target="_blank">[1:09:08]</a>.
+        The Fundamental Theorem of Calculus (FTC), 𝒫𝒜𝑅𝒯 Ⅰ
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-09-08]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-09-08]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Derivatives and integrals as inverse operations</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Defining the area function 𝓐(𝒙) as the integral of 𝒇(𝓉) from a to 𝒙</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Statement of FTC 𝒫𝒜𝑅𝒯 Ⅰ :
+            <br>$\displaystyle\left\{\begin{aligned}&\underline{\text{If }}\; 𝒚 = 𝒇(𝒙) \text{ is continuous over }
+            [𝓪,𝒙], \\[8pt]&\underline{\text{Then }}\; \text{the area is } 𝒜(𝒙) \text{ such that } 𝒜'(𝒙)=𝒇(𝒙),
+            \\[12pt]&𝒜(𝒙)=\int_{𝓪}^{𝒙} 𝒇(𝓉)\,𝒅𝓉\end{aligned}\right.$
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Teaching notes:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If you define the area function from 𝒫𝒜𝑅𝒯 Ⅰ as $𝒜(𝒙)=\displaystyle
+                \int_{𝓪}^{𝒙} 𝒇(t)\,𝒅t$, then $𝒜′(𝒙)=𝒇(𝒙)$,
+                and thus $\displaystyle \int_{𝓪}^{𝓫} 𝒇(𝒙)\,𝒅𝒙=𝒜(𝓫)-𝒜(𝓪)$.
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The indefinite integral is a family: $\displaystyle \int 𝒇(𝒙)\,𝒅𝒙=𝓕(𝒙)+𝓒$.
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">𝒫𝒜𝑅𝒯 Ⅱ tells you how to use any $𝓕$ to evaluate the definite integral on
+                    $[𝓪,𝓫]$.</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Typical Calc I hypothesis: $𝒇$ continuous on $[𝓪,𝓫]$ (ensures existence and
+                evaluability).</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=4380"
+              target="_blank">[1:13:00]</a>. Another interpretation of $𝒜(𝒙)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝒅}{𝒅𝑥}[𝒜(𝒙)]=𝒇(𝒙)\;\Rightarrow\; \dfrac{𝒅}{𝒅𝑥}\!\left[\displaystyle
+                \int_{𝓪}^{𝒙} 𝒇(𝓉)\,𝒅𝓉 \right]=𝒇(𝒙)$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=4610" target="_blank">[1:16:50]</a>. 🧩 Example –
+        Applying the Fundamental Theorem of Calculus (FTC 𝒫𝒜𝑅𝒯 Ⅰ): $\dfrac{𝒅}{𝒅𝑥}\!\left[\displaystyle
+        \int_{1}^{𝒙} 𝓉^{4}\,𝒅𝓉 \right]$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-16-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-16-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{𝒅}{𝒅𝑥}\!\left[\displaystyle \int_{1}^{𝒙} 𝓉^{4}\,𝒅𝓉 \right]=𝒙^{4}$</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Find an antiderivative of $𝓉^{4}$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int 𝓉^{4}\,𝒅𝓉=\dfrac{𝓉^{5}}{5}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluate the definite integral with limits $[1,𝒙]$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝒅}{𝒅𝑥}\!\left[\dfrac{𝒙^{5}}{5}-\dfrac{1^{5}}{5}\right] =
+                \dfrac{𝒅}{𝒅𝑥}\!\left[\dfrac{𝒙^{5}}{5}-\dfrac{1}{5}\right]$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Differentiate the result:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝒅}{𝒅𝑥}\!\left[\dfrac{𝒙^{5}}{5}-\dfrac{1}{5}\right]=𝒙^{4}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>Conclusion:</strong>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">This confirms the <strong>Fundamental Theorem of Calculus (Part I)</strong>:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">If $𝒜(𝒙)=\displaystyle \int_{𝓪}^{𝒙} 𝒇(𝓉)\,𝒅𝓉$, then $𝒜′(𝒙)=𝒇(𝒙)$ — as
+                    long as $𝒇$ is continuous.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=4753" target="_blank">[1:19:13]</a>.🧩 Example –
+        Applying the Fundamental Theorem of Calculus (FTC 𝒫𝒜𝑅𝒯 Ⅰ): $\dfrac{𝒅}{𝒅𝑥}\!\left[\displaystyle
+        \int_{𝓪}^{𝒙} \dfrac{\sin(𝓉)}{𝓉}\,𝒅𝓉 \right]$
+        –
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-19-13]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-19-13]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Conditions for FTC 𝒫𝒜𝑅𝒯 Ⅰ: continuity and boundedness on the interval</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{𝒅}{𝒅𝑥}\!\left[\displaystyle \int_{𝓪}^{𝒙} \dfrac{\sin(𝓉)}{𝓉}\,𝒅𝓉
+            \right]=\dfrac{\sin(𝒙)}{𝒙}$</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｄｅｆｉｎｉｔｅ　ｉｎｔｅｇｒａｌｓ　ｗｉｔｈ　ｓｕｂｓｔｉｔｕｔｉｏｎ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=4860" target="_blank">[1:21:00]</a>. Definite
+        integrals with substitution
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Introduction to the substitution method in definite integrals
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Two main approaches</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=4939" target="_blank">[1:22:19]</a>. 𝓜𝓮𝓽𝓱𝓸𝓭 I –
+
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-22-19]-01.png" target="_blank">[📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-22-19]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">No change to integration limits; substitute back to 𝒙 before evaluating.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example – Definite Integral with Substitution (Method 1): $\displaystyle \int_{0}^{2}
+            4𝒙(𝒙^{2}-1)^{3}\,𝒅𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitution, finding 𝒅𝓾 and expressing 𝒅𝑥:
+                <br>■ $𝓾=𝒙^{2}-1$
+                <br>■ $𝒅𝓾=2𝒙\cdot 𝒅𝒙$
+                <br>■ $\dfrac{𝒅𝓾}{2𝒙}=𝒅𝒙$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rewrite integral:
+                <br>■ $\displaystyle \int_{0}^{2} 4𝒙(𝒙^{2}-1)^{3}\,𝒅𝒙=\int_{0}^{2} 2\cdot 𝓾^{3}\,𝒅𝓾=2\int_{0}^{2}
+                𝓾^{3}\,𝒅𝓾$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Integration:
+                <br>■ $\displaystyle \int 𝓾^{3}\,𝒅𝓾=\dfrac{𝓾^{4}}{4}\;\Rightarrow\; 2\cdot
+                \dfrac{𝓾^{4}}{4}=\dfrac{𝓾^{4}}{2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Back-substitution (don’t change bounds):
+                <br>■ $\dfrac{𝓾^{4}}{2}\;\to\; \left.\dfrac{(𝒙^{2}-1)^{4}}{2}\right|_{0}^{2}$
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate:
+                <br>■
+                $\left.\dfrac{(2^{2}-1)^{4}}{2}\right.-\left.\dfrac{(0^{2}-1)^{4}}{2}\right.=\dfrac{3^{4}}{2}-\dfrac{(-1)^{4}}{2}=\dfrac{81}{2}-\dfrac{1}{2}=40$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=5630" target="_blank">[1:33:50]</a>. 𝓜𝓮𝓽𝒉𝓸𝓭 II
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-33-50]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-33-50]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Change the limits to match $𝓾$; no resubstitution.</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><strong>NO</strong> Back-substitution</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">🧩 Example – Definite Integral with Substitution (Method 2): $\displaystyle \int_{0}^{2}
+            4𝒙(𝒙^{2}-1)^{3}\,𝒅𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Substitution:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝓾=𝒙^{2}-1$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒅𝓾=2𝒙\cdot 𝒅𝒙$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\dfrac{𝒅𝓾}{2𝒙}=𝒅𝒙$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Change bounds:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">If $𝒙=2\Rightarrow 𝓾=2^{2}-1=3$</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">If $𝒙=0\Rightarrow 𝓾=0^{2}-1=-1$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Rewrite integral:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \int_{0}^{2} 4𝒙(𝒙^{2}-1)^{3}\,𝒅𝒙=\int_{-1}^{3} 2\cdot
+                    𝓾^{3}\,𝒅𝓾=2\int_{-1}^{3} 𝓾^{3}\,𝒅𝓾$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Integration:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \int 𝓾^{3}\,𝒅𝓾=\dfrac{𝓾^{4}}{4}\;\Rightarrow\; 2\cdot
+                    \dfrac{𝓾^{4}}{4}=\dfrac{𝓾^{4}}{2}$</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Evaluate:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    $\left.\dfrac{𝓾^{4}}{2}\right|_{-1}^{3}=\dfrac{3^{4}}{2}-\dfrac{(-1)^{4}}{2}=\dfrac{81}{2}-\dfrac{1}{2}=40$
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><strong>Conclusion:</strong>
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">By changing the bounds to match the substitution,
+                    <ul>
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">there is <strong>no need to back-substitute</strong> into $𝒙$.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&amp;t=6060" target="_blank">[1:41:00]</a>. Discussion of
+        both methods and common errors
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=6340" target="_blank">[1:45:40]</a>. 🧩 Example –
+        Definite Integral with Substitution (Method 2): $\displaystyle \int_{0}^{\pi/8} \sin^{5}(2𝒙)\cdot
+        \cos(2𝒙)\,𝒅𝒙$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-45-40]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-45-40]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-45-40]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-45-40]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\,\displaystyle \int_{0}^{7\pi/8} [\sin(2𝒙)]^{5}\cdot \cos(2𝒙)\,𝒅𝒙$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The integral is rewritten in the form $[𝓰(𝒙)]^{n}\cdot 𝓰'(𝒙)$, which is exactly
+                the pattern for applying the reverse chain rule (substitution).</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝓾=\sin(2𝒙)$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒅𝓾=2\cos(2𝒙)\cdot 𝒅𝒙 \;\Rightarrow\; 𝒅𝒙=\dfrac{𝒅𝓾}{2\cos(2𝒙)}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=6662" target="_blank">[1:51:02]</a>. Converting
+            original $𝒙$-limits into new $𝓾$-limits
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=0 \Rightarrow 𝓾=\sin(0)=0$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=7\pi/8 \Rightarrow 𝓾=\sin(2\pi/8)=\dfrac{\sqrt{2}}{2}$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substituting and integrating
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\displaystyle \int_{0}^{\sqrt{2}/2} 𝓾^{5}\cdot
+                \left(\dfrac{𝒅𝓾}{2}\right)=\dfrac{1}{2}\int_{0}^{\sqrt{2}/2} 𝓾^{5}\,𝒅𝓾=\dfrac{1}{2}\cdot
+                \left.\dfrac{𝓾^{6}}{6}\right|_{0}^{\sqrt{2}/2}
+                =\dfrac{1}{12}\left[\left(\dfrac{\sqrt{2}}{2}\right)^{6}-0\right]=\dfrac{1}{12}\cdot
+                \dfrac{8}{64}=\dfrac{1}{12}\cdot \dfrac{1}{8}=\dfrac{1}{96}$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=7035" target="_blank">[1:57:15]</a>. 🧩 Example –
+        Definite Integral with Substitution (Method 2): $\displaystyle \int_{2}^{5} (2𝒙-5)\,(𝒙-3)^{9}\, 𝒅𝒙$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-57-15]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-57-15]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-57-15]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-57-15]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution: $𝓾=𝒙-3$, so that: $𝒅𝓾=𝒅𝑥$</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The integration limits change:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">When $𝒙=2 \Rightarrow 𝓾=2-3=-1$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">When $𝒙=5 \Rightarrow 𝓾=5-3=2$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rewriting $2𝒙-5$ in terms of $𝓾$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Since $𝒙=𝓾+3$, then: $2𝒙-5=2(𝓾+3)-5=2𝓾+6-5=2𝓾+1$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substituting into the integral:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\displaystyle \int_{-1}^{2} (2𝓾+1)\,𝓾^{9}\,𝒅𝓾=\int_{-1}^{2}
+                (2𝓾^{10}+𝓾^{9})\,𝒅𝓾=\left.\left(\dfrac{2𝓾^{11}}{11}+\dfrac{𝓾^{10}}{10}\right)\right|_{-1}^{2}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Evaluation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\left(\dfrac{2\cdot 2^{11}}{11}+\dfrac{2^{10}}{10}\right)-\left(\dfrac{2\cdot
+                (-1)^{11}}{11}+\dfrac{(-1)^{10}}{10}\right)=\dfrac{4096}{11}+\dfrac{1024}{10}-\left(-\dfrac{2}{11}+\dfrac{1}{10}\right)=\dfrac{4098}{11}+\dfrac{1023}{10}$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final simplified result:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\,\dfrac{52233}{110}$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=7889" target="_blank">[2:11:29]</a>. 🧩 Example –
+        Definite Integral with Substitution (Method 2): $\displaystyle \int_{1}^{3} \dfrac{\cos(\pi/𝒙)}{𝒙^{2}}\,𝒅𝑥$
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[2-11-29]-01.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[2-11-29]-01.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[2-11-29]-02.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[2-11-29]-02.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substitution: $𝓾=\dfrac{\pi}{𝒙}$; $𝒅𝓾=-\pi 𝒙^{-2}\,𝒅𝑥$</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Changing the limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=3 \Rightarrow 𝓾=\pi/3$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒙=1 \Rightarrow 𝓾=\pi$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rewriting the integral:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{\pi/3}^{\pi} \cos(𝓾)\cdot
+                \left(-\dfrac{\pi}{𝒙^{2}}\right)\,𝒅𝑥$</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Substituting $𝒅𝑥$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\displaystyle \int_{\pi/3}^{\pi} \cos(𝓾)\cdot \left(-\dfrac{1}{\pi}\right)\,𝒅𝓾$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Applying the 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.2 (indefinite interaks) of sign change in limits:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $-\dfrac{1}{\pi}\displaystyle \int_{\pi}^{\pi/3} \cos(𝓾)\,𝒅𝓾=\dfrac{1}{\pi}\displaystyle
+                \int_{\pi/3}^{\pi} \cos(𝓾)\,𝒅𝓾$
+                <br>
+                ■ 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.2: $\displaystyle \int_{𝓫}^{𝓪} 𝒇(𝒙)\,𝒅𝑥=- \int_{𝓪}^{𝓫} 𝒇(𝒙)\,𝒅𝑥$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final evaluation:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                $\displaystyle
+                \dfrac{1}{\pi}\left[\sin(𝓾)\right]\Big|_{\pi/3}^{\pi}=\dfrac{1}{\pi}\big(\sin(\pi)-\sin(\pi/3)\big)=\dfrac{1}{\pi}\left(0-\dfrac{\sqrt{3}}{2}\right)=-\dfrac{\sqrt{3}}{2\pi}$
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <h2>Ｉｎｔｅｇｒａｌｓ　ｏｆ　ｅｖｅｎ　ａｎｄ　ｏｄｄ　ｆｕｎｃｔｉｏｎｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=8800" target="_blank">[2:26:40]</a>. Introduction
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=5250" target="_blank">[1:27:30]</a>. ᴇᴠᴇɴ ꜰᴜɴᴄᴛɪᴏɴꜱ
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[1-27-30]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[1-27-30]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$𝒇(-𝒙)=𝒇(𝒙)$, showing symmetry about the y-axis</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Symmetry: The function is symmetric with respect to the y-axis, which means that if we reflect any point on
+            the
+            graph over the vertical axis (y-axis), we obtain another point that also belongs to the graph.
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.5.1 of integrating an even function over $[-𝓪,𝓪]$
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                If $𝒇(𝒙)$ is even: $\displaystyle \int_{-a}^{a}𝒇(𝒙)\,𝒅𝑥=2\int_{0}^{a}𝒇(𝒙)\,𝒅𝑥$
+              </li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            [2:32:30] 🧩 Example – even function: $\displaystyle \int_{-2}^{2}(\,𝒙^{2}+4)\,𝒅𝑥$
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[2-32-30]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[2-32-30]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 1: Identify symmetry
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$𝒇(−𝒙)=(−𝒙)^{2}+4=𝒙^{2}+4=𝒇(𝒙)\;\to\;𝒇$ is <strong>even</strong></li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 2: Apply property of even functions
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \int_{-𝓪}^{𝓪}𝒇(𝒙)\,𝒅𝑥=2\int_{0}^{𝓪}𝒇(𝒙)\,𝒅𝑥$</li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$\displaystyle \int_{-3}^{3}(\,𝒙^{2}+4)\,𝒅𝑥=2\int_{0}^{3}(\,𝒙^{2}+4)\,𝒅𝑥$
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 3: Compute the integral
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$2\Big[\frac{𝒙^{3}}{3}+4𝒙\Big]\Big|_{0}^{3}$</li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$=2\big[(27/3+12)-0\big]$</li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">$=2(9+12)=2(21)=42$</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1">
+        <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=9370" target="_blank">[2:36:10]</a>. ᴏᴅᴅ ꜰᴜɴᴄᴛɪᴏɴꜱ
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 4.5/[2-36-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 4.5/[2-36-10]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">𝒇(-𝒙) = -𝒇(𝒙), showing symmetry about the origin.</li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            Symmetry: The function exhibits symmetry with respect to the origin, which means that if we rotate any
+            point on the graph 180 degrees around the origin (switching the signs of both coordinates), we obtain
+            another point that
+            also belongs to the graph.
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.5.2 of integrating an odd function over [-a, a]
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">If 𝒇(𝒙) is odd: ∫[−a, a] 𝒇(𝒙)∙𝒅𝑥 = 0</li>
+            </ul>
+          </li>
+
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">
+            <a href="https://www.youtube.com/watch?v=xjtEfS0vY2o&t=9730" target="_blank">[2:42:10]</a> 🧩 Example – odd
+            function: [-3, 3] sin(𝒙) / √(1 + 𝒙²) ·𝒅𝑥
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 4.5/[2-42-10]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 4.5/[2-42-10]-01.png" alt="Preview" />
+            </span>
+            <ul>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 1: Define the function
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">𝒇(𝒙) = sin(𝒙) / √(1 + 𝒙²)</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 2: Test odd/even symmetry
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    𝒇(−𝒙) = sin(−𝒙) / √(1 + (−𝒙)²)
+                    <br>= (−sin(𝒙)) / √(1 + 𝒙²)
+                    <br>= −𝒇(𝒙)
+                  </li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Therefore, 𝒇(𝒙) is <strong>odd</strong>.</li>
+                </ul>
+              </li>
+
+              <!-- ○ nivel-3 -->
+              <li class="level-3">
+                Step 3: Apply 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.5.2 of odd functions
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">
+                    For any odd function, the areas on symmetric intervals [−𝓪,0] and [0,𝓪] cancel out:
+                    <ul>
+
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">
+                        From 𝒫𝓇𝑜𝓅𝑒𝓇𝓉𝓎 4.4.5 of definite integrals:
+                        <ul>
+
+                          <!-- ▢ nivel-6 -->
+                          <li class="level-6">
+                            ∫[−𝓪, 𝓪] 𝒇(𝒙)·𝒅𝑥 = ∫[−𝓪, 0] 𝒇(𝒙)·𝒅𝑥 + ∫[0, 𝓪] 𝒇(𝒙)·𝒅𝑥
+                          </li>
+                        </ul>
+                      </li>
+
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Since 𝒇(−𝒙) = −𝒇(𝒙), the negative side is the exact opposite of the
+                        positive side.</li>
+
+                      <!-- ▣ nivel-5 -->
+                      <li class="level-5">Thus, the two contributions cancel each other out.</li>
+                    </ul>
+                  </li>
+
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Conclusion: ∫[−𝓪, 𝓪] 𝒇(𝒙)·𝒅𝑥 = 0</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </article>
+</body>
+
+</html>

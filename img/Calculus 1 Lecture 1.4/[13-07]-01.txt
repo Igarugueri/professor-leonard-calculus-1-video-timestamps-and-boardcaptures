@@ -1,0 +1,5 @@
+image_name: [13-07]𝒇(𝒙) =  (𝒙² - 4) ∕ (𝒙 - 2) study continuity at x = 2.png
+file_name: [13-07]-01.png
+timestamp: 13:07
+counter: 01
+folder: Calculus 1 Lecture 1.4

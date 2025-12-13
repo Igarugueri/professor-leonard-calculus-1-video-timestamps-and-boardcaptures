@@ -1,0 +1,5 @@
+image_name: [2-08-00]Evaluation of limₓ→₀  sin (2𝒙)  ∕ 𝒙.png
+file_name: [2-08-00]-01.png
+timestamp: 2:08:00
+counter: 01
+folder: Calculus 1 Lecture 1.2

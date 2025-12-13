@@ -1,0 +1,5 @@
+image_name: [49-09]Example sin(4𝒙⁵).png
+file_name: [49-09]-01.png
+timestamp: 49:09
+counter: 01
+folder: Calculus 1 Lecture 2.6

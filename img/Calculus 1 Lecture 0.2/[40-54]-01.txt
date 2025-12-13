@@ -1,0 +1,5 @@
+image_name: [40-54]Example – 1 Natural Domain 𝒇(𝒙) = 𝒙³.png
+file_name: [40-54]-01.png
+timestamp: 40:54
+counter: 01
+folder: Calculus 1 Lecture 0.2

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．２　Tｅｃｈｎｉｑｕｅｓ　Oｆ　Dｉｆｆｅｒｅｎｔｉａｔｉｏｎ　（ｆｉｎｄｉｎｇ　ｄｅｒｉｖａｔｉｖｅｓ　ｏｆ　ｆｕｎｃｔｉｏｎｓ　ｅａｓｉｌｙ)</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.05,
+        matchFontHeight: false,
+        displayAlign: 'center',
+        displayIndent: '0em',
+        linebreaks: { automatic: false }
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article class="chapter">
+    <h1>Ｃａｌｃｕｌｕｓ　１　ｌｅｃｔｕｒｅ　２．２</h1>
+    <h1>Tｅｃｈｎｉｑｕｅｓ　Oｆ　Dｉｆｆｅｒｅｎｔｉａｔｉｏｎ　（ｆｉｎｄｉｎｇ　ｄｅｒｉｖａｔｉｖｅｓ　ｏｆ　ｆｕｎｃｔｉｏｎｓ　ｅａｓｉｌｙ)</h1>
+
+    <h2>I ｎｔｒｏｄｕｃｔｉｏｎ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=21" target="_blank">0:21</a>.
+        Derivative of a Constant. Exploring the slope of a horizontal line
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[2-44]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[2-44]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Graph of a constant: Horizontal or vertical? 🧩 Example – : $𝒚=c$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The slope of a constant line is zero.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=87" target="_blank">1:27</a>. Meaning
+        of "derivative": Represents the slope of a curve.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The derivative as the slope of a function.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Generalization: the derivative of any constant is zero.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">The relationship between the slope of a horizontal line and the derivative of a constant
+            is the same $=0$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=164" target="_blank">2:44</a>. In
+        summary: <strong>The derivative of a constant is zero</strong>.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Basic 🧩 Examples –:
+            <span class="image-container">
+              <a href="../../img/Calculus 1 Lecture 2.2/[3-05]-01.png" target="_blank">– [📷image]</a>
+              <img src="../../img/Calculus 1 Lecture 2.2/[3-05]-01.png" alt="Preview" />
+            </span>
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Derivative of $3$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Derivative of $-1$.</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Derivative of $\pi$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Ｆｏｒｍｕｌａ　ｆｏｒ　ｆｉｎｄｉｎｇ　ａ　ｄｅｒｉｖａｔｉｖ.</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=250" target="_blank">4:10</a>. Using
+        limits to find derivatives when there is a variable.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}[𝒇(𝒙)]=\displaystyle \lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=293" target="_blank">4:53</a>. 🧩
+        Example – : Find the derivative of $𝒇(𝒙)=𝒙^{3}$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[4-53]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[4-53]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Formula for the derivative:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to 0}\dfrac{𝒇(𝒙+h)-𝒇(𝒙)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 1: Define the functions:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙+h)=(𝒙+h)^{3}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇(𝒙)=𝒙^{3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 2: Substitution into the formula:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to 0}\dfrac{(𝒙+h)^{3}-𝒙^{3}}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 3: Expand the cube:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$(𝒙+h)^{3}=𝒙^{3}+3𝒙^{2}h+3𝒙h^{2}+h^{3}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 4: Substitution of the expanded expression:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to
+                0}\dfrac{(𝒙^{3}+3𝒙^{2}h+3𝒙h^{2}+h^{3})-𝒙^{3}}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 5: Simplify the expression:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to 0}\dfrac{3𝒙^{2}h+3𝒙h^{2}+h^{3}}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 6: Factor out $h$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to 0}\dfrac{h\big(3𝒙^{2}+3𝒙h+h^{2}\big)}{h}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 7: Cancel $h$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=\displaystyle \lim_{h\to 0}\big(3𝒙^{2}+3𝒙h+h^{2}\big)$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Step 8: Apply the limit as $h\to 0$:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$𝒇'(𝒙)=3𝒙^{2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Final answer:
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">The derivative of $𝒇(𝒙)=𝒙^{3}$ is $𝒇'(𝒙)=3𝒙^{2}$.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=471" target="_blank">7:51</a>. The
+        expression $3𝒙^{2}$ gives the slope of the curve $𝒙^{3}$ at any point.</li>
+    </ul>
+
+    <h2>P ｏｗｅｒ　ｒｕｌｅ　ｆｏｒ　ｄｅｒｉｖａｔｉｖｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=515" target="_blank">8:35</a>. Looking
+        for an easier method to find the derivative.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Observing the pattern in the derivative of $𝒙^{3}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Introduction to the power rule for derivatives: a shorthand method.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=718" target="_blank">11:58</a>.
+        <strong>ᴩᴏᴡᴇʀ ʀᴜʟᴇ ꜰᴏʀ ᴅᴇʀɪᴠᴀᴛɪᴠᴇꜱ</strong>:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[11-58]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[11-58]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}[𝒙^{n}]=n\cdot 𝒙^{\,n-1}$, where $n$ is an integer (for now).</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=794" target="_blank">13:14</a>. 🧩
+        Examples – of the Power Rule:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[13-14]-02.png" target="_blank">– [📷image-1]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[13-14]-02.png" alt="Preview" />
+        </span>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[13-14]-01.png" target="_blank">– [📷image-2]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[13-14]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}[𝑥^{2}]=2𝑥$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}[𝑥^{5}]=5𝒙^{4}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝒔}[𝒔^{15}]=15𝒔^{14}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Adaptation of notation according to the variable.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=981" target="_blank">16:21</a>.
+            Derivatives with Negative Exponents
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝑥}[𝒙^{-3}]=-3𝒙^{-4}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒑}[𝒑^{-2}]=-2𝒑^{-3}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝒑}\big[-2𝒑^{-5}\big]=10𝒑^{-6}=\dfrac{10}{𝒑^{6}}$
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">General rule: Rewrite the derivative with positive exponents</li>
+                </ul>
+              </li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝑥}\Big[\dfrac{1}{𝒙}\Big]=-\dfrac{1}{𝒙^{2}}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{d}{d𝑥}[𝒙]=1\cdot 𝒙^{0}=1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>D ｅｒｉｖａｔｉｖｅｓ　ｗｉｔｈ　ｃｏｎｓｔａｎｔ　ｍｕｌｔｉｐｌｉｃａｔｉｖｅ　ｆａｃｔｏｒｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1225" target="_blank">20:25</a>.
+        <strong>ʀᴜʟᴇ ꜰᴏʀ ᴅᴇʀɪᴠᴀᴛɪᴠᴇꜱ ᴡɪᴛʜ ᴄᴏɴꜱᴛᴀɴᴛ ᴍᴜʟᴛɪᴩʟɪᴄᴀᴛɪᴠᴇ ꜰᴀᴄᴛᴏʀꜱ</strong>:
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[20-25]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[20-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}[𝖼\cdot 𝒇(𝒙)]=𝖼\cdot \dfrac{d}{d𝑥}[𝒇(𝒙)]$, where $𝖼$ is a constant.
+          </li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1320" target="_blank">22:00</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}[5𝒙^{4}]=5\cdot \dfrac{d}{d𝑥}[𝒙^{4}]=20𝒙^{3}$.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1393" target="_blank">23:13</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}[-𝒙^{7}]=-1\cdot \dfrac{d}{d𝑥}[𝒙^{7}]=-7𝑥^{6}$.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1446" target="_blank">24:06</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}\Big[\dfrac{\pi}{𝒙^{2}}\Big]$.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rewrite the expression to apply the power rule: $\dfrac{d}{d𝑥}\big[\pi\cdot
+            𝒙^{-2}\big]$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the constant multiplicative rule: $\pi\cdot \dfrac{d}{d𝑥}[𝒙^{-2}]=-2\pi 𝒙^{-3}$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rewrite with positive exponents: $-\dfrac{2\pi}{𝒙^{3}}$.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>D ｅｒｉｖａｔｉｖｅｓ　ｏｆ　ｓｕｍｓ　ａｎｄ　ｄｉｆｆｅｒｅｎｃｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1645" target="_blank">27:25</a>.
+        <strong>ʀᴜʟᴇ ꜰᴏʀ ᴅᴇʀɪᴠᴀᴛɪᴠᴇꜱ ᴏꜰ ꜱᴜᴍꜱ ᴀɴᴅ ᴅɪꜰꜰᴇʀᴇɴᴄᴇꜱ:</strong>
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[27-25]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[27-25]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d}{d𝑥}\big[𝒇(𝒙)\pm 𝓰(𝑥)\big]=\dfrac{d}{d𝑥}[𝒇(𝒙)]\pm
+            \dfrac{d}{d𝑥}[𝓰(𝑥)]$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1720" target="_blank">28:40</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}\big[3𝒙^{9}-𝒙^{-3}\big]$.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Separate the derivative into two terms: $\dfrac{d}{d𝑥}[3𝑥^{9}]-\dfrac{d}{d𝑥}[𝑥^{-3}]$.
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the constant multiplicative rule: $3\cdot
+            \dfrac{d}{d𝑥}[𝒙^{9}]-\dfrac{d}{d𝑥}[𝑥^{-3}]$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Result: $27𝒙^{8}-(-3𝒙^{-4})=27𝒙^{8}+\dfrac{3}{𝒙^{4}}$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2210" target="_blank">36:50</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}\big[5𝒙^{7}-3𝒙^{4}+2𝒙^{3}+𝒙-1\big]=35𝒙^{6}-12𝒙^{3}+6𝒙^{2}+1$.</li>
+    </ul>
+
+    <h2>D ｅｒｉｖａｔｉｖｅｓ　ｗｉｔｈ　ｆｒａｃｔｉｏｎａｌ　ｅｘｐｏｎｅｎｔｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=1974" target="_blank">32:54</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}\big[4-3\sqrt{𝒙}\big]$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[32-54]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[32-54]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Rewrite the root as a fractional exponent:
+            $\dfrac{d}{d𝑥}[4]-\dfrac{d}{d𝑥}\big[3𝒙^{1/2}\big]$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Apply the power rule: $0-\dfrac{3}{2}𝒙^{-1/2}$.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>H ｏｒｉｚｏｎｔａｌ　ｔａｎｇｅｎｔ　ｌｉｎｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2410" target="_blank">40:10</a>.
+        Application of derivatives: finding points where a function has horizontal tangent lines.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[40-10]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[40-10]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2460" target="_blank">41:00</a>.
+        Horizontal tangent lines have a slope of zero.</li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2520" target="_blank">42:00</a>. To
+        find points with horizontal tangent lines:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Find the derivative of the function.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Set the derivative equal to zero.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Solve for $𝒙$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2580" target="_blank">43:00</a>. 🧩
+        Example – : Find the points where $𝒚=𝒙^{3}-3𝒙+4$ has horizontal tangent lines.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Find the derivative: $\dfrac{d𝒚}{d𝑥}=3𝒙²-3$.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2665"
+                  target="_blank">44:25</a>. When a curve’s slope is zero at a point, it signifies a critical point that
+                may be a local or global
+                maximum or minimum. Identifying these points is crucial for optimization and analyzing the behavior of
+                functions in various fiel𝒅𝒔.:
+                <ul>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Local extrema (maximum or minimum) are the highest or lowest points within a
+                    nearby region.</li>
+                  <!-- ■ nivel-4 -->
+                  <li class="level-4">Global extrema (maximum or minimum) are the absolute highest or lowest points
+                    across the entire domain.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Set the derivative to zero: $3𝒙²-3=0$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Solve for $𝒙$: $𝒙=1$; $𝒙=-1$</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Find the corresponding points on the original function: $(-1,\;6)\text{ and }(1,\;2)$.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>H ｉｇｈｅｒ－ｏｒｄｅｒ　ｄｅｒｉｖａｔｉｖｅｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2851" target="_blank">47:31</a>.
+        Introduction to higher-order derivatives.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[48-12]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[48-12]-01.png" alt="Preview" />
+        </span>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=2892" target="_blank">48:12</a>.
+        Notation for higher-order derivatives:
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$f''(𝒙)$ for the second derivative.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$f'''(𝒙)$ for the third derivative, and so on.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d^{2}𝒚}{d𝑥^{2}}$ for the second derivative of $𝒚$ with respect to $𝑥$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">$\dfrac{d^{3}𝒚}{d𝑥^{3}}$ for the third derivative of $𝒚$ with respect to $𝑥$, and so
+            on.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=3120" target="_blank">52:00</a>.
+        Finding all higher-order derivatives of $7𝒙^{4}-3𝒙^{3}-5𝒙^{2}+9𝒙-347$.
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">First derivative: $28𝒙^{3}-9𝒙^{2}-10𝒙+9$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Second derivative: $84𝒙^{2}-18𝒙-10$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Third derivative: $168𝒙-18$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Fourth derivative: $168$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Fifth derivative: $0$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Sixth derivative and all subsequent derivatives: $0$.</li>
+        </ul>
+      </li>
+
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=3396" target="_blank">56:36</a>. In
+        polynomials, higher-order derivatives eventually become zero.</li>
+    </ul>
+
+    <h2>Ｄｅｒｉｖａｔｉｖｅｓ　ｏｆ　ｃｏｍｐｌｅｘ　ｑｕｏｔｉｅｎｔｓ</h2>
+    <ul>
+      <!-- ● nivel-1 -->
+      <li class="level-1"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=3525" target="_blank">58:45</a>. 🧩
+        Example – : $\dfrac{d}{d𝑥}\Big[\dfrac{𝒙^{5}-2𝒙-3}{3\sqrt{𝒙}}\Big]$.
+        <span class="image-container">
+          <a href="../../img/Calculus 1 Lecture 2.2/[58-45]-01.png" target="_blank">– [📷image]</a>
+          <img src="../../img/Calculus 1 Lecture 2.2/[58-45]-01.png" alt="Preview" />
+        </span>
+        <ul>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Simplify the expression: $\dfrac{𝒙^{5}-2𝒙-3}{3𝒙^{1/2}}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Cannot take the derivative of each term of the quotient separately.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2">Separate the fraction into three terms:
+            $\dfrac{𝒙^{5}}{3𝒙^{1/2}}-\dfrac{2𝒙}{3𝒙^{1/2}}-\dfrac{3}{3𝒙^{1/2}}$.</li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=3755" target="_blank">1:02:35</a>.
+            Simplify each term using exponent properties.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{𝒙^{5}}{3𝒙^{1/2}}=\dfrac{1}{3}𝒙^{9/2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{2𝒙}{3𝒙^{1/2}}=\dfrac{2}{3}𝒙^{1/2}$</li>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">$\dfrac{3}{3𝒙^{1/2}}=𝒙^{-1/2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=4008" target="_blank">1:06:48</a>.
+            Take the derivative of each term separately.
+            <ul>
+              <!-- ○ nivel-3 -->
+              <li class="level-3">Result: $\dfrac{3}{2}𝒙^{7/2}-\dfrac{1}{3}𝒙^{-1/2}+\dfrac{1}{2}𝒙^{-3/2}$</li>
+            </ul>
+          </li>
+          <!-- ◉ nivel-2 -->
+          <li class="level-2"><a href="https://www.youtube.com/watch?v=EY6FHX6asU0&t=4248" target="_blank">1:10:48</a>.
+            Rewrite the derivative with roots:
+            $\dfrac{3}{2}\sqrt{𝒙^{7}}-\dfrac{1}{3\sqrt{𝒙}}+\dfrac{1}{2\sqrt{𝒙^{3}}}$.</li>
+        </ul>
+      </li>
+    </ul>
+
+  </article>
+</body>
+
+</html>
