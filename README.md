@@ -1,14 +1,16 @@
 # Calculus 1 – Structured Notes and Visual Index (Professor Leonard Lectures)
 
+
 ## Index
 
 1. [Repository Overview](#1-repository-overview)  
 2. [Local Use](#2-local-use)  
-   2.1 [Recommended Editor: Zettlr](#21-recommended-editor-zettlr)  
-   2.2 [How to Use Locally](#22-how-to-use-locally)  
+   - [Recommended Editor: Zettlr](#21-recommended-editor-zettlr)  
+   - [How to Use Locally](#22-how-to-use-locally)  
 3. [Remote Use (via GitHub Pages)](#3-remote-use-via-github-pages)  
 4. [Motivation](#4-motivation)  
 5. [Credits and License](#5-credits-and-license)
+
 
 ---
 
@@ -44,11 +46,11 @@ This repository offers a highly organized and visually structured index for Prof
 
 ## 2. Local Use
 
-### 2.1 Recommended Editor: Zettlr
+### Recommended Editor: Zettlr
 
-These notes were created and structured using [Zettlr](https://www.zettlr.com/), a powerful open-source Markdown editor. For optimal viewing (especially indentation, bullets, and image previews), Zettlr is recommended.
+These notes were created and structured using [Zettlr](https://www.zettlr.com/), a powerful open-source Markdown editor. For optimal viewing—especially indentation, custom bullet hierarchies, and image previews—Zettlr is strongly recommended.
 
-### 2.2 How to Use Locally
+### How to Use Locally
 
 1. Clone or download the repository.
 2. Open the following folders in Zettlr or your preferred Markdown viewer:
