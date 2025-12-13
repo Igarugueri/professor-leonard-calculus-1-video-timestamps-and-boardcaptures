@@ -3,13 +3,13 @@
 
 ## Index
 
-1. [Repository Overview](#1-repository-overview)  
-2. [Local Use](#2-local-use)  
-   - [Recommended Editor: Zettlr](#21-recommended-editor-zettlr)  
-   - [How to Use Locally](#22-how-to-use-locally)  
-3. [Remote Use (via GitHub Pages)](#3-remote-use-via-github-pages)  
-4. [Motivation](#4-motivation)  
-5. [Credits and License](#5-credits-and-license)
+1. Repository Overview
+2. Local Use
+   - Recommended Editor: Zettlr
+   - How to Use Locally
+3. Remote Use (via GitHub Pages
+4. Motivation
+5. Credits and License
 
 
 ---
