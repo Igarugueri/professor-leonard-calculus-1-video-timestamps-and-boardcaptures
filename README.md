@@ -1,4 +1,6 @@
 # Calculus 1 – Structured Notes and Visual Index (Professor Leonard Lectures)
+Includes synchronized video timestamps, whiteboard snapshots, and structured MathJax-rendered notes for each lecture.
+
 
 ## Index
 
