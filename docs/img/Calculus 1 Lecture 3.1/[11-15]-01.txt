@@ -1,0 +1,5 @@
+image_name: [11-15]Two different directions of a curve's curvature in a increasing function.png
+file_name: [11-15]-01.png
+timestamp: 11:15
+counter: 01
+folder: Calculus 1 Lecture 3.1

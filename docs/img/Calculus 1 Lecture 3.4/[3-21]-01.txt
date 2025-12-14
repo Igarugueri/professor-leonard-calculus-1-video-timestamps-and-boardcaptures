@@ -1,0 +1,5 @@
+image_name: [3-21]The second derivative test.png
+file_name: [3-21]-01.png
+timestamp: 3:21
+counter: 01
+folder: Calculus 1 Lecture 3.4

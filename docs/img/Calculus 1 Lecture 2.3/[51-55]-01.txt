@@ -1,0 +1,5 @@
+image_name: [51-55]product rule and quotient rule are combined.png
+file_name: [51-55]-01.png
+timestamp: 51:55
+counter: 01
+folder: Calculus 1 Lecture 2.3

@@ -1,0 +1,5 @@
+image_name: [16-40]Properties of definite integrals_2.png
+file_name: [16-40]-02.png
+timestamp: 16:40
+counter: 02
+folder: Calculus 1 Lecture 4.4

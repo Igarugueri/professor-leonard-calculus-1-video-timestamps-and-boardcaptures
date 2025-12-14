@@ -1,0 +1,5 @@
+image_name: [2-07]Fnd the derivative of 𝑓(𝒙) = sin(𝒙), denoted as 𝑓'(𝒙)_1.png
+file_name: [2-07]-01.png
+timestamp: 2:07
+counter: 01
+folder: Calculus 1 Lecture 2.5

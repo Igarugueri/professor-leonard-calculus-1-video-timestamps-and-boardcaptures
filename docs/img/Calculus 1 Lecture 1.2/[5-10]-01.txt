@@ -1,0 +1,5 @@
+image_name: [5-10]The Importance of Equality of One-sided Limits.png
+file_name: [5-10]-01.png
+timestamp: 5:10
+counter: 01
+folder: Calculus 1 Lecture 1.2

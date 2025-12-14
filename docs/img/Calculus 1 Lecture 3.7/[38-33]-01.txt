@@ -1,0 +1,5 @@
+image_name: [38-33]Minimizing the Cost of a Pipeline_1.png
+file_name: [38-33]-01.png
+timestamp: 38:33
+counter: 01
+folder: Calculus 1 Lecture 3.7

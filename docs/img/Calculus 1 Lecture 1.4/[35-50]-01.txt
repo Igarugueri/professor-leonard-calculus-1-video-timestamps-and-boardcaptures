@@ -1,0 +1,5 @@
+image_name: [35-50]𝐏𝐫𝐨𝐩𝐞𝐫𝐭𝐢𝐞𝐬 𝐨𝐟 𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐢𝐧 𝐎𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧𝐬 𝐰𝐢𝐭𝐡 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬.png
+file_name: [35-50]-01.png
+timestamp: 35:50
+counter: 01
+folder: Calculus 1 Lecture 1.4

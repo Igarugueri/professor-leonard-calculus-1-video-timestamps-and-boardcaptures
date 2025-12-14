@@ -1,0 +1,5 @@
+image_name: [02-00]Fundamental Theorem of Calculus2.png
+file_name: [02-00]-01.png
+timestamp: 02:00
+counter: 01
+folder: Calculus 1 Lecture 4.5

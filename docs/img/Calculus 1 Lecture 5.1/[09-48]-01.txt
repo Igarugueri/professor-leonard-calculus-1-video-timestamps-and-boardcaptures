@@ -1,0 +1,5 @@
+image_name: [09-48]Relationship with total area.png
+file_name: [09-48]-01.png
+timestamp: 09:48
+counter: 01
+folder: Calculus 1 Lecture 5.1

@@ -1,0 +1,5 @@
+image_name: [8-32] slope of the secant line.png
+file_name: [8-32]-01.png
+timestamp: 8:32
+counter: 01
+folder: Calculus 1 Lecture 1.5

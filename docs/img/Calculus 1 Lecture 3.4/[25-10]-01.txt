@@ -1,0 +1,5 @@
+image_name: [25-10]Example-Analyze the function 𝒉(𝒙) = 𝒙³ - 3𝒙² + 24𝒙 - 32.png
+file_name: [25-10]-01.png
+timestamp: 25:10
+counter: 01
+folder: Calculus 1 Lecture 3.4

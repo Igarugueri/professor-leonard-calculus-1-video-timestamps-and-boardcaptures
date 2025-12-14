@@ -1,0 +1,5 @@
+image_name: [23-30]Example 3𝐲² + sin(𝐲) = 4𝒙⁵.png
+file_name: [23-30]-01.png
+timestamp: 23:30
+counter: 01
+folder: Calculus 1 Lecture 2.7

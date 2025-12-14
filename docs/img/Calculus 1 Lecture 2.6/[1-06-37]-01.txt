@@ -1,0 +1,5 @@
+image_name: [1-06-37]Example √(𝒙³ + csc(𝒙³)).png
+file_name: [1-06-37]-01.png
+timestamp: 1:06:37
+counter: 01
+folder: Calculus 1 Lecture 2.6

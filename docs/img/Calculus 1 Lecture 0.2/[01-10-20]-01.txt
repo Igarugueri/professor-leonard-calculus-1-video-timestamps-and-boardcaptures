@@ -1,0 +1,5 @@
+image_name: [01-10-20]Example – 6 𝒇(𝒙) = 2 + √(𝒙 – 1).png
+file_name: [01-10-20]-01.png
+timestamp: 01:10:20
+counter: 01
+folder: Calculus 1 Lecture 0.2

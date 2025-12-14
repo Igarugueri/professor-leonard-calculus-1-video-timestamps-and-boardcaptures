@@ -1,0 +1,5 @@
+image_name: [1-23-25]𝐄𝐱𝐚𝐦𝐩𝐥𝐞 𝐨𝐟 𝐇𝐨𝐰 𝐭𝐨 𝐀𝐩𝐩𝐫𝐨𝐱𝐢𝐦𝐚𝐭𝐞 𝐑𝐨𝐨𝐭𝐬 𝐔𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐦𝐞𝐝𝐢𝐚𝐭𝐞 𝐕𝐚𝐥𝐮𝐞 𝐓𝐡𝐞𝐨𝐫𝐞𝐦.png
+file_name: [1-23-25]-01.png
+timestamp: 1:23:25
+counter: 01
+folder: Calculus 1 Lecture 1.4

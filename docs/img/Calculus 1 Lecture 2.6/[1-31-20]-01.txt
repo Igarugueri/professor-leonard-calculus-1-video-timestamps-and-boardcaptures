@@ -1,0 +1,5 @@
+image_name: [1-31-20]Example (1 + cos(𝒙²)) ⋅ (1 + sin(𝒙²))⁻¹.png
+file_name: [1-31-20]-01.png
+timestamp: 1:31:20
+counter: 01
+folder: Calculus 1 Lecture 2.6

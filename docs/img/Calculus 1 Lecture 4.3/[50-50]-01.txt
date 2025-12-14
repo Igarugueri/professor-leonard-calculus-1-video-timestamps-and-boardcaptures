@@ -1,0 +1,5 @@
+image_name: [50-50]Arbitrary point’s of each subinterval.png
+file_name: [50-50]-01.png
+timestamp: 50:50
+counter: 01
+folder: Calculus 1 Lecture 4.3

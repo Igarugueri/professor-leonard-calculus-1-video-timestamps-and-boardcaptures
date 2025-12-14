@@ -1,0 +1,5 @@
+image_name: [58-45]DErivatives of complex quotients.png
+file_name: [58-45]-01.png
+timestamp: 58:45
+counter: 01
+folder: Calculus 1 Lecture 2.2

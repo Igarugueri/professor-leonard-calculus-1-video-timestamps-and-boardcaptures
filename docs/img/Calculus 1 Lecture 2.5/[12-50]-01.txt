@@ -1,0 +1,5 @@
+image_name: [12-50]Presentation of the derivatives of the six main trigonometric functions.png
+file_name: [12-50]-01.png
+timestamp: 12:50
+counter: 01
+folder: Calculus 1 Lecture 2.5

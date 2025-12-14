@@ -1,0 +1,5 @@
+image_name: [6-04]Simple summary.png
+file_name: [6-04]-01.png
+timestamp: 6:04
+counter: 01
+folder: Calculus 1 Lecture 3.2

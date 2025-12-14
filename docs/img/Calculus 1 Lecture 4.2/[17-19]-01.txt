@@ -1,0 +1,5 @@
+image_name: [17-19] ∫ 𝒙² · (𝒙³ - 4)⁵ · 𝒅𝒙.png
+file_name: [17-19]-01.png
+timestamp: 17:19
+counter: 01
+folder: Calculus 1 Lecture 4.2

@@ -1,0 +1,5 @@
+image_name: [2-17-25]Real-life application Example – Catapult_3.png
+file_name: [2-17-25]-03.png
+timestamp: 2:17:25
+counter: 03
+folder: Calculus 1 Lecture 4.1

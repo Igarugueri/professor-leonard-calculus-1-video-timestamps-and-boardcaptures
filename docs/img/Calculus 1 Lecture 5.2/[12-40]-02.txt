@@ -1,0 +1,5 @@
+image_name: [12-40]Find the volume of any solid_2.png
+file_name: [12-40]-02.png
+timestamp: 12:40
+counter: 02
+folder: Calculus 1 Lecture 5.2

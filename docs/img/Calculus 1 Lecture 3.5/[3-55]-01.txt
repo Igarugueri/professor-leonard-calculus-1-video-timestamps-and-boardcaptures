@@ -1,0 +1,5 @@
+image_name: [3-55]Difference between removable discontinuities (holes) and VA.png
+file_name: [3-55]-01.png
+timestamp: 3:55
+counter: 01
+folder: Calculus 1 Lecture 3.5

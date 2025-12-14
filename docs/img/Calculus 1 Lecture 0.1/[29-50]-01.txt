@@ -1,0 +1,5 @@
+image_name: [29-50]Example – Finding the Equation of a Line Perpendicular to  2𝒙 +3𝒚 = 12 passing through the point (6,7).png
+file_name: [29-50]-01.png
+timestamp: 29:50
+counter: 01
+folder: Calculus 1 Lecture 0.1

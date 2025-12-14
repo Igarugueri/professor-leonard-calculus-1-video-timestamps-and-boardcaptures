@@ -1,0 +1,5 @@
+image_name: [51-25]Notation for the indefinite integral.png
+file_name: [51-25]-01.png
+timestamp: 51:25
+counter: 01
+folder: Calculus 1 Lecture 4.1

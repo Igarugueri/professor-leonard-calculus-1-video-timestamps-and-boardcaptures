@@ -1,0 +1,5 @@
+image_name: [6-40]Example 𝒇(𝒙) = 𝒙 ÷ ((𝒙 + 3)(𝒙 − 1)).png
+file_name: [6-40]-01.png
+timestamp: 6:40
+counter: 01
+folder: Calculus 1 Lecture 3.5

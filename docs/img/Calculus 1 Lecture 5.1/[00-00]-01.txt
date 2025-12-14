@@ -1,0 +1,5 @@
+image_name: [00-00]Introduction to finding the area between two curves.png
+file_name: [00-00]-01.png
+timestamp: 00:00
+counter: 01
+folder: Calculus 1 Lecture 5.1

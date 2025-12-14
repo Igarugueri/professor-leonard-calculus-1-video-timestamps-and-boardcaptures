@@ -1,0 +1,5 @@
+image_name: [25-41]Example –  𝒇(𝒙) = √(16 - 𝒙²) on the Closed Interval [-4, 4].png
+file_name: [25-41]-01.png
+timestamp: 25:41
+counter: 01
+folder: Calculus 1 Lecture 1.4

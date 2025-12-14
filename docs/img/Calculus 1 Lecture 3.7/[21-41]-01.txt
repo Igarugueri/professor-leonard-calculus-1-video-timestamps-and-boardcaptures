@@ -1,0 +1,5 @@
+image_name: [21-41]Maximizing the Volume of a Box_1.png
+file_name: [21-41]-01.png
+timestamp: 21:41
+counter: 01
+folder: Calculus 1 Lecture 3.7

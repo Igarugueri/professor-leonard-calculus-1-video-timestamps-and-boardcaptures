@@ -1,0 +1,5 @@
+image_name: [2-13-40]Evaluation of limₓ→₀ sin (5𝒙)  ∕ 6𝒙.png
+file_name: [2-13-40]-01.png
+timestamp: 2:13:40
+counter: 01
+folder: Calculus 1 Lecture 1.2

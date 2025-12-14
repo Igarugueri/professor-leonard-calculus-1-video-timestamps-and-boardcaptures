@@ -1,0 +1,5 @@
+image_name: [1-02-32]𝐍𝐎𝐓𝐄 - 𝑻𝙝𝒆 𝒄𝙤𝒏𝙙𝒊𝙩𝒊𝙤𝒏 𝒇𝙤𝒓 𝒕𝙝𝒆 𝒆𝙭𝒊𝙨𝒕𝙚𝒏𝙘𝒆 𝒐𝙛 𝙖 𝙡𝒊𝙢𝒊𝙩 𝙞𝒔 𝒔𝙩𝒂𝙩𝒆𝙙.png
+file_name: [1-02-32]-01.png
+timestamp: 1:02:32
+counter: 01
+folder: Calculus 1 Lecture 1.1

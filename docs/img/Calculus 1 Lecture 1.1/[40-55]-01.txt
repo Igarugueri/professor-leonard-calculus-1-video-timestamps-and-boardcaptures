@@ -1,0 +1,5 @@
+image_name: [40-55]Example – What does the function 𝒇(𝒙) = 𝒙² do as 𝒙 aproaches 2.png
+file_name: [40-55]-01.png
+timestamp: 40:55
+counter: 01
+folder: Calculus 1 Lecture 1.1

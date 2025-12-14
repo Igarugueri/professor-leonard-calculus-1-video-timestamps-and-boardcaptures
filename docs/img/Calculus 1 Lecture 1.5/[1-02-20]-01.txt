@@ -1,0 +1,5 @@
+image_name: [1-02-2057]Example_Average_velocity.png
+file_name: [1-02-2057]-01.png
+timestamp: 1:02:2057
+counter: 01
+folder: Calculus 1 Lecture 1.5

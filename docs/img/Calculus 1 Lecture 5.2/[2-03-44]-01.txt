@@ -1,0 +1,5 @@
+image_name: [2-03-44]Example 2 – Area between 𝑦 = 𝒙² and  𝑦 = 𝒙³, revolved around 𝒙-axis (washers in 𝒅𝒙).png
+file_name: [2-03-44]-01.png
+timestamp: 2:03:44
+counter: 01
+folder: Calculus 1 Lecture 5.2

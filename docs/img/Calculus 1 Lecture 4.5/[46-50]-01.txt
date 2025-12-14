@@ -1,0 +1,5 @@
+image_name: [46-50]Introduction to the concept of total area vs. signed net area.png
+file_name: [46-50]-01.png
+timestamp: 46:50
+counter: 01
+folder: Calculus 1 Lecture 4.5

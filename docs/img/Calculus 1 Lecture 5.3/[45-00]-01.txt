@@ -1,0 +1,5 @@
+image_name: [45-00]Example – cylindrical shells method Region bounded by 𝒇(𝒙) = 𝒙² + 1,  𝓰(𝒙) = -𝒙 + 1 and 𝒉(𝒙) = 1 , around the 𝒚-axis.png
+file_name: [45-00]-01.png
+timestamp: 45:00
+counter: 01
+folder: Calculus 1 Lecture 5.3

@@ -1,0 +1,5 @@
+image_name: [1-22-40]Discussion on the concept of “signed net area”.png
+file_name: [1-22-40]-01.png
+timestamp: 1:22:40
+counter: 01
+folder: Calculus 1 Lecture 4.3

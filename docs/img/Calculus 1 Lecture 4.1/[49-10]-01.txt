@@ -1,0 +1,5 @@
+image_name: [49-10]The process to find the antiderivative is also colled integration.png
+file_name: [49-10]-01.png
+timestamp: 49:10
+counter: 01
+folder: Calculus 1 Lecture 4.1

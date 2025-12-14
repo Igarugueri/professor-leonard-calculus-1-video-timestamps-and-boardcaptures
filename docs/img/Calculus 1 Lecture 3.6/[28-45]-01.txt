@@ -1,0 +1,5 @@
+image_name: [28-45]Example 𝒇(𝒙) ＝（𝒙²　－　１）　／　𝒙³_1.png
+file_name: [28-45]-01.png
+timestamp: 28:45
+counter: 01
+folder: Calculus 1 Lecture 3.6

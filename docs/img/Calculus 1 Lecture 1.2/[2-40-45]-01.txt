@@ -1,0 +1,5 @@
+image_name: [2-40-45]Evaluation of limₓ→₀  (𝒙²− 3·sin(𝒙))  ∕ 𝒙.png
+file_name: [2-40-45]-01.png
+timestamp: 2:40:45
+counter: 01
+folder: Calculus 1 Lecture 1.2

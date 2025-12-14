@@ -1,0 +1,5 @@
+image_name: [9-10]Graphs of Angles.png
+file_name: [9-10]-01.png
+timestamp: 9:10
+counter: 01
+folder: Calculus 1 Lecture 0.3

@@ -1,0 +1,5 @@
+image_name: [01-13-00]Example – 7 with a root in the denominator 𝒇(𝒙) = 1 ∕ √(𝒙 – 1).png
+file_name: [01-13-00]-01.png
+timestamp: 01:13:00
+counter: 01
+folder: Calculus 1 Lecture 0.2

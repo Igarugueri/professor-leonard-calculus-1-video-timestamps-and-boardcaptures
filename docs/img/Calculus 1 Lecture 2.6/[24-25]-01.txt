@@ -1,0 +1,5 @@
+image_name: [24-25][(𝒙)⁶].png
+file_name: [24-25]-01.png
+timestamp: 24:25
+counter: 01
+folder: Calculus 1 Lecture 2.6

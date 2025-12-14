@@ -1,0 +1,5 @@
+image_name: [47-00]∫ sin²(𝒙)·cos(𝒙)·𝒅𝒙  .png
+file_name: [47-00]-01.png
+timestamp: 47:00
+counter: 01
+folder: Calculus 1 Lecture 4.2

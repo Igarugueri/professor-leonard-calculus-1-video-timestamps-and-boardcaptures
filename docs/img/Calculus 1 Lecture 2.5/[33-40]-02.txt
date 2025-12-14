@@ -1,0 +1,5 @@
+image_name: [33-40]Example – 4_variable substitution.png
+file_name: [33-40]-02.png
+timestamp: 33:40
+counter: 02
+folder: Calculus 1 Lecture 2.5

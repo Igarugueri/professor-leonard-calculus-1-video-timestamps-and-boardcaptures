@@ -1,0 +1,5 @@
+image_name: [8-00]Example-Find the inflection points of the function  𝒇(𝒙) = 𝒙⁴ - 4𝒙³ + 12.png
+file_name: [8-00]-01.png
+timestamp: 8:00
+counter: 01
+folder: Calculus 1 Lecture 3.4

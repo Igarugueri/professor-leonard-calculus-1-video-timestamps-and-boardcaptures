@@ -1,0 +1,5 @@
+image_name: [0-00]Introduction to the definite integral.png
+file_name: [0-00]-01.png
+timestamp: 0:00
+counter: 01
+folder: Calculus 1 Lecture 4.4

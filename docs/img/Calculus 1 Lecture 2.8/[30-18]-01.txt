@@ -1,0 +1,5 @@
+image_name: [30-18]A camera on the ground must follow the rocket_1.png
+file_name: [30-18]-01.png
+timestamp: 30:18
+counter: 01
+folder: Calculus 1 Lecture 2.8

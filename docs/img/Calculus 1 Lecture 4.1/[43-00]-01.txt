@@ -1,0 +1,5 @@
+image_name: [43-00]Formal definition of antiderivative.png
+file_name: [43-00]-01.png
+timestamp: 43:00
+counter: 01
+folder: Calculus 1 Lecture 4.1

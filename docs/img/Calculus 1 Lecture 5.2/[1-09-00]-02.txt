@@ -1,0 +1,5 @@
+image_name: [1-09-00]Example – 2 Finding the Volume of a Sphere_2.png
+file_name: [1-09-00]-02.png
+timestamp: 1:09:00
+counter: 02
+folder: Calculus 1 Lecture 5.2

@@ -1,0 +1,5 @@
+image_name: [42-45]Example-4.png
+file_name: [42-45]-04.png
+timestamp: 42:45
+counter: 04
+folder: Calculus 1 Lecture 2.1

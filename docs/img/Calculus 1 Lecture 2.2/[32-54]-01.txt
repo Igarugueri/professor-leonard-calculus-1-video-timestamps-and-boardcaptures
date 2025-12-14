@@ -1,0 +1,5 @@
+image_name: [32-54]Derivatiuves with fractional exponent.png
+file_name: [32-54]-01.png
+timestamp: 32:54
+counter: 01
+folder: Calculus 1 Lecture 2.2

@@ -1,0 +1,5 @@
+image_name: [3-05]The derivative of a constant is zero_examples.png
+file_name: [3-05]-01.png
+timestamp: 3:05
+counter: 01
+folder: Calculus 1 Lecture 2.2

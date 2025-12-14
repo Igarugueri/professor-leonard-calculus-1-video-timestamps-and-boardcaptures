@@ -1,0 +1,5 @@
+image_name: [23-00]Example – Find the length of a curve 𝒇(𝒙) = (1∕3)𝒙³ + (1∕4𝒙) on [1,3]_2.png
+file_name: [23-00]-02.png
+timestamp: 23:00
+counter: 02
+folder: Calculus 1 Lecture 5.4

@@ -1,0 +1,5 @@
+image_name: [18-30]Example – 3 ∫[4,9] √(𝒙) + 𝒙²·𝒅𝑥.png
+file_name: [18-30]-01.png
+timestamp: 18:30
+counter: 01
+folder: Calculus 1 Lecture 4.5

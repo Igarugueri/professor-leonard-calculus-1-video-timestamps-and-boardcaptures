@@ -1,0 +1,5 @@
+image_name: [13-14]Examples of the Power Rule-2.png
+file_name: [13-14]-01.png
+timestamp: 13:14
+counter: 01
+folder: Calculus 1 Lecture 2.2

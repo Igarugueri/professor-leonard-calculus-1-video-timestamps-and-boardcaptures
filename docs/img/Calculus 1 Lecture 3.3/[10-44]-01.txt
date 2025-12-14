@@ -1,0 +1,5 @@
+image_name: [10-44]Example-Application of the first derivative test to an example 𝒇(𝒙) = 𝒙³ -3𝒙 +1.png
+file_name: [10-44]-01.png
+timestamp: 10:44
+counter: 01
+folder: Calculus 1 Lecture 3.3

@@ -1,0 +1,5 @@
+image_name: [56-15]Location of absolute extrema_3.png
+file_name: [56-15]-03.png
+timestamp: 56:15
+counter: 03
+folder: Calculus 1 Lecture 3.1

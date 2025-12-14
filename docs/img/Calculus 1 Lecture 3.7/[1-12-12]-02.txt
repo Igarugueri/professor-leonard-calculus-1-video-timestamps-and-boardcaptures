@@ -1,0 +1,5 @@
+image_name: [1-12-12]Minimizing Material for a Can_2.png
+file_name: [1-12-12]-02.png
+timestamp: 1:12:12
+counter: 02
+folder: Calculus 1 Lecture 3.7

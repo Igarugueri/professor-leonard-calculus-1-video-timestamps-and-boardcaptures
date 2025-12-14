@@ -1,0 +1,5 @@
+image_name: [55-00]𝐃𝐞𝐦𝐨𝐧𝐬𝐭𝐫𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐢𝐭𝐲 𝐨𝐟 𝐭𝐡𝐞 𝐀𝐛𝐬𝐨𝐥𝐮𝐭𝐞 𝐕𝐚𝐥𝐮𝐞 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧.png
+file_name: [55-00]-01.png
+timestamp: 55:00
+counter: 01
+folder: Calculus 1 Lecture 1.4

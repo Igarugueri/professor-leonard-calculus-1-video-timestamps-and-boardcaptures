@@ -1,0 +1,5 @@
+image_name: [19-46]An oil spill is expanding in a circular shape.png
+file_name: [19-46]-01.png
+timestamp: 19:46
+counter: 01
+folder: Calculus 1 Lecture 2.8

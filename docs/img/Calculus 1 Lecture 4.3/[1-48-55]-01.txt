@@ -1,0 +1,5 @@
+image_name: [1-48-55]Example – 3 Calculating the net area under f(x) = 2x − x³ on [0,1] using right endpoints_1.png
+file_name: [1-48-55]-01.png
+timestamp: 1:48:55
+counter: 01
+folder: Calculus 1 Lecture 4.3

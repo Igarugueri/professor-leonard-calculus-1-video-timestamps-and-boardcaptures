@@ -1,0 +1,5 @@
+image_name: [27-25]Rule for derivatives of sum and difference.png
+file_name: [27-25]-01.png
+timestamp: 27:25
+counter: 01
+folder: Calculus 1 Lecture 2.2

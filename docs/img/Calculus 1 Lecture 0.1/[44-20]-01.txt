@@ -1,0 +1,5 @@
+image_name: [44-20]Distance Formula.png
+file_name: [44-20]-01.png
+timestamp: 44:20
+counter: 01
+folder: Calculus 1 Lecture 0.1

@@ -1,0 +1,5 @@
+image_name: [38-23]Evaluation of limₓ→₅  (𝒙² - 3𝒙 - 10)  ∕ (𝒙² - 10𝒙 + 25).png
+file_name: [38-23]-01.png
+timestamp: 38:23
+counter: 01
+folder: Calculus 1 Lecture 1.2

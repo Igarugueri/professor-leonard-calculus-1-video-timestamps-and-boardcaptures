@@ -1,0 +1,5 @@
+image_name: [23-00]Example Identify increasing-decreasing intervals, concave up-down intervals, and points of inflection on a given graph.png
+file_name: [23-00]-01.png
+timestamp: 23:00
+counter: 01
+folder: Calculus 1 Lecture 3.1

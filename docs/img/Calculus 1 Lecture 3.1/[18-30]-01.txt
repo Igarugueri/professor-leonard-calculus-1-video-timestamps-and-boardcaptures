@@ -1,0 +1,5 @@
+image_name: [18-30]Points of inflection-Points where the curve changes concavity.png
+file_name: [18-30]-01.png
+timestamp: 18:30
+counter: 01
+folder: Calculus 1 Lecture 3.1

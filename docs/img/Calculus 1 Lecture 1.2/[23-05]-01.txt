@@ -1,0 +1,5 @@
+image_name: [23-05]Evaluation of limₓ→₂  (4𝒙² + 1)  ∕  (𝒙 + 3).png
+file_name: [23-05]-01.png
+timestamp: 23:05
+counter: 01
+folder: Calculus 1 Lecture 1.2

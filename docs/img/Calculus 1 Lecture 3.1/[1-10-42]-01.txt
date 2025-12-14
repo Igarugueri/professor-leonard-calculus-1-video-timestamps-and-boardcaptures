@@ -1,0 +1,5 @@
+image_name: [1-10-42]Example-Finding Absolute Extrema on a Closed Interval  𝐲 = 6𝒙⁴ᐟ³ − 3𝒙¹ᐟ³on [-1, 1]_1.png
+file_name: [1-10-42]-01.png
+timestamp: 1:10:42
+counter: 01
+folder: Calculus 1 Lecture 3.1

@@ -1,0 +1,5 @@
+image_name: [39-05]√(5𝒙² - 1).png
+file_name: [39-05]-01.png
+timestamp: 39:05
+counter: 01
+folder: Calculus 1 Lecture 2.6

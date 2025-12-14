@@ -1,0 +1,5 @@
+image_name: [55-25]Evaluation of limₓ→₀  (√(1+𝒙) - 1)  ∕ 𝒙.png
+file_name: [55-25]-01.png
+timestamp: 55:25
+counter: 01
+folder: Calculus 1 Lecture 1.2
