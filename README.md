@@ -1,22 +1,21 @@
 # Calculus 1 – Structured Notes and Visual Index (Professor Leonard Lectures)
 
-
 ## Index
 
-1. Repository Overview
-2. Local Use
-   - Recommended Editor: Zettlr
-   - How to Use Locally
-3. Remote Use (via GitHub Pages
-4. Motivation
-5. Credits and License
+1. [Repository Overview](#1-repository-overview)  
+2. [Local Use](#2-local-use)  
+   2.1 [Recommended Editor: Zettlr](#21-recommended-editor-zettlr)  
+   2.2 [How to Use Locally](#22-how-to-use-locally)  
+3. [Remote Use (via GitHub Pages)](#3-remote-use-via-github-pages)  
+4. [Motivation](#4-motivation)  
+5. [Credits and License](#5-credits-and-license)
 
 
 ---
 
 ## 1. Repository Overview
 
-This repository offers a highly organized and visually structured index for Professor Leonard's *Calculus 1* lecture series. The goal is to provide a fast, reliable reference to core topics using clear timestamps, concise explanations, and visual board captures.
+This repository offers a highly organized and visually structured index for Professor Leonard's _Calculus 1_ lecture series. The goal is to provide a fast, reliable reference to core topics using clear timestamps, concise explanations, and visual board captures.
 
 ### Folder Structure:
 
@@ -24,7 +23,7 @@ This repository offers a highly organized and visually structured index for Prof
   Public-facing folder used by GitHub Pages to display content online (HTML + CSS only).
 
 - **img/**  
-  Contains all board screenshots, organized by lecture. Each image is accompanied by a `.txt` *sidecar file* storing metadata:
+  Contains all board screenshots, organized by lecture. Each image is accompanied by a `.txt` _sidecar file_ storing metadata:
   ```
   image_name: 
   file_name: 
@@ -69,7 +68,6 @@ To explore the notes visually online, visit the rendered HTML site via GitHub Pa
 
 [GitHub Pages – Calculus 1 Notes](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-notes/)
 
-
 This version includes only:
 - The `docs/` folder (HTML versions of the lectures).
 - The `img/` folder (for loading screenshots).
@@ -80,7 +78,7 @@ Notes in `ytb/`, `md/`, and `latex/` are not meant to be read directly on GitHub
 
 ## 4. Motivation
 
-This project was born from the need to have a **fast, reliable reference** for key concepts in *Calculus 1*. Over time, even solid understanding can fade, and having a structured index with timestamps, math notation, and visuals helps reinforce or recover these ideas quickly.
+This project was born from the need to have a **fast, reliable reference** for key concepts in _Calculus 1_. Over time, even solid understanding can fade, and having a structured index with timestamps, math notation, and visuals helps reinforce or recover these ideas quickly.
 
 This is especially useful during revision periods or while studying more advanced calculus topics.
 
