@@ -30,21 +30,21 @@ This repository provides a structured index to Professor Leonard’s Calculus 2 
 
 Topics covered include:
 
-- Functions and graphing\
-- Trigonometry review\
-- Limits and continuity\
+- Functions and graphing
+- Trigonometry review
+- Limits and continuity
 - Derivatives and differentiation techniques\
-- Applications of derivatives\
+- Applications of derivatives
 - Implicit differentiation\
-- Related rates\
-- Increasing/decreasing functions\
-- Concavity and curve sketching\
-- Rolle’s Theorem and the Mean Value Theorem\
-- Optimization\
-- Indefinite and definite integrals\
-- The Fundamental Theorem of Calculus\
-- Area between curves\
-- Volumes of solids (disks, washers, and shells)\
+- Related rates
+- Increasing/decreasing functions
+- Concavity and curve sketching
+- Rolle’s Theorem and the Mean Value Theorem
+- Optimization
+- Indefinite and definite integrals
+- The Fundamental Theorem of Calculus
+- Area between curves
+- Volumes of solids (disks, washers, and shells)
 - Arc length
 
 
@@ -63,8 +63,8 @@ Topics covered include:
 
   Example:
 image\_name: [12-35]IntegrationByParts.png
-file\_name:[12-35]-01.png\
-timestamp: 12:35\
+file\_name:[12-35]-01.png
+timestamp: 12:35
 counter: 01
 folder: Calculus 1 Lecture 7.1
 
