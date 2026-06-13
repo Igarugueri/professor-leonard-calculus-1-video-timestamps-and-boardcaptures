@@ -26,7 +26,7 @@ It is designed to help students:
 
 ## 1. Repository Overview
 
-This repository offers a highly organized and visually structured index for Professor Leonard's *Calculus 1* lecture series. The goal is to provide a fast, reliable reference to core topics using clear timestamps, concise explanations, complete whiteboard captures, and structured mathematical notes.
+This repository provides a structured index to Professor Leonard’s Calculus 2 lecture series, combining clickable timestamps, complete whiteboard captures, and organized mathematical notes across the full lecture series.
 
 Topics covered include:
 
