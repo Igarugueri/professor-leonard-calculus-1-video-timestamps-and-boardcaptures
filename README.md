@@ -35,7 +35,7 @@ Topics covered include:
 - Limits and continuity
 - Derivatives and differentiation techniques\
 - Applications of derivatives
-- Implicit differentiation\
+- Implicit differentiation
 - Related rates
 - Increasing/decreasing functions
 - Concavity and curve sketching
