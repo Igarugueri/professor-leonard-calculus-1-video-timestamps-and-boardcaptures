@@ -1,47 +1,72 @@
 # Calculus 1 – Structured Notes and Visual Index (Professor Leonard Lectures)
-Includes synchronized video timestamps, whiteboard snapshots, and structured MathJax-rendered notes for each lecture.
 
+Includes synchronized video timestamps, complete whiteboard captures, structured MathJax-rendered notes, and direct navigation to specific concepts throughout each lecture.
+
+Designed as a fast-reference resource for review, revision, and long-term retention of key Calculus 1 concepts.
+
+This repository is intended as a searchable reference companion to the original lectures, allowing rapid access to specific concepts without having to rewatch entire videos.
 
 ## Index
 
-1. [Repository Overview](#1-repository-overview)  
-2. [Local Use](#2-local-use)  
-   2.1 [Recommended Editor: Zettlr](#21-recommended-editor-zettlr)  
-   2.2 [How to Use Locally](#22-how-to-use-locally)  
-3. [Remote Use (via GitHub Pages)](#3-remote-use-via-github-pages)  
-4. [Motivation](#4-motivation)  
+1. [Repository Overview](#1-repository-overview)
+2. [Local Use](#2-local-use)
+   - [Recommended Editor: Zettlr](#recommended-editor-zettlr)
+   - [How to Use Locally](#how-to-use-locally)
+3. [Remote Use (via GitHub Pages)](#3-remote-use-via-github-pages)
+4. [Motivation](#4-motivation)
 5. [Credits and License](#5-credits-and-license)
-
 
 ---
 
 ## 1. Repository Overview
 
-This repository offers a highly organized and visually structured index for Professor Leonard's _Calculus 1_ lecture series. The goal is to provide a fast, reliable reference to core topics using clear timestamps, concise explanations, and visual board captures.
+This repository offers a highly organized and visually structured index for Professor Leonard's *Calculus 1* lecture series. The goal is to provide a fast, reliable reference to core topics using clear timestamps, concise explanations, complete whiteboard captures, and structured mathematical notes.
 
-### Folder Structure:
+Topics covered include:
+
+- Integration techniques
+- Improper integrals
+- Differential equations
+- Sequences and series
+- Taylor and Maclaurin series
+- Parametric equations
+- Polar coordinates
+- Numerical integration
+
+### Course Numbering Note
+
+
+### Folder Structure
 
 - **docs/**  
   Public-facing folder used by GitHub Pages to display content online (HTML + CSS only).
 
 - **img/**  
-  Contains all board screenshots, organized by lecture. Each image is accompanied by a `.txt` _sidecar file_ storing metadata:
-  ```
-  image_name: 
-  file_name: 
-  timestamp: 
-  counter: 
-  folder: 
-  ```
+  Contains all whiteboard screenshots used throughout the project. These are not a small selection of representative images; they constitute a systematic visual capture of the lecture content and are referenced throughout the notes.
+
+  Each image is accompanied by a `.txt` sidecar file storing metadata.
+
+  Example:
+image\_name: \[12-35]IntegrationByParts.png\
+file\_name: \[12-35]-01.png\
+timestamp: 12:35\
+counter: 01\
+folder: Calculus 1 Lecture 7.1
 
 - **ytb/**  
-  Plain-text timestamp notes specifically formatted for YouTube comments. Allows direct following of the lecture with minimal clutter.
+Contains the original lightweight timestamp indexes created during the early stages of the project. These files were designed to be pasted directly into YouTube comments so that viewers could navigate the lecture while watching it. Although largely superseded by the Markdown and LaTeX versions, they are preserved as part of the project's development history.
 
 - **md/**  
-  Markdown versions of each lecture with clickable timestamps and embedded screenshots. Best for browsing raw notes.
+Markdown versions of each lecture containing clickable video timestamps, screenshots, and structured notes.
+
+These files provide direct navigation between the notes and the original lecture recordings.
+
+**Important:** the `md/` files depend on the `img/` folder. Both should be downloaded together in order to display screenshots correctly.
 
 - **latex/**  
-  LaTeX-formatted Markdown files, with all math notation rendered clearly for structured reading. Not intended for printing, but for clarity and study.
+Enhanced versions of the Markdown notes using LaTeX notation for mathematical expressions.
+
+These files represent the final refined version of the notes and provide improved readability and mathematical clarity compared to the original Markdown drafts.
 
 ---
 
@@ -49,18 +74,19 @@ This repository offers a highly organized and visually structured index for Prof
 
 ### Recommended Editor: Zettlr
 
-These notes were created and structured using [Zettlr](https://www.zettlr.com/), a powerful open-source Markdown editor. For optimal viewing—especially indentation, custom bullet hierarchies, and image previews—Zettlr is strongly recommended.
+These notes were created and structured using [Zettlr](https://www.zettlr.com/), a powerful open-source Markdown editor. For optimal viewing—especially indentation, custom bullet hierarchies, image previews, hyperlinks, and mathematical notation—Zettlr is strongly recommended.
 
 ### How to Use Locally
 
 1. Clone or download the repository.
-2. Open the following folders in Zettlr or your preferred Markdown viewer:
-   - `img/`
-   - `ytb/`
-   - `md/`
-   - `latex/`
+2. Open the following folders in Zettlr or your preferred Markdown editor:
 
-These folders are not optimized for viewing on GitHub but provide the best experience locally.
+ - `img/`
+ - `ytb/`
+ - `md/`
+ - `latex/`
+
+For the best experience, keep the original folder structure intact, since screenshots are referenced through relative paths.
 
 ---
 
@@ -68,19 +94,32 @@ These folders are not optimized for viewing on GitHub but provide the best exper
 
 To explore the notes visually online, visit the rendered HTML site via GitHub Pages:
 
-[GitHub Pages – Calculus 1 Notes](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-notes/)
+[GitHub Pages – Calculus 1 (Professor Leonard Lectures)](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-notes/)
 
-This version includes only:
-- The `docs/` folder (HTML versions of the lectures).
-- The `img/` folder (for loading screenshots).
+The online version includes:
 
-Notes in `ytb/`, `md/`, and `latex/` are not meant to be read directly on GitHub due to formatting limitations.
+- Structured HTML lecture pages
+- Complete whiteboard captures
+- Mathematical notation rendered with MathJax
+- Direct navigation between lectures
+
+The `ytb/`, `md/`, and `latex/` folders are intended primarily for local use and are not optimized for direct reading on GitHub.
+
+### Additional Resources
+
+Many lectures include supplementary references at the end of the notes. These typically point to OpenStax materials or other freely available educational resources that may help reinforce the topic being studied.
 
 ---
 
 ## 4. Motivation
 
-This project was born from the need to have a **fast, reliable reference** for key concepts in _Calculus 1_. Over time, even solid understanding can fade, and having a structured index with timestamps, math notation, and visuals helps reinforce or recover these ideas quickly.
+This project was created to serve as a fast, reliable reference for key concepts in *Calculus 1*.
+
+Rather than replacing the original lectures, its purpose is to make them easier to revisit, search, and navigate. The repository allows users to quickly locate a concept, jump to the relevant timestamp, review the associated whiteboard work, and continue studying without having to rewatch entire lectures.
+
+The notes are not literal transcripts. Instead, they condense the essential mathematical content written on the board, supplemented when necessary with explanatory remarks, clarifications, and observations that arose during the creation of the project.
+
+Each lecture was manually reviewed, indexed, timestamped, cross-referenced, and supplemented with complete visual references from the original whiteboard presentations.
 
 This is especially useful during revision periods or while studying more advanced calculus topics.
 
@@ -88,9 +127,20 @@ This is especially useful during revision periods or while studying more advance
 
 ## 5. Credits and License
 
-- All lectures are by **Professor Leonard**, whose work is publicly available on YouTube.
-- This project was independently created as a personal study and indexing tool.
-- All timestamps, transcriptions, and formatting were generated manually by the author.
-- Screenshots fall under fair use for educational purposes.
+All lectures are by **Professor Leonard**, whose work is publicly available on YouTube.
 
-© 2025. See the LICENSE file for reuse and distribution terms (MIT License recommended).
+Special thanks to Professor Leonard for his remarkable ability to teach mathematics. One of the main motivations behind this project was the clarity of his explanations, his ability to make difficult concepts approachable, and his talent for turning topics that often seem intimidating into ideas that can be understood step by step.
+
+His lectures not only provide mathematical content, but also a model of clear and effective teaching that inspired the creation of this repository.
+
+* This project was independently created as a personal study and indexing tool.
+
+* All timestamps, transcriptions, formatting, indexing, image organization, and cross-references were generated manually by the author.
+
+* Whiteboard captures consist of screenshots taken from the original lecture videos and are included under fair use for educational purposes.
+
+* Additional references may include links to OpenStax and other freely available educational resources.
+
+* AI-assisted tools, including ChatGPT, were used to support parts of the workflow such as HTML generation, formatting, proofreading, and repository organization. All final content, indexing decisions, screenshots, timestamps, and study notes were reviewed and curated manually by the author.
+
+© 2026. See the LICENSE file for reuse and distribution terms.
