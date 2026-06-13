@@ -30,14 +30,23 @@ This repository provides a structured index to Professor Leonard’s Calculus 2 
 
 Topics covered include:
 
-- Integration techniques
-- Improper integrals
-- Differential equations
-- Sequences and series
-- Taylor and Maclaurin series
-- Parametric equations
-- Polar coordinates
-- Numerical integration
+- Functions and graphing\
+- Trigonometry review\
+- Limits and continuity\
+- Derivatives and differentiation techniques\
+- Applications of derivatives\
+- Implicit differentiation\
+- Related rates\
+- Increasing/decreasing functions\
+- Concavity and curve sketching\
+- Rolle’s Theorem and the Mean Value Theorem\
+- Optimization\
+- Indefinite and definite integrals\
+- The Fundamental Theorem of Calculus\
+- Area between curves\
+- Volumes of solids (disks, washers, and shells)\
+- Arc length
+
 
 ### Course Numbering Note
 
@@ -53,10 +62,10 @@ Topics covered include:
   Each image is accompanied by a `.txt` sidecar file storing metadata.
 
   Example:
-image\_name: \[12-35]IntegrationByParts.png\
-file\_name: \[12-35]-01.png\
+image\_name: [12-35]IntegrationByParts.png
+file\_name:[12-35]-01.png\
 timestamp: 12:35\
-counter: 01\
+counter: 01
 folder: Calculus 1 Lecture 7.1
 
 - **ytb/**  
