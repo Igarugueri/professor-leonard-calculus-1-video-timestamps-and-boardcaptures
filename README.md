@@ -28,24 +28,72 @@ It is designed to help students:
 
 This repository provides a structured index to Professor Leonard’s Calculus 2 lecture series, combining clickable timestamps, complete whiteboard captures, and organized mathematical notes across the full lecture series.
 
-Topics covered include:
+Topics:
 
-- Functions and graphing
-- Trigonometry review
-- Limits and continuity
-- Derivatives and differentiation techniques\
-- Applications of derivatives
-- Implicit differentiation
-- Related rates
-- Increasing/decreasing functions
-- Concavity and curve sketching
-- Rolle’s Theorem and the Mean Value Theorem
-- Optimization
-- Indefinite and definite integrals
-- The Fundamental Theorem of Calculus
-- Area between curves
-- Volumes of solids (disks, washers, and shells)
-- Arc length
+* [Lecture 0.1 – Lines, Angle of Inclination, and the Distance Formula](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/0.1.html)
+
+* [Lecture 0.2 – Introduction to Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/0.2.html)
+
+* [Lecture 0.3 – Review of Trigonometry and Graphing Trigonometric Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/0.3.html)
+
+* [Lecture 0.4 – Combining and Composition of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/0.4.html)
+
+* [Lecture 1.1 – An Introduction to Limits](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/1.1.html)
+
+* [Lecture 1.2 – Properties of Limits: Techniques of Limit Computation](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/1.2.html)
+
+* [Lecture 1.4 – Continuity of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/1.4.html)
+
+* [Lecture 1.5 – Slope of a Curve, Velocity, and Rates of Change](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/1.5.html)
+
+* [Lecture 2.1 – Introduction to the Derivative of a Function](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.1.html)
+
+* [Lecture 2.2 – Techniques of Differentiation (Finding Derivatives of Functions Easily)](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.2.html)
+
+* [Lecture 2.3 – The Product and Quotient Rules for Derivatives of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.3.html)
+
+* [Lecture 2.4 – Applications of the Derivative](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.4.html)
+
+* [Lecture 2.5 – Finding Derivatives of Trigonometric Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.5.html)
+
+* [Lecture 2.6 – Discussion of the Chain Rule for Derivatives of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.6.html)
+
+* [Lecture 2.7 – Implicit Differentiation](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.7.html)
+
+* [Lecture 2.8 – Related Rates](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/2.8.html)
+
+* [Lecture 3.1 – Increasing/Decreasing and Concavity of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.1.html)
+
+* [Lecture 3.2 – A Brief Discussion of Rolle’s Theorem and Mean Value Theorem](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.2.html)
+
+* [Lecture 3.3 – The First Derivative Test for Increasing and Decreasing](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.3.html)
+
+* [Lecture 3.4 – The Second Derivative Test for Concavity of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.4.html)
+
+* [Lecture 3.5 – Limits of Functions at Infinity](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.5.html)
+
+* [Lecture 3.6 – How to Sketch Graphs of Functions](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.6.html)
+
+* [Lecture 3.7 – Optimization: Max/Min Application Problems](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/3.7.html)
+
+* [Lecture 4.1 – An Introduction to the Indefinite Integral](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/4.1.html)
+
+* [Lecture 4.2 – Integration by Substitution](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/4.2.html)
+
+* [Lecture 4.3 – Area Under a Curve, Limit Approach, Riemann Sums](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/4.3.html)
+
+* [Lecture 4.4 – The Evaluation of Definite Integrals](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/4.4.html)
+
+* [Lecture 4.5 – The Fundamental Theorem of Calculus](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/4.5.html)
+
+* [Lecture 5.1 – Finding Area Between Two Curves](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/5.1.html)
+
+* [Lecture 5.2 – Volume of Solids by Disks and Washers Method](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/5.2.html)
+
+* [Lecture 5.3 – Volume of Solids by Cylindrical Shells Method](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/5.3.html)
+
+* [Lecture 5.4 – Finding the Length of a Curve on a Plane](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/5.4.html)
+
 
 
 ### Course Numbering Note
