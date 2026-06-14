@@ -157,7 +157,7 @@ For the best experience, keep the original folder structure intact, since screen
 
 To explore the notes visually online, visit the rendered HTML site via GitHub Pages:
 
-[GitHub Pages – Calculus 1 (Professor Leonard Lectures)](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-notes/)
+[GitHub Pages – Calculus 1 (Professor Leonard Lectures)](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/)
 
 The online version includes:
 
