@@ -1,16 +1,19 @@
 # Calculus 1 – Structured Notes and Visual Index (Professor Leonard Lectures)
 
-A fast-reference study tool for finding concepts quickly, revisiting the exact explanation, and reviewing Professor Leonard’s lectures without having to rewatch them in full.
+Structured navigation and study companion for Professor Leonard's Calculus 1 lectures.
 
-This repository includes clickable video timestamps, complete whiteboard captures, structured MathJax-rendered notes, and direct navigation to specific concepts throughout each lecture.
+Includes synchronized video timestamps, complete whiteboard captures, structured MathJax-rendered notes, and direct navigation to specific concepts throughout each lecture.
+
+Designed as a fast-reference resource for review, revision, and long-term retention of key Calculus 1 concepts.
+
 
 It is designed to help students:
 
-* find a concept quickly
-* avoid losing 40 minutes searching through a lecture
-* see the exact whiteboard work for a topic
-* return directly to the moment where an idea is explained
-* review efficiently without rewatching an entire class
+- find a concept quickly
+- avoid losing 40 minutes searching through a lecture
+- see the exact whiteboard work for a topic
+- return directly to the moment where an idea is explained
+- review efficiently without rewatching an entire class
 
 ## Index
 
@@ -26,9 +29,10 @@ It is designed to help students:
 
 ## 1. Repository Overview
 
-This repository provides a structured index to Professor Leonard’s Calculus 1 lecture series, combining clickable timestamps, complete whiteboard captures, and organized mathematical notes across the full lecture series.
+This repository is a structured navigation and study companion for Professor Leonard's Calculus lecture series. Rather than replacing the original lectures, it helps students quickly locate concepts, revisit explanations, review whiteboard work, and navigate directly to relevant moments within the videos. The following links provide direct access to each lecture:
 
-Topics:
+
+### Complete Lecture Collection
 
 * [Lecture 0.1 – Lines, Angle of Inclination, and the Distance Formula](https://igarugueri.github.io/professor-leonard-calculus-1-video-timestamps-and-boardcaptures/html/0.1.html)
 
@@ -96,7 +100,12 @@ Topics:
 
 
 
-### Course Numbering Note
+### Companion Project
+
+Related repository:
+
+[Professor Leonard Calculus 2 – Video Timestamps and Board Captures]\(https://github.com/Igarugueri/professor-leonard-calculus-2-video-timestamps-and-boardcaptures)
+
 
 
 ### Folder Structure
@@ -106,30 +115,31 @@ Topics:
 
 - **img/**  
   Contains all whiteboard screenshots used throughout the project. These are not a small selection of representative images; they constitute a systematic visual capture of the lecture content and are referenced throughout the notes.
+  All screenshots were manually selected and captured during the review process.
 
   Each image is accompanied by a `.txt` sidecar file storing metadata.
 
-  Example:
-image\_name: [12-35]IntegrationByParts.png
-file\_name:[12-35]-01.png
-timestamp: 12:35
-counter: 01
-folder: Calculus 1 Lecture 7.1
+ Example metadata:
+
+```text
+image_name: [18-42]ImplicitDifferentiation.png
+file_name: [18-42]-03.png
+timestamp: 18:42
+counter: 03
+folder: Calculus 1 Lecture 2.7
+```
 
 - **ytb/**  
-Contains the original lightweight timestamp indexes created during the early stages of the project. These files were designed to be pasted directly into YouTube comments so that viewers could navigate the lecture while watching it. Although largely superseded by the Markdown and LaTeX versions, they are preserved as part of the project's development history.
+  Contains the original lightweight timestamp indexes created during the early stages of the project. These files were designed to be pasted directly into YouTube comments so that viewers could navigate the lecture while watching it. Although largely superseded by the Markdown and LaTeX versions, they are preserved as part of the project's development history.
 
 - **md/**  
-Markdown versions of each lecture containing clickable video timestamps, screenshots, and structured notes.
-
-These files provide direct navigation between the notes and the original lecture recordings.
-
-**Important:** the `md/` files depend on the `img/` folder. Both should be downloaded together in order to display screenshots correctly.
+  Markdown versions of each lecture containing clickable video timestamps, screenshots, and structured notes.
 
 - **latex/**  
-Enhanced versions of the Markdown notes using LaTeX notation for mathematical expressions.
+  Enhanced versions of the Markdown notes using LaTeX notation for mathematical expressions.
 
-These files represent the final refined version of the notes and provide improved readability and mathematical clarity compared to the original Markdown drafts.
+  
+**Important:** the `md/` and `latex/` files depend on the `img/` folder. They should be downloaded together in order to display screenshots correctly.
 
 ---
 
@@ -142,14 +152,12 @@ These notes were created and structured using [Zettlr](https://www.zettlr.com/),
 ### How to Use Locally
 
 1. Clone or download the repository.
-2. Open the following folders in Zettlr or your preferred Markdown editor:
 
- - `img/`
- - `ytb/`
- - `md/`
- - `latex/`
+2. Keep the original folder structure intact.
 
-For the best experience, keep the original folder structure intact, since screenshots are referenced through relative paths.
+3. Open the files in the `md/` or `latex/` folders using Zettlr or another Markdown editor.
+
+The notes use relative paths to load the whiteboard screenshots stored in the `img/` folder. As long as the original folder structure is preserved, images and links will work automatically without any additional configuration.
 
 ---
 
@@ -176,9 +184,9 @@ Many lectures include supplementary references at the end of the notes. These ty
 
 ## 4. Motivation
 
-This project was created to solve a practical study problem: long lectures are extremely valuable, but they are not always easy to search, revisit, or review efficiently.
+The primary goal of this project is not to replace Professor Leonard's lectures, but to make them easier to navigate, revisit, and study efficiently over the long term.
 
-The aim of this repository is not to replace Professor Leonard’s lectures, but to make them easier to use as a long-term reference tool.
+This project was created to solve a practical study problem: long lectures are extremely valuable, but they are not always easy to search, revisit, or review efficiently.
 
 Instead of forcing students to rewatch entire lectures just to relocate a single explanation, the project allows them to identify a concept quickly, jump to the exact timestamp, inspect the corresponding whiteboard work, and continue studying with minimal friction.
 
