@@ -104,7 +104,8 @@ This repository is a structured navigation and study companion for Professor Leo
 
 Related repository:
 
-[Professor Leonard Calculus 2 – Video Timestamps and Board Captures]\(https://github.com/Igarugueri/professor-leonard-calculus-2-video-timestamps-and-boardcaptures)
+
+[Professor Leonard Calculus 2 – Video Timestamps and Board Captures](https://github.com/Igarugueri/professor-leonard-calculus-2-video-timestamps-and-boardcaptures)
 
 
 
